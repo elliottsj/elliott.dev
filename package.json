@@ -4,6 +4,8 @@
   "description": "My personal website and blog",
   "main": "index.js",
   "scripts": {
+    "?build": "Compile the application for production deployment to the directory \".next/\".",
+    "build": "next build",
     "?dev": "Launch the application in development mode.",
     "dev": "next",
     "?dev:debug": "Launch the application in development mode, with debugging enabled.",
@@ -12,12 +14,10 @@
     "format:check": "prettier --list-different \"**/*.{js,jsx,ts,tsx}\"",
     "?format:write": "Format all incorrectly-formatted source files and writes them to disk.",
     "format:write": "prettier --write \"**/*.{js,jsx,ts,tsx}\"",
-    "?next:start": "Start the application in production mode. Must run \"build\" first.",
-    "next:start": "cross-env NODE_ENV=production babel-node --extensions \".ts\" server.ts",
-    "?start": "Start the application in production mode.",
-    "start": "npm run next:start",
+    "?start": "Start the application in production mode. Must run \"build\" first.",
+    "start": "next start",
     "?test": "Run all tests",
-    "test": "npm-run-all --sequential format:check apollo:codegen:ci jest"
+    "test": "npm-run-all --sequential format:check jest"
   },
   "repository": {
     "type": "git",
