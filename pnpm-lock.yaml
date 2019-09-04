@@ -1,7 +1,11 @@
 dependencies:
+  '@types/node': 12.7.4
+  '@types/react': 16.9.2
   next: 9.0.5_react-dom@16.9.0+react@16.9.0
+  prettier: 1.18.2
   react: 16.9.0
   react-dom: 16.9.0_react@16.9.0
+  typescript: 3.6.2
 lockfileVersion: 5.1
 packages:
   /@ampproject/toolbox-core/1.0.1:
@@ -886,6 +890,21 @@ packages:
     dev: false
     resolution:
       integrity: sha512-s63F9nJioLqOlW3UkyMd+BYhXt44YuaFm/VV0VwuteqjYwRrObkU7ra9pY4wAJR3oXi8hJrMcrcJdO/HH33vtw==
+  /@types/node/12.7.4:
+    dev: false
+    resolution:
+      integrity: sha512-W0+n1Y+gK/8G2P/piTkBBN38Qc5Q1ZSO6B5H3QmPCUewaiXOo2GCAWZ4ElZCcNhjJuBSUSLGFUJnmlCn5+nxOQ==
+  /@types/prop-types/15.7.2:
+    dev: false
+    resolution:
+      integrity: sha512-f8JzJNWVhKtc9dg/dyDNfliTKNOJSLa7Oht/ElZdF/UbMUmAH3rLmAk3ODNjw0mZajDEgatA03tRjB4+Dp/tzA==
+  /@types/react/16.9.2:
+    dependencies:
+      '@types/prop-types': 15.7.2
+      csstype: 2.6.6
+    dev: false
+    resolution:
+      integrity: sha512-jYP2LWwlh+FTqGd9v7ynUKZzjj98T8x7Yclz479QdRhHfuW9yQ+0jjnD31eXSXutmBpppj5PYNLYLRfnZJvcfg==
   /@webassemblyjs/ast/1.8.5:
     dependencies:
       '@webassemblyjs/helper-module-context': 1.8.5
@@ -1759,6 +1778,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-oUnjmWpy0niI3x/mPL8dVEI1l7MnG3+HHyRPHf+YFSbK+svOhXpmSOcDURUh2aOCgl2grzrOPt1nHLuCVFULLw==
+  /csstype/2.6.6:
+    dev: false
+    resolution:
+      integrity: sha512-RpFbQGUE74iyPgvr46U9t1xoQBM8T4BL8SxrN66Le2xYAPSaDJJKeztV3awugusb3g3G9iL8StmkBBXhcbbXhg==
   /cyclist/0.2.2:
     dev: false
     resolution:
@@ -3404,6 +3427,13 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-AerA/jta9xoqbAL+q7jB/vfgDqs=
+  /prettier/1.18.2:
+    dev: false
+    engines:
+      node: '>=4'
+    hasBin: true
+    resolution:
+      integrity: sha512-OeHeMc0JhFE9idD4ZdtNibzY0+TPHSpSSb9h8FqtP+YnoZZ1sl8Vc9b1sasjfymH3SonAF4QcA2+mzHPhMvIiw==
   /private/0.1.8:
     dev: false
     engines:
@@ -4210,6 +4240,13 @@ packages:
     dev: false
     resolution:
       integrity: sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
+  /typescript/3.6.2:
+    dev: false
+    engines:
+      node: '>=4.2.0'
+    hasBin: true
+    resolution:
+      integrity: sha512-lmQ4L+J6mnu3xweP8+rOrUwzmN+MRAj7TgtJtDaXE5PMyX2kCrklhg3rvOsOIfNeAWMQWO2F1GPc1kMD2vLAfw==
   /unfetch/4.1.0:
     dev: false
     resolution:
@@ -4480,6 +4517,10 @@ packages:
     resolution:
       integrity: sha512-S+Zk8DEWE6oKpV+vI3qWkaK+jSbIK86pCwe2IF/xwIpQ8jEuxpw9NyaGjmp9+BoJv5FV2piqCDcoCtStppiq2A==
 specifiers:
+  '@types/node': 12.7.4
+  '@types/react': 16.9.2
   next: 9.0.5
+  prettier: 1.18.2
   react: 16.9.0
   react-dom: 16.9.0
+  typescript: 3.6.2
