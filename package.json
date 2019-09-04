@@ -1,0 +1,37 @@
+{
+  "name": "elliott.dev",
+  "version": "1.0.0",
+  "description": "My personal website and blog",
+  "main": "index.js",
+  "scripts": {
+    "?dev": "Launch the application in development mode.",
+    "dev": "next",
+    "?dev:debug": "Launch the application in development mode, with debugging enabled.",
+    "dev:debug": "",
+    "?format:check": "Check that all source files are formatted correctly with Prettier.",
+    "format:check": "prettier --list-different \"**/*.{js,jsx,ts,tsx}\"",
+    "?format:write": "Format all incorrectly-formatted source files and writes them to disk.",
+    "format:write": "prettier --write \"**/*.{js,jsx,ts,tsx}\"",
+    "?next:start": "Start the application in production mode. Must run \"build\" first.",
+    "next:start": "cross-env NODE_ENV=production babel-node --extensions \".ts\" server.ts",
+    "?start": "Start the application in production mode.",
+    "start": "npm run next:start",
+    "?test": "Run all tests",
+    "test": "npm-run-all --sequential format:check apollo:codegen:ci jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elliottsj/elliott.dev.git"
+  },
+  "author": "Spencer Elliott <me@elliottsj.com>",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/elliottsj/elliott.dev/issues"
+  },
+  "homepage": "https://github.com/elliottsj/elliott.dev#readme",
+  "dependencies": {
+    "next": "9.0.5",
+    "react": "16.9.0",
+    "react-dom": "16.9.0"
+  }
+}
