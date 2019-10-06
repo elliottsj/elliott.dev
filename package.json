@@ -29,11 +29,13 @@
     "url": "https://github.com/elliottsj/elliott.dev/issues"
   },
   "homepage": "https://github.com/elliottsj/elliott.dev#readme",
+  "//": "@emotion/styled-base is included below due to https://github.com/emotion-js/emotion/pull/1254",
   "dependencies": {
     "@babel/core": "7.6.2",
     "@emotion/babel-preset-css-prop": "10.0.17",
     "@emotion/core": "10.0.17",
     "@emotion/styled": "10.0.17",
+    "@emotion/styled-base": "10.0.19",
     "@types/chroma-js": "1.4.3",
     "@types/node": "12.7.4",
     "@types/react-dom": "16.9.0",

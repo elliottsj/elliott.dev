@@ -1,7 +1,9 @@
 dependencies:
-  '@emotion/babel-preset-css-prop': 10.0.17
+  '@babel/core': 7.6.2
+  '@emotion/babel-preset-css-prop': 10.0.17_@babel+core@7.6.2
   '@emotion/core': 10.0.17_react@16.9.0
   '@emotion/styled': 10.0.17_75d44323d27ae6c4096518a4415c4206
+  '@emotion/styled-base': 10.0.19_75d44323d27ae6c4096518a4415c4206
   '@types/chroma-js': 1.4.3
   '@types/node': 12.7.4
   '@types/react': 16.9.2
@@ -65,6 +67,27 @@ packages:
       node: '>=6.9.0'
     resolution:
       integrity: sha512-OvjIh6aqXtlsA8ujtGKfC7LYWksYSX8yQcM8Ay3LuvVeQ63lcOKgoZWVqcpFwkd29aYU9rVx7jxhfhiEDV9MZA==
+  /@babel/core/7.6.2:
+    dependencies:
+      '@babel/code-frame': 7.5.5
+      '@babel/generator': 7.6.2
+      '@babel/helpers': 7.6.2
+      '@babel/parser': 7.6.2
+      '@babel/template': 7.6.0
+      '@babel/traverse': 7.6.2
+      '@babel/types': 7.6.1
+      convert-source-map: 1.6.0
+      debug: 4.1.1
+      json5: 2.1.1
+      lodash: 4.17.15
+      resolve: 1.12.0
+      semver: 5.7.1
+      source-map: 0.5.7
+    dev: false
+    engines:
+      node: '>=6.9.0'
+    resolution:
+      integrity: sha512-l8zto/fuoZIbncm+01p8zPSDZu/VuuJhAfA7d/AbzM09WR7iVhavvfNDYCNpo1VvLk6E6xgAoP9P+/EMJHuRkQ==
   /@babel/generator/7.6.2:
     dependencies:
       '@babel/types': 7.6.1
@@ -355,17 +378,18 @@ packages:
       '@babel/core': ^7.0.0-0
     resolution:
       integrity: sha512-5UGYnMSLRE1dqqZwug+1LISpA403HzlSfsg6P9VXU6TBjcSHeNlw4DxDx7LgpF+iKZoOG/+uzqoRHTdcUpiZNg==
-  /@babel/plugin-syntax-jsx/7.2.0:
+  /@babel/plugin-syntax-jsx/7.2.0_@babel+core@7.4.5:
     dependencies:
+      '@babel/core': 7.4.5
       '@babel/helper-plugin-utils': 7.0.0
     dev: false
     peerDependencies:
       '@babel/core': ^7.0.0-0
     resolution:
       integrity: sha512-VyN4QANJkRW6lDBmENzRszvZf3/4AXaj9YR7GwrWeeN9tEBPuXbmDYVU9bYBN0D70zCWVwUy0HWq2553VCb6Hw==
-  /@babel/plugin-syntax-jsx/7.2.0_@babel+core@7.4.5:
+  /@babel/plugin-syntax-jsx/7.2.0_@babel+core@7.6.2:
     dependencies:
-      '@babel/core': 7.4.5
+      '@babel/core': 7.6.2
       '@babel/helper-plugin-utils': 7.0.0
     dev: false
     peerDependencies:
@@ -673,22 +697,23 @@ packages:
       '@babel/core': ^7.0.0-0
     resolution:
       integrity: sha512-58Q+Jsy4IDCZx7kqEZuSDdam/1oW8OdDX8f+Loo6xyxdfg1yF0GE2XNJQSTZCaMol93+FBzpWiPEwtbMloAcPg==
-  /@babel/plugin-transform-react-jsx/7.3.0:
-    dependencies:
-      '@babel/helper-builder-react-jsx': 7.3.0
-      '@babel/helper-plugin-utils': 7.0.0
-      '@babel/plugin-syntax-jsx': 7.2.0
-    dev: false
-    peerDependencies:
-      '@babel/core': ^7.0.0-0
-    resolution:
-      integrity: sha512-a/+aRb7R06WcKvQLOu4/TpjKOdvVEKRLWFpKcNuHhiREPgGRB4TQJxq07+EZLS8LFVYpfq1a5lDUnuMdcCpBKg==
   /@babel/plugin-transform-react-jsx/7.3.0_@babel+core@7.4.5:
     dependencies:
       '@babel/core': 7.4.5
       '@babel/helper-builder-react-jsx': 7.3.0
       '@babel/helper-plugin-utils': 7.0.0
       '@babel/plugin-syntax-jsx': 7.2.0_@babel+core@7.4.5
+    dev: false
+    peerDependencies:
+      '@babel/core': ^7.0.0-0
+    resolution:
+      integrity: sha512-a/+aRb7R06WcKvQLOu4/TpjKOdvVEKRLWFpKcNuHhiREPgGRB4TQJxq07+EZLS8LFVYpfq1a5lDUnuMdcCpBKg==
+  /@babel/plugin-transform-react-jsx/7.3.0_@babel+core@7.6.2:
+    dependencies:
+      '@babel/core': 7.6.2
+      '@babel/helper-builder-react-jsx': 7.3.0
+      '@babel/helper-plugin-utils': 7.0.0
+      '@babel/plugin-syntax-jsx': 7.2.0_@babel+core@7.6.2
     dev: false
     peerDependencies:
       '@babel/core': ^7.0.0-0
@@ -927,19 +952,21 @@ packages:
       node: '>=4.0.0'
     resolution:
       integrity: sha512-5a6wqoJV/xEdbRNKVo6I4hO3VjyDq//8q2f9I6PBAvMesJHFauXDorcNCsr9RzvsZnaWi5NYCcfyqP1QeFHFbw==
-  /@emotion/babel-plugin-jsx-pragmatic/0.1.3:
+  /@emotion/babel-plugin-jsx-pragmatic/0.1.3_@babel+core@7.6.2:
     dependencies:
-      '@babel/plugin-syntax-jsx': 7.2.0
+      '@babel/core': 7.6.2
+      '@babel/plugin-syntax-jsx': 7.2.0_@babel+core@7.6.2
     dev: false
     peerDependencies:
       '@babel/core': ^7.0.0
     resolution:
       integrity: sha512-zbxpcKoAX9IMRfJqT2EnYL29AGlJyn+1VPoZW73BJslRDJbzgo2RYJIxR3Hg48kifv/TduIkpMH3L3wU/7yP8g==
-  /@emotion/babel-preset-css-prop/10.0.17:
+  /@emotion/babel-preset-css-prop/10.0.17_@babel+core@7.6.2:
     dependencies:
-      '@babel/plugin-transform-react-jsx': 7.3.0
+      '@babel/core': 7.6.2
+      '@babel/plugin-transform-react-jsx': 7.3.0_@babel+core@7.6.2
       '@babel/runtime': 7.6.2
-      '@emotion/babel-plugin-jsx-pragmatic': 0.1.3
+      '@emotion/babel-plugin-jsx-pragmatic': 0.1.3_@babel+core@7.6.2
       babel-plugin-emotion: 10.0.21
     dev: false
     peerDependencies:
@@ -5665,9 +5692,11 @@ packages:
     resolution:
       integrity: sha512-a4UGQaWPH59mOXUYnAG2ewncQS4i4F43Tv3JoAM+s2VDAmS9NsK8GpDMLrCHPksFT7h3K6TOoUNn2pb7RoXx4g==
 specifiers:
+  '@babel/core': 7.6.2
   '@emotion/babel-preset-css-prop': 10.0.17
   '@emotion/core': 10.0.17
   '@emotion/styled': 10.0.17
+  '@emotion/styled-base': 10.0.19
   '@types/chroma-js': 1.4.3
   '@types/node': 12.7.4
   '@types/react': 16.9.2
