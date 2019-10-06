@@ -33,15 +33,16 @@ const Footer = styled.footer`
 const Layout: React.FC = ({ children }) => (
   <Grid>
     <Header>
-      <Link href="/">
-        <a
-          css={css`
-            font-family: 'Ubuntu', sans-serif;
-          `}
-        >
-          elliott.dev
-        </a>
-      </Link>
+      <span
+        css={css`
+          font-family: 'Ubuntu', sans-serif;
+          font-size: 1.5rem;
+        `}
+      >
+        <Link href="/">
+          <a>elliott.dev</a>
+        </Link>
+      </span>
     </Header>
     <Main>{children}</Main>
     <Footer>footer</Footer>

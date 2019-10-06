@@ -15,6 +15,9 @@ export default class extends App {
 
             ${emotionNormalize}
 
+            html {
+              line-height: normal;
+            }
             body {
               font-family: 'Merriweather', serif;
             }
