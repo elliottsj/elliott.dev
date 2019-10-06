@@ -1,11 +1,13 @@
 import Link from 'next/link';
 import React from 'react';
+import GitHubLogo from 'simple-icons/icons/github.svg';
+import StackOverflowLogo from 'simple-icons/icons/stackoverflow.svg';
+import TwitterLogo from 'simple-icons/icons/twitter.svg';
 
 import { css } from '@emotion/core';
 import styled from '@emotion/styled';
-import { useTheme, Theme } from '../common/theme';
 
-const BASE_FONT_SIZE_PX = 16;
+import { pxRem, Theme, useTheme } from '../common/theme';
 
 const Grid = styled.div<{}, Theme>`
   height: 100vh;
@@ -14,27 +16,43 @@ const Grid = styled.div<{}, Theme>`
     [row1-start] '. header .' auto [row1-end]
     [row2-start] '. main .' 1fr [row2-end]
     [row3-start] '. footer .' auto [row3-end]
-    / 1fr minmax(auto, ${672 / BASE_FONT_SIZE_PX}rem) 1fr;
+    / 1fr minmax(auto, ${pxRem(672)}) 1fr;
   background-color: ${props => props.theme.colors.background};
 `;
 
 const Header = styled.header`
   grid-area: header;
-  padding: ${42 / BASE_FONT_SIZE_PX}rem ${21 / BASE_FONT_SIZE_PX}rem;
+  padding: ${pxRem(42)} ${pxRem(21)};
 `;
 
 const Main = styled.main`
   grid-area: main;
-  padding: 0 ${21 / BASE_FONT_SIZE_PX}rem;
+  padding: 0 ${pxRem(21)};
 `;
 
 const Footer = styled.footer`
   grid-area: footer;
+  padding: ${pxRem(21)};
 `;
+
+const SocialLink: React.FC<{ href: string }> = ({ children, href }) => {
+  const theme = useTheme();
+  return (
+    <a
+      css={css`
+        svg {
+          fill: ${theme.colors.text};
+        }
+      `}
+      href={href}
+    >
+      {children}
+    </a>
+  );
+};
 
 const Layout: React.FC = ({ children }) => {
   const theme = useTheme();
-
   return (
     <Grid>
       <Header>
@@ -58,7 +76,19 @@ const Layout: React.FC = ({ children }) => {
         </span>
       </Header>
       <Main>{children}</Main>
-      <Footer>footer</Footer>
+      <Footer>
+        <SocialLink href="https://github.com/elliottsj">
+          <GitHubLogo />
+        </SocialLink>
+        {' • '}
+        <SocialLink href="https://stackoverflow.com/users/1626478/spencer">
+          <StackOverflowLogo />
+        </SocialLink>
+        {' • '}
+        <SocialLink href="https://github.com/elliottsj">
+          <TwitterLogo />
+        </SocialLink>
+      </Footer>
     </Grid>
   );
 };

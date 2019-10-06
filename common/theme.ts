@@ -16,6 +16,13 @@ export interface Theme {
   };
 }
 
+const BASE_FONT_SIZE_PX = 16;
+
+/**
+ * Convert a px value to the equivalent rem value, based on a font size of 16px.
+ */
+export const pxRem = (px: number) => `${px / BASE_FONT_SIZE_PX}rem`;
+
 export const globalStyles = css`
   @import url('https://fonts.googleapis.com/css?family=Merriweather|Ubuntu&display=swap');
 `;

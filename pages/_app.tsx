@@ -9,6 +9,7 @@ import { getTheme, globalStyles } from '../common/theme';
 import { useInterval } from '../hooks/useInterval';
 
 const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
+  // Recompute the theme every second
   const [theme, setTheme] = useState(getTheme(new Date()));
   useInterval(() => {
     setTheme(getTheme(new Date()));
