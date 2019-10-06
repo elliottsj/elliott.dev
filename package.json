@@ -34,7 +34,7 @@
     "@babel/core": "7.6.2",
     "@elliottsj/next-svgr": "0.0.3",
     "@emotion/babel-preset-css-prop": "10.0.17",
-    "@emotion/core": "10.0.17",
+    "@emotion/core": "10.0.21",
     "@emotion/styled": "10.0.17",
     "@emotion/styled-base": "10.0.19",
     "@types/chroma-js": "1.4.3",

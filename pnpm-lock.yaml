@@ -2,16 +2,16 @@ dependencies:
   '@babel/core': 7.6.2
   '@elliottsj/next-svgr': 0.0.3
   '@emotion/babel-preset-css-prop': 10.0.17_@babel+core@7.6.2
-  '@emotion/core': 10.0.17_react@16.9.0
-  '@emotion/styled': 10.0.17_75d44323d27ae6c4096518a4415c4206
-  '@emotion/styled-base': 10.0.19_75d44323d27ae6c4096518a4415c4206
+  '@emotion/core': 10.0.21_react@16.9.0
+  '@emotion/styled': 10.0.17_69000e70af6bbdd36f7a590c55a5179c
+  '@emotion/styled-base': 10.0.19_69000e70af6bbdd36f7a590c55a5179c
   '@types/chroma-js': 1.4.3
   '@types/node': 12.7.4
   '@types/react': 16.9.2
   '@types/react-dom': 16.9.0
   chroma-js: 2.0.6
-  emotion-normalize: 10.1.0_75d44323d27ae6c4096518a4415c4206
-  emotion-theming: 10.0.19_75d44323d27ae6c4096518a4415c4206
+  emotion-normalize: 10.1.0_69000e70af6bbdd36f7a590c55a5179c
+  emotion-theming: 10.0.19_69000e70af6bbdd36f7a590c55a5179c
   next: 9.0.8_bc02e25475f6242eb3e09d1d06d70c74
   prettier: 1.18.2
   react: 16.9.0
@@ -1519,7 +1519,7 @@ packages:
     dev: false
     resolution:
       integrity: sha512-BoiLlk4vEsGBg2dAqGSJu0vJl/PgVtCYLBFJaEO8RmQzPugXewQCXZJNXTDFaRlfCs0W+quesayav4fvaif5WQ==
-  /@emotion/core/10.0.17_react@16.9.0:
+  /@emotion/core/10.0.21_react@16.9.0:
     dependencies:
       '@babel/runtime': 7.6.2
       '@emotion/cache': 10.0.19
@@ -1532,7 +1532,7 @@ packages:
     peerDependencies:
       react: '>=16.3.0'
     resolution:
-      integrity: sha512-gykyjjr0sxzVuZBVTVK4dUmYsorc2qLhdYgSiOVK+m7WXgcYTKZevGWZ7TLAgTZvMelCTvhNq8xnf8FR1IdTbg==
+      integrity: sha512-U9zbc7ovZ2ceIwbLXYZPJy6wPgnOdTNT4jENZ31ee6v2lojetV5bTbCVk6ciT8G3wQRyVaTTfUCH9WCrMzpRIw==
   /@emotion/css/10.0.14:
     dependencies:
       '@emotion/serialize': 0.11.11
@@ -1569,10 +1569,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-c3Q6V7Df7jfwSq5AzQWbXHa5soeE4F5cbqi40xn0CzXxWW9/6Mxq48WJEtqfWzbZtW9odZdnRAkwCQwN12ob4A==
-  /@emotion/styled-base/10.0.19_75d44323d27ae6c4096518a4415c4206:
+  /@emotion/styled-base/10.0.19_69000e70af6bbdd36f7a590c55a5179c:
     dependencies:
       '@babel/runtime': 7.6.2
-      '@emotion/core': 10.0.17_react@16.9.0
+      '@emotion/core': 10.0.21_react@16.9.0
       '@emotion/is-prop-valid': 0.8.3
       '@emotion/serialize': 0.11.11
       '@emotion/utils': 0.11.2
@@ -1583,10 +1583,10 @@ packages:
       react: '>=16.3.0'
     resolution:
       integrity: sha512-Sz6GBHTbOZoeZQKvkE9gQPzaJ6/qtoQ/OPvyG2Z/6NILlYk60Es1cEcTgTkm26H8y7A0GSgp4UmXl+srvsnFPg==
-  /@emotion/styled/10.0.17_75d44323d27ae6c4096518a4415c4206:
+  /@emotion/styled/10.0.17_69000e70af6bbdd36f7a590c55a5179c:
     dependencies:
-      '@emotion/core': 10.0.17_react@16.9.0
-      '@emotion/styled-base': 10.0.19_75d44323d27ae6c4096518a4415c4206
+      '@emotion/core': 10.0.21_react@16.9.0
+      '@emotion/styled-base': 10.0.19_69000e70af6bbdd36f7a590c55a5179c
       babel-plugin-emotion: 10.0.21
       react: 16.9.0
     dev: false
@@ -3094,9 +3094,9 @@ packages:
       node: '>= 0.10'
     resolution:
       integrity: sha1-TapNnbAPmBmIDHn6RXrlsJof04k=
-  /emotion-normalize/10.1.0_75d44323d27ae6c4096518a4415c4206:
+  /emotion-normalize/10.1.0_69000e70af6bbdd36f7a590c55a5179c:
     dependencies:
-      '@emotion/core': 10.0.17_react@16.9.0
+      '@emotion/core': 10.0.21_react@16.9.0
       react: 16.9.0
     dev: false
     peerDependencies:
@@ -3104,10 +3104,10 @@ packages:
       react: '>=16.3.0'
     resolution:
       integrity: sha512-Z+rz3Eep8tUgtBKT13/rEpci+ZbCadRovEmILuLB9IEpq4FdNpXjm7MVeJqG4iBRGw4tKmIq06lYgjeC6oEnag==
-  /emotion-theming/10.0.19_75d44323d27ae6c4096518a4415c4206:
+  /emotion-theming/10.0.19_69000e70af6bbdd36f7a590c55a5179c:
     dependencies:
       '@babel/runtime': 7.6.2
-      '@emotion/core': 10.0.17_react@16.9.0
+      '@emotion/core': 10.0.21_react@16.9.0
       '@emotion/weak-memoize': 0.2.4
       hoist-non-react-statics: 3.3.0
       react: 16.9.0
@@ -6352,9 +6352,6 @@ packages:
       node: '>=6'
     peerDependencies:
       typescript: '*'
-    peerDependenciesMeta:
-      typescript:
-        optional: true
     resolution:
       integrity: sha512-1J/vefLC+BWSo+qe8OnJQfWTYRS6ingxjwqmHMqaMxXMj7kFtKLgAaYW3JeX3mktjgUL+etlU8/B4VUAUI9QGw==
   /tslib/1.10.0:
@@ -6678,7 +6675,7 @@ specifiers:
   '@babel/core': 7.6.2
   '@elliottsj/next-svgr': 0.0.3
   '@emotion/babel-preset-css-prop': 10.0.17
-  '@emotion/core': 10.0.17
+  '@emotion/core': 10.0.21
   '@emotion/styled': 10.0.17
   '@emotion/styled-base': 10.0.19
   '@types/chroma-js': 1.4.3
