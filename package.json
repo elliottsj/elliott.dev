@@ -39,7 +39,7 @@
     "chroma-js": "2.0.6",
     "emotion-normalize": "^10.1.0",
     "emotion-theming": "10.0.17",
-    "next": "9.0.5",
+    "next": "9.0.8",
     "prettier": "1.18.2",
     "react": "16.9.0",
     "react-dom": "16.9.0",
