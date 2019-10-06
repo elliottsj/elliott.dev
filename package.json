@@ -37,7 +37,7 @@
     "@emotion/styled": "10.0.17",
     "@emotion/styled-base": "10.0.19",
     "@types/chroma-js": "1.4.3",
-    "@types/node": "12.7.4",
+    "@types/node": "12.7.11",
     "@types/react-dom": "16.9.0",
     "@types/react": "16.9.2",
     "chroma-js": "2.0.6",

@@ -5,7 +5,7 @@ dependencies:
   '@emotion/styled': 10.0.17_75d44323d27ae6c4096518a4415c4206
   '@emotion/styled-base': 10.0.19_75d44323d27ae6c4096518a4415c4206
   '@types/chroma-js': 1.4.3
-  '@types/node': 12.7.4
+  '@types/node': 12.7.11
   '@types/react': 16.9.2
   '@types/react-dom': 16.9.0
   chroma-js: 2.0.6
@@ -1078,10 +1078,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-m33zg9cRLtuaUSzlbMrr7iLIKNzrD4+M6Unt5+9mCu4BhR5NwnRjVKblINCwzcBXooukIgld8DtEncP8qpvbNg==
-  /@types/node/12.7.4:
+  /@types/node/12.7.11:
     dev: false
     resolution:
-      integrity: sha512-W0+n1Y+gK/8G2P/piTkBBN38Qc5Q1ZSO6B5H3QmPCUewaiXOo2GCAWZ4ElZCcNhjJuBSUSLGFUJnmlCn5+nxOQ==
+      integrity: sha512-Otxmr2rrZLKRYIybtdG/sgeO+tHY20GxeDjcGmUnmmlCWyEnv2a2x1ZXBo3BTec4OiTXMQCiazB8NMBf0iRlFw==
   /@types/prop-types/15.7.3:
     dev: false
     resolution:
@@ -1678,7 +1678,7 @@ packages:
   /browserslist/4.7.0:
     dependencies:
       caniuse-lite: 1.0.30000999
-      electron-to-chromium: 1.3.275
+      electron-to-chromium: 1.3.276
       node-releases: 1.1.34
     dev: false
     hasBin: true
@@ -2323,10 +2323,10 @@ packages:
     dev: false
     resolution:
       integrity: sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0=
-  /electron-to-chromium/1.3.275:
+  /electron-to-chromium/1.3.276:
     dev: false
     resolution:
-      integrity: sha512-/YWtW/VapMnuYA1lNOaa1F4GhR1LBf+CUTp60lzDPEEh0XOzyOAyULyYZVF9vziZ3qSbTqCwmKwsyRXp66STbw==
+      integrity: sha512-J7bVRAW2fHJVOGZqxSvmMcbBAWPiueHsKwSq+TjaNq1wQ71Za0uBExC1ECuMmAAQioDA2//auhI/glFINnUGPw==
   /elliptic/6.5.1:
     dependencies:
       bn.js: 4.11.8
@@ -5380,9 +5380,6 @@ packages:
       node: '>=6'
     peerDependencies:
       typescript: '*'
-    peerDependenciesMeta:
-      typescript:
-        optional: true
     resolution:
       integrity: sha512-1J/vefLC+BWSo+qe8OnJQfWTYRS6ingxjwqmHMqaMxXMj7kFtKLgAaYW3JeX3mktjgUL+etlU8/B4VUAUI9QGw==
   /tslib/1.10.0:
@@ -5698,7 +5695,7 @@ specifiers:
   '@emotion/styled': 10.0.17
   '@emotion/styled-base': 10.0.19
   '@types/chroma-js': 1.4.3
-  '@types/node': 12.7.4
+  '@types/node': 12.7.11
   '@types/react': 16.9.2
   '@types/react-dom': 16.9.0
   chroma-js: 2.0.6
