@@ -85,7 +85,7 @@ const Layout: React.FC = ({ children }) => {
           <StackOverflowLogo />
         </SocialLink>
         {' • '}
-        <SocialLink href="https://github.com/elliottsj">
+        <SocialLink href="https://twitter.com/spe_">
           <TwitterLogo />
         </SocialLink>
       </Footer>
