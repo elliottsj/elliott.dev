@@ -2,12 +2,13 @@ dependencies:
   '@emotion/babel-preset-css-prop': 10.0.17
   '@emotion/core': 10.0.17_react@16.9.0
   '@emotion/styled': 10.0.17_75d44323d27ae6c4096518a4415c4206
+  '@types/chroma-js': 1.4.3
   '@types/node': 12.7.4
   '@types/react': 16.9.2
   '@types/react-dom': 16.9.0
   chroma-js: 2.0.6
   emotion-normalize: 10.1.0_75d44323d27ae6c4096518a4415c4206
-  emotion-theming: 10.0.17_75d44323d27ae6c4096518a4415c4206
+  emotion-theming: 10.0.19_75d44323d27ae6c4096518a4415c4206
   next: 9.0.8_bc02e25475f6242eb3e09d1d06d70c74
   prettier: 1.18.2
   react: 16.9.0
@@ -1042,14 +1043,14 @@ packages:
     dev: false
     resolution:
       integrity: sha512-UHX2XklLl3sIaP6oiMmlVzT0J+2ATTVpf0dHQVyPJHTkOITvXfaSqnRk6mdDhV9pR8T/tHc3cex78IKXssmzrA==
-  /@emotion/weak-memoize/0.2.3:
-    dev: false
-    resolution:
-      integrity: sha512-zVgvPwGK7c1aVdUVc9Qv7SqepOGRDrqCw7KZPSZziWGxSlbII3gmvGLPzLX4d0n0BMbamBacUrN22zOMyFFEkQ==
   /@emotion/weak-memoize/0.2.4:
     dev: false
     resolution:
       integrity: sha512-6PYY5DVdAY1ifaQW6XYTnOMihmBVT27elqSjEoodchsGjzYlEsTQMcEhSud99kVawatyTZRTiVkJ/c6lwbQ7nA==
+  /@types/chroma-js/1.4.3:
+    dev: false
+    resolution:
+      integrity: sha512-m33zg9cRLtuaUSzlbMrr7iLIKNzrD4+M6Unt5+9mCu4BhR5NwnRjVKblINCwzcBXooukIgld8DtEncP8qpvbNg==
   /@types/node/12.7.4:
     dev: false
     resolution:
@@ -2327,11 +2328,11 @@ packages:
       react: '>=16.3.0'
     resolution:
       integrity: sha512-Z+rz3Eep8tUgtBKT13/rEpci+ZbCadRovEmILuLB9IEpq4FdNpXjm7MVeJqG4iBRGw4tKmIq06lYgjeC6oEnag==
-  /emotion-theming/10.0.17_75d44323d27ae6c4096518a4415c4206:
+  /emotion-theming/10.0.19_75d44323d27ae6c4096518a4415c4206:
     dependencies:
       '@babel/runtime': 7.6.2
       '@emotion/core': 10.0.17_react@16.9.0
-      '@emotion/weak-memoize': 0.2.3
+      '@emotion/weak-memoize': 0.2.4
       hoist-non-react-statics: 3.3.0
       react: 16.9.0
     dev: false
@@ -2339,7 +2340,7 @@ packages:
       '@emotion/core': ^10.0.17
       react: '>=16.3.0'
     resolution:
-      integrity: sha512-EocpFv+YjZPve20spmnj0Xtnkm/aJec8J8d69XJWtn5Kqqq7jK5S/amMtXSGNm5sjAwoGfJBMZ1p0jMgB3wIPA==
+      integrity: sha512-dQRBPLAAQ6eA8JKhkLCIWC8fdjPbiNC1zNTdFF292h9amhZXofcNGUP7axHoHX4XesqQESYwZrXp53OPInMrKw==
   /encodeurl/1.0.2:
     dev: false
     engines:
@@ -5352,6 +5353,9 @@ packages:
       node: '>=6'
     peerDependencies:
       typescript: '*'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
     resolution:
       integrity: sha512-1J/vefLC+BWSo+qe8OnJQfWTYRS6ingxjwqmHMqaMxXMj7kFtKLgAaYW3JeX3mktjgUL+etlU8/B4VUAUI9QGw==
   /tslib/1.10.0:
@@ -5664,12 +5668,13 @@ specifiers:
   '@emotion/babel-preset-css-prop': 10.0.17
   '@emotion/core': 10.0.17
   '@emotion/styled': 10.0.17
+  '@types/chroma-js': 1.4.3
   '@types/node': 12.7.4
   '@types/react': 16.9.2
   '@types/react-dom': 16.9.0
   chroma-js: 2.0.6
   emotion-normalize: ^10.1.0
-  emotion-theming: 10.0.17
+  emotion-theming: 10.0.19
   next: 9.0.8
   prettier: 1.18.2
   react: 16.9.0
