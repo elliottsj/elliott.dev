@@ -11,7 +11,21 @@ export default class extends App {
       <>
         <Global
           styles={css`
+            @import url('https://fonts.googleapis.com/css?family=Merriweather|Ubuntu&display=swap');
+
             ${emotionNormalize}
+
+            body {
+              font-family: 'Merriweather', serif;
+            }
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+              font-family: 'Ubuntu', sans-serif;
+            }
           `}
         />
         <ThemeProvider theme={{}}>
