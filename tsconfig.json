@@ -13,14 +13,6 @@
     "noFallthroughCasesInSwitch": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    // Include './types' in TypeScripts search paths for module types.
-    // This enables us to replace type defintions for npm packages which have missing/incorrect
-    // types.
-    //
-    // See also:
-    // - https://www.typescriptlang.org/docs/handbook/module-resolution.html#path-mapping
-    // - https://github.com/Microsoft/TypeScript/issues/22217#issuecomment-369783776
-    "paths": { "*": ["types/*"] },
     "resolveJsonModule": true,
     "skipLibCheck": false,
     "strict": true,
