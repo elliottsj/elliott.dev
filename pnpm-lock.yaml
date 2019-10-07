@@ -6,7 +6,7 @@ dependencies:
   '@emotion/styled': 10.0.17_75d44323d27ae6c4096518a4415c4206
   '@emotion/styled-base': 10.0.19_75d44323d27ae6c4096518a4415c4206
   '@types/chroma-js': 1.4.3
-  '@types/node': 12.7.4
+  '@types/node': 12.7.11
   '@types/react': 16.9.2
   '@types/react-dom': 16.9.0
   chroma-js: 2.0.6
@@ -1732,10 +1732,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-m33zg9cRLtuaUSzlbMrr7iLIKNzrD4+M6Unt5+9mCu4BhR5NwnRjVKblINCwzcBXooukIgld8DtEncP8qpvbNg==
-  /@types/node/12.7.4:
+  /@types/node/12.7.11:
     dev: false
     resolution:
-      integrity: sha512-W0+n1Y+gK/8G2P/piTkBBN38Qc5Q1ZSO6B5H3QmPCUewaiXOo2GCAWZ4ElZCcNhjJuBSUSLGFUJnmlCn5+nxOQ==
+      integrity: sha512-Otxmr2rrZLKRYIybtdG/sgeO+tHY20GxeDjcGmUnmmlCWyEnv2a2x1ZXBo3BTec4OiTXMQCiazB8NMBf0iRlFw==
   /@types/prop-types/15.7.3:
     dev: false
     resolution:
@@ -6352,9 +6352,6 @@ packages:
       node: '>=6'
     peerDependencies:
       typescript: '*'
-    peerDependenciesMeta:
-      typescript:
-        optional: true
     resolution:
       integrity: sha512-1J/vefLC+BWSo+qe8OnJQfWTYRS6ingxjwqmHMqaMxXMj7kFtKLgAaYW3JeX3mktjgUL+etlU8/B4VUAUI9QGw==
   /tslib/1.10.0:
@@ -6682,7 +6679,7 @@ specifiers:
   '@emotion/styled': 10.0.17
   '@emotion/styled-base': 10.0.19
   '@types/chroma-js': 1.4.3
-  '@types/node': 12.7.4
+  '@types/node': 12.7.11
   '@types/react': 16.9.2
   '@types/react-dom': 16.9.0
   chroma-js: 2.0.6
