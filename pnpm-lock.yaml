@@ -12,36 +12,36 @@ dependencies:
   chroma-js: 2.0.6
   emotion-normalize: 10.1.0_69000e70af6bbdd36f7a590c55a5179c
   emotion-theming: 10.0.19_69000e70af6bbdd36f7a590c55a5179c
-  next: 9.1.1_bc02e25475f6242eb3e09d1d06d70c74
+  next: 9.1.1_ad493fe26fd1ccee8751930274f103b9
   prettier: 1.18.2
   react: 16.9.0
   react-dom: 16.9.0_react@16.9.0
   simple-icons: 1.17.0
-  typescript: 3.6.2
+  typescript: 3.6.3
 lockfileVersion: 5.1
 packages:
-  /@ampproject/toolbox-core/1.0.1:
+  /@ampproject/toolbox-core/1.1.1:
     dependencies:
       node-fetch: 2.6.0
     dev: false
     resolution:
-      integrity: sha512-8aONoeOAVujavLUezSCtpUjg9khkVndpArbn25cLab6/UG+ZgrFPvU3A7z1TjBvB31bte4pXxH6U004BC0VdfA==
+      integrity: sha512-jcuVJUnGDRUEJgMYO6QVdf1dBy/oLZX3NjN2hYG48biFcPCvXevuv4xYFZMJsnsHSvXKg8y0qB8rANNyhTUN/A==
   /@ampproject/toolbox-optimizer/1.0.1:
     dependencies:
-      '@ampproject/toolbox-core': 1.0.1
-      '@ampproject/toolbox-runtime-version': 1.0.1
+      '@ampproject/toolbox-core': 1.1.1
+      '@ampproject/toolbox-runtime-version': 1.1.1
       css: 2.2.4
       parse5: 5.1.0
       parse5-htmlparser2-tree-adapter: 5.1.0
     dev: false
     resolution:
       integrity: sha512-zz1cJsQWBvfg2h1ce2/bbgNdSkTjIY7PaF7QhWMzYVcfvdxGSAykA+Ajt+F13H6adNAtIn09s96z/+6pn7XiXQ==
-  /@ampproject/toolbox-runtime-version/1.0.1:
+  /@ampproject/toolbox-runtime-version/1.1.1:
     dependencies:
-      '@ampproject/toolbox-core': 1.0.1
+      '@ampproject/toolbox-core': 1.1.1
     dev: false
     resolution:
-      integrity: sha512-OFky5rUfP9Hw/NlvEH+/8LqeSZ5DiXY2/RUvWSnY0r0/Uk4ooPyRCWEcVgRF7Y+wY+K1oro5UBZfE9MRYz+hpA==
+      integrity: sha512-ibmw5p+0Sz+wingbX/Dyboe8a0+XDkMfFGSM7KFE0h2z3Op9MADup8ZPLeHT54Z7cYKmB6ob60FVHtQQDhEXNw==
   /@babel/code-frame/7.5.5:
     dependencies:
       '@babel/highlight': 7.5.0
@@ -2341,7 +2341,7 @@ packages:
     dependencies:
       caniuse-lite: 1.0.30000999
       electron-to-chromium: 1.3.277
-      node-releases: 1.1.34
+      node-releases: 1.1.35
     dev: false
     hasBin: true
     resolution:
@@ -3129,16 +3129,16 @@ packages:
     dev: false
     resolution:
       integrity: sha512-+uw1inIHVPQoaVuHzRyXd21icM+cnt4CzD5rW+NC1wjOUSTOs+Te7FOv7AhN7vS9x/oIyhLP5PR1H+phQAHu5Q==
-  /enhanced-resolve/4.1.0:
+  /enhanced-resolve/4.1.1:
     dependencies:
       graceful-fs: 4.2.2
-      memory-fs: 0.4.1
+      memory-fs: 0.5.0
       tapable: 1.1.3
     dev: false
     engines:
       node: '>=6.9.0'
     resolution:
-      integrity: sha512-F/7vkyTtyc/llOIn8oWclcB25KdRaiPBpZYDgJHgh/UHtpgT2p2eldQgtQnLtUvfMKPKxbRaQM/hHkvLHt1Vng==
+      integrity: sha512-98p2zE+rL7/g/DzMHMTF4zZlCgeVdJ7yr6xzEpJRYwFYrGi9ANdn5DnJURg6RpBkyk60XYDnWIv51VfIhfNGuA==
   /entities/2.0.0:
     dev: false
     resolution:
@@ -4273,6 +4273,15 @@ packages:
     dev: false
     resolution:
       integrity: sha1-OpoguEYlI+RHz7x+i7gO1me/xVI=
+  /memory-fs/0.5.0:
+    dependencies:
+      errno: 0.1.7
+      readable-stream: 2.3.6
+    dev: false
+    engines:
+      node: '>=4.3.0 <5.0.0 || >=5.10'
+    resolution:
+      integrity: sha512-jA0rdU5KoQMC0e6ppoNRtpp6vjFq6+NY7r8hywnC7V+1Xj/MtHwGIbB1QaK/dunyjWteJzmkpd7ooeWg10T7GA==
   /merge-deep/3.0.2:
     dependencies:
       arr-union: 3.1.0
@@ -4493,7 +4502,7 @@ packages:
     dev: false
     resolution:
       integrity: sha512-iyam8fBuCUpWeKPGpaNMetEocMt364qkCsfL9JuhjXX6dRnguRVOfk2GZaDpPjcOKiiXCPINZC1GczQ7iTq3Zw==
-  /next/9.1.1_bc02e25475f6242eb3e09d1d06d70c74:
+  /next/9.1.1_ad493fe26fd1ccee8751930274f103b9:
     dependencies:
       '@ampproject/toolbox-optimizer': 1.0.1
       '@babel/core': 7.4.5
@@ -4541,7 +4550,7 @@ packages:
       node-fetch: 2.6.0
       ora: 3.4.0
       path-to-regexp: 2.1.0
-      pnp-webpack-plugin: 1.5.0_typescript@3.6.2
+      pnp-webpack-plugin: 1.5.0_typescript@3.6.3
       postcss-flexbugs-fixes: 4.1.0
       postcss-loader: 3.0.0
       postcss-preset-env: 6.7.0
@@ -4610,12 +4619,12 @@ packages:
     dev: false
     resolution:
       integrity: sha512-h/zcD8H9kaDZ9ALUWwlBUDo6TKF8a7qBSCSEGfjTVIYeqsioSKaAX+BN7NgiMGp6iSIXZ3PxgCu8KS3b71YK5Q==
-  /node-releases/1.1.34:
+  /node-releases/1.1.35:
     dependencies:
       semver: 6.3.0
     dev: false
     resolution:
-      integrity: sha512-fNn12JTEfniTuCqo0r9jXgl44+KxRH/huV7zM/KAGOKxDKrHr6EbT7SSs4B+DNxyBE2mks28AD+Jw6PkfY5uwA==
+      integrity: sha512-JGcM/wndCN/2elJlU0IGdVEJQQnJwsLbgPCFd2pY7V0mxf17bZ0Gb/lgOtL29ZQhvEX5shnVhxQyZz3ex94N8w==
   /normalize-package-data/2.5.0:
     dependencies:
       hosted-git-info: 2.8.5
@@ -5006,9 +5015,9 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-nDywThFk1i4BQK4twPQ6TA4RT8bDY96yeuCVBWL3ePARCiEKDRSrNGbFIgUJpLp+XeIR65v8ra7WuJOFUBtkMA==
-  /pnp-webpack-plugin/1.5.0_typescript@3.6.2:
+  /pnp-webpack-plugin/1.5.0_typescript@3.6.3:
     dependencies:
-      ts-pnp: 1.1.4_typescript@3.6.2
+      ts-pnp: 1.1.4_typescript@3.6.3
     dev: false
     engines:
       node: '>=6'
@@ -6344,9 +6353,9 @@ packages:
     dev: false
     resolution:
       integrity: sha1-y99WD9e5r2MlAv7UD5GMFX6pcTc=
-  /ts-pnp/1.1.4_typescript@3.6.2:
+  /ts-pnp/1.1.4_typescript@3.6.3:
     dependencies:
-      typescript: 3.6.2
+      typescript: 3.6.3
     dev: false
     engines:
       node: '>=6'
@@ -6372,13 +6381,13 @@ packages:
     dev: false
     resolution:
       integrity: sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
-  /typescript/3.6.2:
+  /typescript/3.6.3:
     dev: false
     engines:
       node: '>=4.2.0'
     hasBin: true
     resolution:
-      integrity: sha512-lmQ4L+J6mnu3xweP8+rOrUwzmN+MRAj7TgtJtDaXE5PMyX2kCrklhg3rvOsOIfNeAWMQWO2F1GPc1kMD2vLAfw==
+      integrity: sha512-N7bceJL1CtRQ2RiG0AQME13ksR7DiuQh/QehubYcghzv20tnh+MQnQIuJddTmsbqYj+dztchykemz0zFzlvdQw==
   /unfetch/4.1.0:
     dev: false
     resolution:
@@ -6609,7 +6618,7 @@ packages:
       ajv: 6.10.2
       ajv-keywords: 3.4.1_ajv@6.10.2
       chrome-trace-event: 1.0.2
-      enhanced-resolve: 4.1.0
+      enhanced-resolve: 4.1.1
       eslint-scope: 4.0.3
       json-parse-better-errors: 1.0.2
       loader-runner: 2.4.0
@@ -6690,4 +6699,4 @@ specifiers:
   react: 16.9.0
   react-dom: 16.9.0
   simple-icons: 1.17.0
-  typescript: 3.6.2
+  typescript: 3.6.3
