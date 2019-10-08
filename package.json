@@ -39,7 +39,7 @@
     "@emotion/styled-base": "10.0.19",
     "@types/chroma-js": "1.4.3",
     "@types/node": "12.7.11",
-    "@types/react-dom": "16.9.0",
+    "@types/react-dom": "16.9.1",
     "@types/react": "16.9.2",
     "chroma-js": "2.0.6",
     "emotion-normalize": "^10.1.0",
