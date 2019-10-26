@@ -12,12 +12,12 @@ dependencies:
   chroma-js: 2.0.6
   emotion-normalize: 10.1.0_69000e70af6bbdd36f7a590c55a5179c
   emotion-theming: 10.0.19_69000e70af6bbdd36f7a590c55a5179c
-  next: 9.1.1_ad493fe26fd1ccee8751930274f103b9
+  next: 9.1.1_46c5ae3e15f6bc00058aa6bf350c880a
   prettier: 1.18.2
   react: 16.9.0
   react-dom: 16.9.0_react@16.9.0
   simple-icons: 1.17.0
-  typescript: 3.6.3
+  typescript: 3.6.4
 lockfileVersion: 5.1
 packages:
   /@ampproject/toolbox-core/1.1.1:
@@ -4502,7 +4502,7 @@ packages:
     dev: false
     resolution:
       integrity: sha512-iyam8fBuCUpWeKPGpaNMetEocMt364qkCsfL9JuhjXX6dRnguRVOfk2GZaDpPjcOKiiXCPINZC1GczQ7iTq3Zw==
-  /next/9.1.1_ad493fe26fd1ccee8751930274f103b9:
+  /next/9.1.1_46c5ae3e15f6bc00058aa6bf350c880a:
     dependencies:
       '@ampproject/toolbox-optimizer': 1.0.1
       '@babel/core': 7.4.5
@@ -4550,7 +4550,7 @@ packages:
       node-fetch: 2.6.0
       ora: 3.4.0
       path-to-regexp: 2.1.0
-      pnp-webpack-plugin: 1.5.0_typescript@3.6.3
+      pnp-webpack-plugin: 1.5.0_typescript@3.6.4
       postcss-flexbugs-fixes: 4.1.0
       postcss-loader: 3.0.0
       postcss-preset-env: 6.7.0
@@ -5015,9 +5015,9 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-nDywThFk1i4BQK4twPQ6TA4RT8bDY96yeuCVBWL3ePARCiEKDRSrNGbFIgUJpLp+XeIR65v8ra7WuJOFUBtkMA==
-  /pnp-webpack-plugin/1.5.0_typescript@3.6.3:
+  /pnp-webpack-plugin/1.5.0_typescript@3.6.4:
     dependencies:
-      ts-pnp: 1.1.4_typescript@3.6.3
+      ts-pnp: 1.1.4_typescript@3.6.4
     dev: false
     engines:
       node: '>=6'
@@ -6353,9 +6353,9 @@ packages:
     dev: false
     resolution:
       integrity: sha1-y99WD9e5r2MlAv7UD5GMFX6pcTc=
-  /ts-pnp/1.1.4_typescript@3.6.3:
+  /ts-pnp/1.1.4_typescript@3.6.4:
     dependencies:
-      typescript: 3.6.3
+      typescript: 3.6.4
     dev: false
     engines:
       node: '>=6'
@@ -6381,13 +6381,13 @@ packages:
     dev: false
     resolution:
       integrity: sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
-  /typescript/3.6.3:
+  /typescript/3.6.4:
     dev: false
     engines:
       node: '>=4.2.0'
     hasBin: true
     resolution:
-      integrity: sha512-N7bceJL1CtRQ2RiG0AQME13ksR7DiuQh/QehubYcghzv20tnh+MQnQIuJddTmsbqYj+dztchykemz0zFzlvdQw==
+      integrity: sha512-unoCll1+l+YK4i4F8f22TaNVPRHcD9PA3yCuZ8g5e0qGqlVlJ/8FSateOLLSagn+Yg5+ZwuPkL8LFUc0Jcvksg==
   /unfetch/4.1.0:
     dev: false
     resolution:
@@ -6699,4 +6699,4 @@ specifiers:
   react: 16.9.0
   react-dom: 16.9.0
   simple-icons: 1.17.0
-  typescript: 3.6.3
+  typescript: 3.6.4
