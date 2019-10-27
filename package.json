@@ -9,7 +9,7 @@
     "?dev": "Launch the application in development mode.",
     "dev": "next",
     "?dev:debug": "Launch the application in development mode, with debugging enabled.",
-    "dev:debug": "",
+    "dev:debug": "cross-env NODE_OPTIONS=\"--inspect-brk\" next",
     "?format:check": "Check that all source files are formatted correctly with Prettier.",
     "format:check": "prettier --list-different \"**/*.{js,jsx,ts,tsx}\"",
     "?format:write": "Format all incorrectly-formatted source files and writes them to disk.",
@@ -41,7 +41,9 @@
     "@types/node": "12.7.11",
     "@types/react-dom": "16.9.1",
     "@types/react": "16.9.6",
+    "@types/suncalc": "1.8.0",
     "chroma-js": "2.0.6",
+    "cross-env": "6.0.3",
     "emotion-normalize": "^10.1.0",
     "emotion-theming": "10.0.19",
     "next": "9.1.1",
@@ -49,6 +51,7 @@
     "react-dom": "16.9.0",
     "react": "16.9.0",
     "simple-icons": "1.17.0",
+    "suncalc": "1.8.0",
     "typescript": "3.6.4"
   }
 }

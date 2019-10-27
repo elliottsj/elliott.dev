@@ -1,5 +1,6 @@
 import chroma from 'chroma-js';
 import { useTheme as emotionUseTheme } from 'emotion-theming';
+import * as sun from 'suncalc';
 
 import { css } from '@emotion/core';
 
@@ -28,50 +29,38 @@ export const globalStyles = css`
 `;
 
 /**
- * A simple mapping of the current time of day to a colour temperature.
+ * Given a datetime, determine the approximate longitude of its time zone.
+ */
+const approximateLongitudeFromTimezone = (datetime: Date) =>
+  (-datetime.getTimezoneOffset() * 360) / (24 * 60);
+
+/**
+ * A mapping of the current time of day to a colour temperature, based on the current sun altitude
+ * (solar elevation angle).
  * A warmer colour (3500K) is used during night time, and a cooler colour (6500K) during day time.
- * For simplicity, sunrise is assumed to be at 8 AM (08:00) and sunset at 8 PM (20:00).
- * During a four-hour interval around sunrise (06:00 - 10:00), a colour is determined based
- * on a linear scale from 3500K to 6500K, and vice-versa for a four-hour interval around sunset.
  *
  * See also:
  *  - https://en.wikipedia.org/wiki/Color_temperature
  *  - https://justgetflux.com/research.html
+ *  - https://en.wikipedia.org/wiki/Solar_zenith_angle
+ *  - https://github.com/mourner/suncalc
  */
 const getDaylightTemperature = (datetime: Date) => {
   const MIN_TEMPERATURE_KELVINS = 3500;
   const MAX_TEMPERATURE_KELVINS = 6500;
-  const TWO_HOURS_IN_SECONDS = 2 * 60 * 60;
-  const SUNRISE_HOUR = 8; // 8 AM (08:00)
-  const SUNRISE_START_SECONDS = SUNRISE_HOUR * 60 * 60 - TWO_HOURS_IN_SECONDS;
-  const SUNRISE_END_SECONDS = SUNRISE_HOUR * 60 * 60 + TWO_HOURS_IN_SECONDS;
-  const SUNSET_HOUR = 20; // 8 PM (20:00)
-  const SUNSET_START_SECONDS = SUNSET_HOUR * 60 * 60 - TWO_HOURS_IN_SECONDS;
-  const SUNSET_END_SECONDS = SUNSET_HOUR * 60 * 60 + TWO_HOURS_IN_SECONDS;
-  const currentSeconds =
-    datetime.getHours() * 60 * 60 + datetime.getMinutes() * 60 + datetime.getSeconds();
-  if (SUNRISE_START_SECONDS <= currentSeconds && currentSeconds <= SUNRISE_END_SECONDS) {
-    const sunriseProgressSeconds = currentSeconds - SUNRISE_START_SECONDS;
-    const sunriseTotalSeconds = TWO_HOURS_IN_SECONDS * 2;
-    return (
-      (sunriseProgressSeconds / sunriseTotalSeconds) *
-        (MAX_TEMPERATURE_KELVINS - MIN_TEMPERATURE_KELVINS) +
-      MIN_TEMPERATURE_KELVINS
-    );
-  }
-  if (SUNRISE_END_SECONDS <= currentSeconds && currentSeconds <= SUNSET_START_SECONDS) {
-    return MAX_TEMPERATURE_KELVINS;
-  }
-  if (SUNSET_START_SECONDS <= currentSeconds && currentSeconds <= SUNSET_END_SECONDS) {
-    const sunsetProgressSeconds = currentSeconds - SUNSET_START_SECONDS;
-    const sunsetTotalSeconds = TWO_HOURS_IN_SECONDS * 2;
-    return (
-      (sunsetProgressSeconds / sunsetTotalSeconds) *
-        (MIN_TEMPERATURE_KELVINS - MAX_TEMPERATURE_KELVINS) +
-      MAX_TEMPERATURE_KELVINS
-    );
-  }
-  return MIN_TEMPERATURE_KELVINS;
+  const TEMPERATURE_RANGE = MAX_TEMPERATURE_KELVINS - MIN_TEMPERATURE_KELVINS;
+  const MAX_TEMPERATURE_ALTITUDE = Math.PI / 2 / 4;
+
+  // If no location is provided by the user, assume their latitude as at the equator, and infer their
+  // approximate longitude from their time zone.
+  // TODO: determine user's location from browser APIs
+  const { altitude: sunAltitude } = sun.getPosition(
+    datetime,
+    0 /* equator */,
+    approximateLongitudeFromTimezone(datetime),
+  );
+  const temperature = sunAltitude * (TEMPERATURE_RANGE / MAX_TEMPERATURE_ALTITUDE);
+  return Math.max(MIN_TEMPERATURE_KELVINS, Math.min(temperature, MAX_TEMPERATURE_KELVINS));
 };
 
 export const getTheme = (datetime: Date): Theme => {
