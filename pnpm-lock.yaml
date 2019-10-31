@@ -28,7 +28,7 @@ dependencies:
   react: 16.9.0
   react-dom: 16.9.0_react@16.9.0
   require-from-string: 2.0.2
-  simple-icons: 1.17.0
+  simple-icons: 1.19.0
   suncalc: 1.8.0
   typescript: 3.6.4
 lockfileVersion: 5.1
@@ -1392,7 +1392,7 @@ packages:
       '@babel/plugin-transform-unicode-regex': 7.6.2_@babel+core@7.4.5
       '@babel/types': 7.6.3
       browserslist: 4.7.2
-      core-js-compat: 3.3.5
+      core-js-compat: 3.3.6
       invariant: 2.2.4
       js-levenshtein: 1.1.6
       semver: 5.7.1
@@ -1450,7 +1450,7 @@ packages:
       '@babel/plugin-transform-unicode-regex': 7.6.2_@babel+core@7.6.4
       '@babel/types': 7.6.3
       browserslist: 4.7.2
-      core-js-compat: 3.3.5
+      core-js-compat: 3.3.6
       invariant: 2.2.4
       js-levenshtein: 1.1.6
       semver: 5.7.1
@@ -2502,7 +2502,7 @@ packages:
   /browserslist/4.7.2:
     dependencies:
       caniuse-lite: 1.0.30001006
-      electron-to-chromium: 1.3.296
+      electron-to-chromium: 1.3.297
       node-releases: 1.1.39
     dev: false
     hasBin: true
@@ -2899,13 +2899,13 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-Z29us8OZl8LuGsOpJP1hJHSPV40=
-  /core-js-compat/3.3.5:
+  /core-js-compat/3.3.6:
     dependencies:
       browserslist: 4.7.2
       semver: 6.3.0
     dev: false
     resolution:
-      integrity: sha512-44ZORuapx0MUht0MUk0p9lcQPh7n/LDXehimTmjCs0CYblpKZcqVd5w0OQDUDq5OQjEbazWObHDQJWvvHYPNTg==
+      integrity: sha512-YnwZG/+0/f7Pf6Lr3jxtVAFjtGBW9lsLYcqrxhYJai1GfvrP8DEyEpnNzj/FRQfIkOOfk1j5tTBvPBLWVVJm4A==
   /core-js/2.6.10:
     dev: false
     requiresBuild: true
@@ -3276,10 +3276,10 @@ packages:
     dev: false
     resolution:
       integrity: sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0=
-  /electron-to-chromium/1.3.296:
+  /electron-to-chromium/1.3.297:
     dev: false
     resolution:
-      integrity: sha512-s5hv+TSJSVRsxH190De66YHb50pBGTweT9XGWYu/LMR20KX6TsjFzObo36CjVAzM+PUeeKSBRtm/mISlCzeojQ==
+      integrity: sha512-Q5BHIOJcWhDIz5FmVGv991O0LM0iWtfmGt1L3av+mmpIbIzmv4IWYpHhJcFoCdmbO8up0KqtvYUrH1vlbUP2Eg==
   /elliptic/6.5.1:
     dependencies:
       bn.js: 4.11.8
@@ -5551,13 +5551,13 @@ packages:
       node: '>=6.0.0'
     resolution:
       integrity: sha512-oPTcFFip5LZy8Y/whto91L9xdRHCWEMs3e1MdJxhgt4jy2WYXfhkng59fH5qLXSCPN8k4n94p1Czrfe5IOkKUw==
-  /postcss-initial/3.0.1:
+  /postcss-initial/3.0.2:
     dependencies:
       lodash.template: 4.5.0
       postcss: 7.0.21
     dev: false
     resolution:
-      integrity: sha512-I2Sz83ZSHybMNh02xQDK609lZ1/QOyYeuizCjzEhlMgeV/HcDJapQiH4yTqLjZss0X6/6VvKFXUeObaHpJoINw==
+      integrity: sha512-ugA2wKonC0xeNHgirR4D3VWHs2JcU08WAi1KFLVcnb7IN89phID6Qtg2RIctWbnvp1TM2BOmDtX8GGLCKdR8YA==
   /postcss-lab-function/2.0.1:
     dependencies:
       '@csstools/convert-colors': 1.4.0
@@ -5697,7 +5697,7 @@ packages:
       postcss-font-variant: 4.0.0
       postcss-gap-properties: 2.0.0
       postcss-image-set-function: 3.0.1
-      postcss-initial: 3.0.1
+      postcss-initial: 3.0.2
       postcss-lab-function: 2.0.1
       postcss-logical: 3.0.0
       postcss-media-minmax: 4.0.0
@@ -6358,10 +6358,10 @@ packages:
     dev: false
     resolution:
       integrity: sha1-tf3AjxKH6hF4Yo5BXiUTK3NkbG0=
-  /simple-icons/1.17.0:
+  /simple-icons/1.19.0:
     dev: false
     resolution:
-      integrity: sha512-uVnN+GsYpRLW3OJMIXZw4mSHEEMloDvqMFD2ywC/eAXT1hzVWzJVALNjVMjWIL34zHH28yZBu5m4gtFJVr0xEw==
+      integrity: sha512-BsV3jdhckw3J5GxcPRlEeqWlQh4zzi2aWA2NZeOlK+F6Dz+yFYmtZl9lDQF9uBbw0xbBqrlt194cvOX4C5XQQg==
   /snapdragon-node/2.1.1:
     dependencies:
       define-property: 1.0.0
@@ -7311,6 +7311,6 @@ specifiers:
   react: 16.9.0
   react-dom: 16.9.0
   require-from-string: 2.0.2
-  simple-icons: 1.17.0
+  simple-icons: 1.19.0
   suncalc: 1.8.0
   typescript: 3.6.4
