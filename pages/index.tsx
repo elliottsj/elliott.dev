@@ -10,7 +10,7 @@ export default () => (
       {posts
         .filter(post => post.meta.published)
         .map(post => (
-          <li>
+          <li key={post.slug}>
             <Link href={`/posts/${post.slug}`}>
               <a>{post.meta.title}</a>
             </Link>
