@@ -1,5 +1,6 @@
 import emotionNormalize from 'emotion-normalize';
 import { ThemeProvider } from 'emotion-theming';
+import { DateTime } from 'luxon';
 import App, { AppProps } from 'next/app';
 import React, { useState } from 'react';
 
@@ -10,9 +11,9 @@ import { useInterval } from '../hooks/useInterval';
 
 const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
   // Recompute the theme every second
-  const [theme, setTheme] = useState(getTheme(new Date()));
+  const [theme, setTheme] = useState(getTheme(DateTime.local()));
   useInterval(() => {
-    setTheme(getTheme(new Date()));
+    setTheme(getTheme(DateTime.local()));
   }, 1000);
 
   return (
