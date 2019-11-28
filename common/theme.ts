@@ -1,5 +1,6 @@
 import chroma from 'chroma-js';
 import { useTheme as emotionUseTheme } from 'emotion-theming';
+import { DateTime } from 'luxon';
 import * as sun from 'suncalc';
 
 import { css } from '@emotion/core';
@@ -31,8 +32,8 @@ export const globalStyles = css`
 /**
  * Given a datetime, determine the approximate longitude of its time zone.
  */
-const approximateLongitudeFromTimezone = (datetime: Date) =>
-  (-datetime.getTimezoneOffset() * 360) / (24 * 60);
+export const approximateLongitudeFromTimezone = (datetime: DateTime) =>
+  (datetime.offset * 360) / (24 * 60);
 
 /**
  * A mapping of the current time of day to a colour temperature, based on the current sun altitude
@@ -45,25 +46,28 @@ const approximateLongitudeFromTimezone = (datetime: Date) =>
  *  - https://en.wikipedia.org/wiki/Solar_zenith_angle
  *  - https://github.com/mourner/suncalc
  */
-const getDaylightTemperature = (datetime: Date) => {
+export const getDaylightTemperature = (datetime: DateTime) => {
   const MIN_TEMPERATURE_KELVINS = 3500;
   const MAX_TEMPERATURE_KELVINS = 6500;
   const TEMPERATURE_RANGE = MAX_TEMPERATURE_KELVINS - MIN_TEMPERATURE_KELVINS;
+
+  // When sun is 22.5 degrees or greater above the horizon, use max temperature
   const MAX_TEMPERATURE_ALTITUDE = Math.PI / 2 / 4;
 
   // If no location is provided by the user, assume their latitude as at the equator, and infer their
   // approximate longitude from their time zone.
   // TODO: determine user's location from browser APIs
   const { altitude: sunAltitude } = sun.getPosition(
-    datetime,
+    datetime.toJSDate(),
     0 /* equator */,
     approximateLongitudeFromTimezone(datetime),
   );
-  const temperature = sunAltitude * (TEMPERATURE_RANGE / MAX_TEMPERATURE_ALTITUDE);
+  const temperature =
+    sunAltitude * (TEMPERATURE_RANGE / MAX_TEMPERATURE_ALTITUDE) + MIN_TEMPERATURE_KELVINS;
   return Math.max(MIN_TEMPERATURE_KELVINS, Math.min(temperature, MAX_TEMPERATURE_KELVINS));
 };
 
-export const getTheme = (datetime: Date): Theme => {
+export const getTheme = (datetime: DateTime): Theme => {
   const backgroundColor = chroma.temperature(getDaylightTemperature(datetime));
   return {
     colors: {
