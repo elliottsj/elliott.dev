@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import React from 'react';
+import React, { useState } from 'react';
 import GitHubLogo from 'simple-icons/icons/github.svg';
 import StackOverflowLogo from 'simple-icons/icons/stackoverflow.svg';
 import TwitterLogo from 'simple-icons/icons/twitter.svg';
@@ -8,6 +8,7 @@ import { css } from '@emotion/core';
 import styled from '@emotion/styled';
 
 import { pxRem, Theme, useTheme } from '../common/theme';
+import NightToggle from './NightToggle';
 
 const Grid = styled.div<{}, Theme>`
   height: 100vh;
@@ -23,6 +24,9 @@ const Grid = styled.div<{}, Theme>`
 const Header = styled.header`
   grid-area: header;
   padding: ${pxRem(42)} ${pxRem(21)};
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 `;
 
 const Main = styled.main`
@@ -53,6 +57,7 @@ const SocialLink: React.FC<{ href: string }> = ({ children, href }) => {
 
 const Layout: React.FC = ({ children }) => {
   const theme = useTheme();
+  const [isNightModeEnabled, setIsNightModeEnabled] = useState(true);
   return (
     <Grid>
       <Header>
@@ -74,6 +79,17 @@ const Layout: React.FC = ({ children }) => {
             <a>elliott.dev</a>
           </Link>
         </span>
+        {false && (
+          <NightToggle
+            disabledLabel="Off"
+            enabledLabel="On"
+            size="1em"
+            checked={isNightModeEnabled}
+            onChange={checked => {
+              setIsNightModeEnabled(checked);
+            }}
+          />
+        )}
       </Header>
       <Main>{children}</Main>
       <Footer>
