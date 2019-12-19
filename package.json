@@ -35,8 +35,8 @@
   "homepage": "https://github.com/elliottsj/elliott.dev#readme",
   "//": "@emotion/styled-base is included below due to https://github.com/emotion-js/emotion/pull/1254",
   "dependencies": {
-    "@babel/core": "7.7.4",
-    "@babel/plugin-transform-modules-commonjs": "7.7.4",
+    "@babel/core": "7.7.7",
+    "@babel/plugin-transform-modules-commonjs": "7.7.5",
     "@babel/preset-react": "7.7.4",
     "@elliottsj/next-svgr": "0.0.3",
     "@emotion/babel-preset-css-prop": "10.0.23",
