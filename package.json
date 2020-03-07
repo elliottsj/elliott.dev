@@ -69,7 +69,7 @@
     "jest": "24.9.0",
     "jest-emotion": "10.0.27",
     "luxon": "1.21.3",
-    "next": "9.1.6",
+    "next": "9.2.3-canary.26",
     "nprogress": "0.2.0",
     "prettier": "1.19.1",
     "preval.macro": "4.0.0",
