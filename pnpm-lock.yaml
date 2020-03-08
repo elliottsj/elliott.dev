@@ -23,7 +23,7 @@ dependencies:
   '@types/react': 16.9.17
   '@types/react-dom': 16.9.4
   '@types/suncalc': 1.8.0
-  '@yolkai/next-css': 1.0.0_webpack@4.41.4
+  '@yolkai/next-css': 1.0.0_webpack@4.42.0
   babel-jest: 24.9.0_@babel+core@7.7.7
   babel-plugin-macros: 2.8.0
   chroma-js: 2.1.0
@@ -33,7 +33,7 @@ dependencies:
   jest: 24.9.0
   jest-emotion: 10.0.27
   luxon: 1.21.3
-  next: 9.2.3-canary.26_727e55409c51e4668fd8ce6c10d18575
+  next: 9.2.3-canary.26_react-dom@16.12.0+react@16.12.0
   nprogress: 0.2.0
   prettier: 1.19.1
   preval.macro: 4.0.0
@@ -43,7 +43,7 @@ dependencies:
   simple-icons: 2.0.0
   suncalc: 1.8.0
   typescript: 3.7.4
-  webpack: 4.41.4_webpack@4.41.4
+  webpack: 4.42.0_webpack@4.42.0
 lockfileVersion: 5.1
 packages:
   /@ampproject/toolbox-core/2.0.0:
@@ -52,7 +52,7 @@ packages:
     dev: false
     resolution:
       integrity: sha512-xAJOmh6MPS2mdHNsK8mj1t8TLh6mlehirh0fOBsRhKCNCJXgg4Gfd2u5igy8VFq9sYnuWP/npFyjGX36qpXW5Q==
-  /@ampproject/toolbox-optimizer/2.0.0_lru-cache@5.1.1:
+  /@ampproject/toolbox-optimizer/2.0.0:
     dependencies:
       '@ampproject/toolbox-core': 2.0.0
       '@ampproject/toolbox-runtime-version': 2.0.0
@@ -62,14 +62,9 @@ packages:
       domhandler: 3.0.0
       domutils: 2.0.0
       htmlparser2: 4.0.0
-      lru-cache: 5.1.1
       normalize-html-whitespace: 1.0.0
       terser: 4.6.3
     dev: false
-    peerDependencies:
-      jimp: '*'
-      lru-cache: '*'
-      probe-image-size: '*'
     peerDependenciesMeta:
       jimp:
         optional: true
@@ -2615,13 +2610,13 @@ packages:
     dev: false
     resolution:
       integrity: sha512-NuHqBY1PB/D8xU6s/thBgOAiAP7HOYDQ32+BFZILJ8ivkUkAHQnWfn6WhL79Owj1qmUnoN/YPhktdIoucipkAQ==
-  /@yolkai/next-css/1.0.0_webpack@4.41.4:
+  /@yolkai/next-css/1.0.0_webpack@4.42.0:
     dependencies:
-      css-loader: 2.1.1_webpack@4.41.4
-      extract-css-chunks-webpack-plugin: 3.3.3_webpack@4.41.4
+      css-loader: 2.1.1_webpack@4.42.0
+      extract-css-chunks-webpack-plugin: 3.3.3_webpack@4.42.0
       find-up: 3.0.0
       ignore-loader: 0.1.2
-      optimize-css-assets-webpack-plugin: 5.0.3_webpack@4.41.4
+      optimize-css-assets-webpack-plugin: 5.0.3_webpack@4.42.0
       postcss-loader: 3.0.0
     dev: false
     peerDependencies:
@@ -4027,7 +4022,7 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-Z8hnfsZu4o/kt+AuFzeGpLVhFOGO9mluyHBaA2bA8aCGTwah5sT3WV/fTHH8UNZUytOIImuGPrl/prlb4oX4qQ==
-  /css-loader/2.1.1_webpack@4.41.4:
+  /css-loader/2.1.1_webpack@4.42.0:
     dependencies:
       camelcase: 5.3.1
       icss-utils: 4.1.1
@@ -4040,7 +4035,7 @@ packages:
       postcss-modules-values: 2.0.0
       postcss-value-parser: 3.3.1
       schema-utils: 1.0.0
-      webpack: 4.41.4_webpack@4.41.4
+      webpack: 4.42.0_webpack@4.42.0
     dev: false
     engines:
       node: '>= 6.9.0'
@@ -4831,13 +4826,13 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha512-Nmb6QXkELsuBr24CJSkilo6UHHgbekK5UiZgfE6UHD3Eb27YC6oD+bhcT+tJ6cl8dmsgdQxnWlcry8ksBIBLpw==
-  /extract-css-chunks-webpack-plugin/3.3.3_webpack@4.41.4:
+  /extract-css-chunks-webpack-plugin/3.3.3_webpack@4.42.0:
     dependencies:
       loader-utils: 1.4.0
       lodash: 4.17.15
       normalize-url: 3.3.0
       schema-utils: 1.0.0
-      webpack: 4.41.4_webpack@4.41.4
+      webpack: 4.42.0_webpack@4.42.0
       webpack-sources: 1.4.3
     dev: false
     engines:
@@ -7151,9 +7146,9 @@ packages:
     dev: false
     resolution:
       integrity: sha1-yobR/ogoFpsBICCOPchCS524NCw=
-  /next/9.2.3-canary.26_727e55409c51e4668fd8ce6c10d18575:
+  /next/9.2.3-canary.26_react-dom@16.12.0+react@16.12.0:
     dependencies:
-      '@ampproject/toolbox-optimizer': 2.0.0_lru-cache@5.1.1
+      '@ampproject/toolbox-optimizer': 2.0.0
       '@babel/core': 7.7.2
       '@babel/plugin-proposal-class-properties': 7.7.0_@babel+core@7.7.2
       '@babel/plugin-proposal-nullish-coalescing-operator': 7.7.4_@babel+core@7.7.2
@@ -7215,7 +7210,7 @@ packages:
       node-fetch: 2.6.0
       ora: 3.4.0
       path-to-regexp: 6.1.0
-      pnp-webpack-plugin: 1.5.0_typescript@3.7.4
+      pnp-webpack-plugin: 1.5.0
       postcss-flexbugs-fixes: 4.2.0
       postcss-loader: 3.0.0
       postcss-preset-env: 6.7.0
@@ -7252,7 +7247,6 @@ packages:
     peerDependencies:
       react: ^16.6.0
       react-dom: ^16.6.0
-      typescript: '*'
     resolution:
       integrity: sha512-5IzKvwr0s3mX/siYoA9fFZuMZBz50aeho7cKxFGu8Ty3+qrcuf0Ooh8r9w7/yh4eEp4Gcfr+GoOnQaOTEsEcIg==
   /nice-try/1.0.5:
@@ -7508,11 +7502,11 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha1-BnQoIw/WdEOyeUsiu6UotoZ5YtQ=
-  /optimize-css-assets-webpack-plugin/5.0.3_webpack@4.41.4:
+  /optimize-css-assets-webpack-plugin/5.0.3_webpack@4.42.0:
     dependencies:
       cssnano: 4.1.10
       last-call-webpack-plugin: 3.0.0
-      webpack: 4.41.4_webpack@4.41.4
+      webpack: 4.42.0_webpack@4.42.0
     dev: false
     peerDependencies:
       webpack: ^4.0.0
@@ -7880,14 +7874,12 @@ packages:
     dev: false
     resolution:
       integrity: sha512-2qHaIQr2VLRFoxe2nASzsV6ef4yOOH+Fi9FBOVH6cqeSgUnoyySPZkxzLuzd+RYOQTRpROA0ztTMqxROKSb/nA==
-  /pnp-webpack-plugin/1.5.0_typescript@3.7.4:
+  /pnp-webpack-plugin/1.5.0:
     dependencies:
-      ts-pnp: 1.1.6_typescript@3.7.4
+      ts-pnp: 1.1.6
     dev: false
     engines:
       node: '>=6'
-    peerDependencies:
-      typescript: '*'
     resolution:
       integrity: sha512-jd9olUr9D7do+RN8Wspzhpxhgp1n6Vd0NtQ4SFkmIACZoEL1nkyAdW9Ygrinjec0vgDcWjscFQQ1gDW8rsfKTg==
   /posix-character-classes/0.1.1:
@@ -9927,7 +9919,7 @@ packages:
       webpack: ^4.0.0
     resolution:
       integrity: sha512-QMxecFz/gHQwteWwSo5nTc6UaICqN1bMedC5sMtUc7y3Ha3Q8y6ZO0iCR8pq4RJC8Hjf0FEPEHZqcMB/+DFCrA==
-  /terser-webpack-plugin/1.4.3_webpack@4.41.4:
+  /terser-webpack-plugin/1.4.3_webpack@4.42.0:
     dependencies:
       cacache: 12.0.3
       find-cache-dir: 2.1.0
@@ -9936,7 +9928,7 @@ packages:
       serialize-javascript: 2.1.2
       source-map: 0.6.1
       terser: 4.6.6
-      webpack: 4.41.4_webpack@4.41.4
+      webpack: 4.42.0_webpack@4.42.0
       webpack-sources: 1.4.3
       worker-farm: 1.7.0
     dev: false
@@ -10123,14 +10115,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-rvuRbTarPXmMb79SmzEp8aqXNKcK+y0XaB298IXueQ8I2PsrATcPBCSPyK/dDNa2iWOhKlfNnOjdAOTBU/nkFA==
-  /ts-pnp/1.1.6_typescript@3.7.4:
-    dependencies:
-      typescript: 3.7.4
+  /ts-pnp/1.1.6:
     dev: false
     engines:
       node: '>=6'
-    peerDependencies:
-      typescript: '*'
     peerDependenciesMeta:
       typescript:
         optional: true
@@ -10592,7 +10580,7 @@ packages:
       webpack: '*'
     resolution:
       integrity: sha512-Zhw69edTGfbz9/8JJoyRQ/pq8FYUoY0diOXqW0T6yhgdhCv6wr0hra5DwwWexNRns2Z2+gsnrNcbe9hbGBgk/A==
-  /webpack/4.41.4_webpack@4.41.4:
+  /webpack/4.42.0_webpack@4.42.0:
     dependencies:
       '@webassemblyjs/ast': 1.8.5
       '@webassemblyjs/helper-module-context': 1.8.5
@@ -10614,7 +10602,7 @@ packages:
       node-libs-browser: 2.2.1
       schema-utils: 1.0.0
       tapable: 1.1.3
-      terser-webpack-plugin: 1.4.3_webpack@4.41.4
+      terser-webpack-plugin: 1.4.3_webpack@4.42.0
       watchpack: 1.6.0
       webpack-sources: 1.4.3
     dev: false
@@ -10624,7 +10612,7 @@ packages:
     peerDependencies:
       webpack: '*'
     resolution:
-      integrity: sha512-Lc+2uB6NjpCWsHI3trkoISOI64h9QYIXenbEWj3bn3oyjfB1lEBXjWAfAyY2sM0rZn41oD5V91OLwKRwS6Wp8Q==
+      integrity: sha512-EzJRHvwQyBiYrYqhyjW9AqM90dE4+s1/XtCfn7uWg6cS72zH+2VPFAlsnW0+W0cDi0XRjNKUMoJtpSi50+Ph6w==
   /whatwg-encoding/1.0.5:
     dependencies:
       iconv-lite: 0.4.24
@@ -10827,4 +10815,4 @@ specifiers:
   simple-icons: 2.0.0
   suncalc: 1.8.0
   typescript: 3.7.4
-  webpack: 4.41.4
+  webpack: 4.42.0
