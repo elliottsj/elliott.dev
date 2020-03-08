@@ -80,7 +80,7 @@
     "require-from-string": "2.0.2",
     "simple-icons": "2.0.0",
     "suncalc": "1.8.0",
-    "typescript": "3.7.4",
+    "typescript": "3.8.3",
     "webpack": "4.41.4"
   }
 }
