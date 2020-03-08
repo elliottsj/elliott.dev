@@ -7,9 +7,9 @@ dependencies:
   '@emotion/core': 10.0.27_react@16.12.0
   '@emotion/styled': 10.0.27_2c5d77e899508087ed51e7755add9fe3
   '@emotion/styled-base': 10.0.27_2c5d77e899508087ed51e7755add9fe3
-  '@fortawesome/fontawesome-svg-core': 1.2.26
-  '@fortawesome/free-solid-svg-icons': 5.12.0
-  '@fortawesome/react-fontawesome': 0.1.8_22e2453842f7e8b7d1d08b7797ac0bde
+  '@fortawesome/fontawesome-svg-core': 1.2.27
+  '@fortawesome/free-solid-svg-icons': 5.12.1
+  '@fortawesome/react-fontawesome': 0.1.9_42855a367911e00e120b31acc6c31c71
   '@mdx-js/loader': 1.5.3_react@16.12.0
   '@mdx-js/mdx': 1.5.3
   '@mdx-js/react': 1.5.3_react@16.12.0
@@ -33,7 +33,7 @@ dependencies:
   jest: 24.9.0
   jest-emotion: 10.0.27
   luxon: 1.21.3
-  next: 9.2.3-canary.26_727e55409c51e4668fd8ce6c10d18575
+  next: 9.2.3-canary.26_react-dom@16.12.0+react@16.12.0
   nprogress: 0.2.0
   prettier: 1.19.1
   preval.macro: 4.0.0
@@ -52,7 +52,7 @@ packages:
     dev: false
     resolution:
       integrity: sha512-xAJOmh6MPS2mdHNsK8mj1t8TLh6mlehirh0fOBsRhKCNCJXgg4Gfd2u5igy8VFq9sYnuWP/npFyjGX36qpXW5Q==
-  /@ampproject/toolbox-optimizer/2.0.0_lru-cache@5.1.1:
+  /@ampproject/toolbox-optimizer/2.0.0:
     dependencies:
       '@ampproject/toolbox-core': 2.0.0
       '@ampproject/toolbox-runtime-version': 2.0.0
@@ -62,14 +62,9 @@ packages:
       domhandler: 3.0.0
       domutils: 2.0.0
       htmlparser2: 4.0.0
-      lru-cache: 5.1.1
       normalize-html-whitespace: 1.0.0
       terser: 4.6.3
     dev: false
-    peerDependencies:
-      jimp: '*'
-      lru-cache: '*'
-      probe-image-size: '*'
     peerDependenciesMeta:
       jimp:
         optional: true
@@ -1997,25 +1992,25 @@ packages:
       node: '>=6'
     resolution:
       integrity: sha512-97GaByGaXDGMkzcJX7VmR/jRJd8h1mfhtA7RsxDBN61GnWE/PPCZhOdwG/8OZYktiRUF0CvFOr+VgRkJrt6TWg==
-  /@fortawesome/fontawesome-svg-core/1.2.26:
+  /@fortawesome/fontawesome-svg-core/1.2.27:
     dependencies:
       '@fortawesome/fontawesome-common-types': 0.2.27
     dev: false
     engines:
       node: '>=6'
     resolution:
-      integrity: sha512-3Dfd/v2IztP1TxKOxZiB5+4kaOZK9mNy0KU1vVK7nFlPWz3gzxrCWB+AloQhQUoJ8HhGqbzjliK89Vl7PExGbw==
-  /@fortawesome/free-solid-svg-icons/5.12.0:
+      integrity: sha512-sOD3DKynocnHYpuw2sLPnTunDj7rLk91LYhi2axUYwuGe9cPCw7Bsu9EWtVdNJP+IYgTCZIbyARKXuy5K/nv+Q==
+  /@fortawesome/free-solid-svg-icons/5.12.1:
     dependencies:
       '@fortawesome/fontawesome-common-types': 0.2.27
     dev: false
     engines:
       node: '>=6'
     resolution:
-      integrity: sha512-CnpsWs6GhTs9ekNB3d8rcO5HYqRkXbYKf2YNiAlTWbj5eVlPqsd/XH1F9If8jkcR1aegryAbln/qYeKVZzpM0g==
-  /@fortawesome/react-fontawesome/0.1.8_22e2453842f7e8b7d1d08b7797ac0bde:
+      integrity: sha512-k3MwRFFUhyL4cuCJSaHDA0YNYMELDXX0h8JKtWYxO5XD3Dn+maXOMrVAAiNGooUyM2v/wz/TOaM0jxYVKeXX7g==
+  /@fortawesome/react-fontawesome/0.1.9_42855a367911e00e120b31acc6c31c71:
     dependencies:
-      '@fortawesome/fontawesome-svg-core': 1.2.26
+      '@fortawesome/fontawesome-svg-core': 1.2.27
       prop-types: 15.7.2
       react: 16.12.0
     dev: false
@@ -2023,7 +2018,7 @@ packages:
       '@fortawesome/fontawesome-svg-core': ^1.2.20
       react: 16.x
     resolution:
-      integrity: sha512-I5h9YQg/ePA3Br9ISS18fcwOYmzQYDSM1ftH03/8nHkiqIVHtUyQBw482+60dnzvlr82gHt3mGm+nDUp159FCw==
+      integrity: sha512-49V3WNysLZU5fZ3sqSuys4nGRytsrxJktbv3vuaXkEoxv22C6T7TEG0TW6+nqVjMnkfCQd5xOnmJoZHMF78tOw==
   /@jest/console/24.9.0:
     dependencies:
       '@jest/source-map': 24.9.0
@@ -7151,9 +7146,9 @@ packages:
     dev: false
     resolution:
       integrity: sha1-yobR/ogoFpsBICCOPchCS524NCw=
-  /next/9.2.3-canary.26_727e55409c51e4668fd8ce6c10d18575:
+  /next/9.2.3-canary.26_react-dom@16.12.0+react@16.12.0:
     dependencies:
-      '@ampproject/toolbox-optimizer': 2.0.0_lru-cache@5.1.1
+      '@ampproject/toolbox-optimizer': 2.0.0
       '@babel/core': 7.7.2
       '@babel/plugin-proposal-class-properties': 7.7.0_@babel+core@7.7.2
       '@babel/plugin-proposal-nullish-coalescing-operator': 7.7.4_@babel+core@7.7.2
@@ -7215,7 +7210,7 @@ packages:
       node-fetch: 2.6.0
       ora: 3.4.0
       path-to-regexp: 6.1.0
-      pnp-webpack-plugin: 1.5.0_typescript@3.7.4
+      pnp-webpack-plugin: 1.5.0
       postcss-flexbugs-fixes: 4.2.0
       postcss-loader: 3.0.0
       postcss-preset-env: 6.7.0
@@ -7252,7 +7247,6 @@ packages:
     peerDependencies:
       react: ^16.6.0
       react-dom: ^16.6.0
-      typescript: '*'
     resolution:
       integrity: sha512-5IzKvwr0s3mX/siYoA9fFZuMZBz50aeho7cKxFGu8Ty3+qrcuf0Ooh8r9w7/yh4eEp4Gcfr+GoOnQaOTEsEcIg==
   /nice-try/1.0.5:
@@ -7880,14 +7874,12 @@ packages:
     dev: false
     resolution:
       integrity: sha512-2qHaIQr2VLRFoxe2nASzsV6ef4yOOH+Fi9FBOVH6cqeSgUnoyySPZkxzLuzd+RYOQTRpROA0ztTMqxROKSb/nA==
-  /pnp-webpack-plugin/1.5.0_typescript@3.7.4:
+  /pnp-webpack-plugin/1.5.0:
     dependencies:
-      ts-pnp: 1.1.6_typescript@3.7.4
+      ts-pnp: 1.1.6
     dev: false
     engines:
       node: '>=6'
-    peerDependencies:
-      typescript: '*'
     resolution:
       integrity: sha512-jd9olUr9D7do+RN8Wspzhpxhgp1n6Vd0NtQ4SFkmIACZoEL1nkyAdW9Ygrinjec0vgDcWjscFQQ1gDW8rsfKTg==
   /posix-character-classes/0.1.1:
@@ -10123,14 +10115,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-rvuRbTarPXmMb79SmzEp8aqXNKcK+y0XaB298IXueQ8I2PsrATcPBCSPyK/dDNa2iWOhKlfNnOjdAOTBU/nkFA==
-  /ts-pnp/1.1.6_typescript@3.7.4:
-    dependencies:
-      typescript: 3.7.4
+  /ts-pnp/1.1.6:
     dev: false
     engines:
       node: '>=6'
-    peerDependencies:
-      typescript: '*'
     peerDependenciesMeta:
       typescript:
         optional: true
@@ -10791,9 +10779,9 @@ specifiers:
   '@emotion/core': 10.0.27
   '@emotion/styled': 10.0.27
   '@emotion/styled-base': 10.0.27
-  '@fortawesome/fontawesome-svg-core': 1.2.26
-  '@fortawesome/free-solid-svg-icons': 5.12.0
-  '@fortawesome/react-fontawesome': 0.1.8
+  '@fortawesome/fontawesome-svg-core': 1.2.27
+  '@fortawesome/free-solid-svg-icons': 5.12.1
+  '@fortawesome/react-fontawesome': 0.1.9
   '@mdx-js/loader': 1.5.3
   '@mdx-js/mdx': 1.5.3
   '@mdx-js/react': 1.5.3
