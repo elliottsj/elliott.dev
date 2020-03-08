@@ -4,15 +4,15 @@ dependencies:
   '@babel/preset-react': 7.7.4_@babel+core@7.7.7
   '@elliottsj/next-svgr': 0.0.3
   '@emotion/babel-preset-css-prop': 10.0.27_@babel+core@7.7.7
-  '@emotion/core': 10.0.27_react@16.12.0
-  '@emotion/styled': 10.0.27_2c5d77e899508087ed51e7755add9fe3
-  '@emotion/styled-base': 10.0.27_2c5d77e899508087ed51e7755add9fe3
+  '@emotion/core': 10.0.27_react@16.13.0
+  '@emotion/styled': 10.0.27_8e6c5328f2d8796c746265de88db7cb6
+  '@emotion/styled-base': 10.0.27_8e6c5328f2d8796c746265de88db7cb6
   '@fortawesome/fontawesome-svg-core': 1.2.26
   '@fortawesome/free-solid-svg-icons': 5.12.0
-  '@fortawesome/react-fontawesome': 0.1.8_22e2453842f7e8b7d1d08b7797ac0bde
-  '@mdx-js/loader': 1.5.3_react@16.12.0
+  '@fortawesome/react-fontawesome': 0.1.8_94981577cdb6af8da9fbc5f8a4e8c127
+  '@mdx-js/loader': 1.5.3_react@16.13.0
   '@mdx-js/mdx': 1.5.3
-  '@mdx-js/react': 1.5.3_react@16.12.0
+  '@mdx-js/react': 1.5.3_react@16.13.0
   '@next/mdx': 9.1.6_@mdx-js+loader@1.5.3
   '@types/chroma-js': 1.4.3
   '@types/jest': 24.0.24
@@ -28,17 +28,17 @@ dependencies:
   babel-plugin-macros: 2.8.0
   chroma-js: 2.1.0
   cross-env: 6.0.3
-  emotion-normalize: 10.1.0_2c5d77e899508087ed51e7755add9fe3
-  emotion-theming: 10.0.27_2c5d77e899508087ed51e7755add9fe3
+  emotion-normalize: 10.1.0_8e6c5328f2d8796c746265de88db7cb6
+  emotion-theming: 10.0.27_8e6c5328f2d8796c746265de88db7cb6
   jest: 24.9.0
   jest-emotion: 10.0.27
   luxon: 1.21.3
-  next: 9.2.3-canary.26_727e55409c51e4668fd8ce6c10d18575
+  next: 9.2.3-canary.26_react-dom@16.13.0+react@16.13.0
   nprogress: 0.2.0
   prettier: 1.19.1
   preval.macro: 4.0.0
-  react: 16.12.0
-  react-dom: 16.12.0_react@16.12.0
+  react: 16.13.0
+  react-dom: 16.13.0_react@16.13.0
   require-from-string: 2.0.2
   simple-icons: 2.0.0
   suncalc: 1.8.0
@@ -52,7 +52,7 @@ packages:
     dev: false
     resolution:
       integrity: sha512-xAJOmh6MPS2mdHNsK8mj1t8TLh6mlehirh0fOBsRhKCNCJXgg4Gfd2u5igy8VFq9sYnuWP/npFyjGX36qpXW5Q==
-  /@ampproject/toolbox-optimizer/2.0.0_lru-cache@5.1.1:
+  /@ampproject/toolbox-optimizer/2.0.0:
     dependencies:
       '@ampproject/toolbox-core': 2.0.0
       '@ampproject/toolbox-runtime-version': 2.0.0
@@ -62,14 +62,9 @@ packages:
       domhandler: 3.0.0
       domutils: 2.0.0
       htmlparser2: 4.0.0
-      lru-cache: 5.1.1
       normalize-html-whitespace: 1.0.0
       terser: 4.6.3
     dev: false
-    peerDependencies:
-      jimp: '*'
-      lru-cache: '*'
-      probe-image-size: '*'
     peerDependenciesMeta:
       jimp:
         optional: true
@@ -1899,7 +1894,7 @@ packages:
     dev: false
     resolution:
       integrity: sha512-fU2VtSVlHiF27empSbxi1O2JFdNWZO+2NFHfwO0pxgTep6Xa3uGb+3pVKfLww2l/IBGLNEZl5Xf/++A4wAYDYQ==
-  /@emotion/core/10.0.27_react@16.12.0:
+  /@emotion/core/10.0.27_react@16.13.0:
     dependencies:
       '@babel/runtime': 7.8.7
       '@emotion/cache': 10.0.29
@@ -1907,7 +1902,7 @@ packages:
       '@emotion/serialize': 0.11.16
       '@emotion/sheet': 0.9.4
       '@emotion/utils': 0.11.3
-      react: 16.12.0
+      react: 16.13.0
     dev: false
     peerDependencies:
       react: '>=16.3.0'
@@ -1949,26 +1944,26 @@ packages:
     dev: false
     resolution:
       integrity: sha512-zM9PFmgVSqBw4zL101Q0HrBVTGmpAxFZH/pYx/cjJT5advXguvcgjHFTCaIO3enL/xr89vK2bh0Mfyj9aa0ANA==
-  /@emotion/styled-base/10.0.27_2c5d77e899508087ed51e7755add9fe3:
+  /@emotion/styled-base/10.0.27_8e6c5328f2d8796c746265de88db7cb6:
     dependencies:
       '@babel/runtime': 7.8.7
-      '@emotion/core': 10.0.27_react@16.12.0
+      '@emotion/core': 10.0.27_react@16.13.0
       '@emotion/is-prop-valid': 0.8.6
       '@emotion/serialize': 0.11.16
       '@emotion/utils': 0.11.3
-      react: 16.12.0
+      react: 16.13.0
     dev: false
     peerDependencies:
       '@emotion/core': ^10.0.27
       react: '>=16.3.0'
     resolution:
       integrity: sha512-ufHM/HhE3nr309hJG9jxuFt71r6aHn7p+bwXduFxcwPFEfBIqvmZUMtZ9YxIsY61PVwK3bp4G1XhaCzy9smVvw==
-  /@emotion/styled/10.0.27_2c5d77e899508087ed51e7755add9fe3:
+  /@emotion/styled/10.0.27_8e6c5328f2d8796c746265de88db7cb6:
     dependencies:
-      '@emotion/core': 10.0.27_react@16.12.0
-      '@emotion/styled-base': 10.0.27_2c5d77e899508087ed51e7755add9fe3
+      '@emotion/core': 10.0.27_react@16.13.0
+      '@emotion/styled-base': 10.0.27_8e6c5328f2d8796c746265de88db7cb6
       babel-plugin-emotion: 10.0.29
-      react: 16.12.0
+      react: 16.13.0
     dev: false
     peerDependencies:
       '@emotion/core': ^10.0.27
@@ -2013,11 +2008,11 @@ packages:
       node: '>=6'
     resolution:
       integrity: sha512-CnpsWs6GhTs9ekNB3d8rcO5HYqRkXbYKf2YNiAlTWbj5eVlPqsd/XH1F9If8jkcR1aegryAbln/qYeKVZzpM0g==
-  /@fortawesome/react-fontawesome/0.1.8_22e2453842f7e8b7d1d08b7797ac0bde:
+  /@fortawesome/react-fontawesome/0.1.8_94981577cdb6af8da9fbc5f8a4e8c127:
     dependencies:
       '@fortawesome/fontawesome-svg-core': 1.2.26
       prop-types: 15.7.2
-      react: 16.12.0
+      react: 16.13.0
     dev: false
     peerDependencies:
       '@fortawesome/fontawesome-svg-core': ^1.2.20
@@ -2182,10 +2177,10 @@ packages:
       node: '>= 6'
     resolution:
       integrity: sha512-XKK7ze1apu5JWQ5eZjHITP66AX+QsLlbaJRBGYr8pNzwcAE2JVkwnf0yqjHTsDRcjR0mujy/NmZMXw5kl+kGBw==
-  /@mdx-js/loader/1.5.3_react@16.12.0:
+  /@mdx-js/loader/1.5.3_react@16.13.0:
     dependencies:
       '@mdx-js/mdx': 1.5.3
-      '@mdx-js/react': 1.5.3_react@16.12.0
+      '@mdx-js/react': 1.5.3_react@16.13.0
       loader-utils: 1.2.3
     dev: false
     peerDependencies:
@@ -2215,9 +2210,9 @@ packages:
     dev: false
     resolution:
       integrity: sha512-XxnOvyCQKri52tgaCXbV5NWnZGqgRsRifa/yJrxwWa6QG3vdFiEi/xokBHBf/62RCKRK4+QmbM4dSl0fgWIRNA==
-  /@mdx-js/react/1.5.3_react@16.12.0:
+  /@mdx-js/react/1.5.3_react@16.13.0:
     dependencies:
-      react: 16.12.0
+      react: 16.13.0
     dev: false
     peerDependencies:
       react: ^16.9.0
@@ -2229,7 +2224,7 @@ packages:
       integrity: sha512-SV+V8A+Y33pmVT/LWk/2y51ixIyA/QH1XL+nrWAhoqre1rFtxOEZ4jr0W+bKZpeahOvkn/BQTheK+dRty9o/ig==
   /@next/mdx/9.1.6_@mdx-js+loader@1.5.3:
     dependencies:
-      '@mdx-js/loader': 1.5.3_react@16.12.0
+      '@mdx-js/loader': 1.5.3_react@16.13.0
     dev: false
     peerDependencies:
       '@mdx-js/loader': '>=0.15.0'
@@ -4530,23 +4525,23 @@ packages:
       node: '>= 4'
     resolution:
       integrity: sha512-/kyM18EfinwXZbno9FyUGeFh87KC8HRQBQGildHZbEuRyWFOmv1U10o9BBp8XVZDVNNuQKyIGIu5ZYAAXJ0V2Q==
-  /emotion-normalize/10.1.0_2c5d77e899508087ed51e7755add9fe3:
+  /emotion-normalize/10.1.0_8e6c5328f2d8796c746265de88db7cb6:
     dependencies:
-      '@emotion/core': 10.0.27_react@16.12.0
-      react: 16.12.0
+      '@emotion/core': 10.0.27_react@16.13.0
+      react: 16.13.0
     dev: false
     peerDependencies:
       '@emotion/core': '>=10.0.0'
       react: '>=16.3.0'
     resolution:
       integrity: sha512-Z+rz3Eep8tUgtBKT13/rEpci+ZbCadRovEmILuLB9IEpq4FdNpXjm7MVeJqG4iBRGw4tKmIq06lYgjeC6oEnag==
-  /emotion-theming/10.0.27_2c5d77e899508087ed51e7755add9fe3:
+  /emotion-theming/10.0.27_8e6c5328f2d8796c746265de88db7cb6:
     dependencies:
       '@babel/runtime': 7.8.7
-      '@emotion/core': 10.0.27_react@16.12.0
+      '@emotion/core': 10.0.27_react@16.13.0
       '@emotion/weak-memoize': 0.2.5
       hoist-non-react-statics: 3.3.2
-      react: 16.12.0
+      react: 16.13.0
     dev: false
     peerDependencies:
       '@emotion/core': ^10.0.27
@@ -7151,9 +7146,9 @@ packages:
     dev: false
     resolution:
       integrity: sha1-yobR/ogoFpsBICCOPchCS524NCw=
-  /next/9.2.3-canary.26_727e55409c51e4668fd8ce6c10d18575:
+  /next/9.2.3-canary.26_react-dom@16.13.0+react@16.13.0:
     dependencies:
-      '@ampproject/toolbox-optimizer': 2.0.0_lru-cache@5.1.1
+      '@ampproject/toolbox-optimizer': 2.0.0
       '@babel/core': 7.7.2
       '@babel/plugin-proposal-class-properties': 7.7.0_@babel+core@7.7.2
       '@babel/plugin-proposal-nullish-coalescing-operator': 7.7.4_@babel+core@7.7.2
@@ -7215,15 +7210,15 @@ packages:
       node-fetch: 2.6.0
       ora: 3.4.0
       path-to-regexp: 6.1.0
-      pnp-webpack-plugin: 1.5.0_typescript@3.7.4
+      pnp-webpack-plugin: 1.5.0
       postcss-flexbugs-fixes: 4.2.0
       postcss-loader: 3.0.0
       postcss-preset-env: 6.7.0
       prop-types: 15.7.2
       prop-types-exact: 1.2.0
       raw-body: 2.4.0
-      react: 16.12.0
-      react-dom: 16.12.0_react@16.12.0
+      react: 16.13.0
+      react-dom: 16.13.0_react@16.13.0
       react-error-overlay: 5.1.6
       react-is: 16.8.6
       recast: 0.18.5
@@ -7234,12 +7229,12 @@ packages:
       string-hash: 1.1.3
       strip-ansi: 5.2.0
       style-loader: 1.0.0_webpack@4.41.2
-      styled-jsx: 3.2.4_react@16.12.0
+      styled-jsx: 3.2.4_react@16.13.0
       terser: 4.4.2
       thread-loader: 2.1.3_webpack@4.41.2
       unfetch: 4.1.0
       url: 0.11.0
-      use-subscription: 1.1.1_react@16.12.0
+      use-subscription: 1.1.1_react@16.13.0
       watchpack: 2.0.0-beta.13
       webpack: 4.41.2_webpack@4.41.2
       webpack-dev-middleware: 3.7.0_webpack@4.41.2
@@ -7252,7 +7247,6 @@ packages:
     peerDependencies:
       react: ^16.6.0
       react-dom: ^16.6.0
-      typescript: '*'
     resolution:
       integrity: sha512-5IzKvwr0s3mX/siYoA9fFZuMZBz50aeho7cKxFGu8Ty3+qrcuf0Ooh8r9w7/yh4eEp4Gcfr+GoOnQaOTEsEcIg==
   /nice-try/1.0.5:
@@ -7880,14 +7874,12 @@ packages:
     dev: false
     resolution:
       integrity: sha512-2qHaIQr2VLRFoxe2nASzsV6ef4yOOH+Fi9FBOVH6cqeSgUnoyySPZkxzLuzd+RYOQTRpROA0ztTMqxROKSb/nA==
-  /pnp-webpack-plugin/1.5.0_typescript@3.7.4:
+  /pnp-webpack-plugin/1.5.0:
     dependencies:
-      ts-pnp: 1.1.6_typescript@3.7.4
+      ts-pnp: 1.1.6
     dev: false
     engines:
       node: '>=6'
-    peerDependencies:
-      typescript: '*'
     resolution:
       integrity: sha512-jd9olUr9D7do+RN8Wspzhpxhgp1n6Vd0NtQ4SFkmIACZoEL1nkyAdW9Ygrinjec0vgDcWjscFQQ1gDW8rsfKTg==
   /posix-character-classes/0.1.1:
@@ -8809,18 +8801,18 @@ packages:
       node: '>= 0.8'
     resolution:
       integrity: sha512-4Oz8DUIwdvoa5qMJelxipzi/iJIi40O5cGV1wNYp5hvZP8ZN0T+jiNkL0QepXs+EsQ9XJ8ipEDoiH70ySUJP3Q==
-  /react-dom/16.12.0_react@16.12.0:
+  /react-dom/16.13.0_react@16.13.0:
     dependencies:
       loose-envify: 1.4.0
       object-assign: 4.1.1
       prop-types: 15.7.2
-      react: 16.12.0
-      scheduler: 0.18.0
+      react: 16.13.0
+      scheduler: 0.19.0
     dev: false
     peerDependencies:
       react: ^16.0.0
     resolution:
-      integrity: sha512-LMxFfAGrcS3kETtQaCkTKjMiifahaMySFDn71fZUNpPHZQEzmk/GiAeIT8JSOrHB23fnuCOMruL2a8NYlw+8Gw==
+      integrity: sha512-y09d2c4cG220DzdlFkPTnVvGTszVvNpC73v+AaLGLHbkpy3SSgvYq8x0rNwPJ/Rk/CicTNgk0hbHNw1gMEZAXg==
   /react-error-overlay/5.1.6:
     dev: false
     resolution:
@@ -8833,7 +8825,7 @@ packages:
     dev: false
     resolution:
       integrity: sha512-aUk3bHfZ2bRSVFFbbeVS4i+lNPZr3/WM5jT2J5omUVV1zzcs1nAaf3l51ctA5FFvCRbhrH0bdAsRRQddFJZPtA==
-  /react/16.12.0:
+  /react/16.13.0:
     dependencies:
       loose-envify: 1.4.0
       object-assign: 4.1.1
@@ -8842,7 +8834,7 @@ packages:
     engines:
       node: '>=0.10.0'
     resolution:
-      integrity: sha512-fglqy3k5E+81pA8s+7K0/T3DBCF0ZDOher1elBFzF7O6arXJgzyu/FW+COxFvAWXJoJN9KIZbT2LXlukwphYTA==
+      integrity: sha512-TSavZz2iSLkq5/oiE7gnFzmURKZMltmi193rm5HEoUDAXpzT9Kzw6oNZnGoai/4+fUnm7FqS5dwgUL34TujcWQ==
   /read-pkg-up/4.0.0:
     dependencies:
       find-up: 3.0.0
@@ -9307,13 +9299,13 @@ packages:
     dev: false
     resolution:
       integrity: sha512-NqVDv9TpANUjFm0N8uM5GxL36UgKi9/atZw+x7YFnQ8ckwFGKrl4xX4yWtrey3UJm5nP1kUbnYgLopqWNSRhWw==
-  /scheduler/0.18.0:
+  /scheduler/0.19.0:
     dependencies:
       loose-envify: 1.4.0
       object-assign: 4.1.1
     dev: false
     resolution:
-      integrity: sha512-agTSHR1Nbfi6ulI0kYNK0203joW2Y5W4po4l+v03tOoiJKpTBbxpNhWDvqc/4IcOw+KLmSiQLTasZ4cab2/UWQ==
+      integrity: sha512-xowbVaTPe9r7y7RUejcK73/j8tt2jfiyTednOvHbA8JoClvMYCp+r8QegLwK/n8zWQAtZb1fFnER4XLBZXrCxA==
   /schema-utils/1.0.0:
     dependencies:
       ajv: 6.12.0
@@ -9809,13 +9801,13 @@ packages:
     dev: false
     resolution:
       integrity: sha512-CzFnRRXhzWIdItT3OmF8SQfWyahHhjq3HwcMNCNLn+N7klOOqPjMeG/4JSu77D7ypZdGvSzvkrbyeTMizz2VrA==
-  /styled-jsx/3.2.4_react@16.12.0:
+  /styled-jsx/3.2.4_react@16.13.0:
     dependencies:
       babel-plugin-syntax-jsx: 6.18.0
       babel-types: 6.26.0
       convert-source-map: 1.7.0
       loader-utils: 1.2.3
-      react: 16.12.0
+      react: 16.13.0
       source-map: 0.7.3
       string-hash: 1.1.3
       stylis: 3.5.4
@@ -10123,14 +10115,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-rvuRbTarPXmMb79SmzEp8aqXNKcK+y0XaB298IXueQ8I2PsrATcPBCSPyK/dDNa2iWOhKlfNnOjdAOTBU/nkFA==
-  /ts-pnp/1.1.6_typescript@3.7.4:
-    dependencies:
-      typescript: 3.7.4
+  /ts-pnp/1.1.6:
     dev: false
     engines:
       node: '>=6'
-    peerDependencies:
-      typescript: '*'
     peerDependenciesMeta:
       typescript:
         optional: true
@@ -10375,9 +10363,9 @@ packages:
     dev: false
     resolution:
       integrity: sha1-ODjpfPxgUh63PFJajlW/3Z4uKPE=
-  /use-subscription/1.1.1_react@16.12.0:
+  /use-subscription/1.1.1_react@16.13.0:
     dependencies:
-      react: 16.12.0
+      react: 16.13.0
     dev: false
     peerDependencies:
       react: ^16.8.0
@@ -10821,8 +10809,8 @@ specifiers:
   nprogress: 0.2.0
   prettier: 1.19.1
   preval.macro: 4.0.0
-  react: 16.12.0
-  react-dom: 16.12.0
+  react: 16.13.0
+  react-dom: 16.13.0
   require-from-string: 2.0.2
   simple-icons: 2.0.0
   suncalc: 1.8.0
