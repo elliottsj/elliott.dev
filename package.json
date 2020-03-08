@@ -20,6 +20,8 @@
     "jest": "jest",
     "?jest:watch": "Run Jest tests in watch mode.",
     "jest:watch": "jest --watch",
+    "?preexport": "On Netlify, install dependencies with pnpm prior to exporting the app.",
+    "preexport": "[[ $CI = true ]] && npx pnpm@4.11.3 install --store=node_modules/.pnpm-store || echo skipping pnpm install",
     "?start": "Start the application in production mode. Must run \"build\" first.",
     "start": "next start",
     "?test": "Run all tests",
