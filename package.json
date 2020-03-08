@@ -10,6 +10,8 @@
     "dev": "next",
     "?dev:debug": "Launch the application in development mode, with debugging enabled.",
     "dev:debug": "cross-env NODE_OPTIONS=\"--inspect-brk\" next",
+    "?export": "Export the application for production deployment.",
+    "export": "npm run build && next export",
     "?format:check": "Check that all source files are formatted correctly with Prettier.",
     "format:check": "prettier --list-different \"**/*.{js,jsx,ts,tsx}\"",
     "?format:write": "Format all incorrectly-formatted source files and writes them to disk.",
