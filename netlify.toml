@@ -1,0 +1,11 @@
+# https://docs.netlify.com/configure-builds/file-based-configuration
+
+[build]
+  publish = "out/"
+  command = "npm run export"
+
+[build.environment]
+  # Force Netlify to skip the normal npm install
+  # https://community.netlify.com/t/using-pnpm-and-pnpm-workspaces/2759
+  # https://docs.npmjs.com/misc/config#prefix
+  NPM_FLAGS="--prefix=/"
