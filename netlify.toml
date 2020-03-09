@@ -8,4 +8,4 @@
   # Force Netlify to skip the normal npm install
   # https://community.netlify.com/t/using-pnpm-and-pnpm-workspaces/2759
   # https://docs.npmjs.com/misc/config#prefix
-  NPM_FLAGS="--prefix=/"
+  NPM_FLAGS="--prefix=npm-prefix-workaround"
