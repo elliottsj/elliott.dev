@@ -33,10 +33,10 @@ dependencies:
   jest: 24.9.0
   jest-emotion: 10.0.27
   luxon: 1.21.3
-  next: 9.2.3-canary.26_727e55409c51e4668fd8ce6c10d18575
+  next: 9.2.3-canary.26_react-dom@16.12.0+react@16.12.0
   nprogress: 0.2.0
   prettier: 1.19.1
-  preval.macro: 4.0.0
+  preval.macro: 5.0.0
   react: 16.12.0
   react-dom: 16.12.0_react@16.12.0
   require-from-string: 2.0.2
@@ -52,7 +52,7 @@ packages:
     dev: false
     resolution:
       integrity: sha512-xAJOmh6MPS2mdHNsK8mj1t8TLh6mlehirh0fOBsRhKCNCJXgg4Gfd2u5igy8VFq9sYnuWP/npFyjGX36qpXW5Q==
-  /@ampproject/toolbox-optimizer/2.0.0_lru-cache@5.1.1:
+  /@ampproject/toolbox-optimizer/2.0.0:
     dependencies:
       '@ampproject/toolbox-core': 2.0.0
       '@ampproject/toolbox-runtime-version': 2.0.0
@@ -62,14 +62,9 @@ packages:
       domhandler: 3.0.0
       domutils: 2.0.0
       htmlparser2: 4.0.0
-      lru-cache: 5.1.1
       normalize-html-whitespace: 1.0.0
       terser: 4.6.3
     dev: false
-    peerDependencies:
-      jimp: '*'
-      lru-cache: '*'
-      probe-image-size: '*'
     peerDependenciesMeta:
       jimp:
         optional: true
@@ -1809,6 +1804,12 @@ packages:
     dev: false
     resolution:
       integrity: sha512-+AATMUFppJDw6aiR5NVPHqIQBlV/Pj8wY/EZH+lmvRdUo9xBaz/rF3alAwFJQavvKfeOlPE7oaaDHVbcySbCsg==
+  /@babel/runtime/7.9.2:
+    dependencies:
+      regenerator-runtime: 0.13.5
+    dev: false
+    resolution:
+      integrity: sha512-NE2DtOdufG7R5vnfQUTehdTfNycfUANEtCa9PssN9O/xmTzP4E08UI797ixaei6hBEVL9BI/PsdJS5x7mWoB9Q==
   /@babel/template/7.8.6:
     dependencies:
       '@babel/code-frame': 7.8.3
@@ -3094,17 +3095,17 @@ packages:
     dev: false
     resolution:
       integrity: sha512-SEP5kJpfGYqYKpBrj5XU3ahw5p5GOHJ0U5ssOSQ/WBVdwkD2Dzlce95exQTs3jOVWPPKLBN2rlEWkCK7dSmLvg==
-  /babel-plugin-preval/4.0.0:
+  /babel-plugin-preval/5.0.0:
     dependencies:
-      '@babel/runtime': 7.8.7
+      '@babel/runtime': 7.9.2
       babel-plugin-macros: 2.8.0
       require-from-string: 2.0.2
     dev: false
     engines:
-      node: '>=8'
+      node: '>=10'
       npm: '>=6'
     resolution:
-      integrity: sha512-fZI/4cYneinlj2k/FsXw0/lTWSC5KKoepUueS1g25Gb5vx3GrRyaVwxWCshYqx11GEU4mZnbbFhee8vpquFS2w==
+      integrity: sha512-8DqJq6/LPUjSZ0Qq6bVIFpsj2flCEE0Cbnbut9TvGU6jP9g3dOWEXtQ/sdvsA9d6souza8eNGh04WRXpuH9ThA==
   /babel-plugin-syntax-jsx/6.18.0:
     dev: false
     resolution:
@@ -7151,9 +7152,9 @@ packages:
     dev: false
     resolution:
       integrity: sha1-yobR/ogoFpsBICCOPchCS524NCw=
-  /next/9.2.3-canary.26_727e55409c51e4668fd8ce6c10d18575:
+  /next/9.2.3-canary.26_react-dom@16.12.0+react@16.12.0:
     dependencies:
-      '@ampproject/toolbox-optimizer': 2.0.0_lru-cache@5.1.1
+      '@ampproject/toolbox-optimizer': 2.0.0
       '@babel/core': 7.7.2
       '@babel/plugin-proposal-class-properties': 7.7.0_@babel+core@7.7.2
       '@babel/plugin-proposal-nullish-coalescing-operator': 7.7.4_@babel+core@7.7.2
@@ -7215,7 +7216,7 @@ packages:
       node-fetch: 2.6.0
       ora: 3.4.0
       path-to-regexp: 6.1.0
-      pnp-webpack-plugin: 1.5.0_typescript@3.7.4
+      pnp-webpack-plugin: 1.5.0
       postcss-flexbugs-fixes: 4.2.0
       postcss-loader: 3.0.0
       postcss-preset-env: 6.7.0
@@ -7252,7 +7253,6 @@ packages:
     peerDependencies:
       react: ^16.6.0
       react-dom: ^16.6.0
-      typescript: '*'
     resolution:
       integrity: sha512-5IzKvwr0s3mX/siYoA9fFZuMZBz50aeho7cKxFGu8Ty3+qrcuf0Ooh8r9w7/yh4eEp4Gcfr+GoOnQaOTEsEcIg==
   /nice-try/1.0.5:
@@ -7880,14 +7880,12 @@ packages:
     dev: false
     resolution:
       integrity: sha512-2qHaIQr2VLRFoxe2nASzsV6ef4yOOH+Fi9FBOVH6cqeSgUnoyySPZkxzLuzd+RYOQTRpROA0ztTMqxROKSb/nA==
-  /pnp-webpack-plugin/1.5.0_typescript@3.7.4:
+  /pnp-webpack-plugin/1.5.0:
     dependencies:
-      ts-pnp: 1.1.6_typescript@3.7.4
+      ts-pnp: 1.1.6
     dev: false
     engines:
       node: '>=6'
-    peerDependencies:
-      typescript: '*'
     resolution:
       integrity: sha512-jd9olUr9D7do+RN8Wspzhpxhgp1n6Vd0NtQ4SFkmIACZoEL1nkyAdW9Ygrinjec0vgDcWjscFQQ1gDW8rsfKTg==
   /posix-character-classes/0.1.1:
@@ -8627,12 +8625,14 @@ packages:
       node: '>= 6'
     resolution:
       integrity: sha512-00ZMZUiHaJrNfk33guavqgvfJS30sLYf0f8+Srklv0AMPodGGHcoHgksZ3OThYnIvOd+8yMCn0YiEOogjlgsnA==
-  /preval.macro/4.0.0:
+  /preval.macro/5.0.0:
     dependencies:
-      babel-plugin-preval: 4.0.0
+      babel-plugin-preval: 5.0.0
     dev: false
+    engines:
+      node: '>=10'
     resolution:
-      integrity: sha512-sJJnE71X+MPr64CVD2AurmUj4JEDqbudYbStav3L9Xjcqm4AR0ymMm6sugw1mUmfI/7gw4JWA4JXo/k6w34crw==
+      integrity: sha512-+OZRqZYx1pjZ7H5Jis8bPFXkiT7lwA46UzAT4IjuzFVKwkJK+TwIx1TCqrqNCf8U3e5O12mEJEz1BXslkCLWfQ==
   /private/0.1.8:
     dev: false
     engines:
@@ -8949,6 +8949,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-plpwicqEzfEyTQohIKktWigcLzmNStMGwbOUbykx51/29Z3JOGYldaaNGK7ngNXV+UcoqvIMmloZ48Sr74sd+g==
+  /regenerator-runtime/0.13.5:
+    dev: false
+    resolution:
+      integrity: sha512-ZS5w8CpKFinUzOwW3c83oPeVXoNsrLsaCoLtJvAClH135j/R77RuymhiSErhm2lKcwSCIpmvIWSbDkIfAqKQlA==
   /regenerator-transform/0.14.2:
     dependencies:
       '@babel/runtime': 7.8.7
@@ -10123,14 +10127,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-rvuRbTarPXmMb79SmzEp8aqXNKcK+y0XaB298IXueQ8I2PsrATcPBCSPyK/dDNa2iWOhKlfNnOjdAOTBU/nkFA==
-  /ts-pnp/1.1.6_typescript@3.7.4:
-    dependencies:
-      typescript: 3.7.4
+  /ts-pnp/1.1.6:
     dev: false
     engines:
       node: '>=6'
-    peerDependencies:
-      typescript: '*'
     peerDependenciesMeta:
       typescript:
         optional: true
@@ -10820,7 +10820,7 @@ specifiers:
   next: 9.2.3-canary.26
   nprogress: 0.2.0
   prettier: 1.19.1
-  preval.macro: 4.0.0
+  preval.macro: 5.0.0
   react: 16.12.0
   react-dom: 16.12.0
   require-from-string: 2.0.2
