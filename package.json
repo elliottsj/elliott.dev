@@ -75,7 +75,7 @@
     "luxon": "1.21.3",
     "next": "9.2.3-canary.26",
     "nprogress": "0.2.0",
-    "prettier": "1.19.1",
+    "prettier": "2.0.4",
     "preval.macro": "4.0.0",
     "react": "16.12.0",
     "react-dom": "16.12.0",
