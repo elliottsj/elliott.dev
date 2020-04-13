@@ -6,6 +6,9 @@ yarn-error.log*
 # Dependency directories
 node_modules/
 
+# npm lockfile
+package-lock.json
+
 # Next.js build output
 /.next/
 /out/

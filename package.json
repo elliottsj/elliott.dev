@@ -20,6 +20,8 @@
     "jest": "jest",
     "?jest:watch": "Run Jest tests in watch mode.",
     "jest:watch": "jest --watch",
+    "?postinstall": "If a different package manager was used to install, re-install dependencies with pnpm.",
+    "postinstall": "node -e \"process.exitCode = process.env.npm_execpath.includes('pnpm') ? 1 : 0;\" && npx pnpm@4.13.0 install || echo \"dependencies installed with pnpm\"",
     "?start": "Start the application in production mode. Must run \"build\" first.",
     "start": "next start",
     "?test": "Run all tests",
