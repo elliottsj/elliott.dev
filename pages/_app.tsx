@@ -12,7 +12,7 @@ import React, { useState } from 'react';
 import { css, Global } from '@emotion/core';
 import { config } from '@fortawesome/fontawesome-svg-core';
 
-import { getTheme, globalStyles } from '../common/theme';
+import { getTheme, globalStyles } from '../lib/theme';
 import { useInterval } from '../hooks/useInterval';
 
 // Configure font-awesome to prevent automatically inserting CSS.

@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 
-import posts from '../common/posts';
+import posts from '../lib/posts';
 import { Layout } from '../components';
 
 export default () => (
