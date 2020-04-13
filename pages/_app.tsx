@@ -12,7 +12,7 @@ import React, { useState } from 'react';
 import { css, Global } from '@emotion/core';
 import { config } from '@fortawesome/fontawesome-svg-core';
 
-import { getTheme, globalStyles } from '../lib/theme';
+import { getTheme, globalStyles as themeGlobalStyles } from '../lib/theme';
 import { useInterval } from '../hooks/useInterval';
 
 // Configure font-awesome to prevent automatically inserting CSS.
@@ -44,12 +44,9 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
     <>
       <Global
         styles={css`
-          ${globalStyles}
+          ${themeGlobalStyles}
           ${emotionNormalize}
 
-          html {
-            line-height: normal;
-          }
           body {
             font-family: ${theme.fonts.body};
           }
@@ -60,6 +57,16 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
           h5,
           h6 {
             font-family: ${theme.fonts.heading};
+          }
+
+          /* https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+          html {
+            box-sizing: border-box;
+          }
+          *,
+          *:before,
+          *:after {
+            box-sizing: inherit;
           }
         `}
       />

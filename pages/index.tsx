@@ -1,10 +1,24 @@
 import Link from 'next/link';
 import React from 'react';
 
-import posts from '../lib/posts';
 import { Layout } from '../components';
 
-export default () => (
+export interface Meta {
+  published: boolean;
+  title: string;
+  summary: string;
+}
+
+interface Post {
+  meta: Meta;
+  slug: string;
+}
+
+interface IndexPageProps {
+  posts: Post[];
+}
+
+const IndexPage: React.FC<IndexPageProps> = ({ posts }) => (
   <Layout>
     <ul>
       {posts
@@ -19,3 +33,13 @@ export default () => (
     </ul>
   </Layout>
 );
+
+export default IndexPage;
+
+export const getStaticProps = async () => {
+  const postsReq = require.context('./posts');
+  const getSlug = (moduleName: string) => moduleName.match(/^\.\/(?<slug>.+)\.mdx$/)?.groups?.slug;
+  const posts = postsReq.keys().map((key) => ({ meta: postsReq(key).meta, slug: getSlug(key) }));
+
+  return { props: { posts } };
+};

@@ -6,5 +6,4 @@
 
 module.exports = {
   presets: [require.resolve('next/babel'), require.resolve('@emotion/babel-preset-css-prop')],
-  plugins: [require.resolve('babel-plugin-macros')],
 };
