@@ -6,12 +6,12 @@ const babel = require('@babel/core');
 const mdx = require('@mdx-js/mdx');
 
 const postsDir = path.join(__dirname, '..', 'pages', 'posts');
-const files = fs.readdirSync(postsDir).filter(file => file.endsWith('.mdx'));
+const files = fs.readdirSync(postsDir).filter((file) => file.endsWith('.mdx'));
 
 /**
  * Collect all .md / .mdx posts in this directory and export all posts' meta info and slug names.
  */
-module.exports = files.map(file => {
+module.exports = files.map((file) => {
   const mdxText = fs.readFileSync(path.join(postsDir, file), 'utf-8');
   const mdxCodeESNext = mdx.sync(mdxText);
   const transformed = babel.transformSync(mdxCodeESNext, {

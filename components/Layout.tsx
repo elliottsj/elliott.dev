@@ -18,7 +18,7 @@ const Grid = styled.div<{}, Theme>`
     [row2-start] '. main .' 1fr [row2-end]
     [row3-start] '. footer .' auto [row3-end]
     / 1fr minmax(auto, ${pxRem(672)}) 1fr;
-  background-color: ${props => props.theme.colors.background};
+  background-color: ${(props) => props.theme.colors.background};
 `;
 
 const Header = styled.header`
@@ -85,7 +85,7 @@ const Layout: React.FC = ({ children }) => {
             enabledLabel="On"
             size="1em"
             checked={isNightModeEnabled}
-            onChange={checked => {
+            onChange={(checked) => {
               setIsNightModeEnabled(checked);
             }}
           />

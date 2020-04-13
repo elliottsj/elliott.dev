@@ -34,7 +34,7 @@ dependencies:
   luxon: 1.23.0
   next: 9.3.4_2835b61db5436cc1b0e8bedc12a528e2
   nprogress: 0.2.0
-  prettier: 1.19.1
+  prettier: 2.0.4
   preval.macro: 5.0.0
   react: 16.13.1
   react-dom: 16.13.1_react@16.13.1
@@ -7362,13 +7362,13 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-1PRWKwzjaW5BrFLQ4ALlemNdxtw=
-  /prettier/1.19.1:
+  /prettier/2.0.4:
     dev: false
     engines:
-      node: '>=4'
+      node: '>=10.13.0'
     hasBin: true
     resolution:
-      integrity: sha512-s7PoyDv/II1ObgQunCbB9PdLmUcBZcnWOcxDh7O0N/UwDEsHyqkW+Qh28jW+mVuCdx7gLB0BotYI1Y6uI9iyew==
+      integrity: sha512-SVJIQ51spzFDvh4fIbCLvciiDMCrRhlN3mbZvv/+ycjvmF5E73bKdGfU8QDLNmjYJf+lsGnDBC4UUnvTe5OO0w==
   /pretty-format/25.3.0:
     dependencies:
       '@jest/types': 25.3.0
@@ -9392,7 +9392,7 @@ specifiers:
   luxon: 1.23.0
   next: 9.3.4
   nprogress: 0.2.0
-  prettier: 1.19.1
+  prettier: 2.0.4
   preval.macro: 5.0.0
   react: 16.13.1
   react-dom: 16.13.1

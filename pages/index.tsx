@@ -8,8 +8,8 @@ export default () => (
   <Layout>
     <ul>
       {posts
-        .filter(post => post.meta.published)
-        .map(post => (
+        .filter((post) => post.meta.published)
+        .map((post) => (
           <li key={post.slug}>
             <Link href={`/posts/${post.slug}`}>
               <a>{post.meta.title}</a>

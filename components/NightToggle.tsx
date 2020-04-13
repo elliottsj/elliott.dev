@@ -18,7 +18,7 @@ const Rocker = styled.label<{ size: string }>`
   changing the font-size here
   will change the size of the switch.
   */
-  font-size: ${props => props.size};
+  font-size: ${(props) => props.size};
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
@@ -65,7 +65,7 @@ const SwitchLeft = styled.span<{ checked: boolean }>`
     left: -0.425em;
   }
 
-  ${props =>
+  ${(props) =>
     props.checked &&
     css`
       background-color: #0084d0;
@@ -98,7 +98,7 @@ const SwitchRight = styled.span<{ checked: boolean }>`
     transform: skewY(65deg);
   }
 
-  ${props =>
+  ${(props) =>
     props.checked &&
     css`
       background-color: #ddd;
@@ -128,7 +128,7 @@ interface NightToggleProps {
  *
  * Inspired by https://codepen.io/marcusconnor/pen/QJNvMa
  */
-const NightToggle: React.FC<NightToggleProps> = props => {
+const NightToggle: React.FC<NightToggleProps> = (props) => {
   const { checked, disabledLabel, enabledLabel, size = '2em', onChange } = props;
   return (
     <Container>
@@ -141,7 +141,7 @@ const NightToggle: React.FC<NightToggleProps> = props => {
           `}
           type="checkbox"
           checked={checked}
-          onChange={event => {
+          onChange={(event) => {
             onChange(event.currentTarget.checked);
           }}
         />
