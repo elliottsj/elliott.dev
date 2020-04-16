@@ -15,6 +15,7 @@ dependencies:
   '@types/chroma-js': 2.0.0
   '@types/jest': 25.2.1
   '@types/luxon': 1.22.0
+  '@types/mdx-js__react': 1.5.1
   '@types/node': 13.11.1
   '@types/nprogress': 0.2.0
   '@types/react': 16.9.34
@@ -62,6 +63,10 @@ packages:
       postcss-safe-parser: 4.0.2
       terser: 4.6.8
     dev: false
+    peerDependencies:
+      jimp: '*'
+      lru-cache: '*'
+      probe-image-size: '*'
     peerDependenciesMeta:
       jimp:
         optional: true
@@ -2502,6 +2507,12 @@ packages:
     dev: false
     resolution:
       integrity: sha512-riAvdx85rU7OXCrjW3f7dIf7fuJDrxck2Dkjd0weh6ul7q+wumrwe6+/tD8v7yOKnZAuEnTFF4FU7b+5W/I3bw==
+  /@types/mdx-js__react/1.5.1:
+    dependencies:
+      '@types/react': 16.9.34
+    dev: false
+    resolution:
+      integrity: sha512-CTt1SJxp5+bh+F3FNlmh7ZQCI4TH+Y68AvknWwo0IfevtN6OT0gkQEoNz4eUZzuNG0mr+21hSvvN38VJ3+GtPw==
   /@types/minimatch/3.0.3:
     dev: false
     resolution:
@@ -9920,6 +9931,7 @@ specifiers:
   '@types/chroma-js': 2.0.0
   '@types/jest': 25.2.1
   '@types/luxon': 1.22.0
+  '@types/mdx-js__react': ^1.5.1
   '@types/node': 13.11.1
   '@types/nprogress': 0.2.0
   '@types/react': 16.9.34

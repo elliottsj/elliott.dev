@@ -11,9 +11,11 @@ import React, { useState } from 'react';
 
 import { css, Global } from '@emotion/core';
 import { config } from '@fortawesome/fontawesome-svg-core';
+import { MDXProvider } from '@mdx-js/react';
 
-import { getTheme, globalStyles as themeGlobalStyles } from '../lib/theme';
+import { Layout } from '../components';
 import { useInterval } from '../hooks/useInterval';
+import { getTheme, globalStyles as themeGlobalStyles } from '../lib/theme';
 
 // Configure font-awesome to prevent automatically inserting CSS.
 // We are importing font-awesome's CSS above.
@@ -71,7 +73,9 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
         `}
       />
       <ThemeProvider theme={theme}>
-        <Component {...pageProps} />
+        <MDXProvider components={{ wrapper: Layout }}>
+          <Component {...pageProps} />
+        </MDXProvider>
       </ThemeProvider>
     </>
   );
