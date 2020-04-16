@@ -1,10 +1,14 @@
+import { DateTime } from 'luxon';
 import Link from 'next/link';
 import React from 'react';
+
+import { css } from '@emotion/core';
 
 import { Layout } from '../components';
 
 export interface Meta {
   published: boolean;
+  publishedAt: string;
   title: string;
   summary: string;
 }
@@ -14,23 +18,41 @@ interface Post {
   slug: string;
 }
 
+const Article: React.FC<{ post: Post }> = ({ post }) => (
+  <article>
+    <header>
+      <h2
+        css={css`
+          margin-bottom: 0;
+        `}
+      >
+        <Link href={`/posts/${post.slug}`} passHref>
+          <a
+            css={css`
+              text-decoration: none;
+            `}
+          >
+            {post.meta.title}
+          </a>
+        </Link>
+      </h2>
+      <small>{DateTime.fromISO(post.meta.publishedAt).toLocaleString(DateTime.DATE_FULL)}</small>
+    </header>
+    <p>{post.meta.summary}</p>
+  </article>
+);
+
 interface IndexPageProps {
   posts: Post[];
 }
 
 const IndexPage: React.FC<IndexPageProps> = ({ posts }) => (
   <Layout>
-    <ul>
-      {posts
-        .filter((post) => post.meta.published)
-        .map((post) => (
-          <li key={post.slug}>
-            <Link href={`/posts/${post.slug}`}>
-              <a>{post.meta.title}</a>
-            </Link>
-          </li>
-        ))}
-    </ul>
+    {posts
+      .filter((post) => post.meta.published)
+      .map((post) => (
+        <Article key={post.slug} post={post} />
+      ))}
   </Layout>
 );
 
