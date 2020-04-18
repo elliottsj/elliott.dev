@@ -37,7 +37,7 @@ Router.events.on('routeChangeError', () => {
 
 const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
   // Recompute the theme every second
-  const [theme, setTheme] = useState(getTheme(DateTime.local()));
+  const [theme, setTheme] = useState(getTheme());
   useInterval(() => {
     setTheme(getTheme(DateTime.local()));
   }, 1000);

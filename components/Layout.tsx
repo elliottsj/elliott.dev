@@ -19,6 +19,7 @@ const Grid = styled.div<{}, Theme>`
     [row3-start] '. footer .' auto [row3-end]
     / 1fr minmax(auto, ${pxRem(672)}) 1fr;
   background-color: ${(props) => props.theme.colors.background};
+  transition: background-color 1s ease;
 `;
 
 const Header = styled.header`

@@ -67,7 +67,9 @@ export const getDaylightTemperature = (datetime: DateTime) => {
   return Math.max(MIN_TEMPERATURE_KELVINS, Math.min(temperature, MAX_TEMPERATURE_KELVINS));
 };
 
-export const getTheme = (datetime: DateTime): Theme => {
+const NOON_UTC = DateTime.fromISO('1970-01-01T12:00:00Z', { setZone: true });
+
+export const getTheme = (datetime: DateTime = NOON_UTC): Theme => {
   const backgroundColor = chroma.temperature(getDaylightTemperature(datetime));
   return {
     colors: {
