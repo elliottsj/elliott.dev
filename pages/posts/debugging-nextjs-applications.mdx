@@ -1,0 +1,224 @@
+export const meta = {
+  published: true,
+  publishedAt: '2020-04-20',
+  title: 'Debugging Next.js Applications',
+  summary: 'Ways to debug your Next.js app, in the browser and on the server',
+};
+
+# Debugging Next.js Applications
+
+As a React meta-framework that executes in both Node.js _and_ in the browser, [Next.js](https://nextjs.org/) is more complicated to debug than a typical browser-only React app.
+
+I'll cover some different debugging techniques, each of which can be useful in different situations.
+
+## `console.log`
+
+The classic technique that you can use to verify if and when a piece of code is executing, and log any values you're interested in.
+
+### Examples
+
+```js
+let theme = props.theme;
+
+// Basic usage
+console.log('theme', theme);
+
+// Indented JSON output with 2 spaces
+console.log('theme', JSON.stringify(theme, undefined, 2));
+
+// Human-readable output with colors
+console.log('theme', require('util').inspect(theme, { colors: true }));
+```
+
+Using [`JSON.stringify`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify) or [`require('util').inspect`](https://nodejs.org/api/util.html#util_util_inspect_object_options) can be useful to control the format of your logged values, for enhanced readability. The `'util'` lib even works in the browser, thanks to [webpack@4's built-in polyfills](https://github.com/webpack/node-libs-browser).
+
+More advanced console functions are also available, such as [`console.table`](https://nodejs.org/api/console.html#console_console_table_tabulardata_properties) for tabular output, or [`console.error`](https://nodejs.org/api/console.html#console_console_error_data_args) to output to stderr instead of stdout.
+
+Check stdout of your `next dev` process for server logs, and check your browser's JS console for client logs:
+
+![Server logs](https://dev-to-uploads.s3.amazonaws.com/i/emb34cxda9q233yms52w.png)
+
+![Browser logs](https://dev-to-uploads.s3.amazonaws.com/i/wh5s6f2e13etw04y90wh.png)
+
+## Step-through debugging
+
+It's often more effective to use a step-through debugger to pause and inspect your code as it executes. This is especially true when:
+
+- You have complex control flow and/or many variables, which makes it cumbersome to add console statements everywhere.
+- You want to know _how_ a function is being called, by looking up and down the call stack.
+- You're not sure which values or functions you want to inspect prior to starting your app.
+
+### Browser-only debugging
+
+To debug your Next.js app in the browser, simply:
+
+1. Start your app in "dev" mode, i.e. `next dev`, usually `npm run dev`.
+2. Open your app in your browser.
+3. Go to the "Sources" tab, then click on a line number to set a breakpoint:
+
+   ![Chromium DevTools sources](https://dev-to-uploads.s3.amazonaws.com/i/njbbn1ufhdzuld2kyd0i.png)
+
+From here, you can execute code in the JS console, navigate the call stack, and step through your code.
+
+#### Source maps
+
+Next.js has [source maps](https://developer.mozilla.org/en-US/docs/Tools/Debugger/How_to/Use_a_source_map) enabled by default in dev mode, so you'll see your uncompiled source code, and you can navigate to a specific source file in the sidebar, or by using the "Go to source" shortcut: Cmd+P on Chrome for macOS.
+
+But sometimes you're debugging an issue with your compiled code, and the source code doesn't give you enough information to understand what's going on. For example, you want to run `util.inspect`, but `util` is not defined as a run-time name:
+
+![Source code with error: util is not defined](https://dev-to-uploads.s3.amazonaws.com/i/2e5vsb8wp25ueo7hbcuh.png)
+
+Luckily, you can disable source maps to view the compiled code that's actually executing. In Chromium-based browsers, go to your DevTools settings and uncheck "Enable JavaScript source maps":
+
+![Unchecked "Enable JavaScript source maps"](https://dev-to-uploads.s3.amazonaws.com/i/xw4gxm9jhnuiezjlg5fv.png)
+
+Then it becomes clear that webpack renamed the module at run time:
+
+![Compiled code](https://dev-to-uploads.s3.amazonaws.com/i/vzc0js2psac55ouwxo0z.png)
+
+## Server-only debugging
+
+The browser is only half the story with Next.js apps. By default, the app is rendered on the server before being sent to the browser.
+
+Some of this code is executed _only_ on the server, so it's not possible to debug it in the browser at all, e.g. [`getServerSideProps`, `getStaticProps`, and `getStaticPaths`](https://nextjs.org/docs/basic-features/data-fetching).
+
+The Next.js server is fundamentally a Node.js process, so it can be debugged like any other Node.js process.
+
+### Node.js built-in debugger
+
+The built-in debugger is probably the easiest to launch. First add a `debugger;` statement somewhere in your code, then:
+
+```shell
+node inspect ./node_modules/next/dist/bin/next
+```
+
+![node inspect](https://dev-to-uploads.s3.amazonaws.com/i/tbqojpv24x9y4zuerpi3.png)
+
+Use commands like `cont` (shortcut `c`) to continue execution, `exec()` to evaluate an expression, or `next` (shortcut `n`) to step to the next line.
+
+[Full reference](https://nodejs.org/api/debugger.html#debugger_command_reference).
+
+In situations where you only have command line access to the app you're debugging, the built-in debugger may be your only option.
+
+### Node.js inspector
+
+`node --inspect` executes a program with a _debug server_, which listens on TCP port 9229, similar to a web server or a database server. You can connect to this server using one of several [_Inspector Clients_](https://nodejs.org/en/docs/guides/debugging-getting-started/#inspector-clients).
+
+This enables you to use a full-featured UI to debug your app, much like debugging in the browser.
+
+Usage:
+
+```shell
+node --inspect-brk ./node_modules/next/dist/bin/next
+# or
+node --inspect ./node_modules/next/dist/bin/next
+```
+
+Use `--inspect-brk` to pause your app immediately after starting, giving you the opportunity to debug code that executes at launch, and set new breakpoints before executing.
+
+Use `--inspect` to run your app immediately. Execution will only pause after an inspector client connects and a breakpoint is hit.
+
+> Why `./node_modules/next/dist/bin/next`? This is [Next.js's executable entry point](https://github.com/zeit/next.js/blob/bc845f2206a6cb5c12838f89656fd649272c92b0/packages/next/package.json#L42-L44). On macOS or Linux using [npm](https://github.com/npm/cli) or [Yarn](https://yarnpkg.com/), this is symlinked from `./node_modules/.bin/next`, so `node --inspect ./node_modules/.bin/next` also works. But on Windows or using [pnpm](https://pnpm.js.org/), `./node_modules/.bin/next` is a shell script, so it can't be executed with `node`.
+
+### Node.js inspector via Chromium DevTools
+
+Chromium-based browsers such as Chrome, Edge, and Brave come bundled with a Node.js inspector client. Go to <chrome://inspect> and you should see your app. If you don't then click "Configure..." and make sure `localhost:9229` is added as a target.
+
+![Chrome inspector device list](https://dev-to-uploads.s3.amazonaws.com/i/6s8657l3uxevc9slg1az.png)
+
+Click "inspect" and you'll see a familiar UI:
+
+![Chrome inspector](https://dev-to-uploads.s3.amazonaws.com/i/et0pka1ujhzdcdyvawg0.png)
+
+This works just like debugging your app in the browser.
+
+### Node.js inspector via VSCode
+
+[VSCode also includes an inspector client](https://code.visualstudio.com/docs/nodejs/nodejs-debugging#_remote-debugging). This is a good option if you use VSCode as your editor and you want to debug and edit in the same context.
+
+Create `.vscode/launch.json` if it does not exist, and add this config:
+
+```json
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "attach",
+      "name": "Attach to Remote",
+      "address": "localhost",
+      "port": 9229,
+      "sourceMaps": true
+    }
+  ]
+}
+```
+
+Then connect to your app by running this launch task, either from the "Run" tab (Shift+Cmd+D), or hit F5.
+
+Set `"sourceMaps": false` to disable source maps.
+
+[Full reference](https://code.visualstudio.com/docs/nodejs/nodejs-debugging).
+
+## Combined server + browser debugging via VSCode?
+
+It's also possible to debug _both_ server and client execution from a single VSCode launch command, using the [Debugger for Chrome extension](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome).
+
+#### `package.json`
+
+```json
+{
+  "scripts": {
+    "debug": "node --inspect-brk ./node_modules/next/dist/bin/next"
+  }
+}
+```
+
+#### `.vscode/launch.json`
+
+```json
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "Launch Chrome",
+      "url": "http://localhost:3000",
+      "webRoot": "${workspaceFolder}"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch Next.js",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run-script", "debug"],
+      "port": 9229
+    }
+  ],
+  "compounds": [
+    {
+      "name": "Debug Next.js + Chrome",
+      "configurations": ["Launch Next.js", "Launch Chrome"]
+    }
+  ]
+}
+```
+
+This can be convenient shortcut, but is not applicable in situations where:
+
+- You're debugging an issue in a non-Chrome browser.
+- Your server is running on another machine, or inside a Docker container.
+- You want to view network requests...
+
+## What about network/HTTP requests?
+
+Unfortunately, the [Node.js Inspector APIs do not yet support viewing network requests](https://github.com/nodejs/diagnostics/issues/75). This makes it harder to debug requests made by a Next.js server, which is a common scenario, e.g. [resolving GraphQL requests during the server render](https://www.apollographql.com/docs/react/performance/server-side-rendering/).
+
+An alternative approach is to use an HTTP debugging proxy that sits between your Next.js server and your API. I'll cover this in a future post :)
+
+## Conclusion
+
+To be effective at debugging, it's important to understand your available tools, and how to use them. As with most aspects of programming, there are multiple options available, and each option has its own benefits and drawbacks in different situations. But often it comes down to preference.
+
+In practice, I usually end up using Chromium DevTools. Given that it's the primary way I debug elements, scripts, and network requests in the browser, it's easier to become familiar with a single UI and set of keyboard shortcuts for Node.js debugging too.
