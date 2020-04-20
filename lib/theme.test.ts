@@ -31,30 +31,30 @@ describe('getDaylightTemperature', () => {
   test('evening start', () => {
     expect(
       getDaylightTemperature(DateTime.fromISO('2019-06-08T16:50:00-05:00', { setZone: true })),
-    ).toMatchInlineSnapshot(`5631.430249236464`);
+    ).toMatchInlineSnapshot(`6355.238374872744`);
   });
 
   test('evening end', () => {
     expect(
       getDaylightTemperature(DateTime.fromISO('2019-06-08T17:50:00-05:00', { setZone: true })),
-    ).toMatchInlineSnapshot(`3793.727298174929`);
+    ).toMatchInlineSnapshot(`6048.954549695822`);
   });
 
   test('night', () => {
     expect(
       getDaylightTemperature(DateTime.fromISO('2019-06-08T04:20:00-05:00', { setZone: true })),
-    ).toMatchInlineSnapshot(`3500`);
+    ).toMatchInlineSnapshot(`6000`);
   });
 
   test('morning start', () => {
     expect(
       getDaylightTemperature(DateTime.fromISO('2019-06-08T06:20:00-05:00', { setZone: true })),
-    ).toMatchInlineSnapshot(`4130.623069876323`);
+    ).toMatchInlineSnapshot(`6105.103844979387`);
   });
 
   test('morning end', () => {
     expect(
       getDaylightTemperature(DateTime.fromISO('2019-06-08T07:20:00-05:00', { setZone: true })),
-    ).toMatchInlineSnapshot(`5966.026008208231`);
+    ).toMatchInlineSnapshot(`6411.004334701372`);
   });
 });

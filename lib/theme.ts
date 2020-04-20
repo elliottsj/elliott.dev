@@ -47,7 +47,7 @@ export const approximateLongitudeFromTimezone = (datetime: DateTime) =>
  *  - https://github.com/mourner/suncalc
  */
 export const getDaylightTemperature = (datetime: DateTime) => {
-  const MIN_TEMPERATURE_KELVINS = 3500;
+  const MIN_TEMPERATURE_KELVINS = 6000;
   const MAX_TEMPERATURE_KELVINS = 6500;
   const TEMPERATURE_RANGE = MAX_TEMPERATURE_KELVINS - MIN_TEMPERATURE_KELVINS;
 
