@@ -20,6 +20,7 @@ const Grid = styled.div<{}, Theme>`
     / 1fr minmax(auto, ${pxRem(672)}) 1fr;
   background-color: ${(props) => props.theme.colors.background};
   transition: background-color 1s ease;
+  overflow: auto;
 `;
 
 const Header = styled.header`
@@ -33,6 +34,10 @@ const Header = styled.header`
 const Main = styled.main`
   grid-area: main;
   padding: 0 ${pxRem(21)};
+
+  img {
+    max-width: 100%;
+  }
 `;
 
 const Footer = styled.footer`
