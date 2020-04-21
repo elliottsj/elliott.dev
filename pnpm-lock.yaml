@@ -39,7 +39,7 @@ dependencies:
   next: 9.3.5_react-dom@16.13.1+react@16.13.1
   npm-run-all: 4.1.5
   nprogress: 0.2.0
-  prettier: 2.0.4
+  prettier: 2.0.5
   react: 16.13.1
   react-dom: 16.13.1_react@16.13.1
   simple-icons: 2.9.0
@@ -8319,13 +8319,13 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-1PRWKwzjaW5BrFLQ4ALlemNdxtw=
-  /prettier/2.0.4:
+  /prettier/2.0.5:
     dev: false
     engines:
       node: '>=10.13.0'
     hasBin: true
     resolution:
-      integrity: sha512-SVJIQ51spzFDvh4fIbCLvciiDMCrRhlN3mbZvv/+ycjvmF5E73bKdGfU8QDLNmjYJf+lsGnDBC4UUnvTe5OO0w==
+      integrity: sha512-7PtVymN48hGcO4fGjybyBSIWDsLU4H4XlvOHfq91pz9kkGlonzwTfYkaIEwiRg/dAJF9YlbsduBAgtYLi+8cFg==
   /pretty-format/25.3.0:
     dependencies:
       '@jest/types': 25.3.0
@@ -10647,7 +10647,7 @@ specifiers:
   next: 9.3.5
   npm-run-all: 4.1.5
   nprogress: 0.2.0
-  prettier: 2.0.4
+  prettier: 2.0.5
   react: 16.13.1
   react-dom: 16.13.1
   simple-icons: 2.9.0
