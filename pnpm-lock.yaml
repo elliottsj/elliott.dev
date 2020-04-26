@@ -16,7 +16,7 @@ dependencies:
   '@types/jest': 25.2.1
   '@types/luxon': 1.22.0
   '@types/mdx-js__react': 1.5.1
-  '@types/node': 13.13.2
+  '@types/node': 13.13.3
   '@types/nprogress': 0.2.0
   '@types/react': 16.9.34
   '@types/react-dom': 16.9.6
@@ -36,7 +36,7 @@ dependencies:
   jest: 25.4.0
   jest-emotion: 10.0.32
   luxon: 1.23.0
-  next: 9.3.5_2835b61db5436cc1b0e8bedc12a528e2
+  next: 9.3.5_react-dom@16.13.1+react@16.13.1
   npm-run-all: 4.1.5
   nprogress: 0.2.0
   prettier: 2.0.5
@@ -67,10 +67,6 @@ packages:
       postcss-safe-parser: 4.0.2
       terser: 4.6.8
     dev: false
-    peerDependencies:
-      jimp: '*'
-      lru-cache: '*'
-      probe-image-size: '*'
     peerDependenciesMeta:
       jimp:
         optional: true
@@ -2469,6 +2465,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-LB2R1Oyhpg8gu4SON/mfforE525+Hi/M1ineICEDftqNVTyFg1aRIeGuTvXAoWHc4nbrFncWtJgMmoyRvuGh7A==
+  /@types/node/13.13.3:
+    dev: false
+    resolution:
+      integrity: sha512-FiVARmwSn2s0nXKJM9V7jWtGiSeUc58dxIRIhLPrPZTPRUEoHMK7BDEo0XWxQ9vNflxoUQlGDBn9/gLxORzLKQ==
   /@types/normalize-package-data/2.4.0:
     dev: false
     resolution:
@@ -2540,7 +2540,6 @@ packages:
       functional-red-black-tree: 1.0.1
       regexpp: 3.1.0
       tsutils: 3.17.1_typescript@3.8.3
-      typescript: 3.8.3
     dev: false
     engines:
       node: ^8.10.0 || ^10.13.0 || >=11.10.1
@@ -2575,7 +2574,6 @@ packages:
       '@typescript-eslint/typescript-estree': 2.29.0_typescript@3.8.3
       eslint: 6.8.0
       eslint-visitor-keys: 1.1.0
-      typescript: 3.8.3
     dev: false
     engines:
       node: ^8.10.0 || ^10.13.0 || >=11.10.1
@@ -2596,7 +2594,6 @@ packages:
       lodash: 4.17.15
       semver: 6.3.0
       tsutils: 3.17.1_typescript@3.8.3
-      typescript: 3.8.3
     dev: false
     engines:
       node: ^8.10.0 || ^10.13.0 || >=11.10.1
@@ -7181,7 +7178,7 @@ packages:
     dev: false
     resolution:
       integrity: sha1-yobR/ogoFpsBICCOPchCS524NCw=
-  /next/9.3.5_2835b61db5436cc1b0e8bedc12a528e2:
+  /next/9.3.5_react-dom@16.13.1+react@16.13.1:
     dependencies:
       '@ampproject/toolbox-optimizer': 2.2.0
       '@babel/core': 7.7.2
@@ -7212,7 +7209,7 @@ packages:
       mini-css-extract-plugin: 0.8.0_webpack@4.42.1
       mkdirp: 0.5.3
       native-url: 0.3.1
-      pnp-webpack-plugin: 1.5.0_typescript@3.8.3
+      pnp-webpack-plugin: 1.5.0
       postcss: 7.0.27
       prop-types: 15.7.2
       prop-types-exact: 1.2.0
@@ -7234,7 +7231,6 @@ packages:
     peerDependencies:
       react: ^16.6.0
       react-dom: ^16.6.0
-      typescript: '*'
     resolution:
       integrity: sha512-vJKGUK2nMsveYZTZH5Oz9L+cDYcCsuWLUXfWJejvhdQ3jLgVhZVa+7TQ45Kt0PA1ea7jqlDUN22DtzmPFi981w==
   /nice-try/1.0.5:
@@ -7822,14 +7818,12 @@ packages:
     dev: false
     resolution:
       integrity: sha512-2qHaIQr2VLRFoxe2nASzsV6ef4yOOH+Fi9FBOVH6cqeSgUnoyySPZkxzLuzd+RYOQTRpROA0ztTMqxROKSb/nA==
-  /pnp-webpack-plugin/1.5.0_typescript@3.8.3:
+  /pnp-webpack-plugin/1.5.0:
     dependencies:
-      ts-pnp: 1.2.0_typescript@3.8.3
+      ts-pnp: 1.2.0
     dev: false
     engines:
       node: '>=6'
-    peerDependencies:
-      typescript: '*'
     resolution:
       integrity: sha512-jd9olUr9D7do+RN8Wspzhpxhgp1n6Vd0NtQ4SFkmIACZoEL1nkyAdW9Ygrinjec0vgDcWjscFQQ1gDW8rsfKTg==
   /posix-character-classes/0.1.1:
@@ -9842,14 +9836,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-rvuRbTarPXmMb79SmzEp8aqXNKcK+y0XaB298IXueQ8I2PsrATcPBCSPyK/dDNa2iWOhKlfNnOjdAOTBU/nkFA==
-  /ts-pnp/1.2.0_typescript@3.8.3:
-    dependencies:
-      typescript: 3.8.3
+  /ts-pnp/1.2.0:
     dev: false
     engines:
       node: '>=6'
-    peerDependencies:
-      typescript: '*'
     peerDependenciesMeta:
       typescript:
         optional: true
@@ -10492,7 +10482,7 @@ specifiers:
   '@types/jest': 25.2.1
   '@types/luxon': 1.22.0
   '@types/mdx-js__react': 1.5.1
-  '@types/node': 13.13.2
+  '@types/node': 13.13.3
   '@types/nprogress': 0.2.0
   '@types/react': 16.9.34
   '@types/react-dom': 16.9.6
