@@ -16,7 +16,7 @@ dependencies:
   '@types/jest': 25.2.1
   '@types/luxon': 1.22.0
   '@types/mdx-js__react': 1.5.1
-  '@types/node': 13.13.3
+  '@types/node': 13.13.4
   '@types/nprogress': 0.2.0
   '@types/react': 16.9.34
   '@types/react-dom': 16.9.6
@@ -2465,10 +2465,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-LB2R1Oyhpg8gu4SON/mfforE525+Hi/M1ineICEDftqNVTyFg1aRIeGuTvXAoWHc4nbrFncWtJgMmoyRvuGh7A==
-  /@types/node/13.13.3:
+  /@types/node/13.13.4:
     dev: false
     resolution:
-      integrity: sha512-FiVARmwSn2s0nXKJM9V7jWtGiSeUc58dxIRIhLPrPZTPRUEoHMK7BDEo0XWxQ9vNflxoUQlGDBn9/gLxORzLKQ==
+      integrity: sha512-x26ur3dSXgv5AwKS0lNfbjpCakGIduWU1DU91Zz58ONRWrIKGunmZBNv4P7N+e27sJkiGDsw/3fT4AtsqQBrBA==
   /@types/normalize-package-data/2.4.0:
     dev: false
     resolution:
@@ -10482,7 +10482,7 @@ specifiers:
   '@types/jest': 25.2.1
   '@types/luxon': 1.22.0
   '@types/mdx-js__react': 1.5.1
-  '@types/node': 13.13.3
+  '@types/node': 13.13.4
   '@types/nprogress': 0.2.0
   '@types/react': 16.9.34
   '@types/react-dom': 16.9.6
