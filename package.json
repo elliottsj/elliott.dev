@@ -79,7 +79,7 @@
     "eslint": "6.8.0",
     "eslint-plugin-react": "7.19.0",
     "eslint-plugin-react-hooks": "3.0.0",
-    "jest": "25.5.1",
+    "jest": "25.5.2",
     "jest-emotion": "10.0.32",
     "luxon": "1.23.0",
     "next": "9.3.6",
