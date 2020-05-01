@@ -8,10 +8,10 @@ dependencies:
   '@fortawesome/fontawesome-svg-core': 1.2.28
   '@fortawesome/free-solid-svg-icons': 5.13.0
   '@fortawesome/react-fontawesome': 0.1.9_5fb3140108e238adedb9f9eac67c3a9d
-  '@mdx-js/loader': 1.6.0_react@16.13.1
-  '@mdx-js/mdx': 1.6.0
-  '@mdx-js/react': 1.6.0_react@16.13.1
-  '@next/mdx': 9.3.6_@mdx-js+loader@1.6.0
+  '@mdx-js/loader': 1.6.1_react@16.13.1
+  '@mdx-js/mdx': 1.6.1
+  '@mdx-js/react': 1.6.1_react@16.13.1
+  '@next/mdx': 9.3.6_@mdx-js+loader@1.6.1
   '@types/chroma-js': 2.0.0
   '@types/jest': 25.2.1
   '@types/luxon': 1.22.0
@@ -2352,32 +2352,32 @@ packages:
       node: '>= 8.3'
     resolution:
       integrity: sha512-OXD0RgQ86Tu3MazKo8bnrkDRaDXXMGUqd+kTtLtK1Zb7CRzQcaSRPPPV37SvYTdevXEBVxe0HXylEjs8ibkmCw==
-  /@mdx-js/loader/1.6.0_react@16.13.1:
+  /@mdx-js/loader/1.6.1_react@16.13.1:
     dependencies:
-      '@mdx-js/mdx': 1.6.0
-      '@mdx-js/react': 1.6.0_react@16.13.1
+      '@mdx-js/mdx': 1.6.1
+      '@mdx-js/react': 1.6.1_react@16.13.1
       loader-utils: 2.0.0
     dev: false
     peerDependencies:
       react: '*'
     resolution:
-      integrity: sha512-rgXFDZ8B6f+MuMlJMOGAknv0OzK52AB8WKRz98N+pQnQntRCbosjOsUTwXftfvir2xQSigXybWHe6axsXplVHg==
-  /@mdx-js/mdx/1.6.0:
+      integrity: sha512-v1+q2NEjHQYiMAQVdCw9TA41I9XRJkJYAm8vPKyDIqAqqlq3QAvsAHyHKMpjXldzREfAMW1yckFqIl2ym10AEw==
+  /@mdx-js/mdx/1.6.1:
     dependencies:
       '@babel/core': 7.9.0
       '@babel/plugin-syntax-jsx': 7.8.3_@babel+core@7.9.0
       '@babel/plugin-syntax-object-rest-spread': 7.8.3_@babel+core@7.9.0
-      '@mdx-js/util': 1.6.0
-      babel-plugin-apply-mdx-type-prop: 1.6.0_@babel+core@7.9.0
-      babel-plugin-extract-import-names: 1.6.0
+      '@mdx-js/util': 1.6.1
+      babel-plugin-apply-mdx-type-prop: 1.6.1_@babel+core@7.9.0
+      babel-plugin-extract-import-names: 1.6.1
       camelcase-css: 2.0.1
       detab: 2.0.3
       hast-util-raw: 5.0.2
       lodash.uniq: 4.5.0
       mdast-util-to-hast: 8.2.0
       remark-footnotes: 1.0.0
-      remark-mdx: 1.6.0
-      remark-parse: 8.0.1
+      remark-mdx: 1.6.1
+      remark-parse: 8.0.2
       remark-squeeze-paragraphs: 4.0.0
       style-to-object: 0.3.0
       unified: 9.0.0
@@ -2385,22 +2385,22 @@ packages:
       unist-util-visit: 2.0.2
     dev: false
     resolution:
-      integrity: sha512-e4RZtMWU3jM0mA02fL0fvAOcxzGMTL8awDUHv/7bbU7z5JnfMAX4wSvR3Mp2y0J+hNjQ723696CP5zL92xVjyw==
-  /@mdx-js/react/1.6.0_react@16.13.1:
+      integrity: sha512-DLnHbYZGoXSzfIHKgEtsO4qP8029YbdyJvC746PwfPNrRyGciPsqgWmfz/nEXt/fg+UMBG/6/cZaZx/hvyxnyg==
+  /@mdx-js/react/1.6.1_react@16.13.1:
     dependencies:
       react: 16.13.1
     dev: false
     peerDependencies:
       react: ^16.9.0
     resolution:
-      integrity: sha512-Sn9Rm7/C02PzrpzusM12etSMdZHFUNJGgY1t7nR8Ds10S9hnFKWxnQ1J2b4YrQfzRKn1fOm4wv/KAEUy3oubPA==
-  /@mdx-js/util/1.6.0:
+      integrity: sha512-jXBSWdWFPK2fs3johKb0hQFsf/x/C24XQYQwMhj8FxwlBgf7+NGATwXFs6pGkKd5/JfK9HXmbOcQ78MYoIZyxA==
+  /@mdx-js/util/1.6.1:
     dev: false
     resolution:
-      integrity: sha512-zzGMtKnc28voDQ4LZFczZzwkm5VwwF7ZbC5iePaWFaF+kD+ekPVdronJEOMFK9SUEKUbmc31Bz81rtS6264z4w==
-  /@next/mdx/9.3.6_@mdx-js+loader@1.6.0:
+      integrity: sha512-A3TBBjg5iVo8S4TTG0VrW8G9YNLob4+M6rALKjY8Sxr9zPExWQ7iTPUSvJVE7YhF9E08EQMubx1vRal3jtpJ9Q==
+  /@next/mdx/9.3.6_@mdx-js+loader@1.6.1:
     dependencies:
-      '@mdx-js/loader': 1.6.0_react@16.13.1
+      '@mdx-js/loader': 1.6.1_react@16.13.1
     dev: false
     peerDependencies:
       '@mdx-js/loader': '>=0.15.0'
@@ -3262,16 +3262,16 @@ packages:
       '@babel/core': ^7.0.0
     resolution:
       integrity: sha512-9dA9+GmMjIzgPnYtkhBg73gOo/RHqPmLruP3BaGL4KEX3Dwz6pI8auSN8G8+iuEG90+GSswyKvslN+JYSaacaQ==
-  /babel-plugin-apply-mdx-type-prop/1.6.0_@babel+core@7.9.0:
+  /babel-plugin-apply-mdx-type-prop/1.6.1_@babel+core@7.9.0:
     dependencies:
       '@babel/core': 7.9.0
       '@babel/helper-plugin-utils': 7.8.3
-      '@mdx-js/util': 1.6.0
+      '@mdx-js/util': 1.6.1
     dev: false
     peerDependencies:
       '@babel/core': ^7.0.0
     resolution:
-      integrity: sha512-wtYaotCmckVs9yiVnubiwE5XjmKOd/cFXLpQJoPzE768HPyrv9FVCauSidjxbrJvZv6wLS+yrfOpZdzGAeI8XA==
+      integrity: sha512-chjmLo1x7fCpDRICGUlbkwf2E6sMVG9jjG6PtPBWnQfMEjgV03Gh0jSVGbZJsEUxcMqOpHSsIXvPz1sYip6X3g==
   /babel-plugin-dynamic-import-node/2.3.3:
     dependencies:
       object.assign: 4.1.0
@@ -3293,12 +3293,12 @@ packages:
     dev: false
     resolution:
       integrity: sha512-bxZbTTGz0AJQDHm8k6Rf3RQJ8tX2scsfsRyKVgAbiUPUNIRtlK+7JxP+TAd1kRLABFxe0CFm2VdK4ePkoA9FxQ==
-  /babel-plugin-extract-import-names/1.6.0:
+  /babel-plugin-extract-import-names/1.6.1:
     dependencies:
       '@babel/helper-plugin-utils': 7.8.3
     dev: false
     resolution:
-      integrity: sha512-Uo+g6ykLCYK0I8jxMH3kovHphyHFp4niMmz1+dGCkYblLe3lpYnPDP39JPAh3lbm/c2bLyRcDQHRBgmoUO6fhQ==
+      integrity: sha512-u0uRrPyygx4RlNva1aqz7DM9UBpsQJQZ4NyakHVJF18s73H/iiyXuc+X7k+9tHeN0WKLsohQUGzGLli6z5a0Zw==
   /babel-plugin-istanbul/6.0.0:
     dependencies:
       '@babel/helper-plugin-utils': 7.8.3
@@ -5592,7 +5592,7 @@ packages:
   /hast-to-hyperscript/7.0.4:
     dependencies:
       comma-separated-tokens: 1.0.8
-      property-information: 5.4.0
+      property-information: 5.5.0
       space-separated-tokens: 1.1.5
       style-to-object: 0.2.3
       unist-util-is: 3.0.0
@@ -5604,7 +5604,7 @@ packages:
     dependencies:
       ccount: 1.0.5
       hastscript: 5.1.2
-      property-information: 5.4.0
+      property-information: 5.5.0
       web-namespaces: 1.1.4
       xtend: 4.0.2
     dev: false
@@ -5630,7 +5630,7 @@ packages:
   /hast-util-to-parse5/5.1.2:
     dependencies:
       hast-to-hyperscript: 7.0.4
-      property-information: 5.4.0
+      property-information: 5.5.0
       web-namespaces: 1.1.4
       xtend: 4.0.2
       zwitch: 1.0.5
@@ -5641,7 +5641,7 @@ packages:
     dependencies:
       comma-separated-tokens: 1.0.8
       hast-util-parse-selector: 2.2.4
-      property-information: 5.4.0
+      property-information: 5.5.0
       space-separated-tokens: 1.1.5
     dev: false
     resolution:
@@ -8538,12 +8538,12 @@ packages:
     dev: false
     resolution:
       integrity: sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
-  /property-information/5.4.0:
+  /property-information/5.5.0:
     dependencies:
       xtend: 4.0.2
     dev: false
     resolution:
-      integrity: sha512-nmMWAm/3vKFGmmOWOcdLjgq/Hlxa+hsuR/px1Lp/UGEyc5A22A6l78Shc2C0E71sPmAqglni+HrS7L7VJ7AUCA==
+      integrity: sha512-RgEbCx2HLa1chNgvChcx+rrCWD0ctBmGSE0M7lVm1yyv4UbvbrWoXp/BkVLZefzjrRBGW8/Js6uh/BnlHXFyjA==
   /prr/1.0.1:
     dev: false
     resolution:
@@ -8862,20 +8862,20 @@ packages:
     dev: false
     resolution:
       integrity: sha512-X9Ncj4cj3/CIvLI2Z9IobHtVi8FVdUrdJkCNaL9kdX8ohfsi18DXHsCVd/A7ssARBdccdDb5ODnt62WuEWaM/g==
-  /remark-mdx/1.6.0:
+  /remark-mdx/1.6.1:
     dependencies:
       '@babel/core': 7.9.0
       '@babel/helper-plugin-utils': 7.8.3
       '@babel/plugin-proposal-object-rest-spread': 7.9.5_@babel+core@7.9.0
       '@babel/plugin-syntax-jsx': 7.8.3_@babel+core@7.9.0
-      '@mdx-js/util': 1.6.0
+      '@mdx-js/util': 1.6.1
       is-alphabetical: 1.0.4
-      remark-parse: 8.0.1
+      remark-parse: 8.0.2
       unified: 9.0.0
     dev: false
     resolution:
-      integrity: sha512-L8cHfD44yM07iPTZzLSY9q2MYdOnVdiR+Q41ntPq+CMvWjPoTqDqSAJjYrt+q9GrV+sn6HYXCgShnUxlAOV//A==
-  /remark-parse/8.0.1:
+      integrity: sha512-UyCqqYFv9l5dstX29QpdqMprBHyUYUEQHOUe0MdFUIm1XATxfVGHbRPtVBFz4ccd5NV1UL/rmsruo9WOswwmpQ==
+  /remark-parse/8.0.2:
     dependencies:
       ccount: 1.0.5
       collapse-white-space: 1.0.6
@@ -8895,7 +8895,7 @@ packages:
       xtend: 4.0.2
     dev: false
     resolution:
-      integrity: sha512-Ye/5W57tdQZWsfkuVyRq9SUWRgECHnDsMuyUMzdSKpTbNPkZeGtoYfsrkeSi4+Xyl0mhcPPddHITXPcCPHrl3w==
+      integrity: sha512-eMI6kMRjsAGpMXXBAywJwiwAse+KNpmt+BK55Oofy4KvBZEqUDj6mWbGLJZrujoPIPPxDXzn3T9baRlpsm2jnQ==
   /remark-squeeze-paragraphs/4.0.0:
     dependencies:
       mdast-squeeze-paragraphs: 4.0.0
@@ -10742,9 +10742,9 @@ specifiers:
   '@fortawesome/fontawesome-svg-core': 1.2.28
   '@fortawesome/free-solid-svg-icons': 5.13.0
   '@fortawesome/react-fontawesome': 0.1.9
-  '@mdx-js/loader': 1.6.0
-  '@mdx-js/mdx': 1.6.0
-  '@mdx-js/react': 1.6.0
+  '@mdx-js/loader': 1.6.1
+  '@mdx-js/mdx': 1.6.1
+  '@mdx-js/react': 1.6.1
   '@next/mdx': 9.3.6
   '@types/chroma-js': 2.0.0
   '@types/jest': 25.2.1
