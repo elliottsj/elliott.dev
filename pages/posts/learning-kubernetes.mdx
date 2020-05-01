@@ -1,0 +1,87 @@
+export const meta = {
+  published: false,
+  publishedAt: '2020-05-20',
+  title: 'Learning Kubernetes',
+  summary: 'My journey learning Kubernetes, starting off with Docker + Docker Compose experience.',
+};
+
+# Learning Kubernetes
+
+I want to start [learning in public](https://www.swyx.io/writing/learn-in-public/) more, so here is my journey learning Kubernetes.
+
+> ## The Goal
+>
+> I typically find it easier to learn something new with a goal in mind, so my ultimate objective is to deploy a [Minecraft Bedrock server](https://www.minecraft.net/en-us/download/server/bedrock/) to [Microsoft Azure](https://azure.microsoft.com/en-ca/). More on this later...
+
+## What the heck is Kubernetes?
+
+I've been using [Docker](https://www.docker.com/) and [Docker Compose](https://docs.docker.com/compose/) off and on since 2014, so I'm pretty familiar with them. But my experience with Docker has been limited to:
+
+- Running commands / open-source programs via Docker, so I don't have to install them locally.
+- Building Node.js/Python applications from source, so they can be deployed elsewhere.
+- Building and running containers in continuous integration environments, for testing purposes.
+- Configuring & running multiple containers at the same time, as a development environment.
+
+...so I've never had the need to learn how to deploy a proper production environment for Docker containers, dealing with functionality like load balancing, service discovery, config management, etc.
+
+My current intuition is that _Kubernetes is like Docker Compose, but with 10x more functionality, and 10x more levels of abstraction._
+
+After a quick read through the official ["What is Kubernetes?" page](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/), here's my feature comparison:
+
+|     | Docker Compose | Kubernetes |
+| --- | -------------- | ---------- |
+|     |                |            |
+|     |                |            |
+|     |                |            |
+
+## Terminology
+
+### Cluster
+
+The entire Kubernetes deployment.
+
+### Control Plane
+
+The orchestration layer which exposes APIs to define, deploy, and manage the lifecycle of containers. Essentially equivalent to [Docker Engine](https://docs.docker.com/get-started/overview/#docker-engine)'s `dockerd` daemon and REST API.
+
+It's composed of several components:
+
+- [kube-apiserver](https://kubernetes.io/docs/reference/command-line-tools-reference/kube-apiserver/): the front end server which exposes the Kubernetes API.
+- [etcd](https://etcd.io/): the key-value store for all cluster data. i.e. the database where control plane data is stored.
+- [kube-scheduler](https://kubernetes.io/docs/reference/command-line-tools-reference/kube-scheduler/): watches for updated Pods and selects Node(s) for them to run on.
+- [kube-controller-manager](https://kubernetes.io/docs/reference/command-line-tools-reference/kube-controller-manager/): runs controller processes which observe the cluster state via kube-apiserver, and make changes to reach the desired state.
+- [cloud-controller-manager](https://kubernetes.io/docs/reference/command-line-tools-reference/cloud-controller-manager/): runs controller processes like kube-controller-manager, but for functionality which is tied to a specific cloud provider. For example, observing when Nodes (VMs) are created or deleted. Does not exist on on-premise clusters or learning environments.
+
+### Node
+
+A worker machine which runs containerized applications. i.e. a virtual or physical machine with its own network interface, CPU and memory, and OS.
+
+It's composed of several components:
+
+- [kubelet](https://kubernetes.io/docs/reference/command-line-tools-reference/kubelet/): an agent/daemon which ensures that Pod containers are running and healthy.
+- [kube-proxy](https://kubernetes.io/docs/reference/command-line-tools-reference/kube-proxy/): a rule-based network proxy which forwards TCP/UDP/SCTP traffic to containers.
+- Container runtime: the program responsible for running containers, typically Docker.
+
+### Pod
+
+A single instance of an application running on the cluster, usually a single container or a small set of tightly-coupled containers. Encapsulates an application's container(s), storage volumes, and IP address.
+
+#### Pod template
+
+The chunk of YAML configuration that specifies the container images & commands to run inside a Pod.
+
+### Workload
+
+An application running on the cluster, running as one or more Pods.
+
+#### Controllers
+
+They control workloads, determining the Nodes which Pods run on, checking Pods' health and restarting them if necessary.
+
+e.g. Deployments, Jobs, ReplicaSets, DaemonSets.
+
+##### Deployment
+
+The recommended controller for typical workloads. Defined in YAML, a Deployment specifies the desired state of a workload, such as the number of replica Pods, and the Pod template itself (the container image/command to use).
+
+### Service
