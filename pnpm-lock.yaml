@@ -32,7 +32,7 @@ dependencies:
   emotion-theming: 10.0.27_c989b1aa057905c7a8b69bf973f55a19
   eslint: 6.8.0
   eslint-plugin-react: 7.19.0_eslint@6.8.0
-  eslint-plugin-react-hooks: 3.0.0_eslint@6.8.0
+  eslint-plugin-react-hooks: 4.0.0_eslint@6.8.0
   jest: 25.5.4
   jest-emotion: 10.0.32
   luxon: 1.23.0
@@ -4802,16 +4802,16 @@ packages:
       source-map: 0.6.1
     resolution:
       integrity: sha512-Bmt7NcRySdIfNPfU2ZoXDrrXsG9ZjvDxcAlMfDUgRBjLOWTuIACXPBFJH7Z+cLb40JeQco5toikyc9t9P8E9SQ==
-  /eslint-plugin-react-hooks/3.0.0_eslint@6.8.0:
+  /eslint-plugin-react-hooks/4.0.0_eslint@6.8.0:
     dependencies:
       eslint: 6.8.0
     dev: false
     engines:
-      node: '>=7'
+      node: '>=10'
     peerDependencies:
       eslint: ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0
     resolution:
-      integrity: sha512-EjxTHxjLKIBWFgDJdhKKzLh5q+vjTFrqNZX36uIxWS4OfyXe5DawqPj3U5qeJ1ngLwatjzQnmR0Lz0J0YH3kxw==
+      integrity: sha512-YKBY+kilK5wrwIdQnCF395Ya6nDro3EAMoe+2xFkmyklyhF16fH83TrQOo9zbZIDxBsXFgBbywta/0JKRNFDkw==
   /eslint-plugin-react/7.19.0_eslint@6.8.0:
     dependencies:
       array-includes: 3.1.1
@@ -10766,7 +10766,7 @@ specifiers:
   emotion-theming: 10.0.27
   eslint: 6.8.0
   eslint-plugin-react: 7.19.0
-  eslint-plugin-react-hooks: 3.0.0
+  eslint-plugin-react-hooks: 4.0.0
   jest: 25.5.4
   jest-emotion: 10.0.32
   luxon: 1.23.0
