@@ -42,7 +42,7 @@ dependencies:
   prettier: 2.0.5
   react: 16.13.1
   react-dom: 16.13.1_react@16.13.1
-  simple-icons: 2.10.0
+  simple-icons: 2.11.0
   suncalc: 1.8.0
   typescript: 3.8.3
 lockfileVersion: 5.1
@@ -9356,10 +9356,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-VUJ49FC8U1OxwZLxIbTTrDvLnf/6TDgxZcK8wxR8zs13xpx7xbG60ndBlhNrFi2EMuFRoeDoJO7wthSLq42EjA==
-  /simple-icons/2.10.0:
+  /simple-icons/2.11.0:
     dev: false
     resolution:
-      integrity: sha512-0SlKY0zc0uBkU/qXEkCFA6ZiJew6DufJBziyKVN/FW542hovMdDIsjqU+/OWDgViT4fNshUhbPTOLOo/FhbP4Q==
+      integrity: sha512-k3+Kv0YhHCxAuoHlhOqx/CITDwV2g03cv05TldQbAzPiEBezKxyQ2MNh0TdBf0lUSXcLqvS3T1wGFKK3UWEJ0w==
   /simple-swizzle/0.2.2:
     dependencies:
       is-arrayish: 0.3.2
@@ -10776,6 +10776,6 @@ specifiers:
   prettier: 2.0.5
   react: 16.13.1
   react-dom: 16.13.1
-  simple-icons: 2.10.0
+  simple-icons: 2.11.0
   suncalc: 1.8.0
   typescript: 3.8.3
