@@ -88,7 +88,7 @@
     "prettier": "2.0.5",
     "react": "16.13.1",
     "react-dom": "16.13.1",
-    "simple-icons": "2.10.0",
+    "simple-icons": "2.11.0",
     "suncalc": "1.8.0",
     "typescript": "3.8.3"
   }
