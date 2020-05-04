@@ -35,7 +35,7 @@ dependencies:
   eslint-plugin-react-hooks: 4.0.0_eslint@6.8.0
   jest: 25.5.4
   jest-emotion: 10.0.32
-  luxon: 1.24.0
+  luxon: 1.24.1
   next: 9.3.6_react-dom@16.13.1+react@16.13.1
   npm-run-all: 4.1.5
   nprogress: 0.2.0
@@ -7051,10 +7051,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-KpNARQA3Iwv+jTA0utUVVbrh+Jlrr1Fv0e56GGzAFOXN7dk/FviaDW8LHmK52DlcH4WP2n6gI8vN1aesBFgo9w==
-  /luxon/1.24.0:
+  /luxon/1.24.1:
     dev: false
     resolution:
-      integrity: sha512-PNeB5cFbBtmuS137OuEdaJnCMTMPS2vz9hnM1Zl6tUIuYdtUgEhMqfVZ7yxX0jHEGx6rp757ECe7cdZxDgq2Tg==
+      integrity: sha512-CgnIMKAWT0ghcuWFfCWBnWGOddM0zu6c4wZAWmD0NN7MZTnro0+833DF6tJep+xlxRPg4KtsYEHYLfTMBQKwYg==
   /make-dir/2.1.0:
     dependencies:
       pify: 4.0.1
@@ -10769,7 +10769,7 @@ specifiers:
   eslint-plugin-react-hooks: 4.0.0
   jest: 25.5.4
   jest-emotion: 10.0.32
-  luxon: 1.24.0
+  luxon: 1.24.1
   next: 9.3.6
   npm-run-all: 4.1.5
   nprogress: 0.2.0
