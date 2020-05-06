@@ -14,7 +14,7 @@ dependencies:
   '@next/mdx': 9.3.6_@mdx-js+loader@1.6.1
   '@types/chroma-js': 2.0.0
   '@types/jest': 25.2.1
-  '@types/luxon': 1.22.0
+  '@types/luxon': 1.22.1
   '@types/mdx-js__react': 1.5.1
   '@types/node': 13.13.5
   '@types/nprogress': 0.2.0
@@ -2658,10 +2658,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-8+KAKzEvSUdeo+kmqnKrqgeE+LcA0tjYWFY7RPProVYwnqDjukzO+3b6dLD56rYX5TdWejnEOLJYOIeh4CXKuA==
-  /@types/luxon/1.22.0:
+  /@types/luxon/1.22.1:
     dev: false
     resolution:
-      integrity: sha512-riAvdx85rU7OXCrjW3f7dIf7fuJDrxck2Dkjd0weh6ul7q+wumrwe6+/tD8v7yOKnZAuEnTFF4FU7b+5W/I3bw==
+      integrity: sha512-HJoKzOoUBmZh/w2/465LVXbsqU0wE9l3Jd9VRH9wVNCVsFayJOVeo5qqLF6A8s6z+yklMWmUVLB/9FFfSv2Giw==
   /@types/mdx-js__react/1.5.1:
     dependencies:
       '@types/react': 16.9.34
@@ -10801,7 +10801,7 @@ specifiers:
   '@next/mdx': 9.3.6
   '@types/chroma-js': 2.0.0
   '@types/jest': 25.2.1
-  '@types/luxon': 1.22.0
+  '@types/luxon': 1.22.1
   '@types/mdx-js__react': 1.5.1
   '@types/node': 13.13.5
   '@types/nprogress': 0.2.0
