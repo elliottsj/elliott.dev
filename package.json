@@ -60,7 +60,7 @@
     "@next/mdx": "9.3.6",
     "@types/chroma-js": "2.0.0",
     "@types/jest": "25.2.1",
-    "@types/luxon": "1.22.1",
+    "@types/luxon": "1.24.0",
     "@types/mdx-js__react": "1.5.1",
     "@types/node": "13.13.5",
     "@types/nprogress": "0.2.0",
