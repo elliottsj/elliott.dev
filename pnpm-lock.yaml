@@ -18,7 +18,7 @@ dependencies:
   '@types/mdx-js__react': 1.5.1
   '@types/node': 13.13.5
   '@types/nprogress': 0.2.0
-  '@types/react': 16.9.34
+  '@types/react': 16.9.35
   '@types/react-dom': 16.9.7
   '@types/suncalc': 1.8.0
   '@types/webpack-env': 1.15.2
@@ -2721,6 +2721,13 @@ packages:
     dev: false
     resolution:
       integrity: sha512-8AJlYMOfPe1KGLKyHpflCg5z46n0b5DbRfqDksxBLBTUpB75ypDBAO9eCUcjNwE6LCUslwTz00yyG/X9gaVtow==
+  /@types/react/16.9.35:
+    dependencies:
+      '@types/prop-types': 15.7.3
+      csstype: 2.6.10
+    dev: false
+    resolution:
+      integrity: sha512-q0n0SsWcGc8nDqH2GJfWQWUOmZSJhXV64CjVN5SvcNti3TdEaA3AH0D8DwNmMdzjMAC/78tB8nAZIlV8yTz+zQ==
   /@types/stack-utils/1.0.1:
     dev: false
     resolution:
@@ -10805,7 +10812,7 @@ specifiers:
   '@types/mdx-js__react': 1.5.1
   '@types/node': 13.13.5
   '@types/nprogress': 0.2.0
-  '@types/react': 16.9.34
+  '@types/react': 16.9.35
   '@types/react-dom': 16.9.7
   '@types/suncalc': 1.8.0
   '@types/webpack-env': 1.15.2
