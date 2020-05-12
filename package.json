@@ -78,7 +78,7 @@
     "emotion-theming": "10.0.27",
     "eslint": "7.0.0",
     "eslint-plugin-react": "7.19.0",
-    "eslint-plugin-react-hooks": "4.0.0",
+    "eslint-plugin-react-hooks": "4.0.1",
     "jest": "26.0.1",
     "jest-emotion": "10.0.32",
     "luxon": "1.24.1",
