@@ -22,8 +22,8 @@ dependencies:
   '@types/react-dom': 16.9.8
   '@types/suncalc': 1.8.0
   '@types/webpack-env': 1.15.2
-  '@typescript-eslint/eslint-plugin': 2.31.0_e099344722c1a8e3a885c1e7bee66158
-  '@typescript-eslint/parser': 2.31.0_eslint@7.0.0+typescript@3.8.3
+  '@typescript-eslint/eslint-plugin': 2.32.0_8604b08f235e1c457c7c23917c71a370
+  '@typescript-eslint/parser': 2.32.0_eslint@7.0.0+typescript@3.8.3
   babel-jest: 26.0.1_@babel+core@7.9.6
   chroma-js: 2.1.0
   cross-env: 7.0.2
@@ -2754,10 +2754,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-9T1auFmbPZoxHz0enUFlUuKRy3it01R+hlggyVUMtnCTQRunsQYifnSGb8hET4Xo8yiC0o0r1paW3ud5+rbURg==
-  /@typescript-eslint/eslint-plugin/2.31.0_e099344722c1a8e3a885c1e7bee66158:
+  /@typescript-eslint/eslint-plugin/2.32.0_8604b08f235e1c457c7c23917c71a370:
     dependencies:
-      '@typescript-eslint/experimental-utils': 2.31.0_eslint@7.0.0+typescript@3.8.3
-      '@typescript-eslint/parser': 2.31.0_eslint@7.0.0+typescript@3.8.3
+      '@typescript-eslint/experimental-utils': 2.32.0_eslint@7.0.0+typescript@3.8.3
+      '@typescript-eslint/parser': 2.32.0_eslint@7.0.0+typescript@3.8.3
       eslint: 7.0.0
       functional-red-black-tree: 1.0.1
       regexpp: 3.1.0
@@ -2773,11 +2773,11 @@ packages:
       typescript:
         optional: true
     resolution:
-      integrity: sha512-iIC0Pb8qDaoit+m80Ln/aaeu9zKQdOLF4SHcGLarSeY1gurW6aU4JsOPMjKQwXlw70MvWKZQc6S2NamA8SJ/gg==
-  /@typescript-eslint/experimental-utils/2.31.0_eslint@7.0.0+typescript@3.8.3:
+      integrity: sha512-nb1kSUa8cd22hGgxpGdVT6/iyP7IKyrnyZEGYo+tN8iyDdXvXa+nfsX03tJVeFfhbkwR/0CDk910zPbqSflAsg==
+  /@typescript-eslint/experimental-utils/2.32.0_eslint@7.0.0+typescript@3.8.3:
     dependencies:
       '@types/json-schema': 7.0.4
-      '@typescript-eslint/typescript-estree': 2.31.0_typescript@3.8.3
+      '@typescript-eslint/typescript-estree': 2.32.0_typescript@3.8.3
       eslint: 7.0.0
       eslint-scope: 5.0.0
       eslint-utils: 2.0.0
@@ -2788,12 +2788,12 @@ packages:
       eslint: '*'
       typescript: '*'
     resolution:
-      integrity: sha512-MI6IWkutLYQYTQgZ48IVnRXmLR/0Q6oAyJgiOror74arUMh7EWjJkADfirZhRsUMHeLJ85U2iySDwHTSnNi9vA==
-  /@typescript-eslint/parser/2.31.0_eslint@7.0.0+typescript@3.8.3:
+      integrity: sha512-oDWuB2q5AXsQ/mLq2N4qtWiBASWXPf7KhqXgeGH4QsyVKx+km8F6Vfqd3bspJQyhyCqxcbLO/jKJuIV3DzHZ6A==
+  /@typescript-eslint/parser/2.32.0_eslint@7.0.0+typescript@3.8.3:
     dependencies:
       '@types/eslint-visitor-keys': 1.0.0
-      '@typescript-eslint/experimental-utils': 2.31.0_eslint@7.0.0+typescript@3.8.3
-      '@typescript-eslint/typescript-estree': 2.31.0_typescript@3.8.3
+      '@typescript-eslint/experimental-utils': 2.32.0_eslint@7.0.0+typescript@3.8.3
+      '@typescript-eslint/typescript-estree': 2.32.0_typescript@3.8.3
       eslint: 7.0.0
       eslint-visitor-keys: 1.1.0
     dev: false
@@ -2806,15 +2806,15 @@ packages:
       typescript:
         optional: true
     resolution:
-      integrity: sha512-uph+w6xUOlyV2DLSC6o+fBDzZ5i7+3/TxAsH4h3eC64tlga57oMb96vVlXoMwjR/nN+xyWlsnxtbDkB46M2EPQ==
-  /@typescript-eslint/typescript-estree/2.31.0_typescript@3.8.3:
+      integrity: sha512-swRtH835fUfm2khchiOVNchU3gVNaZNj2pY92QSx4kXan+RzaGNrwIRaCyX8uqzmK0xNPzseaUYHP8CsmrsjFw==
+  /@typescript-eslint/typescript-estree/2.32.0_typescript@3.8.3:
     dependencies:
       debug: 4.1.1
       eslint-visitor-keys: 1.1.0
       glob: 7.1.6
       is-glob: 4.0.1
       lodash: 4.17.15
-      semver: 6.3.0
+      semver: 7.3.2
       tsutils: 3.17.1_typescript@3.8.3
     dev: false
     engines:
@@ -2825,7 +2825,7 @@ packages:
       typescript:
         optional: true
     resolution:
-      integrity: sha512-vxW149bXFXXuBrAak0eKHOzbcu9cvi6iNcJDzEtOkRwGHxJG15chiAQAwhLOsk+86p9GTr/TziYvw+H9kMaIgA==
+      integrity: sha512-hQpbWM/Y2iq6jB9FHYJBqa3h1R9IEGodOtajhb261cVHt9cz30AKjXM6WP7LxJdEPPlyJ9rPTZVgBUgZgiyPgw==
   /@webassemblyjs/ast/1.9.0:
     dependencies:
       '@webassemblyjs/helper-module-context': 1.9.0
@@ -10174,7 +10174,7 @@ packages:
       integrity: sha512-tTSkux6IGPnUGUd1XAZHcpu85MOkIl5zX49pO+jfsie3eP0B6pyhOlLXm3cAC6T7s+euSDDUUV+Acop5WmtkVg==
   /tsutils/3.17.1_typescript@3.8.3:
     dependencies:
-      tslib: 1.11.1
+      tslib: 1.11.2
       typescript: 3.8.3
     dev: false
     engines:
@@ -10835,8 +10835,8 @@ specifiers:
   '@types/react-dom': 16.9.8
   '@types/suncalc': 1.8.0
   '@types/webpack-env': 1.15.2
-  '@typescript-eslint/eslint-plugin': 2.31.0
-  '@typescript-eslint/parser': 2.31.0
+  '@typescript-eslint/eslint-plugin': 2.32.0
+  '@typescript-eslint/parser': 2.32.0
   babel-jest: 26.0.1
   chroma-js: 2.1.0
   cross-env: 7.0.2
