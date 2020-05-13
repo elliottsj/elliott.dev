@@ -31,7 +31,7 @@ dependencies:
   emotion-normalize: 10.1.0_c989b1aa057905c7a8b69bf973f55a19
   emotion-theming: 10.0.27_c989b1aa057905c7a8b69bf973f55a19
   eslint: 7.0.0
-  eslint-plugin-react: 7.19.0_eslint@7.0.0
+  eslint-plugin-react: 7.20.0_eslint@7.0.0
   eslint-plugin-react-hooks: 4.0.2_eslint@7.0.0
   jest: 26.0.1
   jest-emotion: 10.0.32
@@ -1891,13 +1891,13 @@ packages:
       '@babel/core': ^7.0.0-0
     resolution:
       integrity: sha512-1B4HthAelaLGfNRyrWqJtBEjXX1ulThCrLQ5B2VOtEAznWFIFXFJahgXImqppy66lx/Oh+cOSCQdJzZqh2Jh5g==
-  /@babel/runtime-corejs3/7.9.2:
+  /@babel/runtime-corejs3/7.9.6:
     dependencies:
       core-js-pure: 3.6.5
       regenerator-runtime: 0.13.5
     dev: false
     resolution:
-      integrity: sha512-HHxmgxbIzOfFlZ+tdeRKtaxWOMUoCG5Mu3wKeUmOxjYrwb3AAHgnmtCUbPPK11/raIWLIBK250t8E2BPO0p7jA==
+      integrity: sha512-6toWAfaALQjt3KMZQc6fABqZwUDDuWzz+cAfPhqyEnzxvdWOAkjwPNxgF8xlmo7OWLsSjaKjsskpKHRLaMArOA==
   /@babel/runtime/7.7.2:
     dependencies:
       regenerator-runtime: 0.13.5
@@ -4858,7 +4858,7 @@ packages:
       eslint: ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0
     resolution:
       integrity: sha512-kAMRjNztrLW1rK+81X1NwMB2LqG+nc7Q8AibnG8/VyWhQK8SP6JotCFG+HL4u1EjziplxVz4jARdR8gGk8pLDA==
-  /eslint-plugin-react/7.19.0_eslint@7.0.0:
+  /eslint-plugin-react/7.20.0_eslint@7.0.0:
     dependencies:
       array-includes: 3.1.1
       doctrine: 2.1.0
@@ -4870,16 +4870,15 @@ packages:
       object.values: 1.1.1
       prop-types: 15.7.2
       resolve: 1.17.0
-      semver: 6.3.0
       string.prototype.matchall: 4.0.2
       xregexp: 4.3.0
     dev: false
     engines:
       node: '>=4'
     peerDependencies:
-      eslint: ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0
+      eslint: ^3 || ^4 || ^5 || ^6 || ^7
     resolution:
-      integrity: sha512-SPT8j72CGuAP+JFbT0sJHOB80TX/pu44gQ4vXH/cq+hQTiY2PuZ6IHkqXJV6x1b28GDdo1lbInjKUrrdUf0LOQ==
+      integrity: sha512-rqe1abd0vxMjmbPngo4NaYxTcR3Y4Hrmc/jg4T+sYz63yqlmJRknpEQfmWY+eDWPuMmix6iUIK+mv0zExjeLgA==
   /eslint-scope/4.0.3:
     dependencies:
       esrecurse: 4.2.1
@@ -10752,7 +10751,7 @@ packages:
       integrity: sha512-JZnDKK8B0RCDw84FNdDAIpZK+JuJw+s7Lz8nksI7SIuU3UXJJslUthsi+uWBUYOwPFwW7W7PRLRfUKpxjtjFCw==
   /xregexp/4.3.0:
     dependencies:
-      '@babel/runtime-corejs3': 7.9.2
+      '@babel/runtime-corejs3': 7.9.6
     dev: false
     resolution:
       integrity: sha512-7jXDIFXh5yJ/orPn4SXjuVrWWoi4Cr8jfV1eHv9CixKSbU+jY4mxfrBwAuDvupPNKpMUY+FeIqsVw/JLT9+B8g==
@@ -10848,7 +10847,7 @@ specifiers:
   emotion-normalize: 10.1.0
   emotion-theming: 10.0.27
   eslint: 7.0.0
-  eslint-plugin-react: 7.19.0
+  eslint-plugin-react: 7.20.0
   eslint-plugin-react-hooks: 4.0.2
   jest: 26.0.1
   jest-emotion: 10.0.32
