@@ -13,7 +13,7 @@ dependencies:
   '@mdx-js/react': 1.6.1_react@16.13.1
   '@next/mdx': 9.3.6_@mdx-js+loader@1.6.1
   '@types/chroma-js': 2.0.0
-  '@types/jest': 25.2.1
+  '@types/jest': 25.2.2
   '@types/luxon': 1.24.0
   '@types/mdx-js__react': 1.5.1
   '@types/node': 13.13.6
@@ -2328,7 +2328,7 @@ packages:
       node: '>= 10.14.2'
     resolution:
       integrity: sha512-pPRkVkAQ91drKGbzCfDOoHN838+FSbYaEAvBXvKuWeeRRUD8FjwXkqfUNUZL6Ke48aA/1cqq/Ni7kVMCoqagWA==
-  /@jest/types/25.4.0:
+  /@jest/types/25.5.0:
     dependencies:
       '@types/istanbul-lib-coverage': 2.0.1
       '@types/istanbul-reports': 1.1.1
@@ -2338,7 +2338,7 @@ packages:
     engines:
       node: '>= 8.3'
     resolution:
-      integrity: sha512-XBeaWNzw2PPnGW5aXvZt3+VO60M+34RY3XDsCK5tW7kyj3RK0XClRutCfjqcBuaR2aBQTbluEDME9b5MB9UAPw==
+      integrity: sha512-OXD0RgQ86Tu3MazKo8bnrkDRaDXXMGUqd+kTtLtK1Zb7CRzQcaSRPPPV37SvYTdevXEBVxe0HXylEjs8ibkmCw==
   /@jest/types/26.0.1:
     dependencies:
       '@types/istanbul-lib-coverage': 2.0.1
@@ -2647,13 +2647,13 @@ packages:
     dev: false
     resolution:
       integrity: sha512-Q5hTcfdudEL2yOmluA1zaSyPbzWPmJ3XfSWeP3RyoYvS9hnje1ZyagrZOuQ6+1nQC1Gw+7gap3pLNL3xL6UBug==
-  /@types/jest/25.2.1:
+  /@types/jest/25.2.2:
     dependencies:
-      jest-diff: 25.4.0
-      pretty-format: 25.4.0
+      jest-diff: 25.5.0
+      pretty-format: 25.5.0
     dev: false
     resolution:
-      integrity: sha512-msra1bCaAeEdkSyA0CZ6gW1ukMIvZ5YoJkdXw/qhQdsuuDlFTcEUrUw8CLCPt2rVRUfXlClVvK2gvPs9IokZaA==
+      integrity: sha512-aRctFbG8Pb7DSLzUt/fEtL3q/GKb9mretFuYhRub2J0q6NhzBYbx9HTQzHrWgBNIxYOlxGNVe6Z54cpbUt+Few==
   /@types/json-schema/7.0.4:
     dev: false
     resolution:
@@ -6391,17 +6391,17 @@ packages:
       node: '>= 10.14.2'
     resolution:
       integrity: sha512-9mWKx2L1LFgOXlDsC4YSeavnblN6A4CPfXFiobq+YYLaBMymA/SczN7xYTSmLaEYHZOcB98UdoN4m5uNt6tztg==
-  /jest-diff/25.4.0:
+  /jest-diff/25.5.0:
     dependencies:
       chalk: 3.0.0
       diff-sequences: 25.2.6
       jest-get-type: 25.2.6
-      pretty-format: 25.4.0
+      pretty-format: 25.5.0
     dev: false
     engines:
       node: '>= 8.3'
     resolution:
-      integrity: sha512-kklLbJVXW0y8UKOWOdYhI6TH5MG6QAxrWiBMgQaPIuhj3dNFGirKCd+/xfplBXICQ7fI+3QcqHm9p9lWu1N6ug==
+      integrity: sha512-z1kygetuPiREYdNIumRpAHY6RXiGmp70YHptjdaxTWGmA085W3iCnXNx0DhflK3vwrKmrRWyY1wUpkPMVxMK7A==
   /jest-diff/26.0.1:
     dependencies:
       chalk: 4.0.0
@@ -8523,9 +8523,9 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-7PtVymN48hGcO4fGjybyBSIWDsLU4H4XlvOHfq91pz9kkGlonzwTfYkaIEwiRg/dAJF9YlbsduBAgtYLi+8cFg==
-  /pretty-format/25.4.0:
+  /pretty-format/25.5.0:
     dependencies:
-      '@jest/types': 25.4.0
+      '@jest/types': 25.5.0
       ansi-regex: 5.0.0
       ansi-styles: 4.2.1
       react-is: 16.13.1
@@ -8533,7 +8533,7 @@ packages:
     engines:
       node: '>= 8.3'
     resolution:
-      integrity: sha512-PI/2dpGjXK5HyXexLPZU/jw5T9Q6S1YVXxxVxco+LIqzUFHXIbKZKdUVt7GcX7QUCr31+3fzhi4gN4/wUYPVxQ==
+      integrity: sha512-kbo/kq2LQ/A/is0PQwsEHM7Ca6//bGPPvU6UnsdDRSKTWxT/ru/xb88v4BJf6a69H+uTytOEsTusT9ksd/1iWQ==
   /pretty-format/26.0.1:
     dependencies:
       '@jest/types': 26.0.1
@@ -10830,7 +10830,7 @@ specifiers:
   '@mdx-js/react': 1.6.1
   '@next/mdx': 9.3.6
   '@types/chroma-js': 2.0.0
-  '@types/jest': 25.2.1
+  '@types/jest': 25.2.2
   '@types/luxon': 1.24.0
   '@types/mdx-js__react': 1.5.1
   '@types/node': 13.13.6
