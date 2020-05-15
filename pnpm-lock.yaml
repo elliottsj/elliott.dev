@@ -15,7 +15,7 @@ dependencies:
   '@types/chroma-js': 2.0.0
   '@types/jest': 25.2.2
   '@types/luxon': 1.24.0
-  '@types/mdx-js__react': 1.5.1
+  '@types/mdx-js__react': 1.5.2
   '@types/node': 13.13.6
   '@types/nprogress': 0.2.0
   '@types/react': 16.9.35
@@ -2662,12 +2662,12 @@ packages:
     dev: false
     resolution:
       integrity: sha512-OCTdVRQf/ge2ULlGqVKRI/HwyWoKpLV3ppLt6H27yzK/qdYNJ60Sz5tUxy3Jt1RD9K4Iz1tcDWPFJArBFZNAWQ==
-  /@types/mdx-js__react/1.5.1:
+  /@types/mdx-js__react/1.5.2:
     dependencies:
-      '@types/react': 16.9.34
+      '@types/react': 16.9.35
     dev: false
     resolution:
-      integrity: sha512-CTt1SJxp5+bh+F3FNlmh7ZQCI4TH+Y68AvknWwo0IfevtN6OT0gkQEoNz4eUZzuNG0mr+21hSvvN38VJ3+GtPw==
+      integrity: sha512-M/z869+SVti16ZGqMwg46XTNsBKj5/PNcId9NpjEUVPI2V8wzXpbkkhmhZy1n16nQvMAC6HJuh+Dogn8vPLV6w==
   /@types/minimatch/3.0.3:
     dev: false
     resolution:
@@ -2714,13 +2714,6 @@ packages:
     dev: false
     resolution:
       integrity: sha512-ykkPQ+5nFknnlU6lDd947WbQ6TE3NNzbQAkInC2EKY1qeYdTKp7onFusmYZb+ityzx2YviqT6BXSu+LyWWJwcA==
-  /@types/react/16.9.34:
-    dependencies:
-      '@types/prop-types': 15.7.3
-      csstype: 2.6.10
-    dev: false
-    resolution:
-      integrity: sha512-8AJlYMOfPe1KGLKyHpflCg5z46n0b5DbRfqDksxBLBTUpB75ypDBAO9eCUcjNwE6LCUslwTz00yyG/X9gaVtow==
   /@types/react/16.9.35:
     dependencies:
       '@types/prop-types': 15.7.3
@@ -10831,7 +10824,7 @@ specifiers:
   '@types/chroma-js': 2.0.0
   '@types/jest': 25.2.2
   '@types/luxon': 1.24.0
-  '@types/mdx-js__react': 1.5.1
+  '@types/mdx-js__react': 1.5.2
   '@types/node': 13.13.6
   '@types/nprogress': 0.2.0
   '@types/react': 16.9.35
