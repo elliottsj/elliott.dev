@@ -8,10 +8,10 @@ dependencies:
   '@fortawesome/fontawesome-svg-core': 1.2.28
   '@fortawesome/free-solid-svg-icons': 5.13.0
   '@fortawesome/react-fontawesome': 0.1.9_5fb3140108e238adedb9f9eac67c3a9d
-  '@mdx-js/loader': 1.6.3_react@16.13.1
-  '@mdx-js/mdx': 1.6.3
-  '@mdx-js/react': 1.6.3_react@16.13.1
-  '@next/mdx': 9.4.1_@mdx-js+loader@1.6.3
+  '@mdx-js/loader': 1.6.4_react@16.13.1
+  '@mdx-js/mdx': 1.6.4
+  '@mdx-js/react': 1.6.4_react@16.13.1
+  '@next/mdx': 9.4.1_@mdx-js+loader@1.6.4
   '@types/chroma-js': 2.0.0
   '@types/jest': 25.2.3
   '@types/luxon': 1.24.0
@@ -2391,31 +2391,31 @@ packages:
       node: '>= 10.14.2'
     resolution:
       integrity: sha512-IbtjvqI9+eS1qFnOIEL7ggWmT+iK/U+Vde9cGWtYb/b6XgKb3X44ZAe/z9YZzoAAZ/E92m0DqrilF934IGNnQA==
-  /@mdx-js/loader/1.6.3_react@16.13.1:
+  /@mdx-js/loader/1.6.4_react@16.13.1:
     dependencies:
-      '@mdx-js/mdx': 1.6.3
-      '@mdx-js/react': 1.6.3_react@16.13.1
+      '@mdx-js/mdx': 1.6.4
+      '@mdx-js/react': 1.6.4_react@16.13.1
       loader-utils: 2.0.0
     dev: false
     peerDependencies:
       react: '*'
     resolution:
-      integrity: sha512-u64IEQPNPSbbifhhTmKkkqVoC9bYhyOP1Z6gZU0FLSD8FhlEjxlf11xcyL7DxBFmbKuYwmH+oU66+v2zWT6J5A==
-  /@mdx-js/mdx/1.6.3:
+      integrity: sha512-Br+apzC1Dbj5d8adILHgOxiFIuFvYs+1/FAIiMK77FbmgX02xixHd86IPmWvcWX54nFqhJOX7jICF63/UXmMww==
+  /@mdx-js/mdx/1.6.4:
     dependencies:
       '@babel/core': 7.9.6
       '@babel/plugin-syntax-jsx': 7.8.3_@babel+core@7.9.6
       '@babel/plugin-syntax-object-rest-spread': 7.8.3_@babel+core@7.9.6
-      '@mdx-js/util': 1.6.3
-      babel-plugin-apply-mdx-type-prop: 1.6.3_@babel+core@7.9.6
-      babel-plugin-extract-import-names: 1.6.3
+      '@mdx-js/util': 1.6.4
+      babel-plugin-apply-mdx-type-prop: 1.6.4_@babel+core@7.9.6
+      babel-plugin-extract-import-names: 1.6.4
       camelcase-css: 2.0.1
       detab: 2.0.3
       hast-util-raw: 5.0.2
       lodash.uniq: 4.5.0
       mdast-util-to-hast: 9.1.0
       remark-footnotes: 1.0.0
-      remark-mdx: 1.6.3
+      remark-mdx: 1.6.4
       remark-parse: 8.0.2
       remark-squeeze-paragraphs: 4.0.0
       style-to-object: 0.3.0
@@ -2424,22 +2424,22 @@ packages:
       unist-util-visit: 2.0.2
     dev: false
     resolution:
-      integrity: sha512-LiICL1raWTvY4fQosiIlfW2WGhb34pIm8CSPpqA5WMm0wo1XGcMJx4OgdlsQfdc+gCfTX48OL2bAdq7mvRwJDQ==
-  /@mdx-js/react/1.6.3_react@16.13.1:
+      integrity: sha512-TuKjwVrp0bhuv++SnqHp3k7agawS4d29sSL9p1B6Wv6IxJTfkJPMD1rI+Ahek45qTNY0Sxh4Q6kox9a7cq1tag==
+  /@mdx-js/react/1.6.4_react@16.13.1:
     dependencies:
       react: 16.13.1
     dev: false
     peerDependencies:
       react: ^16.9.0
     resolution:
-      integrity: sha512-O95a2/vUp1JUWBMeS8uGwTI9BYMmqcUBFcH/H/qk5gmh0Ar71oRn3xGN3o4YbW9LTDzOfkwQQZchMefyI3yRuA==
-  /@mdx-js/util/1.6.3:
+      integrity: sha512-3SwDgbr2Fc3i5LrOQnahRUTvx0x/wRf+i8+fJM1caGTeq1XwVb6OHztJzaYt3DSizJVzRsBZznReY+l39up5Pg==
+  /@mdx-js/util/1.6.4:
     dev: false
     resolution:
-      integrity: sha512-kCtAleJxvUNJ1HZuc/cEMsiFosTVW/A3FgLhlxPPh70O/kCKg5T4I5gABOMUPL1erO3Ao7yDk+Dbaw4XIKNeZg==
-  /@next/mdx/9.4.1_@mdx-js+loader@1.6.3:
+      integrity: sha512-cVGZ68yZwyJnOMhARAdgD1IhZ0bsbsKCvsj6I/XnJcT9hNV/8WXErSV98zFfZwH3LmSRPde58l9hln+zXdK/mQ==
+  /@next/mdx/9.4.1_@mdx-js+loader@1.6.4:
     dependencies:
-      '@mdx-js/loader': 1.6.3_react@16.13.1
+      '@mdx-js/loader': 1.6.4_react@16.13.1
     dev: false
     peerDependencies:
       '@mdx-js/loader': '>=0.15.0'
@@ -3359,16 +3359,16 @@ packages:
       '@babel/core': ^7.0.0
     resolution:
       integrity: sha512-Z4GGmSNQ8pX3WS1O+6v3fo41YItJJZsVxG5gIQ+HuB/iuAQBJxMTHTwz292vuYws1LnHfwSRgoqI+nxdy/pcvw==
-  /babel-plugin-apply-mdx-type-prop/1.6.3_@babel+core@7.9.6:
+  /babel-plugin-apply-mdx-type-prop/1.6.4_@babel+core@7.9.6:
     dependencies:
       '@babel/core': 7.9.6
       '@babel/helper-plugin-utils': 7.8.3
-      '@mdx-js/util': 1.6.3
+      '@mdx-js/util': 1.6.4
     dev: false
     peerDependencies:
       '@babel/core': ^7.0.0
     resolution:
-      integrity: sha512-FX0AbaDjWXbtFPudIqs/KyUDE5OjcpTnXGaTnXYJzjaQqjKAlIXW+aB8I00tzsFxd/q4dM8VQDlbFKCwvN4ElA==
+      integrity: sha512-rVtztbgf3zmT1Is6vSNugfbdI2AG3mk/PUS8H71ss5V2XRNyYgeuFgTMX3h0bTDEJnbFG3ilRH566kVhZAkGWg==
   /babel-plugin-dynamic-import-node/2.3.3:
     dependencies:
       object.assign: 4.1.0
@@ -3390,12 +3390,12 @@ packages:
     dev: false
     resolution:
       integrity: sha512-bxZbTTGz0AJQDHm8k6Rf3RQJ8tX2scsfsRyKVgAbiUPUNIRtlK+7JxP+TAd1kRLABFxe0CFm2VdK4ePkoA9FxQ==
-  /babel-plugin-extract-import-names/1.6.3:
+  /babel-plugin-extract-import-names/1.6.4:
     dependencies:
       '@babel/helper-plugin-utils': 7.8.3
     dev: false
     resolution:
-      integrity: sha512-9LcaoCE2vQRJa1rummorAe3sUVCpA/2Lh+n2CgZ6cniZfEmCFYgD5Eu03ORxguerrWnpHnsHm6u+VrKsGGzw0A==
+      integrity: sha512-oShDRQX9CGDkg61DnNJG7T/ROjIpgzyLTi3mGr3fwbNDP3kiJ6TousEPu6d090qNUm/XiUasQ1ESOnLAb7plqQ==
   /babel-plugin-istanbul/6.0.0:
     dependencies:
       '@babel/helper-plugin-utils': 7.8.3
@@ -9076,19 +9076,19 @@ packages:
     dev: false
     resolution:
       integrity: sha512-X9Ncj4cj3/CIvLI2Z9IobHtVi8FVdUrdJkCNaL9kdX8ohfsi18DXHsCVd/A7ssARBdccdDb5ODnt62WuEWaM/g==
-  /remark-mdx/1.6.3:
+  /remark-mdx/1.6.4:
     dependencies:
       '@babel/core': 7.9.6
       '@babel/helper-plugin-utils': 7.8.3
       '@babel/plugin-proposal-object-rest-spread': 7.9.6_@babel+core@7.9.6
       '@babel/plugin-syntax-jsx': 7.8.3_@babel+core@7.9.6
-      '@mdx-js/util': 1.6.3
+      '@mdx-js/util': 1.6.4
       is-alphabetical: 1.0.4
       remark-parse: 8.0.2
       unified: 9.0.0
     dev: false
     resolution:
-      integrity: sha512-VLVTZgjZnmAAlp9RopHOnhuM0aLl0phmj70k2g8IdYHn+8E+E8hkbSKQJksQDoQU5YwY7iKqJn+uQC5y5BGedw==
+      integrity: sha512-tJ/CGNNLVC8nOm0C3EjDQH4Vl3YhawgR2f3J+RaalrMDrT4s5ZzOqoNesV1cnF/DsoOxKlYkExOpNSOa6rkAtQ==
   /remark-parse/8.0.2:
     dependencies:
       ccount: 1.0.5
@@ -11053,9 +11053,9 @@ specifiers:
   '@fortawesome/fontawesome-svg-core': 1.2.28
   '@fortawesome/free-solid-svg-icons': 5.13.0
   '@fortawesome/react-fontawesome': 0.1.9
-  '@mdx-js/loader': 1.6.3
-  '@mdx-js/mdx': 1.6.3
-  '@mdx-js/react': 1.6.3
+  '@mdx-js/loader': 1.6.4
+  '@mdx-js/mdx': 1.6.4
+  '@mdx-js/react': 1.6.4
   '@next/mdx': 9.4.1
   '@types/chroma-js': 2.0.0
   '@types/jest': 25.2.3
