@@ -10,7 +10,7 @@ import styled from '@emotion/styled';
 import { pxRem, Theme, useTheme } from '../lib/theme';
 import NightToggle from './NightToggle';
 
-const Grid = styled.div<{}, Theme>`
+const Grid = styled.div<Record<string, unknown>, Theme>`
   height: 100vh;
   display: grid;
   grid:

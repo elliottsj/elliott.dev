@@ -20,6 +20,8 @@
     "jest": "jest",
     "?jest:watch": "Run Jest tests in watch mode.",
     "jest:watch": "jest --watch",
+    "?lint": "Lint source files with ESLint.",
+    "lint": "eslint .",
     "?node_modules:clean": "Delete node_modules.",
     "node_modules:clean": "del-cli node_modules",
     "?node_modules:install": "Install dependencies with pnpm.",
@@ -31,7 +33,7 @@
     "?start": "Start the application in production mode. Must run \"build\" first.",
     "start": "next start",
     "?test": "Run all tests",
-    "test": "npm-run-all --sequential format:check jest build"
+    "test": "npm-run-all --sequential format:check lint jest build"
   },
   "repository": {
     "type": "git",
@@ -68,8 +70,8 @@
     "@types/react-dom": "16.9.8",
     "@types/suncalc": "1.8.0",
     "@types/webpack-env": "1.15.2",
-    "@typescript-eslint/eslint-plugin": "2.34.0",
-    "@typescript-eslint/parser": "2.34.0",
+    "@typescript-eslint/eslint-plugin": "3.0.0",
+    "@typescript-eslint/parser": "3.0.0",
     "babel-jest": "26.0.1",
     "chroma-js": "2.1.0",
     "cross-env": "7.0.2",

@@ -8,14 +8,10 @@ module.exports = {
   },
   extends: [
     'eslint:recommended',
-    'plugin:@typescript-eslint/eslint-recommended',
+    'plugin:@typescript-eslint/recommended',
     'plugin:react/recommended',
     'plugin:react-hooks/recommended',
   ],
-  globals: {
-    Atomics: 'readonly',
-    SharedArrayBuffer: 'readonly',
-  },
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
@@ -28,5 +24,7 @@ module.exports = {
   rules: {
     'no-unused-vars': 'off',
     'react/prop-types': 'off',
+    '@typescript-eslint/explicit-module-boundary-types': 'off',
+    '@typescript-eslint/no-var-requires': 'off',
   },
 };
