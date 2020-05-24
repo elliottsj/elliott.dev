@@ -20,6 +20,8 @@
     "jest": "jest",
     "?jest:watch": "Run Jest tests in watch mode.",
     "jest:watch": "jest --watch",
+    "?lint": "Lint source files with ESLint.",
+    "lint": "eslint .",
     "?node_modules:clean": "Delete node_modules.",
     "node_modules:clean": "del-cli node_modules",
     "?node_modules:install": "Install dependencies with pnpm.",
@@ -31,7 +33,7 @@
     "?start": "Start the application in production mode. Must run \"build\" first.",
     "start": "next start",
     "?test": "Run all tests",
-    "test": "npm-run-all --sequential format:check jest build"
+    "test": "npm-run-all --sequential format:check lint jest build"
   },
   "repository": {
     "type": "git",
