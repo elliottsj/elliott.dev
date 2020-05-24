@@ -36,13 +36,13 @@ dependencies:
   jest: 26.0.1
   jest-emotion: 10.0.32
   luxon: 1.24.1
-  next: 9.4.2_react-dom@16.13.1+react@16.13.1
+  next: 9.4.2_af9fa062b6a4bfe9ae4185908f81044b
   npm-run-all: 4.1.5
   nprogress: 0.2.0
   prettier: 2.0.5
   react: 16.13.1
   react-dom: 16.13.1_react@16.13.1
-  simple-icons: 2.13.0
+  simple-icons: 2.14.0
   suncalc: 1.8.0
   typescript: 3.9.3
 lockfileVersion: 5.1
@@ -67,6 +67,10 @@ packages:
       postcss-safe-parser: 4.0.2
       terser: 4.6.13
     dev: false
+    peerDependencies:
+      jimp: '*'
+      lru-cache: '*'
+      probe-image-size: '*'
     peerDependenciesMeta:
       jimp:
         optional: true
@@ -2843,6 +2847,7 @@ packages:
       functional-red-black-tree: 1.0.1
       regexpp: 3.1.0
       tsutils: 3.17.1_typescript@3.9.3
+      typescript: 3.9.3
     dev: false
     engines:
       node: ^8.10.0 || ^10.13.0 || >=11.10.1
@@ -2877,6 +2882,7 @@ packages:
       '@typescript-eslint/typescript-estree': 2.34.0_typescript@3.9.3
       eslint: 7.0.0
       eslint-visitor-keys: 1.1.0
+      typescript: 3.9.3
     dev: false
     engines:
       node: ^8.10.0 || ^10.13.0 || >=11.10.1
@@ -2897,6 +2903,7 @@ packages:
       lodash: 4.17.15
       semver: 7.3.2
       tsutils: 3.17.1_typescript@3.9.3
+      typescript: 3.9.3
     dev: false
     engines:
       node: ^8.10.0 || ^10.13.0 || >=11.10.1
@@ -7631,7 +7638,7 @@ packages:
     dev: false
     resolution:
       integrity: sha1-yobR/ogoFpsBICCOPchCS524NCw=
-  /next/9.4.2_react-dom@16.13.1+react@16.13.1:
+  /next/9.4.2_af9fa062b6a4bfe9ae4185908f81044b:
     dependencies:
       '@ampproject/toolbox-optimizer': 2.3.1
       '@babel/code-frame': 7.8.3
@@ -7668,7 +7675,7 @@ packages:
       mkdirp: 0.5.3
       native-url: 0.3.1
       neo-async: 2.6.1
-      pnp-webpack-plugin: 1.6.4
+      pnp-webpack-plugin: 1.6.4_typescript@3.9.3
       postcss: 7.0.29
       prop-types: 15.7.2
       prop-types-exact: 1.2.0
@@ -7693,6 +7700,7 @@ packages:
     peerDependencies:
       react: ^16.6.0
       react-dom: ^16.6.0
+      typescript: '*'
     resolution:
       integrity: sha512-T/3Rmz/R++OyrWNZ3ZQn+RR9Tbu6DWxZGVXUc+2z4/FxIkeZXggB/494i3IsAssiK1Fu8WVDIwYxOWQ0RgITUg==
   /nice-try/1.0.5:
@@ -8284,12 +8292,14 @@ packages:
     dev: false
     resolution:
       integrity: sha1-ZGx3ARiZhwtqCQPnXpl+jlHadGE=
-  /pnp-webpack-plugin/1.6.4:
+  /pnp-webpack-plugin/1.6.4_typescript@3.9.3:
     dependencies:
-      ts-pnp: 1.2.0
+      ts-pnp: 1.2.0_typescript@3.9.3
     dev: false
     engines:
       node: '>=6'
+    peerDependencies:
+      typescript: '*'
     resolution:
       integrity: sha512-7Wjy+9E3WwLOEL30D+m8TSTF7qJJUJLONBnwQp0518siuMxUQUbgZwssaFX+QKlZkjHZcw/IpZCt/H0srrntSg==
   /posix-character-classes/0.1.1:
@@ -9577,10 +9587,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-VUJ49FC8U1OxwZLxIbTTrDvLnf/6TDgxZcK8wxR8zs13xpx7xbG60ndBlhNrFi2EMuFRoeDoJO7wthSLq42EjA==
-  /simple-icons/2.13.0:
+  /simple-icons/2.14.0:
     dev: false
     resolution:
-      integrity: sha512-/48gqMEHf5dcCLERB56IlIEKY19u3TSPlj7KH9vyefE4FGcM1stsV3BH5Lpv1JRBFfdnkYuWxC0OuPEFLdtQpg==
+      integrity: sha512-AUixKWXsT53vcbwBrypERGUCWPmffpMToj9yXxY2qri2KTCvZp5JOfkht3+aaIWn0RR3EkNKi6hf2ySIz22h3g==
   /simple-swizzle/0.2.2:
     dependencies:
       is-arrayish: 0.3.2
@@ -10362,10 +10372,14 @@ packages:
     dev: false
     resolution:
       integrity: sha512-rvuRbTarPXmMb79SmzEp8aqXNKcK+y0XaB298IXueQ8I2PsrATcPBCSPyK/dDNa2iWOhKlfNnOjdAOTBU/nkFA==
-  /ts-pnp/1.2.0:
+  /ts-pnp/1.2.0_typescript@3.9.3:
+    dependencies:
+      typescript: 3.9.3
     dev: false
     engines:
       node: '>=6'
+    peerDependencies:
+      typescript: '*'
     peerDependenciesMeta:
       typescript:
         optional: true
@@ -11100,6 +11114,6 @@ specifiers:
   prettier: 2.0.5
   react: 16.13.1
   react-dom: 16.13.1
-  simple-icons: 2.13.0
+  simple-icons: 2.14.0
   suncalc: 1.8.0
   typescript: 3.9.3
