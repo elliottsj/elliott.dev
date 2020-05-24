@@ -1,3 +1,0 @@
-Fonts:
-* Merriweather
-* Ubuntu
