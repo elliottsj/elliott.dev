@@ -71,7 +71,7 @@
     "@types/suncalc": "1.8.0",
     "@types/webpack-env": "1.15.2",
     "@typescript-eslint/eslint-plugin": "3.0.2",
-    "@typescript-eslint/parser": "3.0.1",
+    "@typescript-eslint/parser": "3.0.2",
     "babel-jest": "26.0.1",
     "chroma-js": "2.1.0",
     "cross-env": "7.0.2",
