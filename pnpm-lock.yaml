@@ -11,7 +11,7 @@ dependencies:
   '@mdx-js/loader': 1.6.4_react@16.13.1
   '@mdx-js/mdx': 1.6.4
   '@mdx-js/react': 1.6.4_react@16.13.1
-  '@next/mdx': 9.4.2_@mdx-js+loader@1.6.4
+  '@next/mdx': 9.4.4_@mdx-js+loader@1.6.4
   '@types/chroma-js': 2.0.0
   '@types/jest': 25.2.3
   '@types/luxon': 1.24.0
@@ -2701,14 +2701,14 @@ packages:
     dev: false
     resolution:
       integrity: sha512-cVGZ68yZwyJnOMhARAdgD1IhZ0bsbsKCvsj6I/XnJcT9hNV/8WXErSV98zFfZwH3LmSRPde58l9hln+zXdK/mQ==
-  /@next/mdx/9.4.2_@mdx-js+loader@1.6.4:
+  /@next/mdx/9.4.4_@mdx-js+loader@1.6.4:
     dependencies:
       '@mdx-js/loader': 1.6.4_react@16.13.1
     dev: false
     peerDependencies:
       '@mdx-js/loader': '>=0.15.0'
     resolution:
-      integrity: sha512-yI5nS0XxccVfMc3WpspZsL6Y22EKIsv+/uJRfPb8uVfLlG4Oz9IHaBXR9KRlQKjvJ8mSm+R3GSg0j+WP4TGADQ==
+      integrity: sha512-d1WPPxube7kgQo5JjfiFxPoK+set0OBCNeIJnF8TN176v4SsFNngfB4I5RIxsdXqD7aPzWeFcxCGGGvbzjKa8A==
   /@next/react-dev-overlay/9.4.2_react-dom@16.13.1+react@16.13.1:
     dependencies:
       '@babel/code-frame': 7.8.3
@@ -11403,7 +11403,7 @@ specifiers:
   '@mdx-js/loader': 1.6.4
   '@mdx-js/mdx': 1.6.4
   '@mdx-js/react': 1.6.4
-  '@next/mdx': 9.4.2
+  '@next/mdx': 9.4.4
   '@types/chroma-js': 2.0.0
   '@types/jest': 25.2.3
   '@types/luxon': 1.24.0
