@@ -22,8 +22,8 @@ dependencies:
   '@types/react-dom': 16.9.8
   '@types/suncalc': 1.8.0
   '@types/webpack-env': 1.15.2
-  '@typescript-eslint/eslint-plugin': 3.1.0_0e27ac235d5bbd2b6f9bd0553416eb5e
-  '@typescript-eslint/parser': 3.1.0_eslint@7.1.0+typescript@3.9.3
+  '@typescript-eslint/eslint-plugin': 3.1.0_90ac27b2fe1971cc84dccdcfd6d78c87
+  '@typescript-eslint/parser': 3.1.0_eslint@7.1.0+typescript@3.9.5
   babel-jest: 26.0.1_@babel+core@7.10.2
   chroma-js: 2.1.0
   cross-env: 7.0.2
@@ -36,7 +36,7 @@ dependencies:
   jest: 26.0.1
   jest-emotion: 10.0.32
   luxon: 1.24.1
-  next: 9.4.4_af9fa062b6a4bfe9ae4185908f81044b
+  next: 9.4.4_ca1896585c3b88e06ba893a4954b1f43
   npm-run-all: 4.1.5
   nprogress: 0.2.0
   prettier: 2.0.5
@@ -44,7 +44,7 @@ dependencies:
   react-dom: 16.13.1_react@16.13.1
   simple-icons: 2.15.0
   suncalc: 1.8.0
-  typescript: 3.9.3
+  typescript: 3.9.5
 lockfileVersion: 5.1
 packages:
   /@ampproject/toolbox-core/2.4.0-alpha.1:
@@ -3105,16 +3105,16 @@ packages:
     dev: false
     resolution:
       integrity: sha512-Dk/IDOPtOgubt/IaevIUbTgV7doaKkoorvOyYM2CMwuDyP89bekI7H4xLIwunNYiK9jhCkmc6pUrJk3cj2AB9w==
-  /@typescript-eslint/eslint-plugin/3.1.0_0e27ac235d5bbd2b6f9bd0553416eb5e:
+  /@typescript-eslint/eslint-plugin/3.1.0_90ac27b2fe1971cc84dccdcfd6d78c87:
     dependencies:
-      '@typescript-eslint/experimental-utils': 3.1.0_eslint@7.1.0+typescript@3.9.3
-      '@typescript-eslint/parser': 3.1.0_eslint@7.1.0+typescript@3.9.3
+      '@typescript-eslint/experimental-utils': 3.1.0_eslint@7.1.0+typescript@3.9.5
+      '@typescript-eslint/parser': 3.1.0_eslint@7.1.0+typescript@3.9.5
       eslint: 7.1.0
       functional-red-black-tree: 1.0.1
       regexpp: 3.1.0
       semver: 7.3.2
-      tsutils: 3.17.1_typescript@3.9.3
-      typescript: 3.9.3
+      tsutils: 3.17.1_typescript@3.9.5
+      typescript: 3.9.5
     dev: false
     engines:
       node: ^10.12.0 || >=12.0.0
@@ -3127,10 +3127,10 @@ packages:
         optional: true
     resolution:
       integrity: sha512-D52KwdgkjYc+fmTZKW7CZpH5ZBJREJKZXRrveMiRCmlzZ+Rw9wRVJ1JAmHQ9b/+Ehy1ZeaylofDB9wwXUt83wg==
-  /@typescript-eslint/experimental-utils/3.1.0_eslint@7.1.0+typescript@3.9.3:
+  /@typescript-eslint/experimental-utils/3.1.0_eslint@7.1.0+typescript@3.9.5:
     dependencies:
       '@types/json-schema': 7.0.4
-      '@typescript-eslint/typescript-estree': 3.1.0_typescript@3.9.3
+      '@typescript-eslint/typescript-estree': 3.1.0_typescript@3.9.5
       eslint: 7.1.0
       eslint-scope: 5.0.0
       eslint-utils: 2.0.0
@@ -3142,14 +3142,14 @@ packages:
       typescript: '*'
     resolution:
       integrity: sha512-Zf8JVC2K1svqPIk1CB/ehCiWPaERJBBokbMfNTNRczCbQSlQXaXtO/7OfYz9wZaecNvdSvVADt6/XQuIxhC79w==
-  /@typescript-eslint/parser/3.1.0_eslint@7.1.0+typescript@3.9.3:
+  /@typescript-eslint/parser/3.1.0_eslint@7.1.0+typescript@3.9.5:
     dependencies:
       '@types/eslint-visitor-keys': 1.0.0
-      '@typescript-eslint/experimental-utils': 3.1.0_eslint@7.1.0+typescript@3.9.3
-      '@typescript-eslint/typescript-estree': 3.1.0_typescript@3.9.3
+      '@typescript-eslint/experimental-utils': 3.1.0_eslint@7.1.0+typescript@3.9.5
+      '@typescript-eslint/typescript-estree': 3.1.0_typescript@3.9.5
       eslint: 7.1.0
       eslint-visitor-keys: 1.1.0
-      typescript: 3.9.3
+      typescript: 3.9.5
     dev: false
     engines:
       node: ^10.12.0 || >=12.0.0
@@ -3161,7 +3161,7 @@ packages:
         optional: true
     resolution:
       integrity: sha512-NcDSJK8qTA2tPfyGiPes9HtVKLbksmuYjlgGAUs7Ld2K0swdWibnCq9IJx9kJN8JJdgUJSorFiGaPHBgH81F/Q==
-  /@typescript-eslint/typescript-estree/3.1.0_typescript@3.9.3:
+  /@typescript-eslint/typescript-estree/3.1.0_typescript@3.9.5:
     dependencies:
       debug: 4.1.1
       eslint-visitor-keys: 1.1.0
@@ -3169,8 +3169,8 @@ packages:
       is-glob: 4.0.1
       lodash: 4.17.15
       semver: 7.3.2
-      tsutils: 3.17.1_typescript@3.9.3
-      typescript: 3.9.3
+      tsutils: 3.17.1_typescript@3.9.5
+      typescript: 3.9.5
     dev: false
     engines:
       node: ^10.12.0 || >=12.0.0
@@ -7952,7 +7952,7 @@ packages:
     dev: false
     resolution:
       integrity: sha1-yobR/ogoFpsBICCOPchCS524NCw=
-  /next/9.4.4_af9fa062b6a4bfe9ae4185908f81044b:
+  /next/9.4.4_ca1896585c3b88e06ba893a4954b1f43:
     dependencies:
       '@ampproject/toolbox-optimizer': 2.4.0
       '@babel/code-frame': 7.8.3
@@ -7989,7 +7989,7 @@ packages:
       mkdirp: 0.5.3
       native-url: 0.3.1
       neo-async: 2.6.1
-      pnp-webpack-plugin: 1.6.4_typescript@3.9.3
+      pnp-webpack-plugin: 1.6.4_typescript@3.9.5
       postcss: 7.0.29
       prop-types: 15.7.2
       prop-types-exact: 1.2.0
@@ -8606,9 +8606,9 @@ packages:
     dev: false
     resolution:
       integrity: sha1-ZGx3ARiZhwtqCQPnXpl+jlHadGE=
-  /pnp-webpack-plugin/1.6.4_typescript@3.9.3:
+  /pnp-webpack-plugin/1.6.4_typescript@3.9.5:
     dependencies:
-      ts-pnp: 1.2.0_typescript@3.9.3
+      ts-pnp: 1.2.0_typescript@3.9.5
     dev: false
     engines:
       node: '>=6'
@@ -10686,9 +10686,9 @@ packages:
     dev: false
     resolution:
       integrity: sha512-rvuRbTarPXmMb79SmzEp8aqXNKcK+y0XaB298IXueQ8I2PsrATcPBCSPyK/dDNa2iWOhKlfNnOjdAOTBU/nkFA==
-  /ts-pnp/1.2.0_typescript@3.9.3:
+  /ts-pnp/1.2.0_typescript@3.9.5:
     dependencies:
-      typescript: 3.9.3
+      typescript: 3.9.5
     dev: false
     engines:
       node: '>=6'
@@ -10703,10 +10703,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-i/6DQjL8Xf3be4K/E6Wgpekn5Qasl1usyw++dAA35Ue5orEn65VIxOA+YvNNl9HV3qv70T7CNwjODHZrLwvd1Q==
-  /tsutils/3.17.1_typescript@3.9.3:
+  /tsutils/3.17.1_typescript@3.9.5:
     dependencies:
       tslib: 1.13.0
-      typescript: 3.9.3
+      typescript: 3.9.5
     dev: false
     engines:
       node: '>= 6'
@@ -10798,13 +10798,13 @@ packages:
     dev: false
     resolution:
       integrity: sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
-  /typescript/3.9.3:
+  /typescript/3.9.5:
     dev: false
     engines:
       node: '>=4.2.0'
     hasBin: true
     resolution:
-      integrity: sha512-D/wqnB2xzNFIcoBG9FG8cXRDjiqSTbG2wd8DMZeQyJlP1vfTkIxH4GKveWaEBYySKIg+USu+E+EDIR47SqnaMQ==
+      integrity: sha512-hSAifV3k+i6lEoCJ2k6R2Z/rp/H3+8sdmcn5NrS3/3kE7+RyZXm9aqvxWqjEXHAd8b0pShatpcdMTvEdvAJltQ==
   /unherit/1.1.3:
     dependencies:
       inherits: 2.0.4
@@ -11426,4 +11426,4 @@ specifiers:
   react-dom: 16.13.1
   simple-icons: 2.15.0
   suncalc: 1.8.0
-  typescript: 3.9.3
+  typescript: 3.9.5
