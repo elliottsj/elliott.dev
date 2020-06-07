@@ -90,7 +90,7 @@
     "prettier": "2.0.5",
     "react": "16.13.1",
     "react-dom": "16.13.1",
-    "simple-icons": "2.15.0",
+    "simple-icons": "2.16.0",
     "suncalc": "1.8.0",
     "typescript": "3.9.5"
   }
