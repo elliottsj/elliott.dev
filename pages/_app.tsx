@@ -11,9 +11,10 @@ import React, { useState } from 'react';
 
 import { css, Global } from '@emotion/core';
 import { config } from '@fortawesome/fontawesome-svg-core';
-import { MDXProvider } from '@mdx-js/react';
+import { MDXProvider, MDXProviderProps } from '@mdx-js/react';
 
 import { Layout } from '../components';
+import CodeBlock from '../components/CodeBlock';
 import { useInterval } from '../hooks/useInterval';
 import { getTheme, globalStyles as themeGlobalStyles } from '../lib/theme';
 
@@ -34,6 +35,12 @@ Router.events.on('routeChangeComplete', () => {
 Router.events.on('routeChangeError', () => {
   NProgress.done();
 });
+
+const mdxComponents: MDXProviderProps['components'] = {
+  code: CodeBlock,
+  pre: (props) => <div {...props} />,
+  wrapper: Layout,
+};
 
 const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
   // Recompute the theme every second
@@ -73,7 +80,7 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
         `}
       />
       <ThemeProvider theme={theme}>
-        <MDXProvider components={{ wrapper: Layout }}>
+        <MDXProvider components={mdxComponents}>
           <Component {...pageProps} />
         </MDXProvider>
       </ThemeProvider>

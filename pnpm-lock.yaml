@@ -43,6 +43,7 @@ dependencies:
   npm-run-all: 4.1.5
   nprogress: 0.2.0
   prettier: 2.0.5
+  prism-react-renderer: 1.1.1_react@16.13.1
   react: 16.13.1
   react-dom: 16.13.1_react@16.13.1
   simple-icons: 2.16.0
@@ -8096,6 +8097,8 @@ packages:
       integrity: sha512-iyam8fBuCUpWeKPGpaNMetEocMt364qkCsfL9JuhjXX6dRnguRVOfk2GZaDpPjcOKiiXCPINZC1GczQ7iTq3Zw==
   /next-optimized-images/2.6.1_webpack@4.43.0:
     dependencies:
+      chalk: 2.4.2
+      figures: 3.2.0
       file-loader: 3.0.1_webpack@4.43.0
       imagemin: 6.1.0
       img-loader: 3.0.1_imagemin@6.1.0
@@ -9206,6 +9209,14 @@ packages:
       node: '>= 10.14.2'
     resolution:
       integrity: sha512-SWxz6MbupT3ZSlL0Po4WF/KujhQaVehijR2blyRDCzk9e45EaYMVhMBn49fnRuHxtkSpXTes1GxNpVmH86Bxfw==
+  /prism-react-renderer/1.1.1_react@16.13.1:
+    dependencies:
+      react: 16.13.1
+    dev: false
+    peerDependencies:
+      react: '>=0.14.9'
+    resolution:
+      integrity: sha512-MgMhSdHuHymNRqD6KM3eGS0PNqgK9q4QF5P0yoQQvpB6jNjeSAi3jcSAz0Sua/t9fa4xDOMar9HJbLa08gl9ug==
   /private/0.1.8:
     dev: false
     engines:
@@ -11628,6 +11639,7 @@ specifiers:
   npm-run-all: 4.1.5
   nprogress: 0.2.0
   prettier: 2.0.5
+  prism-react-renderer: 1.1.1
   react: 16.13.1
   react-dom: 16.13.1
   simple-icons: 2.16.0
