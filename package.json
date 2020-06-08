@@ -25,7 +25,7 @@
     "?node_modules:clean": "Delete node_modules.",
     "node_modules:clean": "del-cli node_modules",
     "?node_modules:install": "Install dependencies with pnpm.",
-    "node_modules:install": "npx pnpm@5.1.4 install",
+    "node_modules:install": "npx pnpm@5.1.5 install",
     "?node_modules:reinstall": "Re-install dependencies with pnpm.",
     "node_modules:reinstall": "npm-run-all --sequential node_modules:clean node_modules:install",
     "?postinstall": "If a different package manager was used to install, re-install dependencies with pnpm.",
