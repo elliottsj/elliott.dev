@@ -36,9 +36,11 @@ Router.events.on('routeChangeError', () => {
   NProgress.done();
 });
 
+const Pre: React.FC = (props) => <div {...props} />;
+
 const mdxComponents: MDXProviderProps['components'] = {
   code: CodeBlock,
-  pre: (props) => <div {...props} />,
+  pre: Pre,
   wrapper: Layout,
 };
 

@@ -4,7 +4,15 @@ import React from 'react';
 
 import styled from '@emotion/styled';
 
-const isLanguageValid = (language: string): language is Language => language in Prism.languages;
+// https://github.com/FormidableLabs/prism-react-renderer#faq
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+((typeof global !== 'undefined' ? global : window) as any).Prism = Prism;
+require('prismjs/components/prism-ruby');
+
+type CodeBlockLanguage = Language | 'ruby';
+
+const isLanguageValid = (language: string): language is CodeBlockLanguage =>
+  language === '' || language in Prism.languages || ['ruby'].includes(language);
 
 const Pre = styled.pre`
   overflow: auto;
@@ -13,14 +21,14 @@ const Pre = styled.pre`
 /**
  * https://mdxjs.com/guides/syntax-highlighting
  */
-const CodeBlock: React.FC<{ children: string; className: string }> = ({ children, className }) => {
-  const language = className.replace(/language-/, '');
+const CodeBlock: React.FC<{ children: string; className?: string }> = ({ children, className }) => {
+  const language = (className || '').replace(/language-/, '');
   if (!isLanguageValid(language)) {
     throw new Error(`Invalid language ${language}`);
   }
 
   return (
-    <Highlight {...defaultProps} code={children} language={language} theme={vsDark}>
+    <Highlight {...defaultProps} code={children} language={language as Language} theme={vsDark}>
       {({ className, style, tokens, getLineProps, getTokenProps }) => (
         <Pre className={className} style={{ ...style, padding: '20px' }}>
           {tokens.map((line, i) => (

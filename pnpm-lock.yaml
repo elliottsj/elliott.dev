@@ -19,6 +19,7 @@ dependencies:
   '@types/mdx-js__react': 1.5.2
   '@types/node': 13.13.10
   '@types/nprogress': 0.2.0
+  '@types/prismjs': 1.16.1
   '@types/react': 16.9.35
   '@types/react-dom': 16.9.8
   '@types/suncalc': 1.8.0
@@ -44,6 +45,7 @@ dependencies:
   nprogress: 0.2.0
   prettier: 2.0.5
   prism-react-renderer: 1.1.1_react@16.13.1
+  prismjs: 1.20.0
   react: 16.13.1
   react-dom: 16.13.1_react@16.13.1
   simple-icons: 2.16.0
@@ -3076,6 +3078,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-/rM+sWiuOZ5dvuVzV37sUuklsbg+JPOP8d+nNFlo2ZtfpzPiPvh1/gc8liWOLBqe+sR+ZM7guPaIcTt6UZTo7Q==
+  /@types/prismjs/1.16.1:
+    dev: false
+    resolution:
+      integrity: sha512-RNgcK3FEc1GpeOkamGDq42EYkb6yZW5OWQwTS56NJIB8WL0QGISQglA7En7NUx9RGP8AC52DOe+squqbAckXlA==
   /@types/prop-types/15.7.3:
     dev: false
     resolution:
@@ -4357,6 +4363,15 @@ packages:
     dev: false
     resolution:
       integrity: sha512-GRMWDxpOB6Dgk2E5Uo+3eEBvtOOlimMmpbFiKuLFnQzYDavtLFY3K5ona41jgN/WdRZtG7utuVSVTL4HbZHGkw==
+  /clipboard/2.0.6:
+    dependencies:
+      good-listener: 1.2.2
+      select: 1.1.2
+      tiny-emitter: 2.1.0
+    dev: false
+    optional: true
+    resolution:
+      integrity: sha512-g5zbiixBRk/wyKakSwCKd7vQXDjFnAMGHoEyBogG/bw9kTD9GvdAvaoRR1ALcEzt3pVKxZR0pViekPMIS0QyGg==
   /cliui/6.0.0:
     dependencies:
       string-width: 4.2.0
@@ -5012,6 +5027,11 @@ packages:
       node: '>=0.4.0'
     resolution:
       integrity: sha1-3zrhmayt+31ECqrgsp4icrJOxhk=
+  /delegate/3.2.0:
+    dev: false
+    optional: true
+    resolution:
+      integrity: sha512-IofjkYBZaZivn0V8nnsMJGBr4jVLxHDheKSW88PyxS5QC4Vo9ZbZVvhzlSxY87fVq3STR6r+4cGepyHkcWOQSw==
   /des.js/1.0.1:
     dependencies:
       inherits: 2.0.4
@@ -6048,6 +6068,13 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha512-yTzMmKygLp8RUpG1Ymu2VXPSJQZjNAZPD4ywgYEaG7e4tBJeUQBO8OpXrf1RCNcEs5alsoJYPAMiIHP0cmeC7w==
+  /good-listener/1.2.2:
+    dependencies:
+      delegate: 3.2.0
+    dev: false
+    optional: true
+    resolution:
+      integrity: sha1-1TswzfkxPf+33JoNR3CWqm0UXFA=
   /graceful-fs/4.2.3:
     dev: false
     resolution:
@@ -9217,6 +9244,12 @@ packages:
       react: '>=0.14.9'
     resolution:
       integrity: sha512-MgMhSdHuHymNRqD6KM3eGS0PNqgK9q4QF5P0yoQQvpB6jNjeSAi3jcSAz0Sua/t9fa4xDOMar9HJbLa08gl9ug==
+  /prismjs/1.20.0:
+    dev: false
+    optionalDependencies:
+      clipboard: 2.0.6
+    resolution:
+      integrity: sha512-AEDjSrVNkynnw6A+B1DsFkd6AVdTnp+/WoUixFRULlCLZVRZlVQMVWio/16jv7G1FscUxQxOQhWwApgbnxr6kQ==
   /private/0.1.8:
     dev: false
     engines:
@@ -9974,6 +10007,11 @@ packages:
       node: '>= 8.9.0'
     resolution:
       integrity: sha512-wHutF/WPSbIi9x6ctjGGk2Hvl0VOz5l3EKEuKbjPlB30mKZUzb9A5k9yEXRX3pwyqVLPvpfZZEllaFq/M718hA==
+  /select/1.1.2:
+    dev: false
+    optional: true
+    resolution:
+      integrity: sha1-DnNQrN7ICxEIUoeG7B1EGNEbOW0=
   /semver/5.7.1:
     dev: false
     hasBin: true
@@ -10770,6 +10808,11 @@ packages:
     dev: false
     resolution:
       integrity: sha1-QFQRqOfmM5/mTbmiNN4R3DHgK9Q=
+  /tiny-emitter/2.1.0:
+    dev: false
+    optional: true
+    resolution:
+      integrity: sha512-NB6Dk1A9xgQPMoGqC5CVXn123gWyte215ONT5Pp5a0yt4nlEoO1ZWeCwpncaekPHXO60i47ihFnZPiRPjRMq4Q==
   /tmp/0.0.33:
     dependencies:
       os-tmpdir: 1.0.2
@@ -11615,6 +11658,7 @@ specifiers:
   '@types/mdx-js__react': 1.5.2
   '@types/node': 13.13.10
   '@types/nprogress': 0.2.0
+  '@types/prismjs': 1.16.1
   '@types/react': 16.9.35
   '@types/react-dom': 16.9.8
   '@types/suncalc': 1.8.0
@@ -11640,6 +11684,7 @@ specifiers:
   nprogress: 0.2.0
   prettier: 2.0.5
   prism-react-renderer: 1.1.1
+  prismjs: 1.20.0
   react: 16.13.1
   react-dom: 16.13.1
   simple-icons: 2.16.0
