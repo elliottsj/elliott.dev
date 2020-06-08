@@ -56,6 +56,9 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
           ${themeGlobalStyles}
           ${emotionNormalize}
 
+          html {
+            line-height: 1.5;
+          }
           body {
             font-family: ${theme.fonts.body};
           }
