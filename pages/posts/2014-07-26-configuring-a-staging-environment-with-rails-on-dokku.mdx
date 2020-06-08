@@ -1,0 +1,88 @@
+export const meta = {
+  archived: true,
+  published: true,
+  publishedAt: '2014-07-26',
+  title: 'Configuring a Staging Environment with Rails on Dokku',
+};
+
+# Configuring a Staging Environment with Rails on Dokku
+
+[Dokku][] is a neat little platform-as-a-service app that mimics the core functionality of [Heroku][]. As with Heroku, it adopts the so-called [Twelve Factor](http://12factor.net/) paradigm of building web applications. One of the strengths of this kind of app is that it's very portable: it's easy to deploy the app in multiple places, with multiple configurations. I'll show you how to set up your Dokku-hosted Rails app with a 'staging' environment alongside the production environment; this is often useful to test your app before releasing it to your users.
+
+You may be tempted to create a `config.environments/staging.rb`, [as shown here](http://stackoverflow.com/questions/19344267/adding-a-staging-environment-to-the-workflow), but [Heroku advises against that](https://devcenter.heroku.com/articles/deploying-to-a-custom-rails-environment) since it violates the [third factor](http://12factor.net/config): _Store your config in the environment_. The goal here is to make your staging environment as similar to your production environment as possible; once your start putting stuff like `if Rails.env.staging?` in your code, you start to have code that does something different if you're in a staging environment, losing the benefit of having a staging environment in the first place.
+
+If you haven't already, you should [create a Rails app and deploy it to DigitalOcean using Dokku](https://www.digitalocean.com/community/tutorials/how-to-use-the-dokku-one-click-digitalocean-image-to-run-a-ruby-on-rails-app).
+
+#### Add a git remote
+
+Creating a staging environment is as easy as adding a secondary remote in git that will deploy a _staging_ app to Dokku whenever you do a `git push`:
+
+```bash
+git remote add staging dokku@example.com:staging
+```
+
+The below command would deploy your _master_ branch to <http://staging.example.com>:
+
+```bash
+git push staging master
+```
+
+A better development process might be to have a _develop_ branch separate from your _master_ branch. In that case, use the following command to deploy your _develop_ branch to staging:
+
+```bash
+git push staging develop:master
+```
+
+#### Use different configuration variables on staging
+
+In most cases, you want to set different configuration parameters in your staging environment, for example your Amazon Web Services API key and secret, or your Google Analytics tracking ID. Dokku allows you to set environment variables for each app:
+
+```bash
+dokku config:set staging GA_TRACKING_ID='UA-5xxxxxxx-1'
+dokku config:set staging AWS_ACCESS_KEY_ID='xxxxxxxxxxxxxxxxxxxx'
+dokku config:set staging AWS_SECRET_ACCESS_KEY='xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
+dokku config:set staging S3_BUCKET='example-bucket'
+```
+
+In `config/production.rb`, you can pull your configuration from the environment like this:
+
+```ruby
+Rails.application.configure do
+  ...
+
+  # Google Analytics tracking ID
+  config.ga_tracking_id = ENV['GA_TRACKING_ID']
+end
+```
+
+Then you can access your configuration variables throughout your app, e.g. `Rails.configuration.ga_tracking_id`. For example, in an ERB template:
+
+```html
+<%# Google Analytics (only in production environments) %> <% if Rails.env.production? %>
+<script>
+  (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r;
+    (i[r] =
+      i[r] ||
+      function () {
+        (i[r].q = i[r].q || []).push(arguments);
+      }),
+      (i[r].l = 1 * new Date());
+    (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m);
+  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+  ga('create', '<%= Rails.configuration.ga_tracking_id %>', 'example.com');
+  ga('require', 'displayfeatures');
+  ga('require', 'linkid', 'linkid.js');
+  ga('send', 'pageview');
+</script>
+<% end %>
+```
+
+That's it!
+
+[dokku]: https://github.com/progrium/dokku
+[heroku]: https://www.heroku.com/

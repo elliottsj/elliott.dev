@@ -1,0 +1,102 @@
+export const meta = {
+  archived: true,
+  published: true,
+  publishedAt: '2014-10-25',
+  title: 'Using Git with MarkUs',
+};
+
+# Using Git with MarkUs
+
+If you've taken [CSC207][csc207], you've probably realized that
+[Subversion sucks](http://andreasjacobsen.com/2008/10/26/subversion-sucks-get-over-it/).
+Distributed version control systems like [Git][git] are better in
+[almost](https://git.wiki.kernel.org/index.php/GitSvnComparison)
+[every](http://blog.teamtreehouse.com/why-you-should-switch-from-subversion-to-git)
+[way](https://www.youtube.com/watch?v=4XpnKHJAok8), but unfortunately we're stuck with Subversion
+until [MarkUs fully supports Git](https://github.com/MarkUsProject/Markus/issues/1385).
+
+Don't lose hope though, because you can still use Git locally with a Subversion remote thanks to
+[`git-svn`][git-svn] [[reference][man git-svn]]:
+
+## Clone your MarkUs repository
+
+You can either clone your entire Subversion repository
+(e.g. https://markus.cdf.toronto.edu/svn/csc369-2014-09/group\_xxxx),
+or each subdirectory individually (e.g. https://markus.cdf.toronto.edu/svn/csc369-2014-09/group\_xxxx/a1).
+I prefer to clone each directory individually:
+
+(Use your own CDF username and group ID in place of `g3name` and `group_xxxx`).
+
+```bash
+# Go to where you keep your CSC369 assignments
+❯ cd path/to/csc369
+
+# Use git-svn to clone the repository
+❯ git svn clone --username=g3name https://markus.cdf.toronto.edu/svn/csc369-2014-09/group_xxxx/a1
+```
+
+You'll see output similar to the following. Just type `p` when prompted to accept the certificate,
+and enter your password when prompted.
+
+```bash
+Initialized empty Git repository in path/to/csc369/a1/.git/
+Error validating server certificate for 'https://markus.cdf.toronto.edu:443':
+ - The certificate is not issued by a trusted authority. Use the
+   fingerprint to validate the certificate manually!
+Certificate information:
+ - Hostname: markus.cdf.toronto.edu
+ - Valid: from Fri, 11 Apr 2014 00:00:00 GMT until Sat, 11 Apr 2015 23:59:59 GMT
+ - Issuer: COMODO CA Limited, Salford, Greater Manchester, GB
+ - Fingerprint: 3d:68:3e:94:9b:07:31:50:91:7a:3e:f9:9c:99:d8:82:22:6f:e7:4e
+Certificate problem.
+(R)eject, accept (t)emporarily or accept (p)ermanently? p
+Authentication realm: <https://markus.cdf.toronto.edu:443> MarkUs Subversion Repository
+Password for 'g3name':
+r2 = 90f73ae3dc816ef55ab6b7becbb839f7c819529f (refs/remotes/git-svn)
+	A	.gitignore
+	A	list_driver.c
+	A	list_sync.c
+	A	list.c
+	A	Makefile
+	A	list.h
+	A	list_handoff.c
+Checked out HEAD:
+  https://markus.cdf.toronto.edu/svn/csc369-2014-09/group_xxxx/a1 r2
+```
+
+That's all the setup necessary! Now you can enter your new Git repository and use Git normally:
+
+```bash
+❯ cd a1/
+❯ git status
+On branch master
+nothing to commit, working directory clean
+```
+
+## Interact with a Subversion server
+
+It's well worth reading the official [Git and Subversion article][git-svn], but here's a quick primer on how
+to commit changes to and receive updates from the Subversion server:
+
+#### Commit to Subversion
+
+```bash
+❯ git svn dcommit
+```
+
+This will take your new local Git commits, do a Subversion commit for each, then rewrite (i.e. rebase) your local
+Git commits to include a unique identifier.
+
+#### Update with remote changes
+
+```bash
+❯ git svn rebase
+```
+
+This will fetch new changes from the Subversion server, place them into your local Git history,
+and replay your un-pushed, local Git commits on top of the new changes.
+
+[csc207]: http://cssu.cdf.toronto.edu/w/index.php/CSC207
+[git]: http://git-scm.com/
+[git-svn]: http://git-scm.com/book/en/v1/Git-and-Other-Systems-Git-and-Subversion
+[man git-svn]: http://git-scm.com/docs/git-svn

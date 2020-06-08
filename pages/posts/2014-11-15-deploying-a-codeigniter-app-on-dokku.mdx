@@ -1,0 +1,215 @@
+export const meta = {
+  archived: true,
+  published: true,
+  publishedAt: '2014-11-15',
+  title: 'Deploying CodeIgniter on EC2 via Dokku',
+};
+
+# Deploying CodeIgniter on EC2 via Dokku
+
+[Using the Git post-receive hook to deploy your static site](/posts/2014-09-27-csc309-deploying-the-right-way)
+is lightweight and convenient, but doesn't quite work for applications that require backing services like
+a database or a file upload service.
+
+[Dokku Alternative][dokku-alt] is a more feature-complete fork of [Dokku][dokku], and allows you to turn any
+server into a Heroku-like platform where all you need to do is a single `git push` to deploy an app.
+
+Here is a short guide on deploying a PHP [CodeIgniter][codeigniter] app to an Amazon EC2 instance:
+
+### Create the EC2 instance
+
+[Launch an Ubuntu Server 14.04 instance](https://console.aws.amazon.com/ec2/home?region=us-east-1#launchAmi=ami-9eaa1cf6),
+select any instance size and SSD you like, and make sure you open TCP ports 80 and 443 (HTTP and HTTPS).
+
+### Install dokku-alt
+
+Connect to your instance via SSH and create a TCP tunnel to remote port 2000:
+
+```bash
+macbook$ ssh -L 2000:localhost:2000 ubuntu@<IP_ADDRESS>
+```
+
+Then run the [dokku-alt install script](https://github.com/dokku-alt/dokku-alt#installing):
+
+```bash
+ubuntu@ip-1-2-3-4:~$ sudo bash -c "$(curl -fsSL https://raw.githubusercontent.com/dokku-alt/dokku-alt/master/bootstrap.sh)"
+```
+
+The script will open a web server on port 2000; open <http://localhost:2000>, paste your public SSH key,
+and leave virtualhost naming disabled for now.
+
+### Prepare the CodeIgniter app
+
+To deploy a CodeIgniter app to dokku-alt, you'll need to
+[set it up like a Heroku app](https://devcenter.heroku.com/articles/getting-started-with-php) by configuring
+[Composer][composer] and a `Procfile`.
+
+Add a file `composer.json` with the following contents:
+
+```json
+{
+  "require": {
+    "php": "~5.6.0"
+  },
+  "require-dev": {
+    "heroku/heroku-buildpack-php": "*"
+  }
+}
+```
+
+Add a file `Procfile` with the following contents:
+
+```
+web: vendor/bin/heroku-php-apache2
+```
+
+Run `composer update`, then your project structure should look something like this:
+
+```
+.
+├── application/
+├── system/
+├── vendor/
+├── .gitignore
+├── .htaccess
+├── composer.json
+├── composer.lock
+├── index.php
+├── license.txt
+└── Procfile
+```
+
+### Deploy the app
+
+Add a Git remote that points to your new dokku-alt instance, then push:
+
+```bash
+macbook$ git remote add dokku dokku@<IP_ADDRESS>:myapp
+macbook$ git push dokku
+```
+
+The output should then tell you where the application is deployed, for example:
+
+```
+...
+remote: =====> Application deployed:
+remote:        http://<IP_ADDRESS>:49153
+...
+```
+
+Since we haven't enabled virtualhost naming, the app is served on an app-specific port. Only ports 22, 80, and 443 are
+open, so you need to open an SSH tunnel to access the app port:
+
+```bash
+macbook$ ssh -L 8080:localhost:49153 ubuntu@<IP_ADDRESS>
+```
+
+Then open <http://localhost:8080>.
+
+### Attach the database
+
+If your application requires a database, you can use dokku-alt to create a database container for either
+[MariaDB][mariadb] (a MySQL-compatible database), [PostgreSQL][postgresql], or [MongoDB][mongodb].
+
+For example, add a MariaDB container:
+
+```bash
+ubuntu@ip-1-2-3-4:~$ dokku mariadb:create myapp
+```
+
+Then link it to your app:
+
+```bash
+ubuntu@ip-1-2-3-4:~$ dokku mariadb:link myapp myapp
+```
+
+A new `DATABASE_URL` environment variable should now be configured for the app. For example:
+
+```
+ubuntu@ip-172-31-39-239:~$ dokku config myapp
+=== myapp config vars ===
+DATABASE_URL: mysql2://myapp:PW5HDJs0KhmoUOZH@mariadb:3306/myapp
+```
+
+### Configure environment variables
+
+Now that your app is deployed with a database, you need to configure it to connect using the supplied `DATABASE_URL`
+variable. CodeIgniter does not have a built-in way to specify the database connect with a URL, so we need to parse it.
+
+In `application/config/database.php`:
+
+```php
+<?php
+...
+$database_url = getenv("DATABASE_URL");
+$url=parse_url(getenv("DATABASE_URL"));
+$server = $url["host"];
+$username = isset($url["user"]) ? $url["user"] : '';
+$password = isset($url["pass"]) ? $url["pass"] : '';
+$database = substr($url["path"], 1);
+
+
+$db['default']['hostname'] = $server === 'localhost' ? '127.0.0.1' : $server;
+$db['default']['username'] = $username;
+$db['default']['password'] = $password;
+$db['default']['database'] = $database;
+$db['default']['dbdriver'] = 'mysqli';
+...
+```
+
+Note that the database driver is set to `'mysqli'` instead of the default `'mysql'`; the MariaDB container is
+not compatible with the deprecated `'mysql'` driver.
+
+[See the full database.php here](https://github.com/elliottsj/codeigniter-dokku/blob/2.2.0/application/config/database.php).
+
+It would also be ideal for our app to throw an exception if the required environment variables are not set.
+We can use CodeIgniter hooks to check the environment before calling a controller:
+
+Enable hooks in `application/config/config.php`:
+
+```php
+<?php
+...
+$config['enable_hooks'] = TRUE;
+...
+```
+
+Specify the hook in `application/config/hooks.php`:
+
+```php
+<?php
+...
+$hook['pre_controller'] = array(
+  'class'    => '',
+  'function' => 'check_environment',
+  'filename' => 'Environment.php',
+  'filepath' => 'hooks'
+);
+...
+```
+
+Finally, implement the hook in `application/hooks/Environment.php`:
+
+```php
+<?php
+
+/**
+ * Ensure that environment variables are set
+ */
+function check_environment() {
+    if (!(getenv("DATABASE_URL")))
+        throw new Exception('Must set a DATABASE_URL environment variable');
+}
+```
+
+Add these changes and `git push` them to dokku, and your application should connect to the database.
+
+[A full example for CodeIgniter 2.2.0 is available here](https://github.com/elliottsj/codeigniter-dokku/tree/2.2.0).
+
+[dokku]: https://github.com/progrium/dokku
+[dokku-alt]: https://github.com/dokku-alt/dokku-alt
+[codeigniter]: http://www.codeigniter.com/
+[composer]: https://getcomposer.org/
+[mariadb]: https://mariadb.org/
+[postgresql]: http://www.postgresql.org/
+[mongodb]: http://www.mongodb.org/
