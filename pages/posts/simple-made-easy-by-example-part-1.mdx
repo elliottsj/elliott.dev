@@ -1,0 +1,57 @@
+export const meta = {
+  published: true,
+  publishedAt: '2020-06-13',
+  title: 'Simple Made Easy by Example: State and Objects vs. Values',
+  summary: '',
+};
+
+# Simple Made Easy by Example: State and Objects vs. Values
+
+> Simplicity is a prerequisite for reliability.
+>
+> - Edsger W. Dijkstra
+
+As programmers, it's our job to make reliable software. Things we build must be simple in order to be reliable.
+
+In fact, simplicity is a selfish imperative because it makes our lives easier in the long run. The mental model of our programs becomes easier to handle cognitively, resulting in programs that are more likely to be correct, and easier to change and maintain over time.
+
+This is the first in a series of posts reflecting on [Rich Hickey](https://twitter.com/richhickey)'s 2011 talk [Simple Made Easy](https://www.infoq.com/presentations/Simple-Made-Easy/), and the [same, revised 2012 talk](https://www.infoq.com/presentations/Simple-Made-Easy-QCon-London-2012/). Go watch both of them, even if you've watched them before; each time I watch it again, I learn something new.
+
+My goal is to provide practical examples, applying the principles of this talk to real-world code, starting with a comparison of _state and objects_ versus _values_.
+
+## Example program:
+
+## State and Objects
+
+What is state?
+
+- complexion of time and value
+- source of change
+- cannot build system without state
+- can _reduce_ and _contain_ usage of state to make a relatively simpler program
+
+"State, however, is unambiguously never simple. It essentially is complex. There's no way to un-complect it, because it combines value and time together. Programming languages make this extremely easy to do. But the fact is that, once you use state, particularly pervasive use of state, it's going to cause everything that touches it to become interleaved. [State] is not something to slather all over your application, it's something to say 'I am really scared of this.' When I use it, I'm going to be very careful and explicit, and put warning signs around it and say, 'Look, there's some state here, here are the rules about it'".
+
+```js
+```
+
+objects
+
+- specifically, class instances which may or may not be mutable, may have methods to get or set properties
+- cannot generically traverse or transform objects as data, unless reflection is used
+-
+
+## Values
+
+```js
+```
+
+## Real-world applications
+
+- Redux: actions as values, state as a value within a reducer
+- Compilers: AST as a value
+-
+
+* ordering problem: services -> cannot tolerate ordering
+
+complexity that we tolerate in our programs is _not_ tolerable in service-oriented architecture
