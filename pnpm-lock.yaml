@@ -15,7 +15,7 @@ dependencies:
   '@types/chroma-js': 2.0.0
   '@types/jest': 26.0.0
   '@types/lodash': 4.14.156
-  '@types/luxon': 1.24.0
+  '@types/luxon': 1.24.1
   '@types/mdx-js__react': 1.5.2
   '@types/node': 13.13.12
   '@types/nprogress': 0.2.0
@@ -2986,10 +2986,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-l2AgHXcKUwx2DsvP19wtRPqZ4NkONjmorOdq4sMcxIjqdIuuV/ULo2ftuv4NUpevwfW7Ju/UKLqo0ZXuEt/8lQ==
-  /@types/luxon/1.24.0:
+  /@types/luxon/1.24.1:
     dev: false
     resolution:
-      integrity: sha512-OCTdVRQf/ge2ULlGqVKRI/HwyWoKpLV3ppLt6H27yzK/qdYNJ60Sz5tUxy3Jt1RD9K4Iz1tcDWPFJArBFZNAWQ==
+      integrity: sha512-t93qL4l3PRxy4qQkXwiPS6qjIt7S6o90XMuCfvYDgIAQJvgSBni5qVPxkhGYPnZZPS9ASHOTeCZXRNmdiHHHcg==
   /@types/mdast/3.0.3:
     dependencies:
       '@types/unist': 2.0.3
@@ -11480,7 +11480,7 @@ specifiers:
   '@types/chroma-js': 2.0.0
   '@types/jest': 26.0.0
   '@types/lodash': 4.14.156
-  '@types/luxon': 1.24.0
+  '@types/luxon': 1.24.1
   '@types/mdx-js__react': 1.5.2
   '@types/node': 13.13.12
   '@types/nprogress': 0.2.0
