@@ -14,7 +14,7 @@ dependencies:
   '@next/mdx': 9.4.4_@mdx-js+loader@1.6.6
   '@types/chroma-js': 2.0.0
   '@types/jest': 26.0.2
-  '@types/lodash': 4.14.156
+  '@types/lodash': 4.14.157
   '@types/luxon': 1.24.1
   '@types/mdx-js__react': 1.5.2
   '@types/node': 13.13.12
@@ -2982,10 +2982,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-8+KAKzEvSUdeo+kmqnKrqgeE+LcA0tjYWFY7RPProVYwnqDjukzO+3b6dLD56rYX5TdWejnEOLJYOIeh4CXKuA==
-  /@types/lodash/4.14.156:
+  /@types/lodash/4.14.157:
     dev: false
     resolution:
-      integrity: sha512-l2AgHXcKUwx2DsvP19wtRPqZ4NkONjmorOdq4sMcxIjqdIuuV/ULo2ftuv4NUpevwfW7Ju/UKLqo0ZXuEt/8lQ==
+      integrity: sha512-Ft5BNFmv2pHDgxV5JDsndOWTRJ+56zte0ZpYLowp03tW+K+t8u8YMOzAnpuqPgzX6WO1XpDIUm7u04M8vdDiVQ==
   /@types/luxon/1.24.1:
     dev: false
     resolution:
@@ -11479,7 +11479,7 @@ specifiers:
   '@next/mdx': 9.4.4
   '@types/chroma-js': 2.0.0
   '@types/jest': 26.0.2
-  '@types/lodash': 4.14.156
+  '@types/lodash': 4.14.157
   '@types/luxon': 1.24.1
   '@types/mdx-js__react': 1.5.2
   '@types/node': 13.13.12
