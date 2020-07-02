@@ -98,7 +98,7 @@
     "react-dom": "16.13.1",
     "simple-icons": "2.19.0",
     "suncalc": "1.8.0",
-    "typescript": "3.9.5",
+    "typescript": "3.9.6",
     "webpack": "4.43.0"
   }
 }
