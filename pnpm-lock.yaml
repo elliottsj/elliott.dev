@@ -37,7 +37,7 @@ dependencies:
   eslint-plugin-react-hooks: 4.0.6_eslint@7.4.0
   jest: 26.1.0
   jest-emotion: 10.0.32
-  lodash: 4.17.15
+  lodash: 4.17.17
   luxon: 1.24.1
   next: 9.4.4_0ac8039be390c97a358112ea868cf3dd
   next-optimized-images: 2.6.1_webpack@4.43.0
@@ -7866,6 +7866,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-8xOcRHvCjnocdS5cpwXQXVzmmh5e5+saE2QGoeQmbKmRS6J3VQppPOIt0MnmE+4xlZoumy0GPG0D0MVIQbNA1A==
+  /lodash/4.17.17:
+    dev: false
+    resolution:
+      integrity: sha512-/B2DjOphAoqi5BX4Gg2oh4UR0Gy/A7xYAMh3aSECEKzwS3eCDEpS0Cals1Ktvxwlal3bBJNc+5W9kNIcADdw5Q==
   /loose-envify/1.4.0:
     dependencies:
       js-tokens: 4.0.0
@@ -11813,7 +11817,7 @@ specifiers:
   eslint-plugin-react-hooks: 4.0.6
   jest: 26.1.0
   jest-emotion: 10.0.32
-  lodash: 4.17.15
+  lodash: 4.17.17
   luxon: 1.24.1
   next: 9.4.4
   next-optimized-images: 2.6.1
