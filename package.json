@@ -82,7 +82,7 @@
     "emotion-theming": "10.0.27",
     "eslint": "7.4.0",
     "eslint-plugin-react": "7.20.3",
-    "eslint-plugin-react-hooks": "4.0.7",
+    "eslint-plugin-react-hooks": "4.0.8",
     "jest": "26.1.0",
     "jest-emotion": "10.0.32",
     "lodash": "4.17.19",
