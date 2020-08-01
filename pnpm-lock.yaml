@@ -20,7 +20,7 @@ dependencies:
   '@types/node': 13.13.15
   '@types/nprogress': 0.2.0
   '@types/prismjs': 1.16.1
-  '@types/react': 16.9.43
+  '@types/react': 16.9.44
   '@types/react-dom': 16.9.8
   '@types/suncalc': 1.8.0
   '@types/webpack-env': 1.15.2
@@ -3176,13 +3176,13 @@ packages:
     dev: false
     resolution:
       integrity: sha512-q0n0SsWcGc8nDqH2GJfWQWUOmZSJhXV64CjVN5SvcNti3TdEaA3AH0D8DwNmMdzjMAC/78tB8nAZIlV8yTz+zQ==
-  /@types/react/16.9.43:
+  /@types/react/16.9.44:
     dependencies:
       '@types/prop-types': 15.7.3
-      csstype: 2.6.10
+      csstype: 3.0.2
     dev: false
     resolution:
-      integrity: sha512-PxshAFcnJqIWYpJbLPriClH53Z2WlJcVZE+NP2etUtWQs2s7yIMj3/LDKZT/5CHJ/F62iyjVCDu2H3jHEXIxSg==
+      integrity: sha512-BtLoJrXdW8DVZauKP+bY4Kmiq7ubcJq+H/aCpRfvPF7RAT3RwR73Sg8szdc2YasbAlWBDrQ6Q+AFM0KwtQY+WQ==
   /@types/stack-utils/1.0.1:
     dev: false
     resolution:
@@ -4929,6 +4929,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-D34BqZU4cIlMCY93rZHbrq9pjTAQJ3U8S8rfBqjwHxkGPThWFjzZDQpgMJY0QViLxth6ZKYiwFBo14RdN44U/w==
+  /csstype/3.0.2:
+    dev: false
+    resolution:
+      integrity: sha512-ofovWglpqoqbfLNOTBNZLSbMuGrblAf1efvvArGKOZMBrIoJeu5UsAipQolkijtyQx5MtAzT/J9IHj/CEY1mJw==
   /cyclist/1.0.1:
     dev: false
     resolution:
@@ -11733,7 +11737,7 @@ specifiers:
   '@types/node': 13.13.15
   '@types/nprogress': 0.2.0
   '@types/prismjs': 1.16.1
-  '@types/react': 16.9.43
+  '@types/react': 16.9.44
   '@types/react-dom': 16.9.8
   '@types/suncalc': 1.8.0
   '@types/webpack-env': 1.15.2
