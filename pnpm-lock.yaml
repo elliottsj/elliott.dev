@@ -48,7 +48,7 @@ dependencies:
   prismjs: 1.20.0
   react: 16.13.1
   react-dom: 16.13.1_react@16.13.1
-  simple-icons: 3.3.0
+  simple-icons: 3.4.0
   suncalc: 1.8.0
   typescript: 3.9.7
   webpack: 4.44.1_webpack@4.44.1
@@ -10157,10 +10157,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-VUJ49FC8U1OxwZLxIbTTrDvLnf/6TDgxZcK8wxR8zs13xpx7xbG60ndBlhNrFi2EMuFRoeDoJO7wthSLq42EjA==
-  /simple-icons/3.3.0:
+  /simple-icons/3.4.0:
     dev: false
     resolution:
-      integrity: sha512-Ian40Pk0D2t0HgjanUX5RydaviREuYJ4qNZd7iukCKwl6J1WSV5JB6u0tahRWMg8GdjbQSXGRWAvooPuX45dlw==
+      integrity: sha512-OmFxO282wTYD5uxNfWdQdRf4Z0V86zgidxuBvrC6XroE24DwyDjjBGS3rNqvIt8ZlVvYCFnK9VMK6VtDuZiMSg==
   /simple-swizzle/0.2.2:
     dependencies:
       is-arrayish: 0.3.2
@@ -11751,7 +11751,7 @@ specifiers:
   prismjs: 1.20.0
   react: 16.13.1
   react-dom: 16.13.1
-  simple-icons: 3.3.0
+  simple-icons: 3.4.0
   suncalc: 1.8.0
   typescript: 3.9.7
   webpack: 4.44.1
