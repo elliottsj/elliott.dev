@@ -45,7 +45,7 @@ dependencies:
   nprogress: 0.2.0
   prettier: 2.0.5
   prism-react-renderer: 1.1.1_react@16.13.1
-  prismjs: 1.20.0
+  prismjs: 1.21.0
   react: 16.13.1
   react-dom: 16.13.1_react@16.13.1
   simple-icons: 3.4.0
@@ -9509,12 +9509,12 @@ packages:
       react: '>=0.14.9'
     resolution:
       integrity: sha512-MgMhSdHuHymNRqD6KM3eGS0PNqgK9q4QF5P0yoQQvpB6jNjeSAi3jcSAz0Sua/t9fa4xDOMar9HJbLa08gl9ug==
-  /prismjs/1.20.0:
+  /prismjs/1.21.0:
     dev: false
     optionalDependencies:
       clipboard: 2.0.6
     resolution:
-      integrity: sha512-AEDjSrVNkynnw6A+B1DsFkd6AVdTnp+/WoUixFRULlCLZVRZlVQMVWio/16jv7G1FscUxQxOQhWwApgbnxr6kQ==
+      integrity: sha512-uGdSIu1nk3kej2iZsLyDoJ7e9bnPzIgY0naW/HdknGj61zScaprVEVGHrPoXqI+M9sP0NDnTK2jpkvmldpuqDw==
   /private/0.1.8:
     dev: false
     engines:
@@ -11964,7 +11964,7 @@ specifiers:
   nprogress: 0.2.0
   prettier: 2.0.5
   prism-react-renderer: 1.1.1
-  prismjs: 1.20.0
+  prismjs: 1.21.0
   react: 16.13.1
   react-dom: 16.13.1
   simple-icons: 3.4.0
