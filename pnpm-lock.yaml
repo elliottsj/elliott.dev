@@ -2,9 +2,9 @@ dependencies:
   '@babel/core': 7.11.1
   '@elliottsj/next-svgr': 0.0.3
   '@emotion/babel-preset-css-prop': 10.0.27_@babel+core@7.11.1
-  '@emotion/core': 10.0.28_react@16.13.1
-  '@emotion/styled': 10.0.27_c989b1aa057905c7a8b69bf973f55a19
-  '@emotion/styled-base': 10.0.31_c989b1aa057905c7a8b69bf973f55a19
+  '@emotion/core': 10.0.34_react@16.13.1
+  '@emotion/styled': 10.0.27_0e29bfa898baff96830564c9639caf26
+  '@emotion/styled-base': 10.0.31_0e29bfa898baff96830564c9639caf26
   '@fortawesome/fontawesome-svg-core': 1.2.30
   '@fortawesome/free-solid-svg-icons': 5.14.0
   '@fortawesome/react-fontawesome': 0.1.11_e91d230af880419f914c1e9d225c6864
@@ -30,8 +30,8 @@ dependencies:
   chroma-js: 2.1.0
   cross-env: 7.0.2
   del-cli: 3.0.1
-  emotion-normalize: 10.1.0_c989b1aa057905c7a8b69bf973f55a19
-  emotion-theming: 10.0.27_c989b1aa057905c7a8b69bf973f55a19
+  emotion-normalize: 10.1.0_0e29bfa898baff96830564c9639caf26
+  emotion-theming: 10.0.27_0e29bfa898baff96830564c9639caf26
   eslint: 7.6.0
   eslint-plugin-react: 7.20.5_eslint@7.6.0
   eslint-plugin-react-hooks: 4.0.8_eslint@7.6.0
@@ -2503,9 +2503,9 @@ packages:
     dev: false
     resolution:
       integrity: sha512-fU2VtSVlHiF27empSbxi1O2JFdNWZO+2NFHfwO0pxgTep6Xa3uGb+3pVKfLww2l/IBGLNEZl5Xf/++A4wAYDYQ==
-  /@emotion/core/10.0.28_react@16.13.1:
+  /@emotion/core/10.0.34_react@16.13.1:
     dependencies:
-      '@babel/runtime': 7.9.2
+      '@babel/runtime': 7.9.6
       '@emotion/cache': 10.0.29
       '@emotion/css': 10.0.27
       '@emotion/serialize': 0.11.16
@@ -2516,7 +2516,7 @@ packages:
     peerDependencies:
       react: '>=16.3.0'
     resolution:
-      integrity: sha512-pH8UueKYO5jgg0Iq+AmCLxBsvuGtvlmiDCOuv8fGNYn3cowFpLN98L8zO56U0H1PjDIyAlXymgL3Wu7u7v6hbA==
+      integrity: sha512-Kcs8WHZG1NgaVFQsSpgN07G0xpfPAKUclwKvUqKrYrJovezl9uTz++1M4JfXHrgFVEiJ5QO46hMo1ZDDfvY/tw==
   /@emotion/css/10.0.27:
     dependencies:
       '@emotion/serialize': 0.11.16
@@ -2553,10 +2553,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-zM9PFmgVSqBw4zL101Q0HrBVTGmpAxFZH/pYx/cjJT5advXguvcgjHFTCaIO3enL/xr89vK2bh0Mfyj9aa0ANA==
-  /@emotion/styled-base/10.0.31_c989b1aa057905c7a8b69bf973f55a19:
+  /@emotion/styled-base/10.0.31_0e29bfa898baff96830564c9639caf26:
     dependencies:
       '@babel/runtime': 7.9.2
-      '@emotion/core': 10.0.28_react@16.13.1
+      '@emotion/core': 10.0.34_react@16.13.1
       '@emotion/is-prop-valid': 0.8.8
       '@emotion/serialize': 0.11.16
       '@emotion/utils': 0.11.3
@@ -2567,10 +2567,10 @@ packages:
       react: '>=16.3.0'
     resolution:
       integrity: sha512-wTOE1NcXmqMWlyrtwdkqg87Mu6Rj1MaukEoEmEkHirO5IoHDJ8LgCQL4MjJODgxWxXibGR3opGp1p7YvkNEdXQ==
-  /@emotion/styled/10.0.27_c989b1aa057905c7a8b69bf973f55a19:
+  /@emotion/styled/10.0.27_0e29bfa898baff96830564c9639caf26:
     dependencies:
-      '@emotion/core': 10.0.28_react@16.13.1
-      '@emotion/styled-base': 10.0.31_c989b1aa057905c7a8b69bf973f55a19
+      '@emotion/core': 10.0.34_react@16.13.1
+      '@emotion/styled-base': 10.0.31_0e29bfa898baff96830564c9639caf26
       babel-plugin-emotion: 10.0.33
       react: 16.13.1
     dev: false
@@ -5380,9 +5380,9 @@ packages:
       node: '>= 4'
     resolution:
       integrity: sha512-/kyM18EfinwXZbno9FyUGeFh87KC8HRQBQGildHZbEuRyWFOmv1U10o9BBp8XVZDVNNuQKyIGIu5ZYAAXJ0V2Q==
-  /emotion-normalize/10.1.0_c989b1aa057905c7a8b69bf973f55a19:
+  /emotion-normalize/10.1.0_0e29bfa898baff96830564c9639caf26:
     dependencies:
-      '@emotion/core': 10.0.28_react@16.13.1
+      '@emotion/core': 10.0.34_react@16.13.1
       react: 16.13.1
     dev: false
     peerDependencies:
@@ -5390,10 +5390,10 @@ packages:
       react: '>=16.3.0'
     resolution:
       integrity: sha512-Z+rz3Eep8tUgtBKT13/rEpci+ZbCadRovEmILuLB9IEpq4FdNpXjm7MVeJqG4iBRGw4tKmIq06lYgjeC6oEnag==
-  /emotion-theming/10.0.27_c989b1aa057905c7a8b69bf973f55a19:
+  /emotion-theming/10.0.27_0e29bfa898baff96830564c9639caf26:
     dependencies:
       '@babel/runtime': 7.9.2
-      '@emotion/core': 10.0.28_react@16.13.1
+      '@emotion/core': 10.0.34_react@16.13.1
       '@emotion/weak-memoize': 0.2.5
       hoist-non-react-statics: 3.3.2
       react: 16.13.1
@@ -11808,7 +11808,7 @@ specifiers:
   '@babel/core': 7.11.1
   '@elliottsj/next-svgr': 0.0.3
   '@emotion/babel-preset-css-prop': 10.0.27
-  '@emotion/core': 10.0.28
+  '@emotion/core': 10.0.34
   '@emotion/styled': 10.0.27
   '@emotion/styled-base': 10.0.31
   '@fortawesome/fontawesome-svg-core': 1.2.30
