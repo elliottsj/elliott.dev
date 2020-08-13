@@ -85,7 +85,7 @@
     "eslint-plugin-react-hooks": "4.0.8",
     "jest": "26.4.0",
     "jest-emotion": "10.0.32",
-    "lodash": "4.17.19",
+    "lodash": "4.17.20",
     "luxon": "1.24.1",
     "next": "9.4.4",
     "next-optimized-images": "2.6.2",
