@@ -12,3 +12,6 @@ package-lock.json
 # Next.js build output
 /.next/
 /out/
+
+# Vercel secrets
+.vercel
