@@ -71,6 +71,7 @@
     "@types/react": "16.9.49",
     "@types/react-dom": "16.9.8",
     "@types/suncalc": "1.8.0",
+    "@types/use-ackee": "1.0.0",
     "@types/webpack-env": "1.15.2",
     "@typescript-eslint/eslint-plugin": "3.10.1",
     "@typescript-eslint/parser": "3.10.1",
@@ -99,6 +100,7 @@
     "simple-icons": "3.6.1",
     "suncalc": "1.8.0",
     "typescript": "4.0.2",
+    "use-ackee": "1.0.0",
     "webpack": "4.44.1"
   }
 }

@@ -23,6 +23,7 @@ dependencies:
   '@types/react': 16.9.49
   '@types/react-dom': 16.9.8
   '@types/suncalc': 1.8.0
+  '@types/use-ackee': 1.0.0
   '@types/webpack-env': 1.15.2
   '@typescript-eslint/eslint-plugin': 3.10.1_4b08f58ef8a3bb8fcbaebc4f1e3f8004
   '@typescript-eslint/parser': 3.10.1_eslint@7.7.0+typescript@4.0.2
@@ -51,6 +52,7 @@ dependencies:
   simple-icons: 3.6.1
   suncalc: 1.8.0
   typescript: 4.0.2
+  use-ackee: 1.0.0_react@16.13.1
   webpack: 4.44.1_webpack@4.44.1
 lockfileVersion: 5.1
 packages:
@@ -3287,6 +3289,10 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-bjnWolZ6KVsHhgyCoYRFmbd26p8XVbulCzSG53BDQqAr+JOAderYK7CuYrB3bDjHJuF6LJ7Wrr42+goLRV9qIg==
+  /@types/ackee-tracker/4.0.0:
+    dev: false
+    resolution:
+      integrity: sha512-cyulrEIlIiBqc+LpuMOStbrescP4STYeEMqiGMJpOPAcetb5nZ/zFS8ybU967j76QclYwQXeyrq5QlENYKlwdA==
   /@types/babel__core/7.1.7:
     dependencies:
       '@babel/parser': 7.11.1
@@ -3494,6 +3500,12 @@ packages:
     dev: false
     resolution:
       integrity: sha512-FvUupuM3rlRsRtCN+fDudtmytGO6iHJuuRKS1Ss0pG5z8oX0diNEw94UEL7hgDbpN94rgaK5R7sWm6RrSkZuAQ==
+  /@types/use-ackee/1.0.0:
+    dependencies:
+      '@types/ackee-tracker': 4.0.0
+    dev: false
+    resolution:
+      integrity: sha512-9ukr27B2pMN1FKUvzB0p+FFsYcRu9DAEUWqlaUoa2x7k78tAdSWLHn4LMlkUH+zvX7yu/loeu/t8YsOMpnYdQQ==
   /@types/webpack-env/1.15.2:
     dev: false
     resolution:
@@ -3741,6 +3753,12 @@ packages:
     dev: false
     resolution:
       integrity: sha512-tsFzPpcttalNjFBCFMqsKYQcWxxen1pgJR56by//QwvJc4/OUS3kPOOttx2tSIfjsylB0pYu7f5D3K1RCxUnUg==
+  /ackee-tracker/4.0.0:
+    dependencies:
+      platform: 1.3.6
+    dev: false
+    resolution:
+      integrity: sha512-HA1LAnci8WMv1Dtrl4L3JyFJaOzajxFhfVI856zIPceKVtPdKpJSEQxU1hFOzG5iFH7O6HfeZPPgtJZrkzCJFA==
   /acorn-globals/6.0.0:
     dependencies:
       acorn: 7.3.1
@@ -9202,6 +9220,10 @@ packages:
     dev: false
     resolution:
       integrity: sha1-ZGx3ARiZhwtqCQPnXpl+jlHadGE=
+  /platform/1.3.6:
+    dev: false
+    resolution:
+      integrity: sha512-fnWVljUchTro6RiCFvCXBbNhJc2NijN7oIQxbwsyL0buWJPG85v81ehlHI9fXrJsMNgTofEoWIQeClKpgxFLrg==
   /pnp-webpack-plugin/1.6.4_typescript@4.0.2:
     dependencies:
       ts-pnp: 1.2.0_typescript@4.0.2
@@ -11601,6 +11623,15 @@ packages:
     dev: false
     resolution:
       integrity: sha1-ODjpfPxgUh63PFJajlW/3Z4uKPE=
+  /use-ackee/1.0.0_react@16.13.1:
+    dependencies:
+      ackee-tracker: 4.0.0
+      react: 16.13.1
+    dev: false
+    peerDependencies:
+      react: ^16.11.0
+    resolution:
+      integrity: sha512-Sn6EQewy8bD/pgCG9XsixjGyi+WbvtbiutDNLqbdo/j4+2UrgOYX1vSsSpX7gZAiIlwc4jYEHBdj5FuHMd80pA==
   /use-subscription/1.4.1_react@16.13.1:
     dependencies:
       object-assign: 4.1.1
@@ -12079,6 +12110,7 @@ specifiers:
   '@types/react': 16.9.49
   '@types/react-dom': 16.9.8
   '@types/suncalc': 1.8.0
+  '@types/use-ackee': 1.0.0
   '@types/webpack-env': 1.15.2
   '@typescript-eslint/eslint-plugin': 3.10.1
   '@typescript-eslint/parser': 3.10.1
@@ -12107,4 +12139,5 @@ specifiers:
   simple-icons: 3.6.1
   suncalc: 1.8.0
   typescript: 4.0.2
+  use-ackee: 1.0.0
   webpack: 4.44.1
