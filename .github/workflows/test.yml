@@ -16,7 +16,7 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
-      - run: npm install --global pnpm@4.14.4
+      - run: npm install --global pnpm@5.5.5
       - run: pnpm install
       - run: pnpm test
         env:
