@@ -60,7 +60,7 @@
     "@mdx-js/mdx": "1.6.18",
     "@mdx-js/react": "1.6.18",
     "@next/mdx": "9.4.4",
-    "@types/chroma-js": "2.0.1",
+    "@types/chroma-js": "2.1.0",
     "@types/jest": "26.0.14",
     "@types/lodash": "4.14.161",
     "@types/luxon": "1.24.4",
