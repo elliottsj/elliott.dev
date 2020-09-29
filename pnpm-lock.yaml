@@ -5,9 +5,9 @@ dependencies:
   '@emotion/core': 10.0.35_react@16.13.1
   '@emotion/styled': 10.0.27_4d699cf7e8a2bf97a506a18e2a399a54
   '@emotion/styled-base': 10.0.31_4d699cf7e8a2bf97a506a18e2a399a54
-  '@fortawesome/fontawesome-svg-core': 1.2.30
+  '@fortawesome/fontawesome-svg-core': 1.2.31
   '@fortawesome/free-solid-svg-icons': 5.14.0
-  '@fortawesome/react-fontawesome': 0.1.11_e91d230af880419f914c1e9d225c6864
+  '@fortawesome/react-fontawesome': 0.1.11_5472724ddad544c900a4fa9c40ae60dc
   '@mdx-js/loader': 1.6.18_react@16.13.1
   '@mdx-js/mdx': 1.6.18
   '@mdx-js/react': 1.6.18_react@16.13.1
@@ -2705,14 +2705,22 @@ packages:
       node: '>=6'
     resolution:
       integrity: sha512-TsRwpTuKwFNiPhk1UfKgw7zNPeV5RhNp2Uw3pws+9gDAkPGKrtjR1y2lI3SYn7+YzyfuNknflpBA1LRKjt7hMg==
-  /@fortawesome/fontawesome-svg-core/1.2.30:
-    dependencies:
-      '@fortawesome/fontawesome-common-types': 0.2.30
+  /@fortawesome/fontawesome-common-types/0.2.31:
     dev: false
     engines:
       node: '>=6'
+    requiresBuild: true
     resolution:
-      integrity: sha512-E3sAXATKCSVnT17HYmZjjbcmwihrNOCkoU7dVMlasrcwiJAHxSKeZ+4WN5O+ElgO/FaYgJmASl8p9N7/B/RttA==
+      integrity: sha512-xfnPyH6NN5r/h1/qDYoGB0BlHSID902UkQzxR8QsoKDh55KAPr8ruAoie12WQEEQT8lRE2wtV7LoUllJ1HqCag==
+  /@fortawesome/fontawesome-svg-core/1.2.31:
+    dependencies:
+      '@fortawesome/fontawesome-common-types': 0.2.31
+    dev: false
+    engines:
+      node: '>=6'
+    requiresBuild: true
+    resolution:
+      integrity: sha512-lqUWRK+ylHQJG5Kiez4XrAZAfc7snxCc+X59quL3xPfMnxzfyf1lt+/hD7X1ZL4KlzAH2KFzMuEVrolo/rAkog==
   /@fortawesome/free-solid-svg-icons/5.14.0:
     dependencies:
       '@fortawesome/fontawesome-common-types': 0.2.30
@@ -2721,9 +2729,9 @@ packages:
       node: '>=6'
     resolution:
       integrity: sha512-M933RDM8cecaKMWDSk3FRYdnzWGW7kBBlGNGfvqLVwcwhUPNj9gcw+xZMrqBdRqxnSXdl3zWzTCNNGEtFUq67Q==
-  /@fortawesome/react-fontawesome/0.1.11_e91d230af880419f914c1e9d225c6864:
+  /@fortawesome/react-fontawesome/0.1.11_5472724ddad544c900a4fa9c40ae60dc:
     dependencies:
-      '@fortawesome/fontawesome-svg-core': 1.2.30
+      '@fortawesome/fontawesome-svg-core': 1.2.31
       prop-types: 15.7.2
       react: 16.13.1
     dev: false
@@ -11986,7 +11994,7 @@ specifiers:
   '@emotion/core': 10.0.35
   '@emotion/styled': 10.0.27
   '@emotion/styled-base': 10.0.31
-  '@fortawesome/fontawesome-svg-core': 1.2.30
+  '@fortawesome/fontawesome-svg-core': 1.2.31
   '@fortawesome/free-solid-svg-icons': 5.14.0
   '@fortawesome/react-fontawesome': 0.1.11
   '@mdx-js/loader': 1.6.18
