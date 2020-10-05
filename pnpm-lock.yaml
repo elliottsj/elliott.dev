@@ -20,7 +20,7 @@ dependencies:
   '@types/node': 13.13.21
   '@types/nprogress': 0.2.0
   '@types/prismjs': 1.16.1
-  '@types/react': 16.9.50
+  '@types/react': 16.9.51
   '@types/react-dom': 16.9.8
   '@types/suncalc': 1.8.0
   '@types/use-ackee': 1.0.0
@@ -3396,13 +3396,13 @@ packages:
     dev: false
     resolution:
       integrity: sha512-DtLFjSj0OYAdVLBbyjhuV9CdGVHCkHn2R+xr3XkBvK2rS1Y1tkc14XSGjYgm5Fjjr90AxH9tiSzc1pCFMGO06g==
-  /@types/react/16.9.50:
+  /@types/react/16.9.51:
     dependencies:
       '@types/prop-types': 15.7.3
       csstype: 3.0.2
     dev: false
     resolution:
-      integrity: sha512-kPx5YsNnKDJejTk1P+lqThwxN2PczrocwsvqXnjvVvKpFescoY62ZiM3TV7dH1T8lFhlHZF+PE5xUyimUwqEGA==
+      integrity: sha512-lQa12IyO+DMlnSZ3+AGHRUiUcpK47aakMMoBG8f7HGxJT8Yfe+WE128HIXaHOHVPReAW0oDS3KAI0JI2DDe1PQ==
   /@types/stack-utils/1.0.1:
     dev: false
     resolution:
@@ -12011,7 +12011,7 @@ specifiers:
   '@types/node': 13.13.21
   '@types/nprogress': 0.2.0
   '@types/prismjs': 1.16.1
-  '@types/react': 16.9.50
+  '@types/react': 16.9.51
   '@types/react-dom': 16.9.8
   '@types/suncalc': 1.8.0
   '@types/use-ackee': 1.0.0
