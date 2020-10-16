@@ -17,7 +17,7 @@ dependencies:
   '@types/lodash': 4.14.162
   '@types/luxon': 1.24.4
   '@types/mdx-js__react': 1.5.3
-  '@types/node': 13.13.25
+  '@types/node': 13.13.26
   '@types/nprogress': 0.2.0
   '@types/prismjs': 1.16.1
   '@types/react': 16.9.52
@@ -3336,10 +3336,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-kwbcs0jySLxzLsa2nWUAGOd/s21WU1jebrEdtzhsj1D4Yps1EOuyI1Qcu+FD56dL7NRNIJtDDjcqIG22NwkgLw==
-  /@types/node/13.13.25:
+  /@types/node/13.13.26:
     dev: false
     resolution:
-      integrity: sha512-6ZMK4xRcF2XrPdKmPYQxZkdHKV18xKgUFVvhIgw2iwaaO6weleLPHLBGPZmLhjo+m1N+MZXRAoBEBCCVqgO2zQ==
+      integrity: sha512-+48LLqolaKj/WnIY1crfLseaGQMIDISBy3PTXVOZ7w/PBaRUv+H8t94++atzfoBAvorbUYz6Xq9vh1fHrg33ig==
   /@types/node/13.13.6:
     dev: false
     resolution:
@@ -12008,7 +12008,7 @@ specifiers:
   '@types/lodash': 4.14.162
   '@types/luxon': 1.24.4
   '@types/mdx-js__react': 1.5.3
-  '@types/node': 13.13.25
+  '@types/node': 13.13.26
   '@types/nprogress': 0.2.0
   '@types/prismjs': 1.16.1
   '@types/react': 16.9.52
