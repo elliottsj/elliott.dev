@@ -2,15 +2,15 @@ dependencies:
   '@babel/core': 7.12.3
   '@elliottsj/next-svgr': 0.0.3
   '@emotion/babel-preset-css-prop': 10.0.27_@babel+core@7.12.3
-  '@emotion/core': 10.0.35_react@16.13.1
-  '@emotion/styled': 10.0.27_4d699cf7e8a2bf97a506a18e2a399a54
-  '@emotion/styled-base': 10.0.31_4d699cf7e8a2bf97a506a18e2a399a54
+  '@emotion/core': 10.0.35_react@17.0.1
+  '@emotion/styled': 10.0.27_367588b4c525cc42d8d977c1618f910b
+  '@emotion/styled-base': 10.0.31_367588b4c525cc42d8d977c1618f910b
   '@fortawesome/fontawesome-svg-core': 1.2.32
   '@fortawesome/free-solid-svg-icons': 5.15.1
-  '@fortawesome/react-fontawesome': 0.1.11_22b5ff5cd64cfd006c7aaa46b26f0405
-  '@mdx-js/loader': 1.6.19_react@16.13.1
+  '@fortawesome/react-fontawesome': 0.1.11_8ce9757f921aacb44ae3f15ea31db6bb
+  '@mdx-js/loader': 1.6.19_react@17.0.1
   '@mdx-js/mdx': 1.6.19
-  '@mdx-js/react': 1.6.19_react@16.13.1
+  '@mdx-js/react': 1.6.19_react@17.0.1
   '@next/mdx': 9.5.6-canary.12_@mdx-js+loader@1.6.19
   '@types/chroma-js': 2.1.0
   '@types/jest': 26.0.15
@@ -32,8 +32,8 @@ dependencies:
   chroma-js: 2.1.0
   cross-env: 7.0.2
   del-cli: 3.0.1
-  emotion-normalize: 10.1.0_4d699cf7e8a2bf97a506a18e2a399a54
-  emotion-theming: 10.0.27_4d699cf7e8a2bf97a506a18e2a399a54
+  emotion-normalize: 10.1.0_367588b4c525cc42d8d977c1618f910b
+  emotion-theming: 10.0.27_367588b4c525cc42d8d977c1618f910b
   eslint: 7.11.0
   eslint-plugin-react: 7.21.5_eslint@7.11.0
   eslint-plugin-react-hooks: 4.1.2_eslint@7.11.0
@@ -41,20 +41,20 @@ dependencies:
   jest-emotion: 10.0.32
   lodash: 4.17.20
   luxon: 1.25.0
-  next: 9.5.6-canary.12_87d43d7c94ac96e61a8d846f6c093579
+  next: 9.5.6-canary.12_1c1809c9cb60c15677b649e31ff3e504
   next-optimized-images: 2.6.2
   npm-run-all: 4.1.5
   nprogress: 0.2.0
   prettier: 2.1.2
-  prism-react-renderer: 1.1.1_react@16.13.1
+  prism-react-renderer: 1.1.1_react@17.0.1
   prismjs: 1.22.0
-  react: 16.13.1
-  react-dom: 16.13.1_react@16.13.1
+  react: 17.0.1
+  react-dom: 17.0.1_react@17.0.1
   simple-icons: 3.12.0
   suncalc: 1.8.0
   typescript: 4.0.3
-  use-ackee: 1.0.0_react@16.13.1
-lockfileVersion: 5.1
+  use-ackee: 1.0.0_react@17.0.1
+lockfileVersion: 5.2
 packages:
   /@ampproject/toolbox-core/2.6.1:
     dependencies:
@@ -2138,7 +2138,7 @@ packages:
     dev: false
     resolution:
       integrity: sha512-fU2VtSVlHiF27empSbxi1O2JFdNWZO+2NFHfwO0pxgTep6Xa3uGb+3pVKfLww2l/IBGLNEZl5Xf/++A4wAYDYQ==
-  /@emotion/core/10.0.35_react@16.13.1:
+  /@emotion/core/10.0.35_react@17.0.1:
     dependencies:
       '@babel/runtime': 7.12.1
       '@emotion/cache': 10.0.29
@@ -2146,7 +2146,7 @@ packages:
       '@emotion/serialize': 0.11.16
       '@emotion/sheet': 0.9.4
       '@emotion/utils': 0.11.3
-      react: 16.13.1
+      react: 17.0.1
     dev: false
     peerDependencies:
       react: '>=16.3.0'
@@ -2188,26 +2188,26 @@ packages:
     dev: false
     resolution:
       integrity: sha512-zM9PFmgVSqBw4zL101Q0HrBVTGmpAxFZH/pYx/cjJT5advXguvcgjHFTCaIO3enL/xr89vK2bh0Mfyj9aa0ANA==
-  /@emotion/styled-base/10.0.31_4d699cf7e8a2bf97a506a18e2a399a54:
+  /@emotion/styled-base/10.0.31_367588b4c525cc42d8d977c1618f910b:
     dependencies:
       '@babel/runtime': 7.12.1
-      '@emotion/core': 10.0.35_react@16.13.1
+      '@emotion/core': 10.0.35_react@17.0.1
       '@emotion/is-prop-valid': 0.8.8
       '@emotion/serialize': 0.11.16
       '@emotion/utils': 0.11.3
-      react: 16.13.1
+      react: 17.0.1
     dev: false
     peerDependencies:
       '@emotion/core': ^10.0.28
       react: '>=16.3.0'
     resolution:
       integrity: sha512-wTOE1NcXmqMWlyrtwdkqg87Mu6Rj1MaukEoEmEkHirO5IoHDJ8LgCQL4MjJODgxWxXibGR3opGp1p7YvkNEdXQ==
-  /@emotion/styled/10.0.27_4d699cf7e8a2bf97a506a18e2a399a54:
+  /@emotion/styled/10.0.27_367588b4c525cc42d8d977c1618f910b:
     dependencies:
-      '@emotion/core': 10.0.35_react@16.13.1
-      '@emotion/styled-base': 10.0.31_4d699cf7e8a2bf97a506a18e2a399a54
+      '@emotion/core': 10.0.35_react@17.0.1
+      '@emotion/styled-base': 10.0.31_367588b4c525cc42d8d977c1618f910b
       babel-plugin-emotion: 10.0.33
-      react: 16.13.1
+      react: 17.0.1
     dev: false
     peerDependencies:
       '@emotion/core': ^10.0.27
@@ -2272,11 +2272,11 @@ packages:
     requiresBuild: true
     resolution:
       integrity: sha512-EFMuKtzRMNbvjab/SvJBaOOpaqJfdSap/Nl6hst7CgrJxwfORR1drdTV6q1Ib/JVzq4xObdTDcT6sqTaXMqfdg==
-  /@fortawesome/react-fontawesome/0.1.11_22b5ff5cd64cfd006c7aaa46b26f0405:
+  /@fortawesome/react-fontawesome/0.1.11_8ce9757f921aacb44ae3f15ea31db6bb:
     dependencies:
       '@fortawesome/fontawesome-svg-core': 1.2.32
       prop-types: 15.7.2
-      react: 16.13.1
+      react: 17.0.1
     dev: false
     peerDependencies:
       '@fortawesome/fontawesome-svg-core': ^1.2.20
@@ -2348,7 +2348,7 @@ packages:
       jest-haste-map: 26.6.0
       jest-message-util: 26.6.0
       jest-regex-util: 26.0.0
-      jest-resolve: 26.6.0_jest-resolve@26.6.0
+      jest-resolve: 26.6.0
       jest-resolve-dependencies: 26.6.0
       jest-runner: 26.6.0
       jest-runtime: 26.6.0
@@ -2418,7 +2418,7 @@ packages:
       istanbul-lib-source-maps: 4.0.0
       istanbul-reports: 3.0.2
       jest-haste-map: 26.6.0
-      jest-resolve: 26.6.0_jest-resolve@26.6.0
+      jest-resolve: 26.6.0
       jest-util: 26.6.0
       jest-worker: 26.5.0
       slash: 3.0.0
@@ -2500,10 +2500,10 @@ packages:
       node: '>= 10.14.2'
     resolution:
       integrity: sha512-8pDeq/JVyAYw7jBGU83v8RMYAkdrRxLG3BGnAJuqaQAUd6GWBmND2uyl+awI88+hit48suLoLjNFtR+ZXxWaYg==
-  /@mdx-js/loader/1.6.19_react@16.13.1:
+  /@mdx-js/loader/1.6.19_react@17.0.1:
     dependencies:
       '@mdx-js/mdx': 1.6.19
-      '@mdx-js/react': 1.6.19_react@16.13.1
+      '@mdx-js/react': 1.6.19_react@17.0.1
       loader-utils: 2.0.0
     dev: false
     peerDependencies:
@@ -2534,9 +2534,9 @@ packages:
     dev: false
     resolution:
       integrity: sha512-L3eLhEFnV/2bcb9XwOegsRmLHd1oEDQPtTBVezhptQ5U1YM+/WQNzx1apjzVTAyukwOanUXnTUMjRUtqJNgFCg==
-  /@mdx-js/react/1.6.19_react@16.13.1:
+  /@mdx-js/react/1.6.19_react@17.0.1:
     dependencies:
-      react: 16.13.1
+      react: 17.0.1
     dev: false
     peerDependencies:
       react: ^16.13.1
@@ -2561,7 +2561,7 @@ packages:
       integrity: sha512-cZ2ETTduAi+ThD6rk6FNzQWAOI0QRg0De54EqG4+2YFAU/FwWeoVy6c8nkaO1KE3qCVqXEyuat2Q6knA4E/sFA==
   /@next/mdx/9.5.6-canary.12_@mdx-js+loader@1.6.19:
     dependencies:
-      '@mdx-js/loader': 1.6.19_react@16.13.1
+      '@mdx-js/loader': 1.6.19_react@17.0.1
     dev: false
     peerDependencies:
       '@mdx-js/loader': '>=0.15.0'
@@ -2571,7 +2571,7 @@ packages:
     dev: false
     resolution:
       integrity: sha512-2zOZYPJtzlPnObsjD9UEmOygQwvlSzeMGCwklFmH+ioR5ngaA7P4oXtqh8ocYAsjRVbZucJcT9Yn5roPbZfUNQ==
-  /@next/react-dev-overlay/9.5.6-canary.12_0ef0fc372bbe7446962b2f2b401490c1:
+  /@next/react-dev-overlay/9.5.6-canary.12_9bc0526c8b535b2dad29bb0e3840dff1:
     dependencies:
       '@babel/code-frame': 7.10.4
       ally.js: 1.4.1
@@ -2579,13 +2579,13 @@ packages:
       chalk: 4.0.0
       classnames: 2.2.6
       data-uri-to-buffer: 3.0.0
-      react: 16.13.1
-      react-dom: 16.13.1_react@16.13.1
+      react: 17.0.1
+      react-dom: 17.0.1_react@17.0.1
       shell-quote: 1.7.2
       source-map: 0.8.0-beta.0
       stacktrace-parser: 0.1.10
       strip-ansi: 6.0.0
-      webpack: 4.44.1_webpack@4.44.1
+      webpack: 4.44.1
     dev: false
     peerDependencies:
       react: ^16.9.0 || ^17
@@ -2596,7 +2596,7 @@ packages:
   /@next/react-refresh-utils/9.5.6-canary.12_66609d456e1c4fc52398fef065f8d988:
     dependencies:
       react-refresh: 0.8.3
-      webpack: 4.44.1_webpack@4.44.1
+      webpack: 4.44.1
     dev: false
     peerDependencies:
       react-refresh: 0.8.3
@@ -4554,7 +4554,7 @@ packages:
       postcss-value-parser: 4.1.0
       schema-utils: 2.7.1
       semver: 7.3.2
-      webpack: 4.44.1_webpack@4.44.1
+      webpack: 4.44.1
     dev: false
     engines:
       node: '>= 10.13.0'
@@ -5048,23 +5048,23 @@ packages:
       node: '>= 4'
     resolution:
       integrity: sha512-/kyM18EfinwXZbno9FyUGeFh87KC8HRQBQGildHZbEuRyWFOmv1U10o9BBp8XVZDVNNuQKyIGIu5ZYAAXJ0V2Q==
-  /emotion-normalize/10.1.0_4d699cf7e8a2bf97a506a18e2a399a54:
+  /emotion-normalize/10.1.0_367588b4c525cc42d8d977c1618f910b:
     dependencies:
-      '@emotion/core': 10.0.35_react@16.13.1
-      react: 16.13.1
+      '@emotion/core': 10.0.35_react@17.0.1
+      react: 17.0.1
     dev: false
     peerDependencies:
       '@emotion/core': '>=10.0.0'
       react: '>=16.3.0'
     resolution:
       integrity: sha512-Z+rz3Eep8tUgtBKT13/rEpci+ZbCadRovEmILuLB9IEpq4FdNpXjm7MVeJqG4iBRGw4tKmIq06lYgjeC6oEnag==
-  /emotion-theming/10.0.27_4d699cf7e8a2bf97a506a18e2a399a54:
+  /emotion-theming/10.0.27_367588b4c525cc42d8d977c1618f910b:
     dependencies:
       '@babel/runtime': 7.12.1
-      '@emotion/core': 10.0.35_react@16.13.1
+      '@emotion/core': 10.0.35_react@17.0.1
       '@emotion/weak-memoize': 0.2.5
       hoist-non-react-statics: 3.3.2
-      react: 16.13.1
+      react: 17.0.1
     dev: false
     peerDependencies:
       '@emotion/core': ^10.0.27
@@ -6811,7 +6811,7 @@ packages:
       jest-get-type: 26.3.0
       jest-jasmine2: 26.6.0
       jest-regex-util: 26.0.0
-      jest-resolve: 26.6.0_jest-resolve@26.6.0
+      jest-resolve: 26.6.0
       jest-util: 26.6.0
       jest-validate: 26.6.0
       micromatch: 4.0.2
@@ -6992,7 +6992,7 @@ packages:
       integrity: sha512-HsNmL8vVIn1rL1GWA21Drpy9Cl+7GImwbWz/0fkWHrUXVzuaG7rP0vwLtE+/n70Mt0U8nPkz8fxioi3SC0wqhw==
   /jest-pnp-resolver/1.2.2_jest-resolve@26.6.0:
     dependencies:
-      jest-resolve: 26.6.0_jest-resolve@26.6.0
+      jest-resolve: 26.6.0
     dev: false
     engines:
       node: '>=6'
@@ -7019,7 +7019,7 @@ packages:
       node: '>= 10.14.2'
     resolution:
       integrity: sha512-4di+XUT7LwJJ8b8qFEEDQssC5+aeVjLhvRICCaS4alh/EVS9JCT1armfJ3pnSS8t4o6659WbMmKVo82H4LuUVw==
-  /jest-resolve/26.6.0_jest-resolve@26.6.0:
+  /jest-resolve/26.6.0:
     dependencies:
       '@jest/types': 26.6.0
       chalk: 4.1.0
@@ -7032,8 +7032,6 @@ packages:
     dev: false
     engines:
       node: '>= 10.14.2'
-    peerDependencies:
-      jest-resolve: '*'
     resolution:
       integrity: sha512-tRAz2bwraHufNp+CCmAD8ciyCpXCs1NQxB5EJAmtCFy6BN81loFEGWKzYu26Y62lAJJe4X4jg36Kf+NsQyiStQ==
   /jest-runner/26.6.0:
@@ -7052,7 +7050,7 @@ packages:
       jest-haste-map: 26.6.0
       jest-leak-detector: 26.6.0
       jest-message-util: 26.6.0
-      jest-resolve: 26.6.0_jest-resolve@26.6.0
+      jest-resolve: 26.6.0
       jest-runtime: 26.6.0
       jest-util: 26.6.0
       jest-worker: 26.5.0
@@ -7084,7 +7082,7 @@ packages:
       jest-message-util: 26.6.0
       jest-mock: 26.6.0
       jest-regex-util: 26.0.0
-      jest-resolve: 26.6.0_jest-resolve@26.6.0
+      jest-resolve: 26.6.0
       jest-snapshot: 26.6.0
       jest-util: 26.6.0
       jest-validate: 26.6.0
@@ -7120,7 +7118,7 @@ packages:
       jest-haste-map: 26.6.0
       jest-matcher-utils: 26.6.0
       jest-message-util: 26.6.0
-      jest-resolve: 26.6.0_jest-resolve@26.6.0
+      jest-resolve: 26.6.0
       natural-compare: 1.4.0
       pretty-format: 26.6.0
       semver: 7.3.2
@@ -7998,7 +7996,7 @@ packages:
     dev: false
     resolution:
       integrity: sha1-yobR/ogoFpsBICCOPchCS524NCw=
-  /next/9.5.6-canary.12_87d43d7c94ac96e61a8d846f6c093579:
+  /next/9.5.6-canary.12_1c1809c9cb60c15677b649e31ff3e504:
     dependencies:
       '@ampproject/toolbox-optimizer': 2.7.0-alpha.1
       '@babel/code-frame': 7.10.4
@@ -8021,7 +8019,7 @@ packages:
       '@hapi/accept': 5.0.1
       '@next/env': 9.5.6-canary.12
       '@next/polyfill-module': 9.5.6-canary.12
-      '@next/react-dev-overlay': 9.5.6-canary.12_0ef0fc372bbe7446962b2f2b401490c1
+      '@next/react-dev-overlay': 9.5.6-canary.12_9bc0526c8b535b2dad29bb0e3840dff1
       '@next/react-refresh-utils': 9.5.6-canary.12_66609d456e1c4fc52398fef065f8d988
       ast-types: 0.13.2
       babel-plugin-transform-define: 2.0.0
@@ -8046,8 +8044,8 @@ packages:
       postcss: 8.1.1
       process: 0.11.10
       prop-types: 15.7.2
-      react: 16.13.1
-      react-dom: 16.13.1_react@16.13.1
+      react: 17.0.1
+      react-dom: 17.0.1_react@17.0.1
       react-is: 16.13.1
       react-refresh: 0.8.3
       resolve-url-loader: 3.1.2
@@ -8055,12 +8053,12 @@ packages:
       schema-utils: 2.7.1
       stream-browserify: 3.0.0
       style-loader: 1.2.1_webpack@4.44.1
-      styled-jsx: 3.3.0_react@16.13.1
-      use-subscription: 1.4.1_react@16.13.1
+      styled-jsx: 3.3.0_react@17.0.1
+      use-subscription: 1.4.1_react@17.0.1
       vm-browserify: 1.1.2
       watchpack: 2.0.0-beta.13
       web-vitals: 0.2.4
-      webpack: 4.44.1_webpack@4.44.1
+      webpack: 4.44.1
       webpack-sources: 1.4.3
     dev: false
     engines:
@@ -8833,9 +8831,9 @@ packages:
       node: '>= 10'
     resolution:
       integrity: sha512-Uumr9URVB7bm6SbaByXtx+zGlS+0loDkFMHP0kHahMjmfCtmFY03iqd++5v3Ld6iB5TocVXlBN/T+DXMn9d4BA==
-  /prism-react-renderer/1.1.1_react@16.13.1:
+  /prism-react-renderer/1.1.1_react@17.0.1:
     dependencies:
-      react: 16.13.1
+      react: 17.0.1
     dev: false
     peerDependencies:
       react: '>=0.14.9'
@@ -9011,18 +9009,17 @@ packages:
     optional: true
     resolution:
       integrity: sha512-y3bGgqKj3QBdxLbLkomlohkvsA8gdAiUQlSBJnBhfn+BPxg4bc62d8TcBW15wavDfgexCgccckhcZvywyQYPOw==
-  /react-dom/16.13.1_react@16.13.1:
+  /react-dom/17.0.1_react@17.0.1:
     dependencies:
       loose-envify: 1.4.0
       object-assign: 4.1.1
-      prop-types: 15.7.2
-      react: 16.13.1
-      scheduler: 0.19.1
+      react: 17.0.1
+      scheduler: 0.20.1
     dev: false
     peerDependencies:
-      react: ^16.13.1
+      react: 17.0.1
     resolution:
-      integrity: sha512-81PIMmVLnCNLO/fFOQxdQkvEq/+Hfpv24XNJfpyZhTRfO0QcmQIF/PgCa1zCOj2w1hrn12MFLyaJ/G0+Mxtfag==
+      integrity: sha512-6eV150oJZ9U2t9svnsspTMrWNyHc6chX0KzDeAOXftRa8bNeOKTTfCJ7KorIwenkHd2xqVTBTCZd79yk/lx/Ug==
   /react-is/16.13.1:
     dev: false
     resolution:
@@ -9033,16 +9030,15 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha512-X8jZHc7nCMjaCqoU+V2I0cOhNW+QMBwSUkeXnTi8IPe6zaRWfn60ZzvFDZqWPfmSJfjub7dDW1SP0jaHWLu/hg==
-  /react/16.13.1:
+  /react/17.0.1:
     dependencies:
       loose-envify: 1.4.0
       object-assign: 4.1.1
-      prop-types: 15.7.2
     dev: false
     engines:
       node: '>=0.10.0'
     resolution:
-      integrity: sha512-YMZQQq32xHLX0bz5Mnibv1/LHb3Sqzngu7xstSM+vrkE5Kzr9xE0yMByK5kMoTK30YVJE61WfbxIFFvfeDKT1w==
+      integrity: sha512-lG9c9UuMHdcAexXtigOZLX8exLWkW0Ku29qPRU8uhF2R9BN96dLCt0psvzPLlHc5OWkgymP3qwTRgbnw5BKx3w==
   /read-pkg-up/7.0.1:
     dependencies:
       find-up: 4.1.0
@@ -9498,7 +9494,7 @@ packages:
       neo-async: 2.6.2
       schema-utils: 2.7.1
       semver: 7.3.2
-      webpack: 4.44.1_webpack@4.44.1
+      webpack: 4.44.1
     dev: false
     engines:
       node: '>= 10.13.0'
@@ -9528,13 +9524,13 @@ packages:
       node: '>=10'
     resolution:
       integrity: sha512-5LBh1Tls8c9xgGjw3QrMwETmTMVk0oFgvrFSvWx62llR2hcEInrKNZ2GZCCuuy2lvWrdl5jhbpeqc5hRYKFOcw==
-  /scheduler/0.19.1:
+  /scheduler/0.20.1:
     dependencies:
       loose-envify: 1.4.0
       object-assign: 4.1.1
     dev: false
     resolution:
-      integrity: sha512-n/zwRWRYSUj0/3g/otKDRPMh6qv2SYMWNq85IEa8iZyAv8od9zDYpGSnpBEjNgcMNq6Scbu5KfIPxNF72R/2EA==
+      integrity: sha512-LKTe+2xNJBNxu/QhHvDR14wUXHRQbVY5ZOYpOGWRzhydZUqrLb2JBvLPY7cAqFmqrWuDED0Mjk7013SZiOz6Bw==
   /schema-utils/1.0.0:
     dependencies:
       ajv: 6.12.6
@@ -10143,7 +10139,7 @@ packages:
     dependencies:
       loader-utils: 2.0.0
       schema-utils: 2.7.1
-      webpack: 4.44.1_webpack@4.44.1
+      webpack: 4.44.1
     dev: false
     engines:
       node: '>= 8.9.0'
@@ -10157,13 +10153,13 @@ packages:
     dev: false
     resolution:
       integrity: sha512-CzFnRRXhzWIdItT3OmF8SQfWyahHhjq3HwcMNCNLn+N7klOOqPjMeG/4JSu77D7ypZdGvSzvkrbyeTMizz2VrA==
-  /styled-jsx/3.3.0_react@16.13.1:
+  /styled-jsx/3.3.0_react@17.0.1:
     dependencies:
       '@babel/types': 7.8.3
       babel-plugin-syntax-jsx: 6.18.0
       convert-source-map: 1.7.0
       loader-utils: 1.2.3
-      react: 16.13.1
+      react: 17.0.1
       source-map: 0.7.3
       string-hash: 1.1.3
       stylis: 3.5.4
@@ -10322,7 +10318,7 @@ packages:
       serialize-javascript: 4.0.0
       source-map: 0.6.1
       terser: 4.8.0
-      webpack: 4.44.1_webpack@4.44.1
+      webpack: 4.44.1
       webpack-sources: 1.4.3
       worker-farm: 1.7.0
     dev: false
@@ -10787,19 +10783,19 @@ packages:
     dev: false
     resolution:
       integrity: sha1-ODjpfPxgUh63PFJajlW/3Z4uKPE=
-  /use-ackee/1.0.0_react@16.13.1:
+  /use-ackee/1.0.0_react@17.0.1:
     dependencies:
       ackee-tracker: 4.0.2
-      react: 16.13.1
+      react: 17.0.1
     dev: false
     peerDependencies:
       react: ^16.11.0
     resolution:
       integrity: sha512-Sn6EQewy8bD/pgCG9XsixjGyi+WbvtbiutDNLqbdo/j4+2UrgOYX1vSsSpX7gZAiIlwc4jYEHBdj5FuHMd80pA==
-  /use-subscription/1.4.1_react@16.13.1:
+  /use-subscription/1.4.1_react@17.0.1:
     dependencies:
       object-assign: 4.1.1
-      react: 16.13.1
+      react: 17.0.1
     dev: false
     peerDependencies:
       react: ^16.8.0
@@ -10982,7 +10978,7 @@ packages:
     dev: false
     resolution:
       integrity: sha512-lgTS3Xhv1lCOKo7SA5TjKXMjpSM4sBjNV5+q2bqesbSPs5FjGmU6jjtBSkX9b4qW87vDIsCIlUPOEhbZrMdjeQ==
-  /webpack/4.44.1_webpack@4.44.1:
+  /webpack/4.44.1:
     dependencies:
       '@webassemblyjs/ast': 1.9.0
       '@webassemblyjs/helper-module-context': 1.9.0
@@ -11012,7 +11008,6 @@ packages:
       node: '>=6.11.5'
     hasBin: true
     peerDependencies:
-      webpack: '*'
       webpack-cli: '*'
       webpack-command: '*'
     peerDependenciesMeta:
@@ -11252,8 +11247,8 @@ specifiers:
   prettier: 2.1.2
   prism-react-renderer: 1.1.1
   prismjs: 1.22.0
-  react: 16.13.1
-  react-dom: 16.13.1
+  react: 17.0.1
+  react-dom: 17.0.1
   simple-icons: 3.12.0
   suncalc: 1.8.0
   typescript: 4.0.3
