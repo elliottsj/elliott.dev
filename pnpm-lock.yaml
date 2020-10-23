@@ -11,7 +11,7 @@ dependencies:
   '@mdx-js/loader': 1.6.19_react@16.13.1
   '@mdx-js/mdx': 1.6.19
   '@mdx-js/react': 1.6.19_react@16.13.1
-  '@next/mdx': 9.4.4_@mdx-js+loader@1.6.19
+  '@next/mdx': 9.5.5_@mdx-js+loader@1.6.19
   '@types/chroma-js': 2.1.0
   '@types/jest': 26.0.15
   '@types/lodash': 4.14.162
@@ -2662,14 +2662,14 @@ packages:
     dev: false
     resolution:
       integrity: sha512-cZ2ETTduAi+ThD6rk6FNzQWAOI0QRg0De54EqG4+2YFAU/FwWeoVy6c8nkaO1KE3qCVqXEyuat2Q6knA4E/sFA==
-  /@next/mdx/9.4.4_@mdx-js+loader@1.6.19:
+  /@next/mdx/9.5.5_@mdx-js+loader@1.6.19:
     dependencies:
       '@mdx-js/loader': 1.6.19_react@16.13.1
     dev: false
     peerDependencies:
       '@mdx-js/loader': '>=0.15.0'
     resolution:
-      integrity: sha512-d1WPPxube7kgQo5JjfiFxPoK+set0OBCNeIJnF8TN176v4SsFNngfB4I5RIxsdXqD7aPzWeFcxCGGGvbzjKa8A==
+      integrity: sha512-IdwwXrxqNhZuEeyVdCKtv1R2CqIsAZm/rtCUbE5WImFW3VK8nrSFDFi+JkoWoDcHgGgaJYgfoYAoieHV5POGJg==
   /@next/polyfill-module/9.5.6-canary.12:
     dev: false
     resolution:
@@ -11463,7 +11463,7 @@ specifiers:
   '@mdx-js/loader': 1.6.19
   '@mdx-js/mdx': 1.6.19
   '@mdx-js/react': 1.6.19
-  '@next/mdx': 9.4.4
+  '@next/mdx': 9.5.5
   '@types/chroma-js': 2.1.0
   '@types/jest': 26.0.15
   '@types/lodash': 4.14.162

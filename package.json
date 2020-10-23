@@ -59,7 +59,7 @@
     "@mdx-js/loader": "1.6.19",
     "@mdx-js/mdx": "1.6.19",
     "@mdx-js/react": "1.6.19",
-    "@next/mdx": "9.4.4",
+    "@next/mdx": "9.5.5",
     "@types/chroma-js": "2.1.0",
     "@types/jest": "26.0.15",
     "@types/lodash": "4.14.162",
