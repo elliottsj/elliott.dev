@@ -18,6 +18,7 @@ import { Layout } from '../components';
 import CodeBlock from '../components/CodeBlock';
 import { useInterval } from '../hooks/useInterval';
 import { getTheme, globalStyles as themeGlobalStyles } from '../lib/theme';
+import Link from 'next/link';
 
 const Ackee = dynamic(() => import('../components/Ackee'), { ssr: false });
 
@@ -41,10 +42,30 @@ Router.events.on('routeChangeError', () => {
 
 const Pre: React.FC = (props) => <div {...props} />;
 
+/**
+ * Links in an MDX document are wrapped in a Next.js <Link /> if it's a link
+ * to a page on this site.
+ */
+const MDXLink: React.FC<React.DetailedHTMLProps<
+  React.AnchorHTMLAttributes<HTMLAnchorElement>,
+  HTMLAnchorElement
+>> = (props) => {
+  const { href, ...rest } = props;
+  if (href?.startsWith('/')) {
+    return (
+      <Link href={href}>
+        <a {...rest} />
+      </Link>
+    );
+  }
+  return <a href={href} {...rest} />;
+};
+
 const mdxComponents: MDXProviderProps['components'] = {
   code: CodeBlock,
   pre: Pre,
   wrapper: Layout,
+  a: MDXLink,
 };
 
 const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
