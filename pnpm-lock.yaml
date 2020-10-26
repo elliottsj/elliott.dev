@@ -11,7 +11,7 @@ dependencies:
   '@mdx-js/loader': 1.6.19_react@17.0.1
   '@mdx-js/mdx': 1.6.19
   '@mdx-js/react': 1.6.19_react@17.0.1
-  '@next/mdx': 9.5.6-canary.14_@mdx-js+loader@1.6.19
+  '@next/mdx': 9.5.6-canary.15_@mdx-js+loader@1.6.19
   '@types/chroma-js': 2.1.0
   '@types/jest': 26.0.15
   '@types/lodash': 4.14.162
@@ -41,7 +41,7 @@ dependencies:
   jest-emotion: 10.0.32
   lodash: 4.17.20
   luxon: 1.25.0
-  next: 9.5.6-canary.14_1c1809c9cb60c15677b649e31ff3e504
+  next: 9.5.6-canary.15_1c1809c9cb60c15677b649e31ff3e504
   next-optimized-images: 2.6.2
   npm-run-all: 4.1.5
   nprogress: 0.2.0
@@ -2620,23 +2620,23 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha512-bPHp6Ji8b41szTOcaP63VlnbbO5Ny6dwAATtY6JTjh5N2OLrb5Qk/Th5cRkRQhkWCt+EJsYrNB0MiL+Gpn6e3g==
-  /@next/env/9.5.6-canary.14:
+  /@next/env/9.5.6-canary.15:
     dev: false
     resolution:
-      integrity: sha512-evDDFWN93/vTNlxJhFHvc5Nwp7uf3UtQZGa+D+31LFlGIVZtTP8G6l5U8HDUVkFeL/CD5cDefm6OotQp1W1PvA==
-  /@next/mdx/9.5.6-canary.14_@mdx-js+loader@1.6.19:
+      integrity: sha512-0aPlri2bTsswhsUbpItjnCnZPapxjbgvViLl5muXXcdnA0ZakcG2PJjZwfowzcbJ2qYFSlykiTuBIJQfg/54ew==
+  /@next/mdx/9.5.6-canary.15_@mdx-js+loader@1.6.19:
     dependencies:
       '@mdx-js/loader': 1.6.19_react@17.0.1
     dev: false
     peerDependencies:
       '@mdx-js/loader': '>=0.15.0'
     resolution:
-      integrity: sha512-wzy7w7atlPkscXy6DdPPvtL/j3RSbvqvgcaxwXChx3NNdIfqkbjOPv/zEk27TiUIjyjz0+eYjRSIwmGjpYy8Rg==
-  /@next/polyfill-module/9.5.6-canary.14:
+      integrity: sha512-+Ky3sOXnuqmS/9AdaDdGiRCRCL1ihViO6cc2T314UY0TTHQK9yQ5+1nxLdgOpZYKrCFds/KIexzsfzsC0wMk3g==
+  /@next/polyfill-module/9.5.6-canary.15:
     dev: false
     resolution:
-      integrity: sha512-OVOPKfxsi56RPHyXKv/Wrqq2uYbYbwh9kMBskqfNCI05lAoiBaXetABa8JcO2xUO+WM6MPUSmxlyWuN5LLJqXA==
-  /@next/react-dev-overlay/9.5.6-canary.14_9bc0526c8b535b2dad29bb0e3840dff1:
+      integrity: sha512-LfwvVj8uQ92KB7h3TBWlFszMctUa/BgnOEW5Jw10lSLO92udy3VRKHnjYTXxR8CJhhKgBqeP3URGmugt4xFo4g==
+  /@next/react-dev-overlay/9.5.6-canary.15_9bc0526c8b535b2dad29bb0e3840dff1:
     dependencies:
       '@babel/code-frame': 7.10.4
       ally.js: 1.4.1
@@ -2657,8 +2657,8 @@ packages:
       react-dom: ^16.9.0 || ^17
       webpack: ^4 || ^5
     resolution:
-      integrity: sha512-hPpNDFWBTDQwa1nRMltxpSD0uewkP0jP6CCfGqyVSZugl7N+6VYgdTvM4s/ZZTaL+OKbd2rUdI/U6V7IQVn+4Q==
-  /@next/react-refresh-utils/9.5.6-canary.14_66609d456e1c4fc52398fef065f8d988:
+      integrity: sha512-odRCboFN0Q9k5QoHygVlfmv/U/SSqHNaYRzR/Yf1nAHAcLngcEWvX8mda8xVhRohE1CYXMJsG8Spsmc5ZIxdeA==
+  /@next/react-refresh-utils/9.5.6-canary.15_66609d456e1c4fc52398fef065f8d988:
     dependencies:
       react-refresh: 0.8.3
       webpack: 4.44.1
@@ -2667,7 +2667,7 @@ packages:
       react-refresh: 0.8.3
       webpack: ^4 || ^5
     resolution:
-      integrity: sha512-uZawKMFl0hxzFF2lPGqo80zVj2XQRrlGN+o37XFQt+W0pR8GgLHNk8xikrPNz7dOwW1s7DNSAwujKmDiutc0og==
+      integrity: sha512-UwC4+25WgPYyYdXGZO35JDuBrk1IjlGD48s+evkblSf8QD4wHi/Sc9/7tVdqzIspQ48iAzCCeYWXHz0OT8pjFQ==
   /@nodelib/fs.scandir/2.1.3:
     dependencies:
       '@nodelib/fs.stat': 2.0.3
@@ -8097,7 +8097,7 @@ packages:
     dev: false
     resolution:
       integrity: sha1-yobR/ogoFpsBICCOPchCS524NCw=
-  /next/9.5.6-canary.14_1c1809c9cb60c15677b649e31ff3e504:
+  /next/9.5.6-canary.15_1c1809c9cb60c15677b649e31ff3e504:
     dependencies:
       '@ampproject/toolbox-optimizer': 2.7.0-alpha.1
       '@babel/code-frame': 7.10.4
@@ -8118,10 +8118,10 @@ packages:
       '@babel/runtime': 7.11.2
       '@babel/types': 7.11.5
       '@hapi/accept': 5.0.1
-      '@next/env': 9.5.6-canary.14
-      '@next/polyfill-module': 9.5.6-canary.14
-      '@next/react-dev-overlay': 9.5.6-canary.14_9bc0526c8b535b2dad29bb0e3840dff1
-      '@next/react-refresh-utils': 9.5.6-canary.14_66609d456e1c4fc52398fef065f8d988
+      '@next/env': 9.5.6-canary.15
+      '@next/polyfill-module': 9.5.6-canary.15
+      '@next/react-dev-overlay': 9.5.6-canary.15_9bc0526c8b535b2dad29bb0e3840dff1
+      '@next/react-refresh-utils': 9.5.6-canary.15_66609d456e1c4fc52398fef065f8d988
       ast-types: 0.13.2
       babel-plugin-transform-define: 2.0.0
       babel-plugin-transform-react-remove-prop-types: 0.4.24
@@ -8172,7 +8172,7 @@ packages:
       react-dom: ^16.6.0 || ^17
       typescript: '*'
     resolution:
-      integrity: sha512-uUcWxznWWMjNBA9fqJ82avTuVe7Rud0/129oRZRsQX+VH5qqhxeBbupEfzP65AihyLD+X5olGZQ2SsmqWqubJQ==
+      integrity: sha512-1+eX+fQIfxKGj1RDJQ58vziQYfz/AraTLI+J4VA3EiGEPttnbWU4MxedgfTZKR1VEqK6r42ej3yfzbLhY530BA==
   /nice-try/1.0.5:
     dev: false
     resolution:
@@ -11326,7 +11326,7 @@ specifiers:
   '@mdx-js/loader': 1.6.19
   '@mdx-js/mdx': 1.6.19
   '@mdx-js/react': 1.6.19
-  '@next/mdx': 9.5.6-canary.14
+  '@next/mdx': 9.5.6-canary.15
   '@types/chroma-js': 2.1.0
   '@types/jest': 26.0.15
   '@types/lodash': 4.14.162
@@ -11356,7 +11356,7 @@ specifiers:
   jest-emotion: 10.0.32
   lodash: 4.17.20
   luxon: 1.25.0
-  next: 9.5.6-canary.14
+  next: 9.5.6-canary.15
   next-optimized-images: 2.6.2
   npm-run-all: 4.1.5
   nprogress: 0.2.0
