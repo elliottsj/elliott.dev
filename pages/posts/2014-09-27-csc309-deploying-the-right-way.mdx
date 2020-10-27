@@ -5,6 +5,8 @@ export const meta = {
   title: 'CSC309: Deploying the Right Way',
 };
 
+import Image from 'next/image';
+
 # CSC309: Deploying the Right Way
 
 The first assignment in [CSC309][csc309] this semester has some rather strange methods for deploying the website:
@@ -30,13 +32,11 @@ Next, launch a new EC2 instance of the AMI that De Lara provides:
 
 <https://console.aws.amazon.com/ec2/home?region=us-east-1#launchAmi=ami-cafc53a2>
 
-import ec2SecurityGroup from '../../images/ec2-security-group.png';
-
 1. Choose the _t2.micro_ instance type (or _t2.small_ if you have cash to spare)
 2. Click _Next_ until you get to _Step 6: Configure Security Group_
 3. Create a new security group, name it something like _csc309-a1_, and allow SSH access from anywhere:
 
-   <img src={ec2SecurityGroup} alt="Security Group" />
+   <Image src="/images/ec2-security-group.png" alt="Security Group" unsized />
 
 4. Then go ahead and click _Review and Launch_, then _Launch_.
 
