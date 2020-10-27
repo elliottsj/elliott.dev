@@ -5,6 +5,8 @@ export const meta = {
   title: 'Public Key Authentication on CDF',
 };
 
+import Image from 'next/image';
+
 # Public Key Authentication on CDF
 
 You don't have to use your [CDF](http://www.cdf.toronto.edu/) password every time they connect via SSH. Instead of password authentication, you can use an SSH key pair to authenticate automatically.
@@ -60,9 +62,7 @@ Now when you connect to CDF, `ssh` should use your private key `~/.ssh/id_rsa` t
 
 Use [PuTTYgen][putty-download] to generate your SSH private/public key pair. Open PuTTYgen and click the _Generate_ button:
 
-import puttygen01 from '../../images/puttygen01.png';
-
-<img src={puttygen01} alt="PuTTYgen" />;
+<Image src="/images/puttygen01.png" alt="PuTTYgen" unsized />
 
 At this point, PuTTYgen will ask you to move your mouse around over the window, which creates some entropy to make the key a bit more secure.
 
@@ -70,25 +70,19 @@ Optionally change the _Key comment_ to something useful like your CDF username, 
 
 (Note: You cannot create directories with a leading `.` in Windows Explorer. Open `cmd.exe` and run `mkdir %UserProfile%\.ssh` to create the directory.)
 
-import puttygen02 from '../../images/puttygen02.png';
-
-<img src={puttygen02} alt="PuTTYgen" />;
+<Image src="/images/puttygen02.png" alt="PuTTYgen" unsized />
 
 #### Copy your public key onto CDF.
 
 Your public key is displayed in the section of the PuTTYgen window _Public key for pasting into OpenSSH authorized_keys file_. We need to copy the contents of this file into a file on CDF, `~/.ssh/authorized_keys` so that CDF knows that your key pair is allowed to log into your CDF account.
 
-import puttygen03 from '../../images/puttygen03.png';
-
-<img src={puttygen03} alt="PuTTYgen" />;
+<Image src="/images/puttygen03.png" alt="PuTTYgen" unsized />
 
 Copy the entire string to your clipboard.
 
 Connect to CDF in PuTTY using your password:
 
-import putty01 from '../../images/putty01.png';
-
-<img src={putty01} alt="PuTTY" />;
+<Image src="/images/putty01.png" alt="PuTTY" unsized />
 
 Create `~/.ssh/authorized_keys` by pasting your public key into an  
 `echo "..." >> authorized_keys` command:
@@ -108,21 +102,15 @@ exit
 
 Set your username in _Connection_ -> _Data_:
 
-import putty02 from '../../images/putty02.png';
-
-<img src={putty02} alt="PuTTY" />;
+<Image src="/images/putty02.png" alt="PuTTY" unsized />
 
 Set your private key in _Connection_ -> _SSH_ -> _Auth_:
 
-import putty03 from '../../images/putty03.png';
-
-<img src={putty03} alt="PuTTY" />;
+<Image src="/images/putty03.png" alt="PuTTY" unsized />
 
 Create a saved session:
 
-import putty04 from '../../images/putty04.png';
-
-<img src={putty04} alt="PuTTY" />;
+<Image src="/images/putty04.png" alt="PuTTY" unsized />
 
 Now when you open PuTTY, all you need to do is double-click the name of your saved session (in my case, _cdf_) and you'll be logged in automatically. Perfect!
 
