@@ -20,7 +20,7 @@ dependencies:
   '@types/node': 13.13.29
   '@types/nprogress': 0.2.0
   '@types/prismjs': 1.16.1
-  '@types/react': 16.9.53
+  '@types/react': 16.9.54
   '@types/react-dom': 16.9.9
   '@types/suncalc': 1.8.0
   '@types/use-ackee': 1.0.0
@@ -3007,6 +3007,13 @@ packages:
     dev: false
     resolution:
       integrity: sha512-4nW60Sd4L7+WMXH1D6jCdVftuW7j4Za6zdp6tJ33Rqv0nk1ZAmQKML9ZLD4H0dehA3FZxXR/GM8gXplf82oNGw==
+  /@types/react/16.9.54:
+    dependencies:
+      '@types/prop-types': 15.7.3
+      csstype: 3.0.3
+    dev: false
+    resolution:
+      integrity: sha512-GhawhYraQZpGFO2hVMArjPrYbnA/6+DS8SubK8IPhhVClmKqANihsRenOm5E0mvqK0m/BKoqVktA1O1+Xvlz9w==
   /@types/source-list-map/0.1.2:
     dev: false
     resolution:
@@ -11339,7 +11346,7 @@ specifiers:
   '@types/node': 13.13.29
   '@types/nprogress': 0.2.0
   '@types/prismjs': 1.16.1
-  '@types/react': 16.9.53
+  '@types/react': 16.9.54
   '@types/react-dom': 16.9.9
   '@types/suncalc': 1.8.0
   '@types/use-ackee': 1.0.0
