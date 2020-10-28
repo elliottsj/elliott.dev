@@ -24,7 +24,7 @@ dependencies:
   '@types/react-dom': 16.9.9
   '@types/suncalc': 1.8.0
   '@types/use-ackee': 1.0.0
-  '@types/webpack': 4.41.23
+  '@types/webpack': 4.41.24
   '@types/webpack-env': 1.15.3
   '@typescript-eslint/eslint-plugin': 4.6.0_5b45abdb13fea4fae68d9888b9d8cc1b
   '@typescript-eslint/parser': 4.6.0_eslint@7.12.1+typescript@4.0.5
@@ -2964,23 +2964,23 @@ packages:
       integrity: sha512-5oiXqR7kwDGZ6+gmzIO2lTC+QsriNuQXZDWNYRV3l2XRN/zmPgnC21DLSx2D05zvD8vnXW6qUg7JnXZ4I6qLVQ==
   /@types/webpack-sources/2.0.0:
     dependencies:
-      '@types/node': 13.13.29
+      '@types/node': 13.13.30
       '@types/source-list-map': 0.1.2
       source-map: 0.7.3
     dev: false
     resolution:
       integrity: sha512-a5kPx98CNFRKQ+wqawroFunvFqv7GHm/3KOI52NY9xWADgc8smu4R6prt4EU/M4QfVjvgBkMqU4fBhw3QfMVkg==
-  /@types/webpack/4.41.23:
+  /@types/webpack/4.41.24:
     dependencies:
       '@types/anymatch': 1.3.1
-      '@types/node': 13.13.29
+      '@types/node': 13.13.30
       '@types/tapable': 1.0.6
       '@types/uglify-js': 3.11.1
       '@types/webpack-sources': 2.0.0
       source-map: 0.6.1
     dev: false
     resolution:
-      integrity: sha512-ojA4CupZg8RCzVJLugWlvqrHpT59GWhqFxbinlsnvk10MjQCWB+ot7XDACctbWhnhtdhYK7+HOH1JxkVLiZhMg==
+      integrity: sha512-1A0MXPwZiMOD3DPMuOKUKcpkdPo8Lq33UGggZ7xio6wJ/jV1dAu5cXDrOfGDnldUroPIRLsr/DT43/GqOA4RFQ==
   /@types/yargs-parser/15.0.0:
     dev: false
     resolution:
@@ -11066,7 +11066,7 @@ specifiers:
   '@types/react-dom': 16.9.9
   '@types/suncalc': 1.8.0
   '@types/use-ackee': 1.0.0
-  '@types/webpack': 4.41.23
+  '@types/webpack': 4.41.24
   '@types/webpack-env': 1.15.3
   '@typescript-eslint/eslint-plugin': 4.6.0
   '@typescript-eslint/parser': 4.6.0
