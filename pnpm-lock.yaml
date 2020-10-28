@@ -19,7 +19,7 @@ dependencies:
   '@types/mdx-js__react': 1.5.3
   '@types/node': 13.13.30
   '@types/nprogress': 0.2.0
-  '@types/prismjs': 1.16.1
+  '@types/prismjs': 1.16.2
   '@types/react': 16.9.54
   '@types/react-dom': 16.9.9
   '@types/suncalc': 1.8.0
@@ -2901,10 +2901,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-UEyp8LwZ4Dg30kVU2Q3amHHyTn1jEdhCIE59ANed76GaT1Vp76DD3ZWSAxgCrw6wJ0TqeoBpqmfUHiUDPs//HQ==
-  /@types/prismjs/1.16.1:
+  /@types/prismjs/1.16.2:
     dev: false
     resolution:
-      integrity: sha512-RNgcK3FEc1GpeOkamGDq42EYkb6yZW5OWQwTS56NJIB8WL0QGISQglA7En7NUx9RGP8AC52DOe+squqbAckXlA==
+      integrity: sha512-1M/j21xgTde7RPtpJVQebW5rzrquj7S+wnqt4x9uWrIPpr0Ya/uXypcqC2aUQL5gtLXFCKSH7GnjfAijMdfbuA==
   /@types/prop-types/15.7.3:
     dev: false
     resolution:
@@ -11061,7 +11061,7 @@ specifiers:
   '@types/mdx-js__react': 1.5.3
   '@types/node': 13.13.30
   '@types/nprogress': 0.2.0
-  '@types/prismjs': 1.16.1
+  '@types/prismjs': 1.16.2
   '@types/react': 16.9.54
   '@types/react-dom': 16.9.9
   '@types/suncalc': 1.8.0
