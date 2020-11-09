@@ -49,7 +49,7 @@
   "dependencies": {
     "@babel/core": "7.12.3",
     "@elliottsj/next-svgr": "0.0.3",
-    "@emotion/babel-preset-css-prop": "10.1.0",
+    "@emotion/babel-preset-css-prop": "10.2.0",
     "@emotion/core": "10.1.1",
     "@emotion/styled": "10.0.27",
     "@emotion/styled-base": "10.0.31",
