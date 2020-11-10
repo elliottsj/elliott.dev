@@ -6,6 +6,8 @@ import { ThemeProvider } from 'emotion-theming';
 import { DateTime } from 'luxon';
 import App, { AppProps } from 'next/app';
 import dynamic from 'next/dynamic';
+import Head from 'next/head';
+import Link from 'next/link';
 import Router from 'next/router';
 import NProgress from 'nprogress';
 import React, { useState } from 'react';
@@ -18,7 +20,6 @@ import { Layout } from '../components';
 import CodeBlock from '../components/CodeBlock';
 import { useInterval } from '../hooks/useInterval';
 import { getTheme, globalStyles as themeGlobalStyles } from '../lib/theme';
-import Link from 'next/link';
 
 const Ackee = dynamic(() => import('../components/Ackee'), { ssr: false });
 
@@ -80,6 +81,12 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
 
   return (
     <>
+      <Head>
+        <link
+          rel="icon"
+          href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🪐</text></svg>"
+        />
+      </Head>
       <Global
         styles={css`
           ${themeGlobalStyles}
