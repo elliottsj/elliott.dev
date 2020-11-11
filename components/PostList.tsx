@@ -1,10 +1,10 @@
-import { DateTime } from 'luxon';
 import Link from 'next/link';
 import React from 'react';
 
 import { css } from '@emotion/core';
 
 import { Post } from '../lib/getPosts';
+import PostDate from './PostDate';
 
 const PostItem: React.FC<{ post: Post }> = ({ post }) => (
   <article>
@@ -24,7 +24,7 @@ const PostItem: React.FC<{ post: Post }> = ({ post }) => (
           </a>
         </Link>
       </h2>
-      <small>{DateTime.fromISO(post.meta.publishedAt).toLocaleString(DateTime.DATE_FULL)}</small>
+      <PostDate isoDate={post.meta.publishedAt} />
     </header>
     {post.meta.summary && <p>{post.meta.summary}</p>}
   </article>
