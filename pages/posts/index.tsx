@@ -1,6 +1,8 @@
-import React from 'react';
-import { css } from '@emotion/core';
+import { GetStaticProps } from 'next';
 import Link from 'next/link';
+import React from 'react';
+
+import { css } from '@emotion/core';
 
 import { Layout } from '../../components';
 import PostList from '../../components/PostList';
@@ -29,7 +31,7 @@ const IndexPage: React.FC<Props> = ({ posts }) => (
 
 export default IndexPage;
 
-export const getStaticProps = async () => ({
+export const getStaticProps: GetStaticProps = async () => ({
   props: {
     posts: (await getPosts(require.context('.'))).filter((post) => !post.meta.archived),
   },
