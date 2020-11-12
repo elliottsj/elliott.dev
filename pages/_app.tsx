@@ -53,7 +53,14 @@ const BlockQuote: React.FC = (props) => (
   />
 );
 
-const Pre: React.FC = (props) => <div {...props} />;
+const Pre: React.FC = (props) => (
+  <div
+    css={css`
+      display: grid;
+    `}
+    {...props}
+  />
+);
 
 const Table: React.FC = (props) => (
   <table
