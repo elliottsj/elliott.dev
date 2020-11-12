@@ -69,6 +69,7 @@ const Layout: React.FC = ({ children }) => {
       <Header>
         <span
           css={css`
+            flex: 1;
             font-family: 'Ubuntu', sans-serif;
             font-size: 1.5rem;
             font-weight: bold;
@@ -83,6 +84,28 @@ const Layout: React.FC = ({ children }) => {
         >
           <Link href="/">
             <a>elliott.dev</a>
+          </Link>
+        </span>
+        <span
+          css={css`
+            flex: 0;
+            font-family: 'Ubuntu', sans-serif;
+            padding-left: 1em;
+          `}
+        >
+          <Link href="/">
+            <a>Posts</a>
+          </Link>
+        </span>
+        <span
+          css={css`
+            flex: 0;
+            font-family: 'Ubuntu', sans-serif;
+            padding-left: 1em;
+          `}
+        >
+          <Link href="/about">
+            <a>About</a>
           </Link>
         </span>
         {false && (
