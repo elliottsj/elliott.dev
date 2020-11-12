@@ -24,7 +24,7 @@ dependencies:
   '@types/react-dom': 16.9.9
   '@types/suncalc': 1.8.0
   '@types/use-ackee': 1.0.0
-  '@types/webpack': 4.41.24
+  '@types/webpack': 4.41.25
   '@types/webpack-env': 1.15.3
   '@typescript-eslint/eslint-plugin': 4.7.0_e0872ac31e5aafe6623f77947c0152d6
   '@typescript-eslint/parser': 4.7.0_eslint@7.13.0+typescript@4.0.5
@@ -3036,7 +3036,7 @@ packages:
     dev: false
     resolution:
       integrity: sha512-a5kPx98CNFRKQ+wqawroFunvFqv7GHm/3KOI52NY9xWADgc8smu4R6prt4EU/M4QfVjvgBkMqU4fBhw3QfMVkg==
-  /@types/webpack/4.41.24:
+  /@types/webpack/4.41.25:
     dependencies:
       '@types/anymatch': 1.3.1
       '@types/node': 13.13.30
@@ -3046,7 +3046,7 @@ packages:
       source-map: 0.6.1
     dev: false
     resolution:
-      integrity: sha512-1A0MXPwZiMOD3DPMuOKUKcpkdPo8Lq33UGggZ7xio6wJ/jV1dAu5cXDrOfGDnldUroPIRLsr/DT43/GqOA4RFQ==
+      integrity: sha512-cr6kZ+4m9lp86ytQc1jPOJXgINQyz3kLLunZ57jznW+WIAL0JqZbGubQk4GlD42MuQL5JGOABrxdpqqWeovlVQ==
   /@types/yargs-parser/15.0.0:
     dev: false
     resolution:
@@ -11162,7 +11162,7 @@ specifiers:
   '@types/react-dom': 16.9.9
   '@types/suncalc': 1.8.0
   '@types/use-ackee': 1.0.0
-  '@types/webpack': 4.41.24
+  '@types/webpack': 4.41.25
   '@types/webpack-env': 1.15.3
   '@typescript-eslint/eslint-plugin': 4.7.0
   '@typescript-eslint/parser': 4.7.0
