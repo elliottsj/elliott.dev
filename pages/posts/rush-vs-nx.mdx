@@ -1,0 +1,192 @@
+export const meta = {
+  published: false,
+  publishedAt: '2020-11-11',
+  title: 'Rush vs Nx: A Comparison of TypeScript Monorepo Management Tools',
+  summary:
+    'Rush and Nx: differences in their goals, capabilities, their approach to structuring projects, and the overall developer experience.',
+};
+
+# Rush vs Nx: A Comparison of TypeScript Monorepo Management Tools
+
+import PostDate from '../../components/PostDate';
+
+<PostDate isoDate="2020-11-11" />
+
+With the increasing popularity of the [monorepo](https://en.wikipedia.org/wiki/Monorepo) strategy for storing source code, there is a growing number of tools to manage projects in a monorepo, such as [Bazel](https://bazel.build/), [Lerna](https://lerna.js.org/), [Rush](https://rushjs.io/), or [Nx](https://nx.dev/).
+
+This article will focus on comparing Rush and Nx: differences in their goals, capabilities, and their approach to structuring projects.
+
+## Goals of Rush and Nx
+
+Both Rush and Nx have similar goals. They both aim to provide a scalable solution to manage large monorepos for web projects.
+
+As stated by [Rush](https://rushjs.io/):
+
+> Rush: a scalable monorepo manager for the web
+
+> Rush Stack is a mission to provide reusable tech for running large scale monorepos for the web
+
+As stated by [Nx](https://nx.dev/web):
+
+> Nx is a set of extensible dev tools for monorepos, which helps you develop like Google, Facebook, and Microsoft.
+
+Each tool is oriented towards a different audience, based on the way the tool is published and marketed by its sponsor.
+
+Rush was published by Microsoft after it was internally developed by the OneDrive + SharePoint teams to solve the specific scaling problems encountered by these teams. It is built with first-class support for publishing and managing changelogs for a large number of npm packages. It's published as [open-source](https://github.com/microsoft/rushstack) with a permissive license, but feature development is mainly suited to Microsoft's needs.
+
+Nx is published by [Nrwl](https://nrwl.io/), a consulting company whose mission is to help its clients build software better and faster. Nrwl built Nx specifically to help software organizations become more productive and organize their code in a more safe, predictable, and scalable fashion. Nrwl is actively building a community around Nx, including blog posts, training, and consulting to assist organization in adopting Nx.
+
+## Comparison of Capabilities
+
+| Feature                                                                                                               | Rush                              | Nx                                                                                                      |
+| --------------------------------------------------------------------------------------------------------------------- | --------------------------------- | ------------------------------------------------------------------------------------------------------- |
+| Manage a complex dependency graph of application and library projects                                                 | ✅                                | ✅                                                                                                      |
+| Ability to build all projects                                                                                         | ✅ `rush rebuild`                 | ✅ `nx run-many --all`                                                                                  |
+| Ability to build a specific project and its dependencies                                                              | ✅ `rush build --to`              | ✅ `nx run-many --with-deps` (coming in v9.0.0)                                                         |
+| Ability to build a specific project and its dependents                                                                | ✅ `rush build --from`            | ❌                                                                                                      |
+| Ability to build projects in parallel                                                                                 | ✅ single machine only            | ✅ single machine, or CI execution plan via `nx print-affected`                                         |
+| Ability to build all projects affected by edited source code                                                          | ✅ `rush build`                   | ✅ `nx affected:build`                                                                                  |
+| Isolation of npm dependencies per project                                                                             | ✅                                | ❌ not included. By default, all projects use a shared set of packages defined in the root package.json |
+| Generate code to scaffold new projects and components quickly                                                         | ❌                                | ✅ using community schematics or custom workspace schematics                                            |
+| View a visual representation of the dependency graph                                                                  | ❌                                | ✅ `nx dep-graph`                                                                                       |
+| Community plugins + examples using modern tools/frameworks such as Next.js, Cypress, Jest, and Storybook              | ❌                                | ✅ community packages under the `@nrwl` npm scope                                                       |
+| Ability to publish npm packages to a registry, with a CLI semver workflow                                             | ✅ `rush change` + `rush publish` | ❌                                                                                                      |
+| Define arbitrary commands in each project to launch a dev server, run tests, build production code, or any other task | ✅ via npm scripts                | ✅ via custom builders                                                                                  |
+| Sponsor                                                                                                               | Microsoft                         | Nrwl                                                                                                    |
+
+## Project Structure
+
+Rush and Nx have different approaches to structuring projects in a monorepo:
+
+- With Rush, each project must contain:
+  - `package.json` file defining the project's dependencies
+  - `build` script
+  - `test` script
+- Beyond these constraints, a project's structure is up to the developer; the `build` and `test` scripts can be implemented arbitrarily.
+- Nx emphasizes an _opinionated structure_ of projects. Tasks such as building and testing are not arbitrarily-defined, but instead are encapsulated in **plugins**, which are collections of **builders** and **schematics**. Each plugin is typically associated with a specific tool, such as [`@nrwl/jest`](https://www.npmjs.com/package/@nrwl/jest) for [Jest](https://jestjs.io/), [`@nrwl/next`](https://www.npmjs.com/package/@nrwl/next) for [Next.js](https://nextjs.org/), or [`@nrwl/cypress`](https://www.npmjs.com/package/@nrwl/cypress) for [Cypress](https://www.cypress.io/).
+
+The result of these differences is that Rush has a higher degree of control over project configuration, but requires writing your own npm scripts to build, lint, and test a project. Whereas an Nx project has opinionated structure, commands, and generators, which can ease the maintenance burden over time, but can require writing your own plugins to control how things are built.
+
+The constraints imposed by Nx afford several advantages:
+
+- Predictable, consistent developer experience between projects.
+- Easier to upgrade core dependencies.
+- Easy to set up new projects using the same tools and conventions as existing projects.
+
+## Linking Projects
+
+An important difference between Rush and Nx is how they handle installation of npm dependencies, and managing inter-dependencies between projects in the monorepo.
+
+### Rush
+
+Rush can be configured to use either npm, Yarn, or pnpm to install npm dependencies. Running `rush install` performs these steps:
+
+1. Install the correct version of the configured package manager, if it's not already installed.
+2. Install npm dependencies to `common/temp/node_modules`.
+3. Link dependencies declared by each project to its respective `node_modules` subdirectory.
+
+For example, we might end up with this directory structure:
+
+```
+my-monorepo/
+  rush.json
+  common/
+    temp/
+      node_modules/
+        react/
+        luxon/
+  projects/
+    my-app/
+      package.json
+      index.ts
+      node_modules/
+        react/ -> ../../../common/temp/node_modules/react
+        @my-monorepo/my-datetime-library -> ../../my-datetime-library
+    my-datetime-library/
+      package.json
+      index.ts
+      node_modules/
+        luxon/ -> ../../../common/temp/node_modules/luxon
+```
+
+Observe that:
+
+- The main dependencies store is tucked away in a subdirectory `common/temp/node_modules/`.
+- Each project declares its own dependencies in a `package.json` file.
+- Rush creates a `node_modules` directory in each project, containing symbolic links to dependencies which were declared in `package.json`. Links are created for both npm dependencies and inter-dependencies on other projects in the monorepo.
+
+The result of this structure is that modules in projects are prevented from accidentally importing a package which haven't been declared in `package.json`. This is because the Node.js package resolution algorithm doesn't find a folder called `node_modules` as it walks up the directory tree from within `projects/`.
+
+This idea of ensuring that only declared dependencies are available in `node_modules` is especially important when publishing npm packages from the monorepo. Without this guarantee, a package which imports an undeclared dependency might "work" in the monorepo, but it will fail when published to the npm registry.
+
+Read more about Rush's unique approach here: https://rushjs.io/pages/advanced/phantom_deps/
+
+### Nx
+
+Nx is not opinionated about how npm dependencies are installed. You can directly use any package manager with Nx, whether npm, Yarn, pnpm, or others. Nx does not apply any special directory structure or symbolic links, so there are no built-in safety guaratees like those provided by Rush.
+
+It's possible to use [Yarn workspaces](https://classic.yarnpkg.com/en/docs/workspaces/) or [pnpm workspaces](https://pnpm.js.org/en/workspaces) with Nx, which can provide some additional safety guarantees. However, a `node_modules` folder still must exist at the root of the monorepo to store Nx's own npm dependencies, so these may still be accidentally imported by individual projects.
+
+There is a feature request for Nx to more directly support per-project npm dependencies: https://github.com/nrwl/nx/issues/1777
+
+For projects which depend on other projects in the monorepo, Nx uses TypeScript's [`tsconfig.json` `"paths"`](https://www.typescriptlang.org/tsconfig#paths) config to enable imports across projects:
+
+```
+my-monorepo/
+  package.json
+  tsconfig.json
+  node_modules/
+    react/
+    luxon/
+  projects/
+    my-app/
+      index.ts
+    my-datetime-library/
+      index.ts
+```
+
+#### `tsconfig.json`
+
+```json
+{
+  "compilerOptions": {
+    "paths": {
+      "@my-monorepo/my-app": ["projects/my-app/index.ts"],
+      "@my-monorepo/my-datetime-library": ["projects/my-datetime-library/index.ts"]
+    }
+  }
+}
+```
+
+#### `my-app/index.ts`
+
+```ts
+import { DateTime } from '@my-monorepo/my-datetime-library';
+
+// ...
+```
+
+This is a simpler approach, however it relies on every project being written in TypeScript in order to work. It requires additional setup to write a plain JavaScript library, or to use other compile-to-JS languages.
+
+Nx supports some types of build targets which do not use `tsc` directly, such as [Cypress, which uses webpack internally](https://github.com/nrwl/nx/blob/5b6df632cb767e3da5cf8b804b827147d729e129/packages/cypress/src/plugins/preprocessor.ts#L30-L33). In these cases, [tsconfig-paths-webpack-plugin](https://www.npmjs.com/package/tsconfig-paths-webpack-plugin) is used to augment webpack's module resolution to resolve cross-project dependencies.
+
+## Conclusion
+
+Rush and Nx each serve similar purposes, but with slightly different philosophies.
+
+Rush emphasizes safety of npm dependencies and adherence with conventions used in Node.js, in particular `package.json`, npm scripts, and the Node.js package resolution algorithm to resolve project inter-dependencies.
+
+Nx emphasizes extensibility with plugins and code generation, making it easy to scaffold new projects quickly and ensure that builds and code are consistent across projects. Common large-codebase requirements like linting, formatting, and planning CI builds are built in.
+
+As with anything in technology, there are tradeoffs for each approach. It often comes down to organizational requirements, and ultimately developer preferences.
+
+Personally, I prefer Rush for its safety guarantees, adherence to Node.js conventions, and greater control of builds via npm scripts.
+
+Here's a list of some overlapping technologies to explore further:
+
+- [changesets](https://github.com/atlassian/changesets)
+- [Bazel](https://bazel.build/)
+- [Lerna](https://lerna.js.org/)
+- [Yarn workspaces](https://classic.yarnpkg.com/en/docs/workspaces/)
+- [pnpm workspaces](https://pnpm.js.org/en/workspaces)
+- [Awesome Monorepo](https://github.com/korfuri/awesome-monorepo)
