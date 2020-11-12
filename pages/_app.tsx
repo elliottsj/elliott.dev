@@ -41,7 +41,38 @@ Router.events.on('routeChangeError', () => {
   NProgress.done();
 });
 
+const BlockQuote: React.FC = (props) => (
+  <blockquote
+    css={css`
+      margin: 0;
+      padding-left: 20px;
+      box-shadow: inset 3px 0 0 0 rgba(41, 41, 41, 1);
+      font-style: italic;
+    `}
+    {...props}
+  />
+);
+
 const Pre: React.FC = (props) => <div {...props} />;
+
+const Table: React.FC = (props) => (
+  <table
+    css={css`
+      border-collapse: collapse;
+    `}
+    {...props}
+  />
+);
+
+const Td: React.FC = (props) => (
+  <td
+    css={css`
+      border: 1px solid #e2e8f0;
+      padding: 0.5rem;
+    `}
+    {...props}
+  />
+);
 
 /**
  * Links in an MDX document are wrapped in a Next.js <Link /> if it's a link
@@ -63,10 +94,13 @@ const MDXLink: React.FC<React.DetailedHTMLProps<
 };
 
 const mdxComponents: MDXProviderProps['components'] = {
+  blockquote: BlockQuote,
   code: CodeBlock,
   pre: Pre,
   wrapper: Layout,
   a: MDXLink,
+  table: Table,
+  td: Td,
 };
 
 const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
