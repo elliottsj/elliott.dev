@@ -73,6 +73,7 @@ const Table: React.FC = (props) => (
         display: block;
         overflow: auto;
         border-collapse: collapse;
+        width: 99%;
       `}
       {...props}
     />
