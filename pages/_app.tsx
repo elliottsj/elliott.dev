@@ -63,12 +63,20 @@ const Pre: React.FC = (props) => (
 );
 
 const Table: React.FC = (props) => (
-  <table
+  <div
     css={css`
-      border-collapse: collapse;
+      display: grid;
     `}
-    {...props}
-  />
+  >
+    <table
+      css={css`
+        display: block;
+        overflow: auto;
+        border-collapse: collapse;
+      `}
+      {...props}
+    />
+  </div>
 );
 
 const Td: React.FC = (props) => (
