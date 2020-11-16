@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React, { useState } from 'react';
+import Div100vh from 'react-div-100vh';
 import GitHubLogo from 'simple-icons/icons/github.svg';
 import StackOverflowLogo from 'simple-icons/icons/stackoverflow.svg';
 import TwitterLogo from 'simple-icons/icons/twitter.svg';
@@ -11,7 +12,7 @@ import { pxRem, Theme, useTheme } from '../lib/theme';
 import NightToggle from './NightToggle';
 
 const Grid = styled.div<Record<string, unknown>, Theme>`
-  height: 100vh;
+  height: 100%;
   display: grid;
   grid:
     [row1-start] '. header .' auto [row1-end]
@@ -65,76 +66,78 @@ const Layout: React.FC = ({ children }) => {
   const theme = useTheme();
   const [isNightModeEnabled, setIsNightModeEnabled] = useState(true);
   return (
-    <Grid>
-      <Header>
-        <span
-          css={css`
-            flex: 1;
-            font-family: 'Ubuntu', sans-serif;
-            font-size: 1.5rem;
-            font-weight: bold;
+    <Div100vh>
+      <Grid>
+        <Header>
+          <span
+            css={css`
+              flex: 1;
+              font-family: 'Ubuntu', sans-serif;
+              font-size: 1.5rem;
+              font-weight: bold;
 
-            a {
-              background-color: ${theme.colors.primary};
-              box-shadow: 0 0 0 0.5rem ${theme.colors.primary};
-              color: ${theme.colors.background};
-              text-decoration: none;
-            }
-          `}
-        >
-          <Link href="/">
-            <a>elliott.dev</a>
-          </Link>
-        </span>
-        <span
-          css={css`
-            flex: 0;
-            font-family: 'Ubuntu', sans-serif;
-            padding-left: 1em;
-          `}
-        >
-          <Link href="/">
-            <a>Posts</a>
-          </Link>
-        </span>
-        <span
-          css={css`
-            flex: 0;
-            font-family: 'Ubuntu', sans-serif;
-            padding-left: 1em;
-          `}
-        >
-          <Link href="/about">
-            <a>About</a>
-          </Link>
-        </span>
-        {false && (
-          <NightToggle
-            disabledLabel="Off"
-            enabledLabel="On"
-            size="1em"
-            checked={isNightModeEnabled}
-            onChange={(checked) => {
-              setIsNightModeEnabled(checked);
-            }}
-          />
-        )}
-      </Header>
-      <Main>{children}</Main>
-      <Footer>
-        <SocialLink href="https://github.com/elliottsj">
-          <GitHubLogo />
-        </SocialLink>
-        {' • '}
-        <SocialLink href="https://stackoverflow.com/users/1626478/spencer">
-          <StackOverflowLogo />
-        </SocialLink>
-        {' • '}
-        <SocialLink href="https://twitter.com/spe_">
-          <TwitterLogo />
-        </SocialLink>
-      </Footer>
-    </Grid>
+              a {
+                background-color: ${theme.colors.primary};
+                box-shadow: 0 0 0 0.5rem ${theme.colors.primary};
+                color: ${theme.colors.background};
+                text-decoration: none;
+              }
+            `}
+          >
+            <Link href="/">
+              <a>elliott.dev</a>
+            </Link>
+          </span>
+          <span
+            css={css`
+              flex: 0;
+              font-family: 'Ubuntu', sans-serif;
+              padding-left: 1em;
+            `}
+          >
+            <Link href="/">
+              <a>Posts</a>
+            </Link>
+          </span>
+          <span
+            css={css`
+              flex: 0;
+              font-family: 'Ubuntu', sans-serif;
+              padding-left: 1em;
+            `}
+          >
+            <Link href="/about">
+              <a>About</a>
+            </Link>
+          </span>
+          {false && (
+            <NightToggle
+              disabledLabel="Off"
+              enabledLabel="On"
+              size="1em"
+              checked={isNightModeEnabled}
+              onChange={(checked) => {
+                setIsNightModeEnabled(checked);
+              }}
+            />
+          )}
+        </Header>
+        <Main>{children}</Main>
+        <Footer>
+          <SocialLink href="https://github.com/elliottsj">
+            <GitHubLogo />
+          </SocialLink>
+          {' • '}
+          <SocialLink href="https://stackoverflow.com/users/1626478/spencer">
+            <StackOverflowLogo />
+          </SocialLink>
+          {' • '}
+          <SocialLink href="https://twitter.com/spe_">
+            <TwitterLogo />
+          </SocialLink>
+        </Footer>
+      </Grid>
+    </Div100vh>
   );
 };
 
