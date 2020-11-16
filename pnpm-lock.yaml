@@ -48,6 +48,7 @@ dependencies:
   prism-react-renderer: 1.1.1_react@17.0.1
   prismjs: 1.22.0
   react: 17.0.1
+  react-div-100vh: 0.5.6_react@17.0.1
   react-dom: 17.0.1_react@17.0.1
   simple-icons: 3.12.4
   suncalc: 1.8.0
@@ -8968,6 +8969,14 @@ packages:
     optional: true
     resolution:
       integrity: sha512-y3bGgqKj3QBdxLbLkomlohkvsA8gdAiUQlSBJnBhfn+BPxg4bc62d8TcBW15wavDfgexCgccckhcZvywyQYPOw==
+  /react-div-100vh/0.5.6_react@17.0.1:
+    dependencies:
+      react: 17.0.1
+    dev: false
+    peerDependencies:
+      react: '>=16.8.0'
+    resolution:
+      integrity: sha512-foNzJeBwiWp2Xs+pDhKyX2sP9O8UoGfYyz/D+GgZaHCKS3R+lbtJc8OdgMDr03txXgPVsxGEtmjKeDcLW30xwQ==
   /react-dom/17.0.1_react@17.0.1:
     dependencies:
       loose-envify: 1.4.0
@@ -11186,6 +11195,7 @@ specifiers:
   prism-react-renderer: 1.1.1
   prismjs: 1.22.0
   react: 17.0.1
+  react-div-100vh: 0.5.6
   react-dom: 17.0.1
   simple-icons: 3.12.4
   suncalc: 1.8.0
