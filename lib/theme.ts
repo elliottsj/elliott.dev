@@ -1,21 +1,22 @@
 import chroma from 'chroma-js';
-import { useTheme as emotionUseTheme } from 'emotion-theming';
 import { DateTime } from 'luxon';
 import * as sun from 'suncalc';
 
-import { css } from '@emotion/core';
+import { css, Theme } from '@emotion/react';
 
-export interface Theme {
-  colors: {
-    primary: string;
-    secondary: string;
-    background: string;
-    text: string;
-  };
-  fonts: {
-    body: string;
-    heading: string;
-  };
+declare module '@emotion/react' {
+  export interface Theme {
+    colors: {
+      primary: string;
+      secondary: string;
+      background: string;
+      text: string;
+    };
+    fonts: {
+      body: string;
+      heading: string;
+    };
+  }
 }
 
 const BASE_FONT_SIZE_PX = 16;
@@ -84,5 +85,3 @@ export const getTheme = (datetime: DateTime = NOON_UTC): Theme => {
     },
   };
 };
-
-export const useTheme = () => emotionUseTheme<Theme>();

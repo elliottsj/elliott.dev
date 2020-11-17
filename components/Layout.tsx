@@ -5,13 +5,13 @@ import GitHubLogo from 'simple-icons/icons/github.svg';
 import StackOverflowLogo from 'simple-icons/icons/stackoverflow.svg';
 import TwitterLogo from 'simple-icons/icons/twitter.svg';
 
-import { css } from '@emotion/core';
+import { css, useTheme } from '@emotion/react';
 import styled from '@emotion/styled';
 
-import { pxRem, Theme, useTheme } from '../lib/theme';
+import { pxRem } from '../lib/theme';
 import NightToggle from './NightToggle';
 
-const Grid = styled.div<Record<string, unknown>, Theme>`
+const Grid = styled.div`
   height: 100%;
   display: grid;
   grid:

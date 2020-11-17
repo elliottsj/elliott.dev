@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 
-import { css } from '@emotion/core';
+import { css } from '@emotion/react';
 
 import { Post } from '../lib/getPosts';
 import PostDate from './PostDate';
