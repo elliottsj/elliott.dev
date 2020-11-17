@@ -1,8 +1,7 @@
+import 'normalize.css/normalize.css';
 import 'nprogress/nprogress.css';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 
-import emotionNormalize from 'emotion-normalize';
-import { ThemeProvider } from 'emotion-theming';
 import { DateTime } from 'luxon';
 import App, { AppProps } from 'next/app';
 import dynamic from 'next/dynamic';
@@ -12,7 +11,7 @@ import Router from 'next/router';
 import NProgress from 'nprogress';
 import React, { useState } from 'react';
 
-import { css, Global } from '@emotion/core';
+import { css, Global, ThemeProvider } from '@emotion/react';
 import { config } from '@fortawesome/fontawesome-svg-core';
 import { MDXProvider, MDXProviderProps } from '@mdx-js/react';
 
@@ -141,7 +140,6 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
       <Global
         styles={css`
           ${themeGlobalStyles}
-          ${emotionNormalize}
 
           html {
             line-height: 1.5;

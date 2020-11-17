@@ -2,7 +2,7 @@ import { GetStaticProps } from 'next';
 import Link from 'next/link';
 import React from 'react';
 
-import { css } from '@emotion/core';
+import { css } from '@emotion/react';
 
 import { Layout } from '../../components';
 import PostList from '../../components/PostList';
