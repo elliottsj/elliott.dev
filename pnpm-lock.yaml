@@ -26,8 +26,8 @@ dependencies:
   '@types/use-ackee': 1.0.0
   '@types/webpack': 4.41.25
   '@types/webpack-env': 1.15.3
-  '@typescript-eslint/eslint-plugin': 4.7.0_e0872ac31e5aafe6623f77947c0152d6
-  '@typescript-eslint/parser': 4.7.0_eslint@7.13.0+typescript@4.0.5
+  '@typescript-eslint/eslint-plugin': 4.8.0_86ae3552254159dfc6540f39e7b20b0d
+  '@typescript-eslint/parser': 4.8.0_eslint@7.13.0+typescript@4.0.5
   babel-jest: 26.6.3_@babel+core@7.12.3
   chroma-js: 2.1.0
   cross-env: 7.0.2
@@ -3058,11 +3058,11 @@ packages:
     dev: false
     resolution:
       integrity: sha512-HmU8SeIRhZCWcnRskCs36Q1Q00KBV6Cqh/ora8WN1+22dY07AZdn6Gel8QZ3t26XYPImtcL8WV/eqjhVmMEw4g==
-  /@typescript-eslint/eslint-plugin/4.7.0_e0872ac31e5aafe6623f77947c0152d6:
+  /@typescript-eslint/eslint-plugin/4.8.0_86ae3552254159dfc6540f39e7b20b0d:
     dependencies:
-      '@typescript-eslint/experimental-utils': 4.7.0_eslint@7.13.0+typescript@4.0.5
-      '@typescript-eslint/parser': 4.7.0_eslint@7.13.0+typescript@4.0.5
-      '@typescript-eslint/scope-manager': 4.7.0
+      '@typescript-eslint/experimental-utils': 4.8.0_eslint@7.13.0+typescript@4.0.5
+      '@typescript-eslint/parser': 4.8.0_eslint@7.13.0+typescript@4.0.5
+      '@typescript-eslint/scope-manager': 4.8.0
       debug: 4.2.0
       eslint: 7.13.0
       functional-red-black-tree: 1.0.1
@@ -3081,13 +3081,13 @@ packages:
       typescript:
         optional: true
     resolution:
-      integrity: sha512-li9aiSVBBd7kU5VlQlT1AqP0uWGDK6JYKUQ9cVDnOg34VNnd9t4jr0Yqc/bKxJr/tDCPDaB4KzoSFN9fgVxe/Q==
-  /@typescript-eslint/experimental-utils/4.7.0_eslint@7.13.0+typescript@4.0.5:
+      integrity: sha512-nm80Yy5D7Ot00bomzBYodnGmGhNdePHS3iaxJ3Th0wxRWEI/6KCgbmL8PR78fF7MtT1VDcYNtY5y+YYyGlRhBg==
+  /@typescript-eslint/experimental-utils/4.8.0_eslint@7.13.0+typescript@4.0.5:
     dependencies:
       '@types/json-schema': 7.0.6
-      '@typescript-eslint/scope-manager': 4.7.0
-      '@typescript-eslint/types': 4.7.0
-      '@typescript-eslint/typescript-estree': 4.7.0_typescript@4.0.5
+      '@typescript-eslint/scope-manager': 4.8.0
+      '@typescript-eslint/types': 4.8.0
+      '@typescript-eslint/typescript-estree': 4.8.0_typescript@4.0.5
       eslint: 7.13.0
       eslint-scope: 5.1.1
       eslint-utils: 2.1.0
@@ -3098,12 +3098,12 @@ packages:
       eslint: '*'
       typescript: '*'
     resolution:
-      integrity: sha512-cymzovXAiD4EF+YoHAB5Oh02MpnXjvyaOb+v+BdpY7lsJXZQN34oIETeUwVT2XfV9rSNpXaIcknDLfupO/tUoA==
-  /@typescript-eslint/parser/4.7.0_eslint@7.13.0+typescript@4.0.5:
+      integrity: sha512-1yOvI++HMdA9lpaAkXXQlVUwJjruNz7Z9K3lgpcU+JU/Szvsv42H6G6DECalAuz2Dd0KFU/MeUrPC0jXnuAvlA==
+  /@typescript-eslint/parser/4.8.0_eslint@7.13.0+typescript@4.0.5:
     dependencies:
-      '@typescript-eslint/scope-manager': 4.7.0
-      '@typescript-eslint/types': 4.7.0
-      '@typescript-eslint/typescript-estree': 4.7.0_typescript@4.0.5
+      '@typescript-eslint/scope-manager': 4.8.0
+      '@typescript-eslint/types': 4.8.0
+      '@typescript-eslint/typescript-estree': 4.8.0_typescript@4.0.5
       debug: 4.2.0
       eslint: 7.13.0
       typescript: 4.0.5
@@ -3117,26 +3117,26 @@ packages:
       typescript:
         optional: true
     resolution:
-      integrity: sha512-+meGV8bMP1sJHBI2AFq1GeTwofcGiur8LoIr6v+rEmD9knyCqDlrQcFHR0KDDfldHIFDU/enZ53fla6ReF4wRw==
-  /@typescript-eslint/scope-manager/4.7.0:
+      integrity: sha512-15sp9BIoZalx4wRgkebfau8KizVe6w0eTjPMnuST9kbIeOaloDy1xKkg7eJfFvE/MdCtKlEWZFLoJB8C0SEOaw==
+  /@typescript-eslint/scope-manager/4.8.0:
     dependencies:
-      '@typescript-eslint/types': 4.7.0
-      '@typescript-eslint/visitor-keys': 4.7.0
+      '@typescript-eslint/types': 4.8.0
+      '@typescript-eslint/visitor-keys': 4.8.0
     dev: false
     engines:
       node: ^8.10.0 || ^10.13.0 || >=11.10.1
     resolution:
-      integrity: sha512-ILITvqwDJYbcDCROj6+Ob0oCKNg3SH46iWcNcTIT9B5aiVssoTYkhKjxOMNzR1F7WSJkik4zmuqve5MdnA0DyA==
-  /@typescript-eslint/types/4.7.0:
+      integrity: sha512-eJ+SV6w5WcyFusQ/Ru4A/c7E65HMGzWWGPJAqSuM/1EKEE6wOw9LUQTqAvLa6v2oIcaDo9F+/EyOPZgoD/BcLA==
+  /@typescript-eslint/types/4.8.0:
     dev: false
     engines:
       node: ^8.10.0 || ^10.13.0 || >=11.10.1
     resolution:
-      integrity: sha512-uLszFe0wExJc+I7q0Z/+BnP7wao/kzX0hB5vJn4LIgrfrMLgnB2UXoReV19lkJQS1a1mHWGGODSxnBx6JQC3Sg==
-  /@typescript-eslint/typescript-estree/4.7.0_typescript@4.0.5:
+      integrity: sha512-2/mGmXxr3sTxCvCT1mhR2b9rbfpMEBK41tiu0lMnMtZEbpphcUyrmgt2ogDFWNvsvyyeUxO1159eDrgFb7zV4Q==
+  /@typescript-eslint/typescript-estree/4.8.0_typescript@4.0.5:
     dependencies:
-      '@typescript-eslint/types': 4.7.0
-      '@typescript-eslint/visitor-keys': 4.7.0
+      '@typescript-eslint/types': 4.8.0
+      '@typescript-eslint/visitor-keys': 4.8.0
       debug: 4.2.0
       globby: 11.0.1
       is-glob: 4.0.1
@@ -3153,16 +3153,16 @@ packages:
       typescript:
         optional: true
     resolution:
-      integrity: sha512-5XZRQznD1MfUmxu1t8/j2Af4OxbA7EFU2rbo0No7meb46eHgGkSieFdfV6omiC/DGIBhH9H9gXn7okBbVOm8jw==
-  /@typescript-eslint/visitor-keys/4.7.0:
+      integrity: sha512-jEdeERN8DIs7S8PlTdI7Sdy63Caxg2VtR21/RV7Z1Dtixiq/QEFSPrDXggMXKNOPPlrtMS+eCz7d7NV0HWLFVg==
+  /@typescript-eslint/visitor-keys/4.8.0:
     dependencies:
-      '@typescript-eslint/types': 4.7.0
+      '@typescript-eslint/types': 4.8.0
       eslint-visitor-keys: 2.0.0
     dev: false
     engines:
       node: ^8.10.0 || ^10.13.0 || >=11.10.1
     resolution:
-      integrity: sha512-aDJDWuCRsf1lXOtignlfiPODkzSxxop7D0rZ91L6ZuMlcMCSh0YyK+gAfo5zN/ih6WxMwhoXgJWC3cWQdaKC+A==
+      integrity: sha512-JluNZLvnkRUr0h3L6MnQVLuy2rw9DpD0OyMC21FVbgcezr0LQkbBjDp9kyKZhuZrLrtq4mwPiIkpfRb8IRqneA==
   /@webassemblyjs/ast/1.9.0:
     dependencies:
       '@webassemblyjs/helper-module-context': 1.9.0
@@ -11173,8 +11173,8 @@ specifiers:
   '@types/use-ackee': 1.0.0
   '@types/webpack': 4.41.25
   '@types/webpack-env': 1.15.3
-  '@typescript-eslint/eslint-plugin': 4.7.0
-  '@typescript-eslint/parser': 4.7.0
+  '@typescript-eslint/eslint-plugin': 4.8.0
+  '@typescript-eslint/parser': 4.8.0
   babel-jest: 26.6.3
   chroma-js: 2.1.0
   cross-env: 7.0.2
