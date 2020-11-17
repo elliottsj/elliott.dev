@@ -2,9 +2,9 @@ dependencies:
   '@babel/core': 7.12.3
   '@elliottsj/next-svgr': 0.0.3
   '@emotion/babel-preset-css-prop': 11.0.0_@babel+core@7.12.3
-  '@emotion/jest': 11.0.0_@types+jest@26.0.15
-  '@emotion/react': 11.0.0_ab740a5ebd0e0e9d8b04d7fdff93972b
-  '@emotion/styled': 11.0.0_8c2743a21b77b24506b5ace4f2b320b9
+  '@emotion/jest': 11.1.0_@types+jest@26.0.15
+  '@emotion/react': 11.1.1_ab740a5ebd0e0e9d8b04d7fdff93972b
+  '@emotion/styled': 11.0.0_23b93eba6cfcb49de1f21270970e7bbf
   '@fortawesome/fontawesome-svg-core': 1.2.32
   '@fortawesome/free-solid-svg-icons': 5.15.1
   '@fortawesome/react-fontawesome': 0.1.12_8ce9757f921aacb44ae3f15ea31db6bb
@@ -2174,7 +2174,7 @@ packages:
     dev: false
     resolution:
       integrity: sha512-G5X0t7eR9pkhUvAY32QS3lToP9JyNF8It5CcmMvbWjmC9/Yq7IhevaKqxl+me2BKR93iTPiL/h3En1ZX/1G3PQ==
-  /@emotion/jest/11.0.0_@types+jest@26.0.15:
+  /@emotion/jest/11.1.0_@types+jest@26.0.15:
     dependencies:
       '@babel/runtime': 7.12.5
       '@emotion/css-prettifier': 1.0.0
@@ -2192,12 +2192,12 @@ packages:
       enzyme-to-json:
         optional: true
     resolution:
-      integrity: sha512-C92K/pJ/fN4WOX3VIGdYKKKYWQcsHxcF7v602TD7O5hk75hGwYNexPpNKgSjW3uA5gCsyBu9uEYGv4bj7oaYug==
+      integrity: sha512-nkJY5U/cM3WjFYoKozy4WSKILmV3Y2P/uMynI9HVoCTNuYHSdu0djQBHL6zqBmpRya0sjVT1Sv7lasYYwVoMFg==
   /@emotion/memoize/0.7.4:
     dev: false
     resolution:
       integrity: sha512-Ja/Vfqe3HpuzRsG1oBtWTHk2PGZ7GR+2Vz5iYGelAw8dx32K0y7PjVuxK6z1nMpZOqAFsRUPCkK1YjJ56qJlgw==
-  /@emotion/react/11.0.0_ab740a5ebd0e0e9d8b04d7fdff93972b:
+  /@emotion/react/11.1.1_ab740a5ebd0e0e9d8b04d7fdff93972b:
     dependencies:
       '@babel/core': 7.12.3
       '@babel/runtime': 7.12.5
@@ -2220,7 +2220,7 @@ packages:
       '@types/react':
         optional: true
     resolution:
-      integrity: sha512-mMQOuJcCVHUHUKZMamCbNnuUEgEff1W1JL3/1jGXFN52Ik5R/2ccVb3FherYFkSJkkjkPC3dUfFSeisXVh9Spg==
+      integrity: sha512-otA0Np8OnOeU9ChkOS9iuLB6vIxiM+bJiU0id33CsQn3R2Pk9ijVHnxevENIKV/P2S7AhrD8cFbUGysEciWlEA==
   /@emotion/serialize/1.0.0:
     dependencies:
       '@emotion/hash': 0.8.0
@@ -2235,13 +2235,13 @@ packages:
     dev: false
     resolution:
       integrity: sha512-cdCHfZtf/0rahPDCZ9zyq+36EqfD/6c0WUqTFZ/hv9xadTUv2lGE5QK7/Z6Dnx2oRxC0usfVM2/BYn9q9B9wZA==
-  /@emotion/styled/11.0.0_8c2743a21b77b24506b5ace4f2b320b9:
+  /@emotion/styled/11.0.0_23b93eba6cfcb49de1f21270970e7bbf:
     dependencies:
       '@babel/core': 7.12.3
       '@babel/runtime': 7.12.5
       '@emotion/babel-plugin': 11.0.0_@babel+core@7.12.3
       '@emotion/is-prop-valid': 1.0.0
-      '@emotion/react': 11.0.0_ab740a5ebd0e0e9d8b04d7fdff93972b
+      '@emotion/react': 11.1.1_ab740a5ebd0e0e9d8b04d7fdff93972b
       '@emotion/serialize': 1.0.0
       '@emotion/utils': 1.0.0
       '@types/react': 16.9.56
@@ -11092,8 +11092,8 @@ specifiers:
   '@babel/core': 7.12.3
   '@elliottsj/next-svgr': 0.0.3
   '@emotion/babel-preset-css-prop': 11.0.0
-  '@emotion/jest': 11.0.0
-  '@emotion/react': 11.0.0
+  '@emotion/jest': 11.1.0
+  '@emotion/react': 11.1.1
   '@emotion/styled': 11.0.0
   '@fortawesome/fontawesome-svg-core': 1.2.32
   '@fortawesome/free-solid-svg-icons': 5.15.1
