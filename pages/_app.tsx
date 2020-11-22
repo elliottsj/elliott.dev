@@ -93,10 +93,9 @@ const Td: React.FC = (props) => (
  * Links in an MDX document are wrapped in a Next.js <Link /> if it's a link
  * to a page on this site.
  */
-const MDXLink: React.FC<React.DetailedHTMLProps<
-  React.AnchorHTMLAttributes<HTMLAnchorElement>,
-  HTMLAnchorElement
->> = (props) => {
+const MDXLink: React.FC<
+  React.DetailedHTMLProps<React.AnchorHTMLAttributes<HTMLAnchorElement>, HTMLAnchorElement>
+> = (props) => {
   const { href, ...rest } = props;
   if (href?.startsWith('/')) {
     return (
