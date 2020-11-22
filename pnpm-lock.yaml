@@ -21,7 +21,7 @@ dependencies:
   '@types/nprogress': 0.2.0
   '@types/prismjs': 1.16.2
   '@types/react': 17.0.0
-  '@types/react-dom': 16.9.10
+  '@types/react-dom': 17.0.0
   '@types/suncalc': 1.8.0
   '@types/use-ackee': 1.0.0
   '@types/webpack': 4.41.25
@@ -359,7 +359,7 @@ packages:
       integrity: sha512-k0CIe3tXUKTRSoEx1LQEPFU9vRQfqHtl+kf8eNnDqb4AUJEy5pz6aIiog+YWtVm2jpggjS1laH68bPsR+KWWPQ==
   /@babel/helper-module-imports/7.12.5:
     dependencies:
-      '@babel/types': 7.12.6
+      '@babel/types': 7.12.7
     dev: false
     resolution:
       integrity: sha512-SR713Ogqg6++uexFRORf/+nPXMmWIn80TALu0uaFb+iQIUoR7bOC7zBWyzBs5b3tBBJXuyD0cRu1F15GyzjOWA==
@@ -3140,12 +3140,12 @@ packages:
     dev: false
     resolution:
       integrity: sha512-1HcDas8SEj4z1Wc696tH56G8OlRaH/sqZOynNNB+HF0WOeXPaxTtbYzJY2oEfiUxjSKjhCKr+MvR7dCHcEelug==
-  /@types/react-dom/16.9.10:
+  /@types/react-dom/17.0.0:
     dependencies:
-      '@types/react': 16.9.56
+      '@types/react': 17.0.0
     dev: false
     resolution:
-      integrity: sha512-ItatOrnXDMAYpv6G8UCk2VhbYVTjZT9aorLtA/OzDN9XJ2GKcfam68jutoAcILdRjsRUO8qb7AmyObF77Q8QFw==
+      integrity: sha512-lUqY7OlkF/RbNtD5nIq7ot8NquXrdFrjSOR6+w9a9RFQevGi1oZO1dcJbXMeONAPKtZ2UrZOEJ5UOCVsxbLk/g==
   /@types/react/16.9.56:
     dependencies:
       '@types/prop-types': 15.7.3
@@ -11361,7 +11361,7 @@ specifiers:
   '@types/nprogress': 0.2.0
   '@types/prismjs': 1.16.2
   '@types/react': 17.0.0
-  '@types/react-dom': 16.9.10
+  '@types/react-dom': 17.0.0
   '@types/suncalc': 1.8.0
   '@types/use-ackee': 1.0.0
   '@types/webpack': 4.41.25
