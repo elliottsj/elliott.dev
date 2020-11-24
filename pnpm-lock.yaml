@@ -25,7 +25,7 @@ dependencies:
   '@types/suncalc': 1.8.0
   '@types/use-ackee': 1.0.0
   '@types/webpack': 4.41.25
-  '@types/webpack-env': 1.15.3
+  '@types/webpack-env': 1.16.0
   '@typescript-eslint/eslint-plugin': 4.8.2_6341bfd4e6c74608cac2d9a1d059520a
   '@typescript-eslint/parser': 4.8.2_eslint@7.14.0+typescript@4.1.2
   babel-jest: 26.6.3_@babel+core@7.12.9
@@ -3152,10 +3152,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-9ukr27B2pMN1FKUvzB0p+FFsYcRu9DAEUWqlaUoa2x7k78tAdSWLHn4LMlkUH+zvX7yu/loeu/t8YsOMpnYdQQ==
-  /@types/webpack-env/1.15.3:
+  /@types/webpack-env/1.16.0:
     dev: false
     resolution:
-      integrity: sha512-5oiXqR7kwDGZ6+gmzIO2lTC+QsriNuQXZDWNYRV3l2XRN/zmPgnC21DLSx2D05zvD8vnXW6qUg7JnXZ4I6qLVQ==
+      integrity: sha512-Fx+NpfOO0CpeYX2g9bkvX8O5qh9wrU1sOF4g8sft4Mu7z+qfe387YlyY8w8daDyDsKY5vUxM0yxkAYnbkRbZEw==
   /@types/webpack-sources/2.0.0:
     dependencies:
       '@types/node': 13.13.32
@@ -11328,7 +11328,7 @@ specifiers:
   '@types/suncalc': 1.8.0
   '@types/use-ackee': 1.0.0
   '@types/webpack': 4.41.25
-  '@types/webpack-env': 1.15.3
+  '@types/webpack-env': 1.16.0
   '@typescript-eslint/eslint-plugin': 4.8.2
   '@typescript-eslint/parser': 4.8.2
   babel-jest: 26.6.3
