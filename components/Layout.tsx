@@ -110,6 +110,9 @@ const Layout: React.FC = ({ children }) => {
               <a>About</a>
             </Link>
           </span>
+          <Link href="/activity">
+            <a>Activity</a>
+          </Link>
           {false && (
             <NightToggle
               disabledLabel="Off"
