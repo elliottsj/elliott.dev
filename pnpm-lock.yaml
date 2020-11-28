@@ -42,7 +42,7 @@ dependencies:
   normalize.css: 8.0.1
   npm-run-all: 4.1.5
   nprogress: 0.2.0
-  prettier: 2.2.0
+  prettier: 2.2.1
   prism-react-renderer: 1.1.1_react@17.0.1
   prismjs: 1.22.0
   react: 17.0.1
@@ -8713,13 +8713,13 @@ packages:
       node: '>= 0.8.0'
     resolution:
       integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==
-  /prettier/2.2.0:
+  /prettier/2.2.1:
     dev: false
     engines:
       node: '>=10.13.0'
     hasBin: true
     resolution:
-      integrity: sha512-yYerpkvseM4iKD/BXLYUkQV5aKt4tQPqaGW6EsZjzyu0r7sVZZNPJW4Y8MyKmicp6t42XUPcBVA+H6sB3gqndw==
+      integrity: sha512-PqyhM2yCjg/oKkFPtTGUojv7gnZAoG80ttl45O6x2Ug/rMJw4wcc9k6aaf2hibP7BGVCCM33gZoGjyvt9mm16Q==
   /pretty-format/26.6.2:
     dependencies:
       '@jest/types': 26.6.2
@@ -11127,7 +11127,7 @@ specifiers:
   normalize.css: 8.0.1
   npm-run-all: 4.1.5
   nprogress: 0.2.0
-  prettier: 2.2.0
+  prettier: 2.2.1
   prism-react-renderer: 1.1.1
   prismjs: 1.22.0
   react: 17.0.1
