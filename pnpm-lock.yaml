@@ -2,7 +2,7 @@ dependencies:
   '@babel/core': 7.12.9
   '@elliottsj/next-svgr': 0.0.3
   '@emotion/babel-preset-css-prop': 11.0.0_@babel+core@7.12.9
-  '@emotion/jest': 11.1.0_@types+jest@26.0.15
+  '@emotion/jest': 11.1.0_@types+jest@26.0.16
   '@emotion/react': 11.1.1_8438dde46461c381000edf63e35e5e5a
   '@emotion/styled': 11.0.0_b3a632144d8ca4e6724564f65f794258
   '@fortawesome/fontawesome-svg-core': 1.2.32
@@ -13,7 +13,7 @@ dependencies:
   '@mdx-js/react': 1.6.21_react@17.0.1
   '@next/mdx': 10.0.1_@mdx-js+loader@1.6.21
   '@types/chroma-js': 2.1.2
-  '@types/jest': 26.0.15
+  '@types/jest': 26.0.16
   '@types/lodash': 4.14.165
   '@types/luxon': 1.25.0
   '@types/mdx-js__react': 1.5.3
@@ -2164,11 +2164,11 @@ packages:
     dev: false
     resolution:
       integrity: sha512-G5X0t7eR9pkhUvAY32QS3lToP9JyNF8It5CcmMvbWjmC9/Yq7IhevaKqxl+me2BKR93iTPiL/h3En1ZX/1G3PQ==
-  /@emotion/jest/11.1.0_@types+jest@26.0.15:
+  /@emotion/jest/11.1.0_@types+jest@26.0.16:
     dependencies:
       '@babel/runtime': 7.12.5
       '@emotion/css-prettifier': 1.0.0
-      '@types/jest': 26.0.15
+      '@types/jest': 26.0.16
       chalk: 4.1.0
       specificity: 0.4.1
       stylis: 4.0.3
@@ -2862,13 +2862,13 @@ packages:
     dev: false
     resolution:
       integrity: sha512-nwKNbvnwJ2/mndE9ItP/zc2TCzw6uuodnF4EHYWD+gCQDVBuRQL5UzbZD0/ezy1iKsFU2ZQiDqg4M9dN4+wZgA==
-  /@types/jest/26.0.15:
+  /@types/jest/26.0.16:
     dependencies:
       jest-diff: 26.6.2
       pretty-format: 26.6.2
     dev: false
     resolution:
-      integrity: sha512-s2VMReFXRg9XXxV+CW9e5Nz8fH2K1aEhwgjUqPPbQd7g95T0laAcvLv032EhFHIa5GHsZ8W7iJEQVaJq6k3Gog==
+      integrity: sha512-Gp12+7tmKCgv9JjtltxUXokohCAEZfpJaEW5tn871SGRp8I+bRWBonQO7vW5NHwnAHe5dd50+Q4zyKuN35i09g==
   /@types/json-schema/7.0.6:
     dev: false
     resolution:
@@ -11102,7 +11102,7 @@ specifiers:
   '@mdx-js/react': 1.6.21
   '@next/mdx': 10.0.1
   '@types/chroma-js': 2.1.2
-  '@types/jest': 26.0.15
+  '@types/jest': 26.0.16
   '@types/lodash': 4.14.165
   '@types/luxon': 1.25.0
   '@types/mdx-js__react': 1.5.3
