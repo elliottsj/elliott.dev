@@ -48,7 +48,7 @@ dependencies:
   react: 17.0.1
   react-div-100vh: 0.5.6_react@17.0.1
   react-dom: 17.0.1_react@17.0.1
-  simple-icons: 4.0.1
+  simple-icons: 4.1.0
   suncalc: 1.8.0
   typescript: 4.1.2
   use-ackee: 1.0.0_react@17.0.1
@@ -9549,10 +9549,10 @@ packages:
     optional: true
     resolution:
       integrity: sha512-ZalZGexYr3TA0SwySsr5HlgOOinS4Jsa8YB2GJ6lUNAazyAu4KG/VmzMTwAt2YVXzzVj8QmefmAonZIK2BSGcQ==
-  /simple-icons/4.0.1:
+  /simple-icons/4.1.0:
     dev: false
     resolution:
-      integrity: sha512-oPAaJLwRJdxAKTvwfrja9dkhykkz+XpkbvwxDCSzcW4Uk3IZ0p2Ib/ETRE0B5pgJXvZw5xv4WpgQKFDyCAcS4Q==
+      integrity: sha512-qVYH7huMNS6NhZkhWZj/C8SSlPD4zyHVYbKi0qhuP/3/m++AQ8NU+MXzcEwISg6TnDRCjZrCrzWi/kIAXCjv4g==
   /simple-swizzle/0.2.2:
     dependencies:
       is-arrayish: 0.3.2
@@ -11076,7 +11076,7 @@ specifiers:
   react: 17.0.1
   react-div-100vh: 0.5.6
   react-dom: 17.0.1
-  simple-icons: 4.0.1
+  simple-icons: 4.1.0
   suncalc: 1.8.0
   typescript: 4.1.2
   use-ackee: 1.0.0
