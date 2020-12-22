@@ -3,8 +3,8 @@ dependencies:
   '@elliottsj/next-svgr': 0.0.3
   '@emotion/babel-preset-css-prop': 11.0.0_@babel+core@7.12.10
   '@emotion/jest': 11.1.0_@types+jest@26.0.19
-  '@emotion/react': 11.1.3_3e9142bec00f6fba5069683b6b9caa06
-  '@emotion/styled': 11.0.0_a2846d622253ce8e06b546c51d565bc3
+  '@emotion/react': 11.1.4_3e9142bec00f6fba5069683b6b9caa06
+  '@emotion/styled': 11.0.0_ed0dd63ef793dc6af5b7b6a4c0d5035d
   '@fortawesome/fontawesome-svg-core': 1.2.32
   '@fortawesome/free-solid-svg-icons': 5.15.1
   '@fortawesome/react-fontawesome': 0.1.13_8ce9757f921aacb44ae3f15ea31db6bb
@@ -2314,7 +2314,7 @@ packages:
     dev: false
     resolution:
       integrity: sha512-Ja/Vfqe3HpuzRsG1oBtWTHk2PGZ7GR+2Vz5iYGelAw8dx32K0y7PjVuxK6z1nMpZOqAFsRUPCkK1YjJ56qJlgw==
-  /@emotion/react/11.1.3_3e9142bec00f6fba5069683b6b9caa06:
+  /@emotion/react/11.1.4_3e9142bec00f6fba5069683b6b9caa06:
     dependencies:
       '@babel/core': 7.12.10
       '@babel/runtime': 7.12.5
@@ -2337,7 +2337,7 @@ packages:
       '@types/react':
         optional: true
     resolution:
-      integrity: sha512-4kTKUm321key/capzff/AEIm8ow9IrcYltqaMQVdKlqMTUQpoO9GozDnDG1YXLYzgFnxYTZUbok3Z0vudylxiA==
+      integrity: sha512-9gkhrW8UjV4IGRnEe4/aGPkUxoGS23aD9Vu6JCGfEDyBYL+nGkkRBoMFGAzCT9qFdyUvQp4UUtErbKWxq/JS4A==
   /@emotion/serialize/1.0.0:
     dependencies:
       '@emotion/hash': 0.8.0
@@ -2352,13 +2352,13 @@ packages:
     dev: false
     resolution:
       integrity: sha512-GbIvVMe4U+Zc+929N1V7nW6YYJtidj31lidSmdYcWozwoBIObXBnaJkKNDjZrLm9Nc0BR+ZyHNaRZxqNZbof5g==
-  /@emotion/styled/11.0.0_a2846d622253ce8e06b546c51d565bc3:
+  /@emotion/styled/11.0.0_ed0dd63ef793dc6af5b7b6a4c0d5035d:
     dependencies:
       '@babel/core': 7.12.10
       '@babel/runtime': 7.12.5
       '@emotion/babel-plugin': 11.0.0_@babel+core@7.12.10
       '@emotion/is-prop-valid': 1.0.0
-      '@emotion/react': 11.1.3_3e9142bec00f6fba5069683b6b9caa06
+      '@emotion/react': 11.1.4_3e9142bec00f6fba5069683b6b9caa06
       '@emotion/serialize': 1.0.0
       '@emotion/utils': 1.0.0
       '@types/react': 17.0.0
@@ -11253,7 +11253,7 @@ specifiers:
   '@elliottsj/next-svgr': 0.0.3
   '@emotion/babel-preset-css-prop': 11.0.0
   '@emotion/jest': 11.1.0
-  '@emotion/react': 11.1.3
+  '@emotion/react': 11.1.4
   '@emotion/styled': 11.0.0
   '@fortawesome/fontawesome-svg-core': 1.2.32
   '@fortawesome/free-solid-svg-icons': 5.15.1
