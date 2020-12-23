@@ -233,8 +233,8 @@ const FamilyTreePage: React.FC<Props> = ({ data: family }) => {
       <button
         css={css`
           position: absolute;
-          bottom: 20px;
-          right: 20px;
+          top: 20px;
+          left: 20px;
           font-size: 2em;
         `}
         onClick={() => {
