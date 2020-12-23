@@ -163,7 +163,7 @@ const FamilyTreePage: React.FC<Props> = ({ data: family }) => {
 
     nodes
       .append('text')
-      .style('font-size', '0.2em')
+      .style('font-size', '0.23em')
       .text((d) => (d.type === 'FamilyMemberNode' ? d.member.name : ''))
       .attr('x', 0)
       .attr('dy', '0.35em')
