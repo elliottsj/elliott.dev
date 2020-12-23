@@ -70,7 +70,7 @@ const FamilyTreePage: React.FC<Props> = ({ data: family }) => {
 
     const simulation = d3
       .forceSimulation<SimulationFamilyNodeDatum, SimulationFamilyLinkDatum>(graph.nodes)
-      .force('charge', d3.forceManyBody().strength(-300).distanceMin(20).distanceMax(200))
+      .force('charge', d3.forceManyBody().strength(-200).distanceMin(20).distanceMax(300))
       .force('collision', d3.forceCollide(25).strength(0.8))
       .force(
         'link',
