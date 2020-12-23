@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "allowJs": true,
+    "downlevelIteration": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "isolatedModules": true,
@@ -10,7 +11,7 @@
     "moduleResolution": "node",
     "noEmit": true,
     "noFallthroughCasesInSwitch": true,
-    "noUncheckedIndexedAccess": true,
+    "noUncheckedIndexedAccess": false,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "resolveJsonModule": true,
