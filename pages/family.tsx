@@ -213,7 +213,7 @@ const FamilyTreePage: React.FC<Props> = ({ data: family }) => {
         [0, 0],
         [windowSize.width, windowSize.height],
       ])
-      .scaleExtent([0.2, 3])
+      .scaleExtent([0.2, 6])
       .on('zoom', ({ transform }) => {
         zoomGroup.attr('transform', transform);
       });
@@ -245,6 +245,11 @@ const FamilyTreePage: React.FC<Props> = ({ data: family }) => {
       </button>
       <Modal
         ariaHideApp={false}
+        style={{
+          content: {
+            WebkitOverflowScrolling: 'auto',
+          },
+        }}
         isOpen={isModalOpen}
         onRequestClose={() => {
           setIsModalOpen(false);
