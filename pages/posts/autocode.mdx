@@ -27,25 +27,25 @@ I ended up building [pocket-to-onedrive](https://github.com/elliottsj/autocode-p
 
 It has a few moving parts:
 
-- Pocket authentication flow
+- Pocket authentication flow.
 
   To access data in Pocket, the integration needs to persist an access token for the Pocket API. We use Pocket's [OAuth-like authentication flow](https://getpocket.com/developer/docs/authentication) to retrieve a new access token when needed, by sending an SMS message to the user's phone number to prompt for login.
 
   See `pocket_login.js`, `pocket_auth_callback.js`.
 
-- OneDrive authentication flow
+- OneDrive authentication flow.
 
   To access data in OneDrive, the integration needs to persist an access token for the OneDrive API. We use OneDrive's [OAuth-like authorization code flow](https://docs.microsoft.com/en-us/onedrive/developer/rest-api/getting-started/graph-oauth?view=odsp-graph-online) to retrieve a new access token when needed, by sending an SMS message to the user's phone number to prompt for login.
 
   See `onedrive_auth_callback.js`.
 
-- Hourly OneDrive token refresh
+- Hourly OneDrive token refresh.
 
   The OneDrive access token expires every hour, so we need to refresh it using the refresh token before the "sync" job attempts to use the access token to access OneDrive. This runs every hour, 30 minutes before the "sync" job.
 
   See `refresh_onedrive_token.js`.
 
-- Hourly Pocket -> OneDrive sync job
+- Hourly Pocket -> OneDrive sync job.
 
   Pocket doesn't have any sort of event-based API or outgoing webhooks, so I chose to sync data hourly. New items are detected by fetching Pocket items created in the last 24 hours and checking whether they've been "seen" by the integration in the past 48 hours.
 
@@ -53,19 +53,19 @@ It has a few moving parts:
 
 ## Things I like about Autocode
 
-- It's JavaScript
+- It's JavaScript.
 
   The ability to program in a familiar language and access to the ecosystem of npm libraries makes it easy to use.
 
-- The online IDE
+- The online IDE.
 
   Don't need to set up a local environment to get started, making it faster to get something working. Syntax highlighting and autocomplete are bonuses.
 
-- Automated npm dependency management
+- Automated npm dependency management.
 
   A `require('some-library')` import just works; no need to run npm, yarn, etc.
 
-- Integrated hosting
+- Integrated hosting.
 
   Deploying a function gives you a public URL immediately, no need to set up DNS or servers.
 
@@ -73,11 +73,11 @@ It has a few moving parts:
 
   Simple persisted storage is included, no database required.
 
-- Release/version management
+- Release/version management.
 
   Seems pretty well designed, separation of "sandboxes", "dev environments", and "releases" makes it clear where your code is running and how changes are saved and published.
 
-- Secret management via environment variables
+- Secret management via environment variables.
 
   `env.json`, `process.env`, and requiring env var values when someone forks your project.
 
