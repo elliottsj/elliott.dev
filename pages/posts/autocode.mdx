@@ -1,0 +1,133 @@
+export const meta = {
+  published: false,
+  publishedAt: '2021-01-01',
+  title: 'Using Autocode to sync Pocket with OneDrive',
+  summary: 'Experimenting with Autocode to quickly build API integrations',
+};
+
+# Using Autocode to sync Pocket with OneDrive
+
+This holiday break, I was trying to recall this long RFC document I remember finding on Twitter. It was a Markdown document on GitHub somewhere, comparing six or seven different approaches to some API proposal, analyzing the properties of each proposal and assigning weights of importance to each property. I don't remember whether it was a ECMA-262 proposal or something React-related, but I had the urge to find it based on my limited memory.
+
+I had the thought, "maybe I saved it in [Pocket](https://app.getpocket.com/)" since that's where I've been saving interesting links for a while. I might find it there.
+
+So I started reading through my giant backlog of items saved in Pocket and thought to myself: "It would be a shame if Pocket was to lose all of this data somehow. I should keep this backed up."
+
+I've already started building my own [Obsidian](https://obsidian.md/) knowledge base synced to my OneDrive, so that would be the perfect place to keep Pocket items backed up, and better organize them and write notes. Pocket and OneDrive don't have native integrations, so I would need to build something custom to keep them synced.
+
+After hearing of [Autocode](https://autocode.com/) (previously "Standard Library") for a while now, I thought I'd try it out since it seems like a good way to build one-off API integrations quickly.
+
+> ### [What is Autocode?](https://docs.autocode.com/introduction-to-autocode/what-is-autocode/)
+>
+> Autocode is an **automation software suite** that allows you to instantly connect APIs together **with code** in response to HTTP (web) requests or SaaS events, like `slack.command`, `stripe.charge.succeeded` or `shopify.order.created`. You can think of it like level up from traditional UI-based ("no-code" or "low-code") workflow automation towards a more sophisticated approach where integrations are treated like individual apps that you can code, share and more. Autocode is best utilized when your team is looking to automate with a degree of sophistication higher than "no-code", still wants to move quickly, and isn't afraid of either writing or learning to write a little bit of code.
+
+## pocket-to-onedrive
+
+I ended up building [pocket-to-onedrive](https://github.com/elliottsj/autocode-pocket-to-onedrive). Every hour, the latest Pocket items are fetched. Each item that hasn't been seen recently (in the past 48 hours) is appended to a specific Markdown file in OneDrive.
+
+It has a few moving parts:
+
+- Pocket authentication flow
+
+  To access data in Pocket, the integration needs to persist an access token for the Pocket API. We use Pocket's [OAuth-like authentication flow](https://getpocket.com/developer/docs/authentication) to retrieve a new access token when needed, by sending an SMS message to the user's phone number to prompt for login.
+
+  See `pocket_login.js`, `pocket_auth_callback.js`.
+
+- OneDrive authentication flow
+
+  To access data in OneDrive, the integration needs to persist an access token for the OneDrive API. We use OneDrive's [OAuth-like authorization code flow](https://docs.microsoft.com/en-us/onedrive/developer/rest-api/getting-started/graph-oauth?view=odsp-graph-online) to retrieve a new access token when needed, by sending an SMS message to the user's phone number to prompt for login.
+
+  See `onedrive_auth_callback.js`.
+
+- Hourly OneDrive token refresh
+
+  The OneDrive access token expires every hour, so we need to refresh it using the refresh token before the "sync" job attempts to use the access token to access OneDrive. This runs every hour, 30 minutes before the "sync" job.
+
+  See `refresh_onedrive_token.js`.
+
+- Hourly Pocket -> OneDrive sync job
+
+  Pocket doesn't have any sort of event-based API or outgoing webhooks, so I chose to sync data hourly. New items are detected by fetching Pocket items created in the last 24 hours and checking whether they've been "seen" by the integration in the past 48 hours.
+
+  See `sync.js`.
+
+## Things I like about Autocode
+
+- It's JavaScript
+
+  The ability to program in a familiar language and access to the ecosystem of npm libraries makes it easy to use.
+
+- The online IDE
+
+  Don't need to set up a local environment to get started, making it faster to get something working. Syntax highlighting and autocomplete are bonuses.
+
+- Automated npm dependency management
+
+  A `require('some-library')` import just works; no need to run npm, yarn, etc.
+
+- Integrated hosting
+
+  Deploying a function gives you a public URL immediately, no need to set up DNS or servers.
+
+- [Key-Value Storage](https://docs.autocode.com/building-endpoints/keyvalue-storage/)
+
+  Simple persisted storage is included, no database required.
+
+- Release/version management
+
+  Seems pretty well designed, separation of "sandboxes", "dev environments", and "releases" makes it clear where your code is running and how changes are saved and published.
+
+- Secret management via environment variables
+
+  `env.json`, `process.env`, and requiring env var values when someone forks your project.
+
+## Things I dislike about Autocode
+
+- Online IDE keyboard navigation.
+
+  It's quirky and doesn't do what I want much of the time. Examples:
+
+  - Option + Left / Option + Right: expect to move the cursor word by word, but cursor moves by only one character.
+  - Command + Shift + Right, Shift + Left: expect to select from cursor to end of line, then shrink selection by one character from the right. But selection expands by one character from the left.
+  - The autocomplete prompt appears when moving the cursor around, but I expect it to appear only after typing certain characters (e.g. a period), or by using a shortcut like Control + Space.
+
+- Lack of GitHub sync support.
+
+  Code that you write is hosted on Autocode and isn't easily synced to external services like GitHub. I think it's important to be able to easily back up and own the code that you write, in case Autocode goes down and also to share an app as open source. There is a CLI to support this in some capacity, however it has some quirks as described below.
+
+- The CLI has some odd ergonomics.
+
+  The [lib](https://github.com/stdlib/lib) CLI seems to have a lot of functionality/terminology left over from before the rebrand and restructure to Autocode: services, hosts, packages. The main thing I want to do with the CLI is sync my Autocode app with my local file system, which is done like this:
+
+  ```shell
+  $ cd dev/elliottsj/autocode-workspace
+  $ lib get spencer/pocket-to-onedrive -w  # download the source code
+  ...
+  $ cd spencer/pocket-to-onedrive
+  $ # make some edits to the source code
+  $ lib up dev  # upload and deploy the app to the "dev" environment
+  ```
+
+  The final command uploads the edited source code to the deployed "dev" environment but doesn't update the "dev" _Sandbox_ automatically. To bring your changes back into the Sandbox so it can be edited in the online IDE, you need to _tear down_ the existing Sandbox and "Fork" the dev _environment_ into a new Sandbox. It's a little tedious and hard to intuitively grasp, but at least there is a way to download and upload an app's source code.
+
+  Downloading the latest source code with `lib get spencer/pocket-to-onedrive -w` will overwrite the existing local folder, including the `.git/` metadata if one was created, making it difficult to even manully maintain a Git copy of an app.
+
+- Wish custom authentication flows had better support.
+
+  As described above, most of the pocket-to-onedrive implementation deals with implementing authentication flows for 3rd-party services. Autocode features [API Authentication Management](https://docs.autocode.com/introduction-to-autocode/components-of-autocode/api-authentication-management/) which is designed to streamline this process, however they do not support Pocket or OneDrive, and [custom authentication is not yet supported](https://docs.autocode.com/standard-library-of-apis/adding-your-own-apis/custom-authentication/).
+
+- No [Markdown table](https://www.markdownguide.org/extended-syntax/#tables) support.
+
+- Wish there was a way to programmatically retrieve the public URL to a function. Currently passing them as env vars, e.g.
+
+  ```
+  ONEDRIVE_AUTH_CALLBACK_ENDPOINT=https://spencer.api.stdlib.com/pocket-to-onedrive@dev/onedrive_auth_callback/
+  ```
+
+- Apps are not portable to other platforms. They can only run on Autocode.
+
+## Conclusion
+
+I never did find the document I was originally looking for, or clear much of my Pocket backlog, but ideally those will be easier now that this integration is working.
+
+If this project were to continue, I would want to try migrating it to [Next.js](https://github.com/vercel/next.js) + [Vercel](https://vercel.com/) + [Quirrel](https://quirrel.dev/). In my opinion, the productivity of using Git + GitHub + VSCode and the ability to own/run the code yourself outweigh the benefits of Autocode in its current state.
