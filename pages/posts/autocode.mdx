@@ -1,6 +1,6 @@
 export const meta = {
-  published: false,
-  publishedAt: '2021-01-01',
+  published: true,
+  publishedAt: '2021-01-02',
   title: 'Using Autocode to sync Pocket with OneDrive',
   summary: 'Experimenting with Autocode to quickly build API integrations',
 };
@@ -108,9 +108,9 @@ It has a few moving parts:
   $ lib up dev  # upload and deploy the app to the "dev" environment
   ```
 
-  The final command uploads the edited source code to the deployed "dev" environment but doesn't update the "dev" _Sandbox_ automatically. To bring your changes back into the Sandbox so it can be edited in the online IDE, you need to _tear down_ the existing Sandbox and "Fork" the dev _environment_ into a new Sandbox. It's a little tedious and hard to intuitively grasp, but at least there is a way to download and upload an app's source code.
+  The final command uploads the edited source code to the deployed "dev" environment but doesn't update the "dev" _Sandbox_ automatically. To bring your changes back into the Sandbox so it can be edited in the online IDE, you need to _tear down_ the existing Sandbox and _fork_ the dev _environment_ into a new Sandbox. It's a little tedious and hard to intuitively grasp, but at least there is a way to download and upload an app's source code.
 
-  Downloading the latest source code with `lib get spencer/pocket-to-onedrive -w` will overwrite the existing local folder, including the `.git/` metadata if one was created, making it difficult to even manully maintain a Git copy of an app.
+  Downloading the latest source code with `lib get -w` will overwrite the existing local folder, including the `.git/` metadata if one was created, making it difficult to manully maintain a Git copy of an app.
 
 - Wish custom authentication flows had better support.
 
