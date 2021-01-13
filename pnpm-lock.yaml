@@ -5,9 +5,9 @@ dependencies:
   '@emotion/jest': 11.1.0_@types+jest@26.0.20
   '@emotion/react': 11.1.4_3e9142bec00f6fba5069683b6b9caa06
   '@emotion/styled': 11.0.0_ed0dd63ef793dc6af5b7b6a4c0d5035d
-  '@fortawesome/fontawesome-svg-core': 1.2.32
-  '@fortawesome/free-solid-svg-icons': 5.15.1
-  '@fortawesome/react-fontawesome': 0.1.14_8ce9757f921aacb44ae3f15ea31db6bb
+  '@fortawesome/fontawesome-svg-core': 1.2.34
+  '@fortawesome/free-solid-svg-icons': 5.15.2
+  '@fortawesome/react-fontawesome': 0.1.14_fdbbf59a1e8653ce678e6d59b8f3bef7
   '@mdx-js/loader': 1.6.22_react@17.0.1
   '@mdx-js/mdx': 1.6.22
   '@mdx-js/react': 1.6.22_react@17.0.1
@@ -1571,34 +1571,34 @@ packages:
       node: ^10.12.0 || >=12.0.0
     resolution:
       integrity: sha512-EfB5OHNYp1F4px/LI/FEnGylop7nOqkQ1LRzCM0KccA2U8tvV8w01KBv37LbO7nW4H+YhKyo2LcJhRwjjV17QQ==
-  /@fortawesome/fontawesome-common-types/0.2.32:
+  /@fortawesome/fontawesome-common-types/0.2.34:
     dev: false
     engines:
       node: '>=6'
     requiresBuild: true
     resolution:
-      integrity: sha512-ux2EDjKMpcdHBVLi/eWZynnPxs0BtFVXJkgHIxXRl+9ZFaHPvYamAfCzeeQFqHRjuJtX90wVnMRaMQAAlctz3w==
-  /@fortawesome/fontawesome-svg-core/1.2.32:
+      integrity: sha512-XcIn3iYbTEzGIxD0/dY5+4f019jIcEIWBiHc3KrmK/ROahwxmZ/s+tdj97p/5K0klz4zZUiMfUlYP0ajhSJjmA==
+  /@fortawesome/fontawesome-svg-core/1.2.34:
     dependencies:
-      '@fortawesome/fontawesome-common-types': 0.2.32
+      '@fortawesome/fontawesome-common-types': 0.2.34
     dev: false
     engines:
       node: '>=6'
     requiresBuild: true
     resolution:
-      integrity: sha512-XjqyeLCsR/c/usUpdWcOdVtWFVjPbDFBTQkn2fQRrWhhUoxriQohO2RWDxLyUM8XpD+Zzg5xwJ8gqTYGDLeGaQ==
-  /@fortawesome/free-solid-svg-icons/5.15.1:
+      integrity: sha512-0KNN0nc5eIzaJxlv43QcDmTkDY1CqeN6J7OCGSs+fwGPdtv0yOQqRjieopBCmw+yd7uD3N2HeNL3Zm5isDleLg==
+  /@fortawesome/free-solid-svg-icons/5.15.2:
     dependencies:
-      '@fortawesome/fontawesome-common-types': 0.2.32
+      '@fortawesome/fontawesome-common-types': 0.2.34
     dev: false
     engines:
       node: '>=6'
     requiresBuild: true
     resolution:
-      integrity: sha512-EFMuKtzRMNbvjab/SvJBaOOpaqJfdSap/Nl6hst7CgrJxwfORR1drdTV6q1Ib/JVzq4xObdTDcT6sqTaXMqfdg==
-  /@fortawesome/react-fontawesome/0.1.14_8ce9757f921aacb44ae3f15ea31db6bb:
+      integrity: sha512-ZfCU+QjaFsdNZmOGmfqEWhzI3JOe37x5dF4kz9GeXvKn/sTxhqMtZ7mh3lBf76SvcYY5/GKFuyG7p1r4iWMQqw==
+  /@fortawesome/react-fontawesome/0.1.14_fdbbf59a1e8653ce678e6d59b8f3bef7:
     dependencies:
-      '@fortawesome/fontawesome-svg-core': 1.2.32
+      '@fortawesome/fontawesome-svg-core': 1.2.34
       prop-types: 15.7.2
       react: 17.0.1
     dev: false
@@ -9007,7 +9007,7 @@ packages:
       request-promise-core: 1.1.4_request@2.88.2
       stealthy-require: 1.1.1
       tough-cookie: 2.5.0
-    deprecated: 'request-promise-native has been deprecated because it extends the now deprecated request package, see https://github.com/request/request/issues/3142'
+    deprecated: request-promise-native has been deprecated because it extends the now deprecated request package, see https://github.com/request/request/issues/3142
     dev: false
     engines:
       node: '>=0.12.0'
@@ -9037,7 +9037,7 @@ packages:
       tough-cookie: 2.5.0
       tunnel-agent: 0.6.0
       uuid: 3.4.0
-    deprecated: 'request has been deprecated, see https://github.com/request/request/issues/3142'
+    deprecated: request has been deprecated, see https://github.com/request/request/issues/3142
     dev: false
     engines:
       node: '>= 6'
@@ -9097,7 +9097,7 @@ packages:
     resolution:
       integrity: sha512-QEb4A76c8Mi7I3xNKXlRKQSlLBwjUV/ULFMP+G7n3/7tJZ8MG5wsZ3ucxP1Jz8Vevn6fnJsxDx9cIls+utGzPQ==
   /resolve-url/0.2.1:
-    deprecated: 'https://github.com/lydell/resolve-url#deprecated'
+    deprecated: https://github.com/lydell/resolve-url#deprecated
     dev: false
     resolution:
       integrity: sha1-LGN/53yJOv0qZj/iGqkIAGjiBSo=
@@ -10492,7 +10492,7 @@ packages:
     resolution:
       integrity: sha512-B0yRTzYdUCCn9n+F4+Gh4yIDtMQcaJsmYBDsTSG8g/OejKBodLQ2IHfN3bM7jUsRXndopT7OIXWdYqc1fjmV6g==
   /urix/0.1.0:
-    deprecated: 'Please see https://github.com/lydell/urix#deprecated'
+    deprecated: Please see https://github.com/lydell/urix#deprecated
     dev: false
     resolution:
       integrity: sha1-2pN/emLiH+wf0Y1Js1wpNQZ6bHI=
@@ -10922,8 +10922,8 @@ specifiers:
   '@emotion/jest': 11.1.0
   '@emotion/react': 11.1.4
   '@emotion/styled': 11.0.0
-  '@fortawesome/fontawesome-svg-core': 1.2.32
-  '@fortawesome/free-solid-svg-icons': 5.15.1
+  '@fortawesome/fontawesome-svg-core': 1.2.34
+  '@fortawesome/free-solid-svg-icons': 5.15.2
   '@fortawesome/react-fontawesome': 0.1.14
   '@mdx-js/loader': 1.6.22
   '@mdx-js/mdx': 1.6.22
