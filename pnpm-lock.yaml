@@ -3,8 +3,8 @@ dependencies:
   '@elliottsj/next-svgr': 0.0.3
   '@emotion/babel-preset-css-prop': 11.0.0_@babel+core@7.12.13
   '@emotion/jest': 11.1.0_@types+jest@26.0.20
-  '@emotion/react': 11.1.5_a2556f2d593fd471baaa8c7acd354475
-  '@emotion/styled': 11.1.5_b2387b5f190676dd86d96184d71d025e
+  '@emotion/react': 11.1.5_ce9830ee2d07e1d5539b200b8e458ae5
+  '@emotion/styled': 11.1.5_91a57c34e43882c4dc496705bc5aad53
   '@fortawesome/fontawesome-svg-core': 1.2.34
   '@fortawesome/free-solid-svg-icons': 5.15.2
   '@fortawesome/react-fontawesome': 0.1.14_fdbbf59a1e8653ce678e6d59b8f3bef7
@@ -21,7 +21,7 @@ dependencies:
   '@types/node': 13.13.41
   '@types/nprogress': 0.2.0
   '@types/prismjs': 1.16.2
-  '@types/react': 17.0.0
+  '@types/react': 17.0.1
   '@types/react-dom': 17.0.0
   '@types/react-modal': 3.12.0
   '@types/suncalc': 1.8.0
@@ -1642,7 +1642,7 @@ packages:
     dev: false
     resolution:
       integrity: sha512-igX9a37DR2ZPGYtV6suZ6whr8pTFtyHL3K/oLUotxpSVO2ASaprmAe2Dkq7tBo7CRY7MMDrAa9nuQP9/YG8FxQ==
-  /@emotion/react/11.1.5_a2556f2d593fd471baaa8c7acd354475:
+  /@emotion/react/11.1.5_ce9830ee2d07e1d5539b200b8e458ae5:
     dependencies:
       '@babel/core': 7.12.13
       '@babel/runtime': 7.12.5
@@ -1651,7 +1651,7 @@ packages:
       '@emotion/sheet': 1.0.1
       '@emotion/utils': 1.0.0
       '@emotion/weak-memoize': 0.2.5
-      '@types/react': 17.0.0
+      '@types/react': 17.0.1
       hoist-non-react-statics: 3.3.2
       react: 17.0.1
     dev: false
@@ -1680,16 +1680,16 @@ packages:
     dev: false
     resolution:
       integrity: sha512-GbIvVMe4U+Zc+929N1V7nW6YYJtidj31lidSmdYcWozwoBIObXBnaJkKNDjZrLm9Nc0BR+ZyHNaRZxqNZbof5g==
-  /@emotion/styled/11.1.5_b2387b5f190676dd86d96184d71d025e:
+  /@emotion/styled/11.1.5_91a57c34e43882c4dc496705bc5aad53:
     dependencies:
       '@babel/core': 7.12.13
       '@babel/runtime': 7.12.5
       '@emotion/babel-plugin': 11.1.2_@babel+core@7.12.13
       '@emotion/is-prop-valid': 1.1.0
-      '@emotion/react': 11.1.5_a2556f2d593fd471baaa8c7acd354475
+      '@emotion/react': 11.1.5_ce9830ee2d07e1d5539b200b8e458ae5
       '@emotion/serialize': 1.0.0
       '@emotion/utils': 1.0.0
-      '@types/react': 17.0.0
+      '@types/react': 17.0.1
       react: 17.0.1
     dev: false
     peerDependencies:
@@ -2615,6 +2615,13 @@ packages:
     dev: false
     resolution:
       integrity: sha512-aj/L7RIMsRlWML3YB6KZiXB3fV2t41+5RBGYF8z+tAKU43Px8C3cYUZsDvf1/+Bm4FK21QWBrDutu8ZJ/70qOw==
+  /@types/react/17.0.1:
+    dependencies:
+      '@types/prop-types': 15.7.3
+      csstype: 3.0.5
+    dev: false
+    resolution:
+      integrity: sha512-w8t9f53B2ei4jeOqf/gxtc2Sswnc3LBK5s0DyJcg5xd10tMHXts2N31cKjWfH9IC/JvEPa/YF1U4YeP1t4R6HQ==
   /@types/source-list-map/0.1.2:
     dev: false
     resolution:
@@ -10091,7 +10098,7 @@ specifiers:
   '@types/node': 13.13.41
   '@types/nprogress': 0.2.0
   '@types/prismjs': 1.16.2
-  '@types/react': 17.0.0
+  '@types/react': 17.0.1
   '@types/react-dom': 17.0.0
   '@types/react-modal': 3.12.0
   '@types/suncalc': 1.8.0
