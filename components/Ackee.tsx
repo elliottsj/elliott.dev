@@ -9,11 +9,7 @@ const Ackee: React.FC<{ ackeeServerUrl: string; ackeeDomainId: string }> = ({
   ackeeDomainId,
 }) => {
   const router = useRouter();
-  useAckee(
-    router.asPath,
-    { server: ackeeServerUrl, domainId: ackeeDomainId },
-    { detailed: false, ignoreLocalhost: true },
-  );
+  useAckee(router.asPath, { server: ackeeServerUrl, domainId: ackeeDomainId }, { detailed: false });
 
   return null;
 };

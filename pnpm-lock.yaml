@@ -25,7 +25,7 @@ dependencies:
   '@types/react-dom': 17.0.0
   '@types/react-modal': 3.12.0
   '@types/suncalc': 1.8.0
-  '@types/use-ackee': 1.0.0
+  '@types/use-ackee': 2.0.0
   '@types/webpack': 4.41.26
   '@types/webpack-env': 1.16.0
   '@typescript-eslint/eslint-plugin': 4.14.2_e5f964fa93e839b7a7927397f6cb9cb1
@@ -56,7 +56,7 @@ dependencies:
   simple-icons: 4.10.0
   suncalc: 1.8.0
   typescript: 4.1.3
-  use-ackee: 1.0.0_react@17.0.1
+  use-ackee: 2.0.0_react@17.0.1
 lockfileVersion: 5.2
 packages:
   /@ampproject/toolbox-core/2.7.4:
@@ -2641,12 +2641,12 @@ packages:
     dev: false
     resolution:
       integrity: sha512-FvUupuM3rlRsRtCN+fDudtmytGO6iHJuuRKS1Ss0pG5z8oX0diNEw94UEL7hgDbpN94rgaK5R7sWm6RrSkZuAQ==
-  /@types/use-ackee/1.0.0:
+  /@types/use-ackee/2.0.0:
     dependencies:
       '@types/ackee-tracker': 4.0.0
     dev: false
     resolution:
-      integrity: sha512-9ukr27B2pMN1FKUvzB0p+FFsYcRu9DAEUWqlaUoa2x7k78tAdSWLHn4LMlkUH+zvX7yu/loeu/t8YsOMpnYdQQ==
+      integrity: sha512-rLKdPEdtXZxfbBfptlRPV1DqJgNSVHYtHotlv8sc3bKmm0LCQ9yNARExGQL4zJ/CF2Wq5sD37LwRRraPiWOewA==
   /@types/webpack-env/1.16.0:
     dev: false
     resolution:
@@ -2798,12 +2798,12 @@ packages:
       node: '>=6.5'
     resolution:
       integrity: sha512-h8lQ8tacZYnR3vNQTgibj+tODHI5/+l06Au2Pcriv/Gmet0eaj4TwWH41sO9wnHDiQsEj19q0drzdWdeAHtweg==
-  /ackee-tracker/4.2.0:
+  /ackee-tracker/5.0.1:
     dependencies:
       platform: 1.3.6
     dev: false
     resolution:
-      integrity: sha512-SEEr7c+6l1+leLmjf61Abkjux+NnFQON3dpoXgbnmYj/MdYcOF2qiaT8Y8jpMspNJ94CN1TKTD9uLcGrmPvBHA==
+      integrity: sha512-VN5eZK9XjdZ6QGGCfH019LGzLfwb73aXKDg1eDWKudGlijSandJXjzlgqnG9dvkkOKhK6EQLLBanV3tLqKA34w==
   /acorn-globals/6.0.0:
     dependencies:
       acorn: 7.4.1
@@ -9729,15 +9729,15 @@ packages:
     dev: false
     resolution:
       integrity: sha1-ODjpfPxgUh63PFJajlW/3Z4uKPE=
-  /use-ackee/1.0.0_react@17.0.1:
+  /use-ackee/2.0.0_react@17.0.1:
     dependencies:
-      ackee-tracker: 4.2.0
+      ackee-tracker: 5.0.1
       react: 17.0.1
     dev: false
     peerDependencies:
       react: ^16.11.0
     resolution:
-      integrity: sha512-Sn6EQewy8bD/pgCG9XsixjGyi+WbvtbiutDNLqbdo/j4+2UrgOYX1vSsSpX7gZAiIlwc4jYEHBdj5FuHMd80pA==
+      integrity: sha512-Ea1uPlzytlYm34YgXMYqKCgRJVFQ70ylklWXa5bON0n1XQbT16Mx/nr1/XTC2P7t83wew48SC50fEgOCTuSvLA==
   /use-subscription/1.5.1_react@17.0.1:
     dependencies:
       object-assign: 4.1.1
@@ -10095,7 +10095,7 @@ specifiers:
   '@types/react-dom': 17.0.0
   '@types/react-modal': 3.12.0
   '@types/suncalc': 1.8.0
-  '@types/use-ackee': 1.0.0
+  '@types/use-ackee': 2.0.0
   '@types/webpack': 4.41.26
   '@types/webpack-env': 1.16.0
   '@typescript-eslint/eslint-plugin': 4.14.2
@@ -10126,4 +10126,4 @@ specifiers:
   simple-icons: 4.10.0
   suncalc: 1.8.0
   typescript: 4.1.3
-  use-ackee: 1.0.0
+  use-ackee: 2.0.0
