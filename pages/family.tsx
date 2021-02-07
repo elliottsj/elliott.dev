@@ -40,8 +40,6 @@ const FamilyTreePage: React.FC<Props> = ({ data: family }) => {
     const markerBoxHeight = 20;
     const refX = markerBoxWidth / 2;
     const refY = markerBoxHeight / 2;
-    // const markerWidth = markerBoxWidth / 2;
-    // const markerHeight = markerBoxHeight / 2;
     const arrowPoints: [number, number][] = [
       [0, 0],
       [0, 20],
@@ -62,6 +60,7 @@ const FamilyTreePage: React.FC<Props> = ({ data: family }) => {
       .attr('markerHeight', markerBoxHeight)
       .attr('orient', 'auto-start-reverse')
       .append('path')
+      // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
       .attr('d', line(arrowPoints)!)
       .attr('stroke', 'black');
 
@@ -78,15 +77,6 @@ const FamilyTreePage: React.FC<Props> = ({ data: family }) => {
           .forceLink<SimulationFamilyNodeDatum, SimulationFamilyLinkDatum>(graph.links)
           .id((d) => d.id)
           .distance(30)
-          // .distance((d) => {
-          //   if (
-          //     d.kind === 'Partner' ||
-          //     ((d.target as unknown) as FamilyNode).type === 'FamilyUnionNode'
-          //   ) {
-          //     return 10;
-          //   }
-          //   return 0;
-          // })
           .strength((d) =>
             d.kind === 'Partner' || ((d.target as unknown) as FamilyNode).type === 'FamilyUnionNode'
               ? 1
@@ -94,50 +84,31 @@ const FamilyTreePage: React.FC<Props> = ({ data: family }) => {
           )
           .iterations(5),
       );
-    // .force('x', d3.forceX())
-    // .force('y', d3.forceY());
 
     simulationRef.current = simulation;
 
-    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-    // @ts-ignore
-    function click(event, d) {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    function click(_event: any, d: any) {
       delete d.fx;
       delete d.fy;
-      // d3.select(this).classed('fixed', false);
       simulation.alpha(0.05).restart();
     }
 
-    function dragstart() {
-      // d3.select(this).classed('fixed', true);
-    }
-
-    // function clamp(x: number, lo: number, hi: number) {
-    //   return x < lo ? lo : x > hi ? hi : x;
-    // }
-
-    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-    // @ts-ignore
-    function dragged(event, d) {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    function dragged(event: any, d: any) {
       d.fx = event.x; //clamp(event.x, 0, 1000 /*width*/);
       d.fy = event.y; //clamp(event.y, 0, 1000 /*height*/);
       simulation.alpha(0.05).restart();
     }
 
-    const drag: any = d3.drag().on('start', dragstart).on('drag', dragged);
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const drag: any = d3.drag().on('drag', dragged);
 
-    const links = g
-      // .append('g')
-      // .attr('stroke', '#999')
-      // .attr('stroke-opacity', 0.6)
-      .selectAll('path')
-      .data(graph.links)
-      .join('path')
-      .attr('stroke', 'black');
-    // .attr('marker-start', 'url(#arrow)');
+    const links = g.selectAll('path').data(graph.links).join('path').attr('stroke', 'black');
 
     links.filter((d) => d.kind === 'Partner').attr('stroke-dasharray', '1');
     links
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       .filter((d) => d.kind === 'Child' && (d.target as any).type === 'FamilyUnionNode')
       .attr('stroke-dasharray', '4 1');
 
@@ -170,17 +141,15 @@ const FamilyTreePage: React.FC<Props> = ({ data: family }) => {
       .attr('text-anchor', 'middle');
 
     simulationRef.current.on('tick', () => {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       links.attr('d', (d: any) => {
         return d3.line()([
           [d.source.x, d.source.y],
           [d.target.x, d.target.y],
         ]);
       });
-      // .attr('x1', (d: any) => d.source.x)
-      // .attr('y1', (d: any) => d.source.y)
-      // .attr('x2', (d: any) => d.target.x)
-      // .attr('y2', (d: any) => d.target.y);
 
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       nodes.attr('transform', (d: any) => `translate(${d.x},${d.y})`);
     });
   }, [family]);
