@@ -1,8 +1,8 @@
 dependencies:
   '@babel/core': 7.12.16
   '@elliottsj/next-svgr': 0.0.3
-  '@emotion/babel-preset-css-prop': 11.0.0_@babel+core@7.12.16
-  '@emotion/jest': 11.1.0_@types+jest@26.0.20
+  '@emotion/babel-preset-css-prop': 11.2.0_@babel+core@7.12.16
+  '@emotion/jest': 11.2.0_@types+jest@26.0.20
   '@emotion/react': 11.1.5_dd9a4d4d1d9095b1d03a8a6d24825398
   '@emotion/styled': 11.1.5_d309e1e690e3e48fa3b47663e9589835
   '@fortawesome/fontawesome-svg-core': 1.2.34
@@ -1345,18 +1345,38 @@ packages:
       '@babel/core': ^7.0.0
     resolution:
       integrity: sha512-Nz1k7b11dWw8Nw4Z1R99A9mlB6C6rRsCtZnwNUOj4NsoZdrO2f2A/83ST7htJORD5zpOiLKY59aJN23092949w==
-  /@emotion/babel-preset-css-prop/11.0.0_@babel+core@7.12.16:
+  /@emotion/babel-plugin/11.2.0_@babel+core@7.12.16:
+    dependencies:
+      '@babel/core': 7.12.16
+      '@babel/helper-module-imports': 7.12.13
+      '@babel/plugin-syntax-jsx': 7.12.13_@babel+core@7.12.16
+      '@babel/runtime': 7.12.13
+      '@emotion/hash': 0.8.0
+      '@emotion/memoize': 0.7.5
+      '@emotion/serialize': 1.0.0
+      babel-plugin-macros: 2.8.0
+      convert-source-map: 1.7.0
+      escape-string-regexp: 4.0.0
+      find-root: 1.1.0
+      source-map: 0.5.7
+      stylis: 4.0.7
+    dev: false
+    peerDependencies:
+      '@babel/core': ^7.0.0
+    resolution:
+      integrity: sha512-lsnQBnl3l4wu/FJoyHnYRpHJeIPNkOBMbtDUIXcO8luulwRKZXPvA10zd2eXVN6dABIWNX4E34en/jkejIg/yA==
+  /@emotion/babel-preset-css-prop/11.2.0_@babel+core@7.12.16:
     dependencies:
       '@babel/core': 7.12.16
       '@babel/plugin-transform-react-jsx': 7.12.13_@babel+core@7.12.16
       '@babel/runtime': 7.12.13
-      '@emotion/babel-plugin': 11.1.2_@babel+core@7.12.16
+      '@emotion/babel-plugin': 11.2.0_@babel+core@7.12.16
       '@emotion/babel-plugin-jsx-pragmatic': 0.1.5_@babel+core@7.12.16
     dev: false
     peerDependencies:
       '@babel/core': ^7.0.0
     resolution:
-      integrity: sha512-E7z3jMf1OyThGpp3ngYGxOSGX5AdoSQTuqM9QgJNAHFh3Fi8N5CbWx6g+IdySJ8bjPiMgFQsIeEhkyy+4mDpCQ==
+      integrity: sha512-9XLQm2eLPYTho+Cx1LQTDA1rATjoAaB4O+ds55XDvoAa+Z16Hhg8y5Vihj3C8E6+ilDM8SV5A9Z6z+yj0YIRBg==
   /@emotion/cache/11.1.3:
     dependencies:
       '@emotion/memoize': 0.7.5
@@ -1384,7 +1404,7 @@ packages:
     dev: false
     resolution:
       integrity: sha512-9RkilvXAufQHsSsjQ3PIzSns+pxuX4EW8EbGeSPjZMHuMx6z/MOzb9LpqNieQX4F3mre3NWS2+X3JNRHTQztUQ==
-  /@emotion/jest/11.1.0_@types+jest@26.0.20:
+  /@emotion/jest/11.2.0_@types+jest@26.0.20:
     dependencies:
       '@babel/runtime': 7.12.13
       '@emotion/css-prettifier': 1.0.0
@@ -1402,7 +1422,7 @@ packages:
       enzyme-to-json:
         optional: true
     resolution:
-      integrity: sha512-nkJY5U/cM3WjFYoKozy4WSKILmV3Y2P/uMynI9HVoCTNuYHSdu0djQBHL6zqBmpRya0sjVT1Sv7lasYYwVoMFg==
+      integrity: sha512-/IHfepppnbf5KHOuz5e145oKR2JOV0hz4chy3HHSz/JrIDa9EyQLGIo6ZqLku1XdieMYvnxaCA2ReJRo7EvUIQ==
   /@emotion/memoize/0.7.5:
     dev: false
     resolution:
@@ -9721,8 +9741,8 @@ packages:
 specifiers:
   '@babel/core': 7.12.16
   '@elliottsj/next-svgr': 0.0.3
-  '@emotion/babel-preset-css-prop': 11.0.0
-  '@emotion/jest': 11.1.0
+  '@emotion/babel-preset-css-prop': 11.2.0
+  '@emotion/jest': 11.2.0
   '@emotion/react': 11.1.5
   '@emotion/styled': 11.1.5
   '@fortawesome/fontawesome-svg-core': 1.2.34
