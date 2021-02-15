@@ -11,7 +11,7 @@ dependencies:
   '@mdx-js/loader': 1.6.22_react@17.0.1
   '@mdx-js/mdx': 1.6.22
   '@mdx-js/react': 1.6.22_react@17.0.1
-  '@next/mdx': 10.0.7-canary.8_f56c41adb6190c4680be4a1c0222355d
+  '@next/mdx': 10.0.7_f56c41adb6190c4680be4a1c0222355d
   '@types/chroma-js': 2.1.3
   '@types/d3': 6.3.0
   '@types/jest': 26.0.20
@@ -41,7 +41,7 @@ dependencies:
   jest: 26.6.3
   lodash: 4.17.20
   luxon: 1.26.0
-  next: 10.0.7-canary.8_bdba1ca4a80d13560ab4ce49959c6ea2
+  next: 10.0.7_bdba1ca4a80d13560ab4ce49959c6ea2
   normalize.css: 8.0.1
   npm-run-all: 4.1.5
   npm-scripts-info: 0.3.9
@@ -1638,11 +1638,11 @@ packages:
     dev: false
     resolution:
       integrity: sha512-H1rQc1ZOHANWBvPcW+JpGwr+juXSxM8Q8YCkm3GhZd8REu1fHR3z99CErO1p9pkcfcxZnMdIZdIsXkOHY0NilA==
-  /@next/env/10.0.7-canary.8:
+  /@next/env/10.0.7:
     dev: false
     resolution:
-      integrity: sha512-4rNuMMj+eG+vP6hr61Fo6GAjhtyHV+4fgLYcvd3HAnsfulU2TX/1cufZH04N5qXgK1IzgO0t0ZUweIXTn6vj7A==
-  /@next/mdx/10.0.7-canary.8_f56c41adb6190c4680be4a1c0222355d:
+      integrity: sha512-/vnz2SL/mk3Tei58WfRtVnvz5xHmAqcBmZL5sTBEy1CZG6OtZGNx0qAFCjtVkeJ5m1Bh4Ut+WFh/RF333wx8Sg==
+  /@next/mdx/10.0.7_f56c41adb6190c4680be4a1c0222355d:
     dependencies:
       '@mdx-js/loader': 1.6.22_react@17.0.1
       '@mdx-js/react': 1.6.22_react@17.0.1
@@ -1651,12 +1651,12 @@ packages:
       '@mdx-js/loader': '>=0.15.0'
       '@mdx-js/react': '*'
     resolution:
-      integrity: sha512-0K5d9OGEpsEXRKTCPMgyNI0aFgZhZ3Zd9qocL0KkHb7qFwPmH6ugmQ16FfrmT5yH8ilzlFJ574/NsjreXJXduA==
-  /@next/polyfill-module/10.0.7-canary.8:
+      integrity: sha512-joaEBSh+P6YpRIrRti4OoDCn6sEMxUb00q2Hd29s4/oGAVOmgo7nRCSRoy99i/uGK2IMBjPksSrHTLwW+bcG5A==
+  /@next/polyfill-module/10.0.7:
     dev: false
     resolution:
-      integrity: sha512-3dX9HZ1N8KDI0kmS6SIS5z7a0V8QULwVLR2YH7a2q/JcpFMs4h6AadCOwgjb8G2P6eRKj0VN9tUS/pDdCsiqjw==
-  /@next/react-dev-overlay/10.0.7-canary.8_react-dom@17.0.1+react@17.0.1:
+      integrity: sha512-HxqzRpoSgmZP0kRIWwH+e0SgtAXqJ0VkYtwWcsQFED8+xF4Eqn+7Twyp4uE6hutC8gr8IFSFqH+DEYhRtg1ltQ==
+  /@next/react-dev-overlay/10.0.7_react-dom@17.0.1+react@17.0.1:
     dependencies:
       '@babel/code-frame': 7.12.11
       anser: 1.4.9
@@ -1676,8 +1676,8 @@ packages:
       react: ^16.9.0 || ^17
       react-dom: ^16.9.0 || ^17
     resolution:
-      integrity: sha512-PUjmUH+mMA+uQMlPT30y7UJg92bZY//xujKchvZqj8AOngQhZCjr8cdd97MtwwWOFYBB5ALUXXN8zkjmgcvDtw==
-  /@next/react-refresh-utils/10.0.7-canary.8_react-refresh@0.8.3:
+      integrity: sha512-yq71MDHVqN2N+IqOvZDiFsMpQrBcymrdpTx1ShhAADX7cWQvW4dhcIir4BbfrS10vS1LLz/3a8uKZkGdNoJj3w==
+  /@next/react-refresh-utils/10.0.7_react-refresh@0.8.3:
     dependencies:
       react-refresh: 0.8.3
     dev: false
@@ -1688,7 +1688,7 @@ packages:
       webpack:
         optional: true
     resolution:
-      integrity: sha512-1KkWSXIjaCg9mrj4sYl/mZfuP+tsJjvgsbpECt8tE6phPrablZgxlpJfMx/CtFxh+JYE2kHNxAeunQoIQi73zw==
+      integrity: sha512-d/71vtQglv6m7sh4W1O9drc2hYti7UnAdEXfBLZAS354g2S80lvCRGIhbDrMx4w0rpShoxBIZboE2++LihAESg==
   /@nodelib/fs.scandir/2.1.4:
     dependencies:
       '@nodelib/fs.stat': 2.0.4
@@ -6702,14 +6702,14 @@ packages:
     dev: false
     resolution:
       integrity: sha1-Sr6/7tdUHywnrPspvbvRXI1bpPc=
-  /next/10.0.7-canary.8_bdba1ca4a80d13560ab4ce49959c6ea2:
+  /next/10.0.7_bdba1ca4a80d13560ab4ce49959c6ea2:
     dependencies:
       '@babel/runtime': 7.12.5
       '@hapi/accept': 5.0.1
-      '@next/env': 10.0.7-canary.8
-      '@next/polyfill-module': 10.0.7-canary.8
-      '@next/react-dev-overlay': 10.0.7-canary.8_react-dom@17.0.1+react@17.0.1
-      '@next/react-refresh-utils': 10.0.7-canary.8_react-refresh@0.8.3
+      '@next/env': 10.0.7
+      '@next/polyfill-module': 10.0.7
+      '@next/react-dev-overlay': 10.0.7_react-dom@17.0.1+react@17.0.1
+      '@next/react-refresh-utils': 10.0.7_react-refresh@0.8.3
       '@opentelemetry/api': 0.14.0
       ast-types: 0.13.2
       browserslist: 4.16.1
@@ -6763,7 +6763,7 @@ packages:
       sass:
         optional: true
     resolution:
-      integrity: sha512-F0AmkgDq9Eq43YzP1aclz0s8J8x/8TzOzeOaeGY6nzblnJ3EjdzdkVM5YAKYC738MAQ6zR7Wat9VCs96yWZ7WA==
+      integrity: sha512-We0utmwwfkvO12eLyUZd3tX9VLDE3FPpOaHpH3kqKdUTxJzUKt8FLBXCTm0mwsTKW5XColWG8mJvz2OLu3+3QA==
   /nice-try/1.0.5:
     dev: false
     resolution:
@@ -9528,7 +9528,7 @@ specifiers:
   '@mdx-js/loader': 1.6.22
   '@mdx-js/mdx': 1.6.22
   '@mdx-js/react': 1.6.22
-  '@next/mdx': 10.0.7-canary.8
+  '@next/mdx': 10.0.7
   '@types/chroma-js': 2.1.3
   '@types/d3': 6.3.0
   '@types/jest': 26.0.20
@@ -9558,7 +9558,7 @@ specifiers:
   jest: 26.6.3
   lodash: 4.17.20
   luxon: 1.26.0
-  next: 10.0.7-canary.8
+  next: 10.0.7
   normalize.css: 8.0.1
   npm-run-all: 4.1.5
   npm-scripts-info: 0.3.9
