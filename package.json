@@ -61,7 +61,7 @@
     "@types/lodash": "4.14.168",
     "@types/luxon": "1.26.0",
     "@types/mdx-js__react": "1.5.3",
-    "@types/node": "13.13.43",
+    "@types/node": "13.13.44",
     "@types/nprogress": "0.2.0",
     "@types/prismjs": "1.16.3",
     "@types/react": "17.0.2",
