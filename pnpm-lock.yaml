@@ -8,9 +8,11 @@ dependencies:
   '@fortawesome/fontawesome-svg-core': 1.2.34
   '@fortawesome/free-solid-svg-icons': 5.15.2
   '@fortawesome/react-fontawesome': 0.1.14_fdbbf59a1e8653ce678e6d59b8f3bef7
+  '@hapi/accept': 5.0.1
   '@mdx-js/loader': 1.6.22_react@17.0.1
   '@mdx-js/mdx': 1.6.22
   '@mdx-js/react': 1.6.22_react@17.0.1
+  '@next/env': 10.0.7
   '@next/mdx': 10.0.7_f56c41adb6190c4680be4a1c0222355d
   '@types/chroma-js': 2.1.3
   '@types/d3': 6.3.0
@@ -54,6 +56,7 @@ dependencies:
   react-dom: 17.0.1_react@17.0.1
   react-modal: 3.12.1_react-dom@17.0.1+react@17.0.1
   simple-icons: 4.11.0
+  styled-jsx: 3.3.2_react@17.0.1
   suncalc: 1.8.0
   typescript: 4.1.5
   use-ackee: 2.0.0_react@17.0.1
@@ -9790,9 +9793,11 @@ specifiers:
   '@fortawesome/fontawesome-svg-core': 1.2.34
   '@fortawesome/free-solid-svg-icons': 5.15.2
   '@fortawesome/react-fontawesome': 0.1.14
+  '@hapi/accept': 5.0.1
   '@mdx-js/loader': 1.6.22
   '@mdx-js/mdx': 1.6.22
   '@mdx-js/react': 1.6.22
+  '@next/env': 10.0.7
   '@next/mdx': 10.0.7
   '@types/chroma-js': 2.1.3
   '@types/d3': 6.3.0
@@ -9836,6 +9841,7 @@ specifiers:
   react-dom: 17.0.1
   react-modal: 3.12.1
   simple-icons: 4.11.0
+  styled-jsx: 3.3.2
   suncalc: 1.8.0
   typescript: 4.1.5
   use-ackee: 2.0.0
