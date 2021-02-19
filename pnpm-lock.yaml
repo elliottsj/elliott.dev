@@ -8,7 +8,7 @@ dependencies:
   '@fortawesome/fontawesome-svg-core': 1.2.34
   '@fortawesome/free-solid-svg-icons': 5.15.2
   '@fortawesome/react-fontawesome': 0.1.14_fdbbf59a1e8653ce678e6d59b8f3bef7
-  '@hapi/accept': 5.0.1
+  '@hapi/accept': 5.0.2
   '@mdx-js/loader': 1.6.22_react@17.0.1
   '@mdx-js/mdx': 1.6.22
   '@mdx-js/react': 1.6.22_react@17.0.1
@@ -1595,6 +1595,13 @@ packages:
     dev: false
     resolution:
       integrity: sha512-fMr4d7zLzsAXo28PRRQPXR1o2Wmu+6z+VY1UzDp0iFo13Twj8WePakwXBiqn3E1aAlTpSNzCXdnnQXFhst8h8Q==
+  /@hapi/accept/5.0.2:
+    dependencies:
+      '@hapi/boom': 9.1.1
+      '@hapi/hoek': 9.1.1
+    dev: false
+    resolution:
+      integrity: sha512-CmzBx/bXUR8451fnZRuZAJRlzgm0Jgu5dltTX/bszmR2lheb9BpyN47Q1RbaGTsvFzn0PXAEs+lXDKfshccYZw==
   /@hapi/boom/9.1.1:
     dependencies:
       '@hapi/hoek': 9.1.1
@@ -9792,7 +9799,7 @@ specifiers:
   '@fortawesome/fontawesome-svg-core': 1.2.34
   '@fortawesome/free-solid-svg-icons': 5.15.2
   '@fortawesome/react-fontawesome': 0.1.14
-  '@hapi/accept': ^5.0.1
+  '@hapi/accept': 5.0.2
   '@mdx-js/loader': 1.6.22
   '@mdx-js/mdx': 1.6.22
   '@mdx-js/react': 1.6.22
