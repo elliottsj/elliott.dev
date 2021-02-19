@@ -1,6 +1,6 @@
 {
   "private": true,
   "scripts": {
-    "vercel-build": "node ./build.js"
+    "vercel-build": "node ./do-build.js"
   }
 }
