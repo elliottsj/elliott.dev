@@ -47,7 +47,7 @@ dependencies:
   npm-scripts-info: 0.3.9
   nprogress: 0.2.0
   prettier: 2.2.1
-  prism-react-renderer: 1.1.1_react@17.0.1
+  prism-react-renderer: 1.2.0_react@17.0.1
   prismjs: 1.23.0
   react: 17.0.1
   react-div-100vh: 0.5.6_react@17.0.1
@@ -7440,14 +7440,14 @@ packages:
       node: '>= 10'
     resolution:
       integrity: sha512-7AeGuCYNGmycyQbCqd/3PWH4eOoX/OiCa0uphp57NVTeAGdJGaAliecxwBDHYQCIvrW7aDBZCYeNTP/WX69mkg==
-  /prism-react-renderer/1.1.1_react@17.0.1:
+  /prism-react-renderer/1.2.0_react@17.0.1:
     dependencies:
       react: 17.0.1
     dev: false
     peerDependencies:
       react: '>=0.14.9'
     resolution:
-      integrity: sha512-MgMhSdHuHymNRqD6KM3eGS0PNqgK9q4QF5P0yoQQvpB6jNjeSAi3jcSAz0Sua/t9fa4xDOMar9HJbLa08gl9ug==
+      integrity: sha512-GHqzxLYImx1iKN1jJURcuRoA/0ygCcNhfGw1IT8nPIMzarmKQ3Nc+JcG0gi8JXQzuh0C5ShE4npMIoqNin40hg==
   /prismjs/1.23.0:
     dev: false
     optionalDependencies:
@@ -9574,7 +9574,7 @@ specifiers:
   npm-scripts-info: 0.3.9
   nprogress: 0.2.0
   prettier: 2.2.1
-  prism-react-renderer: 1.1.1
+  prism-react-renderer: 1.2.0
   prismjs: 1.23.0
   react: 17.0.1
   react-div-100vh: 0.5.6
