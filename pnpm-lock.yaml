@@ -39,7 +39,7 @@ dependencies:
   eslint-plugin-react: 7.22.0_eslint@7.20.0
   eslint-plugin-react-hooks: 4.2.0_eslint@7.20.0
   jest: 26.6.3
-  lodash: 4.17.20
+  lodash: 4.17.21
   luxon: 1.26.0
   next: 10.0.7_bdba1ca4a80d13560ab4ce49959c6ea2
   normalize.css: 8.0.1
@@ -6331,6 +6331,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-PlhdFcillOINfeV7Ni6oF1TAEayyZBoZ8bcshTHqOYJYlrqzRK5hagpagky5o4HfCzzd1TRkXPMFq6cKk9rGmA==
+  /lodash/4.17.21:
+    dev: false
+    resolution:
+      integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
   /loose-envify/1.4.0:
     dependencies:
       js-tokens: 4.0.0
@@ -9566,7 +9570,7 @@ specifiers:
   eslint-plugin-react: 7.22.0
   eslint-plugin-react-hooks: 4.2.0
   jest: 26.6.3
-  lodash: 4.17.20
+  lodash: 4.17.21
   luxon: 1.26.0
   next: 10.0.7
   normalize.css: 8.0.1
