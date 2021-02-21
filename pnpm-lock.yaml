@@ -56,7 +56,7 @@ dependencies:
   simple-icons: 4.12.0
   suncalc: 1.8.0
   typescript: 4.1.5
-  use-ackee: 2.0.0_react@17.0.1
+  use-ackee: 3.0.0_react@17.0.1
 lockfileVersion: 5.2
 packages:
   /@babel/code-frame/7.12.11:
@@ -9191,15 +9191,15 @@ packages:
     dev: false
     resolution:
       integrity: sha1-ODjpfPxgUh63PFJajlW/3Z4uKPE=
-  /use-ackee/2.0.0_react@17.0.1:
+  /use-ackee/3.0.0_react@17.0.1:
     dependencies:
       ackee-tracker: 5.0.1
       react: 17.0.1
     dev: false
     peerDependencies:
-      react: ^16.11.0
+      react: ^17.0.0
     resolution:
-      integrity: sha512-Ea1uPlzytlYm34YgXMYqKCgRJVFQ70ylklWXa5bON0n1XQbT16Mx/nr1/XTC2P7t83wew48SC50fEgOCTuSvLA==
+      integrity: sha512-vErgP/OnZhSsxes8P/bePQqnjx8fV35iQsNBH+PomnNhHNl8CyRZqq1/gibaj9hF3edqKBr8CNOKSsnIYuycLw==
   /use-subscription/1.5.1_react@17.0.1:
     dependencies:
       object-assign: 4.1.1
@@ -9587,4 +9587,4 @@ specifiers:
   simple-icons: 4.12.0
   suncalc: 1.8.0
   typescript: 4.1.5
-  use-ackee: 2.0.0
+  use-ackee: 3.0.0
