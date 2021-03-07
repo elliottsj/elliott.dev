@@ -2,7 +2,7 @@ dependencies:
   '@babel/core': 7.13.8
   '@elliottsj/next-svgr': 0.0.3
   '@emotion/babel-preset-css-prop': 11.2.0_@babel+core@7.13.8
-  '@emotion/jest': 11.2.0_@types+jest@26.0.20
+  '@emotion/jest': 11.2.1_@types+jest@26.0.20
   '@emotion/react': 11.1.5_b56dfe05d57b038376aad281b8b436c0
   '@emotion/styled': 11.1.5_48d7819343cf88c4f97b7987d499f7fb
   '@fortawesome/fontawesome-svg-core': 1.2.34
@@ -1468,7 +1468,7 @@ packages:
     dev: false
     resolution:
       integrity: sha512-9RkilvXAufQHsSsjQ3PIzSns+pxuX4EW8EbGeSPjZMHuMx6z/MOzb9LpqNieQX4F3mre3NWS2+X3JNRHTQztUQ==
-  /@emotion/jest/11.2.0_@types+jest@26.0.20:
+  /@emotion/jest/11.2.1_@types+jest@26.0.20:
     dependencies:
       '@babel/runtime': 7.12.18
       '@emotion/css-prettifier': 1.0.0
@@ -1486,7 +1486,7 @@ packages:
       enzyme-to-json:
         optional: true
     resolution:
-      integrity: sha512-/IHfepppnbf5KHOuz5e145oKR2JOV0hz4chy3HHSz/JrIDa9EyQLGIo6ZqLku1XdieMYvnxaCA2ReJRo7EvUIQ==
+      integrity: sha512-uLlPahLgyBRjAoYoPNmq+PUit+7Dqdz4YqsF+Ol4/vMRfjnMuXzpzgIaFFsL5npMDGPeIhHeJTM4O+9r10t3vw==
   /@emotion/memoize/0.7.5:
     dev: false
     resolution:
@@ -9473,7 +9473,7 @@ specifiers:
   '@babel/core': 7.13.8
   '@elliottsj/next-svgr': 0.0.3
   '@emotion/babel-preset-css-prop': 11.2.0
-  '@emotion/jest': 11.2.0
+  '@emotion/jest': 11.2.1
   '@emotion/react': 11.1.5
   '@emotion/styled': 11.1.5
   '@fortawesome/fontawesome-svg-core': 1.2.34

@@ -43,7 +43,7 @@
     "@babel/core": "7.13.8",
     "@elliottsj/next-svgr": "0.0.3",
     "@emotion/babel-preset-css-prop": "11.2.0",
-    "@emotion/jest": "11.2.0",
+    "@emotion/jest": "11.2.1",
     "@emotion/react": "11.1.5",
     "@emotion/styled": "11.1.5",
     "@fortawesome/fontawesome-svg-core": "1.2.34",
