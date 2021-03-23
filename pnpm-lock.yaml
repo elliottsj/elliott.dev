@@ -3,14 +3,14 @@ dependencies:
   '@elliottsj/next-svgr': 0.0.3
   '@emotion/babel-preset-css-prop': 11.2.0_@babel+core@7.13.10
   '@emotion/jest': 11.2.1_@types+jest@26.0.21
-  '@emotion/react': 11.1.5_7cf727389cc10a47e39630496bce526a
-  '@emotion/styled': 11.1.5_f7309712ab0a20b9df4c980c5e7b9a9a
+  '@emotion/react': 11.1.5_56bc1ea09cbf7391894c8302c7356d59
+  '@emotion/styled': 11.1.5_573f4db7cfdd50515a7a556a3f107eed
   '@fortawesome/fontawesome-svg-core': 1.2.35
   '@fortawesome/free-solid-svg-icons': 5.15.3
-  '@fortawesome/react-fontawesome': 0.1.14_ed0e1e64cc1bf90f46c775f566e579d3
-  '@mdx-js/loader': 1.6.22_react@17.0.1
+  '@fortawesome/react-fontawesome': 0.1.14_ec0af2bc0907a851e3e0afc4708fd0f0
+  '@mdx-js/loader': 1.6.22_react@17.0.2
   '@mdx-js/mdx': 1.6.22
-  '@mdx-js/react': 1.6.22_react@17.0.1
+  '@mdx-js/react': 1.6.22_react@17.0.2
   '@next/mdx': 10.0.9_f56c41adb6190c4680be4a1c0222355d
   '@types/chroma-js': 2.1.3
   '@types/d3': 6.3.0
@@ -41,22 +41,22 @@ dependencies:
   jest: 26.6.3
   lodash: 4.17.21
   luxon: 1.26.0
-  next: 10.0.9_5347ba9dae72bc17e95cc7756ff465f1
+  next: 10.0.9_19437c2f9b137c4ee9c416360487a7aa
   normalize.css: 8.0.1
   npm-run-all: 4.1.5
   npm-scripts-info: 0.3.9
   nprogress: 0.2.0
   prettier: 2.2.1
-  prism-react-renderer: 1.1.1_react@17.0.1
+  prism-react-renderer: 1.1.1_react@17.0.2
   prismjs: 1.23.0
-  react: 17.0.1
-  react-div-100vh: 0.5.6_react@17.0.1
-  react-dom: 17.0.1_react@17.0.1
-  react-modal: 3.12.1_react-dom@17.0.1+react@17.0.1
+  react: 17.0.2
+  react-div-100vh: 0.5.6_react@17.0.2
+  react-dom: 17.0.2_react@17.0.2
+  react-modal: 3.12.1_react-dom@17.0.2+react@17.0.2
   simple-icons: 4.12.0
   suncalc: 1.8.0
   typescript: 4.2.3
-  use-ackee: 3.0.0_react@17.0.1
+  use-ackee: 3.0.0_react@17.0.2
 lockfileVersion: 5.2
 packages:
   /@babel/code-frame/7.12.11:
@@ -1491,7 +1491,7 @@ packages:
     dev: false
     resolution:
       integrity: sha512-igX9a37DR2ZPGYtV6suZ6whr8pTFtyHL3K/oLUotxpSVO2ASaprmAe2Dkq7tBo7CRY7MMDrAa9nuQP9/YG8FxQ==
-  /@emotion/react/11.1.5_7cf727389cc10a47e39630496bce526a:
+  /@emotion/react/11.1.5_56bc1ea09cbf7391894c8302c7356d59:
     dependencies:
       '@babel/core': 7.13.10
       '@babel/runtime': 7.12.18
@@ -1502,7 +1502,7 @@ packages:
       '@emotion/weak-memoize': 0.2.5
       '@types/react': 17.0.2
       hoist-non-react-statics: 3.3.2
-      react: 17.0.1
+      react: 17.0.2
     dev: false
     peerDependencies:
       '@babel/core': ^7.0.0
@@ -1529,17 +1529,17 @@ packages:
     dev: false
     resolution:
       integrity: sha512-GbIvVMe4U+Zc+929N1V7nW6YYJtidj31lidSmdYcWozwoBIObXBnaJkKNDjZrLm9Nc0BR+ZyHNaRZxqNZbof5g==
-  /@emotion/styled/11.1.5_f7309712ab0a20b9df4c980c5e7b9a9a:
+  /@emotion/styled/11.1.5_573f4db7cfdd50515a7a556a3f107eed:
     dependencies:
       '@babel/core': 7.13.10
       '@babel/runtime': 7.12.18
       '@emotion/babel-plugin': 11.2.0_@babel+core@7.13.10
       '@emotion/is-prop-valid': 1.1.0
-      '@emotion/react': 11.1.5_7cf727389cc10a47e39630496bce526a
+      '@emotion/react': 11.1.5_56bc1ea09cbf7391894c8302c7356d59
       '@emotion/serialize': 1.0.0
       '@emotion/utils': 1.0.0
       '@types/react': 17.0.2
-      react: 17.0.1
+      react: 17.0.2
     dev: false
     peerDependencies:
       '@babel/core': ^7.0.0
@@ -1607,11 +1607,11 @@ packages:
     requiresBuild: true
     resolution:
       integrity: sha512-XPeeu1IlGYqz4VWGRAT5ukNMd4VHUEEJ7ysZ7pSSgaEtNvSo+FLurybGJVmiqkQdK50OkSja2bfZXOeyMGRD8Q==
-  /@fortawesome/react-fontawesome/0.1.14_ed0e1e64cc1bf90f46c775f566e579d3:
+  /@fortawesome/react-fontawesome/0.1.14_ec0af2bc0907a851e3e0afc4708fd0f0:
     dependencies:
       '@fortawesome/fontawesome-svg-core': 1.2.35
       prop-types: 15.7.2
-      react: 17.0.1
+      react: 17.0.2
     dev: false
     peerDependencies:
       '@fortawesome/fontawesome-svg-core': ^1.2.32
@@ -1835,10 +1835,10 @@ packages:
       node: '>= 10.14.2'
     resolution:
       integrity: sha512-fC6QCp7Sc5sX6g8Tvbmj4XUTbyrik0akgRy03yjXbQaBWWNWGE7SGtJk98m0N8nzegD/7SggrUlivxo5ax4KWQ==
-  /@mdx-js/loader/1.6.22_react@17.0.1:
+  /@mdx-js/loader/1.6.22_react@17.0.2:
     dependencies:
       '@mdx-js/mdx': 1.6.22
-      '@mdx-js/react': 1.6.22_react@17.0.1
+      '@mdx-js/react': 1.6.22_react@17.0.2
       loader-utils: 2.0.0
     dev: false
     peerDependencies:
@@ -1869,9 +1869,9 @@ packages:
     dev: false
     resolution:
       integrity: sha512-AMxuLxPz2j5/6TpF/XSdKpQP1NlG0z11dFOlq+2IP/lSgl11GY8ji6S/rgsViN/L0BDvHvUMruRb7ub+24LUYA==
-  /@mdx-js/react/1.6.22_react@17.0.1:
+  /@mdx-js/react/1.6.22_react@17.0.2:
     dependencies:
-      react: 17.0.1
+      react: 17.0.2
     dev: false
     peerDependencies:
       react: ^16.13.1 || ^17.0.0
@@ -1887,8 +1887,8 @@ packages:
       integrity: sha512-MERX3DY5u0Ed29eAsXeFBCZlFAGBtmjf7+Nht0hfgB25MPKKkIbC/0MRPcX/PQcAgLHsAHO6ay1u9xKzR4Vzjw==
   /@next/mdx/10.0.9_f56c41adb6190c4680be4a1c0222355d:
     dependencies:
-      '@mdx-js/loader': 1.6.22_react@17.0.1
-      '@mdx-js/react': 1.6.22_react@17.0.1
+      '@mdx-js/loader': 1.6.22_react@17.0.2
+      '@mdx-js/react': 1.6.22_react@17.0.2
     dev: false
     peerDependencies:
       '@mdx-js/loader': '>=0.15.0'
@@ -1899,7 +1899,7 @@ packages:
     dev: false
     resolution:
       integrity: sha512-kPOP6ku/e8zdrK8hwxOrjUrPLcdDEj12huLHVz+DZU+20q6VlhMOtR8aKHW1460L4LoLE/DAa7YyIuxtArhDRg==
-  /@next/react-dev-overlay/10.0.9_react-dom@17.0.1+react@17.0.1:
+  /@next/react-dev-overlay/10.0.9_react-dom@17.0.2+react@17.0.2:
     dependencies:
       '@babel/code-frame': 7.12.11
       anser: 1.4.9
@@ -1908,8 +1908,8 @@ packages:
       css.escape: 1.5.1
       data-uri-to-buffer: 3.0.1
       platform: 1.3.6
-      react: 17.0.1
-      react-dom: 17.0.1_react@17.0.1
+      react: 17.0.2
+      react-dom: 17.0.2_react@17.0.2
       shell-quote: 1.7.2
       source-map: 0.8.0-beta.0
       stacktrace-parser: 0.1.10
@@ -6825,13 +6825,13 @@ packages:
     dev: false
     resolution:
       integrity: sha1-Sr6/7tdUHywnrPspvbvRXI1bpPc=
-  /next/10.0.9_5347ba9dae72bc17e95cc7756ff465f1:
+  /next/10.0.9_19437c2f9b137c4ee9c416360487a7aa:
     dependencies:
       '@babel/runtime': 7.12.5
       '@hapi/accept': 5.0.1
       '@next/env': 10.0.9
       '@next/polyfill-module': 10.0.9
-      '@next/react-dev-overlay': 10.0.9_react-dom@17.0.1+react@17.0.1
+      '@next/react-dev-overlay': 10.0.9_react-dom@17.0.2+react@17.0.2
       '@next/react-refresh-utils': 10.0.9_react-refresh@0.8.3
       '@opentelemetry/api': 0.14.0
       ast-types: 0.13.2
@@ -6857,13 +6857,13 @@ packages:
       process: 0.11.10
       prop-types: 15.7.2
       raw-body: 2.4.1
-      react: 17.0.1
-      react-dom: 17.0.1_react@17.0.1
+      react: 17.0.2
+      react-dom: 17.0.2_react@17.0.2
       react-is: 16.13.1
       react-refresh: 0.8.3
       stream-browserify: 3.0.0
-      styled-jsx: 3.3.2_react@17.0.1
-      use-subscription: 1.5.1_react@17.0.1
+      styled-jsx: 3.3.2_react@17.0.2
+      use-subscription: 1.5.1_react@17.0.2
       vm-browserify: 1.1.2
       watchpack: 2.1.1
     dev: false
@@ -7500,9 +7500,9 @@ packages:
       node: '>= 10'
     resolution:
       integrity: sha512-7AeGuCYNGmycyQbCqd/3PWH4eOoX/OiCa0uphp57NVTeAGdJGaAliecxwBDHYQCIvrW7aDBZCYeNTP/WX69mkg==
-  /prism-react-renderer/1.1.1_react@17.0.1:
+  /prism-react-renderer/1.1.1_react@17.0.2:
     dependencies:
-      react: 17.0.1
+      react: 17.0.2
     dev: false
     peerDependencies:
       react: '>=0.14.9'
@@ -7660,25 +7660,25 @@ packages:
       node: '>= 0.8'
     resolution:
       integrity: sha512-9WmIKF6mkvA0SLmA2Knm9+qj89e+j1zqgyn8aXGd7+nAduPoqgI9lO57SAZNn/Byzo5P7JhXTyg9PzaJbH73bA==
-  /react-div-100vh/0.5.6_react@17.0.1:
+  /react-div-100vh/0.5.6_react@17.0.2:
     dependencies:
-      react: 17.0.1
+      react: 17.0.2
     dev: false
     peerDependencies:
       react: '>=16.8.0'
     resolution:
       integrity: sha512-foNzJeBwiWp2Xs+pDhKyX2sP9O8UoGfYyz/D+GgZaHCKS3R+lbtJc8OdgMDr03txXgPVsxGEtmjKeDcLW30xwQ==
-  /react-dom/17.0.1_react@17.0.1:
+  /react-dom/17.0.2_react@17.0.2:
     dependencies:
       loose-envify: 1.4.0
       object-assign: 4.1.1
-      react: 17.0.1
-      scheduler: 0.20.1
+      react: 17.0.2
+      scheduler: 0.20.2
     dev: false
     peerDependencies:
-      react: 17.0.1
+      react: 17.0.2
     resolution:
-      integrity: sha512-6eV150oJZ9U2t9svnsspTMrWNyHc6chX0KzDeAOXftRa8bNeOKTTfCJ7KorIwenkHd2xqVTBTCZd79yk/lx/Ug==
+      integrity: sha512-s4h96KtLDUQlsENhMn1ar8t2bEa+q/YAtj8pPPdIjPDGBDIVNsrD9aXNWqspUe6AzKCIG0C1HZZLqLV7qpOBGA==
   /react-is/16.13.1:
     dev: false
     resolution:
@@ -7691,12 +7691,12 @@ packages:
     dev: false
     resolution:
       integrity: sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==
-  /react-modal/3.12.1_react-dom@17.0.1+react@17.0.1:
+  /react-modal/3.12.1_react-dom@17.0.2+react@17.0.2:
     dependencies:
       exenv: 1.2.2
       prop-types: 15.7.2
-      react: 17.0.1
-      react-dom: 17.0.1_react@17.0.1
+      react: 17.0.2
+      react-dom: 17.0.2_react@17.0.2
       react-lifecycles-compat: 3.0.4
       warning: 4.0.3
     dev: false
@@ -7713,7 +7713,7 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha512-X8jZHc7nCMjaCqoU+V2I0cOhNW+QMBwSUkeXnTi8IPe6zaRWfn60ZzvFDZqWPfmSJfjub7dDW1SP0jaHWLu/hg==
-  /react/17.0.1:
+  /react/17.0.2:
     dependencies:
       loose-envify: 1.4.0
       object-assign: 4.1.1
@@ -7721,7 +7721,7 @@ packages:
     engines:
       node: '>=0.10.0'
     resolution:
-      integrity: sha512-lG9c9UuMHdcAexXtigOZLX8exLWkW0Ku29qPRU8uhF2R9BN96dLCt0psvzPLlHc5OWkgymP3qwTRgbnw5BKx3w==
+      integrity: sha512-gnhPt75i/dq/z3/6q/0asP78D0u592D5L1pd7M8P+dck6Fu/jJeL6iVVK23fptSUZj8Vjf++7wXA8UNclGQcbA==
   /read-pkg-up/3.0.0:
     dependencies:
       find-up: 2.1.0
@@ -8137,13 +8137,13 @@ packages:
       node: '>=10'
     resolution:
       integrity: sha512-5LBh1Tls8c9xgGjw3QrMwETmTMVk0oFgvrFSvWx62llR2hcEInrKNZ2GZCCuuy2lvWrdl5jhbpeqc5hRYKFOcw==
-  /scheduler/0.20.1:
+  /scheduler/0.20.2:
     dependencies:
       loose-envify: 1.4.0
       object-assign: 4.1.1
     dev: false
     resolution:
-      integrity: sha512-LKTe+2xNJBNxu/QhHvDR14wUXHRQbVY5ZOYpOGWRzhydZUqrLb2JBvLPY7cAqFmqrWuDED0Mjk7013SZiOz6Bw==
+      integrity: sha512-2eWfGgAqqWFGqtdMmcL5zCMK1U8KlXv8SQFGglL3CEtd0aDVDWgeF/YoCmvln55m5zSk3J/20hTaSBeSObsQDQ==
   /select/1.1.2:
     dev: false
     optional: true
@@ -8632,13 +8632,13 @@ packages:
     dev: false
     resolution:
       integrity: sha512-CzFnRRXhzWIdItT3OmF8SQfWyahHhjq3HwcMNCNLn+N7klOOqPjMeG/4JSu77D7ypZdGvSzvkrbyeTMizz2VrA==
-  /styled-jsx/3.3.2_react@17.0.1:
+  /styled-jsx/3.3.2_react@17.0.2:
     dependencies:
       '@babel/types': 7.8.3
       babel-plugin-syntax-jsx: 6.18.0
       convert-source-map: 1.7.0
       loader-utils: 1.2.3
-      react: 17.0.1
+      react: 17.0.2
       source-map: 0.7.3
       string-hash: 1.1.3
       stylis: 3.5.4
@@ -9143,19 +9143,19 @@ packages:
     dev: false
     resolution:
       integrity: sha1-ODjpfPxgUh63PFJajlW/3Z4uKPE=
-  /use-ackee/3.0.0_react@17.0.1:
+  /use-ackee/3.0.0_react@17.0.2:
     dependencies:
       ackee-tracker: 5.0.1
-      react: 17.0.1
+      react: 17.0.2
     dev: false
     peerDependencies:
       react: ^17.0.0
     resolution:
       integrity: sha512-vErgP/OnZhSsxes8P/bePQqnjx8fV35iQsNBH+PomnNhHNl8CyRZqq1/gibaj9hF3edqKBr8CNOKSsnIYuycLw==
-  /use-subscription/1.5.1_react@17.0.1:
+  /use-subscription/1.5.1_react@17.0.2:
     dependencies:
       object-assign: 4.1.1
-      react: 17.0.1
+      react: 17.0.2
     dev: false
     peerDependencies:
       react: ^16.8.0 || ^17.0.0
@@ -9520,9 +9520,9 @@ specifiers:
   prettier: 2.2.1
   prism-react-renderer: 1.1.1
   prismjs: 1.23.0
-  react: 17.0.1
+  react: 17.0.2
   react-div-100vh: 0.5.6
-  react-dom: 17.0.1
+  react-dom: 17.0.2
   react-modal: 3.12.1
   simple-icons: 4.12.0
   suncalc: 1.8.0
