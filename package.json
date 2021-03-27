@@ -40,7 +40,7 @@
   },
   "homepage": "https://github.com/elliottsj/elliott.dev#readme",
   "dependencies": {
-    "@babel/core": "7.13.10",
+    "@babel/core": "7.13.13",
     "@elliottsj/next-svgr": "0.0.3",
     "@emotion/babel-preset-css-prop": "11.2.0",
     "@emotion/jest": "11.2.1",
