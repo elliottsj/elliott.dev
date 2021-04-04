@@ -57,7 +57,7 @@
     "@types/d3": "6.3.0",
     "@types/jest": "26.0.22",
     "@types/lodash": "4.14.168",
-    "@types/luxon": "1.26.2",
+    "@types/luxon": "1.26.3",
     "@types/mdx-js__react": "1.5.3",
     "@types/node": "13.13.48",
     "@types/nprogress": "0.2.0",
