@@ -55,7 +55,7 @@ specifiers:
   react-div-100vh: 0.6.0
   react-dom: 17.0.2
   react-modal: 3.12.1
-  simple-icons: 4.17.0
+  simple-icons: 4.18.0
   suncalc: 1.8.0
   typescript: 4.2.4
   use-ackee: 3.0.0
@@ -115,7 +115,7 @@ dependencies:
   react-div-100vh: 0.6.0_react@17.0.2
   react-dom: 17.0.2_react@17.0.2
   react-modal: 3.12.1_react-dom@17.0.2+react@17.0.2
-  simple-icons: 4.17.0
+  simple-icons: 4.18.0
   suncalc: 1.8.0
   typescript: 4.2.4
   use-ackee: 3.0.0_react@17.0.2
@@ -8125,8 +8125,8 @@ packages:
     resolution: {integrity: sha512-VUJ49FC8U1OxwZLxIbTTrDvLnf/6TDgxZcK8wxR8zs13xpx7xbG60ndBlhNrFi2EMuFRoeDoJO7wthSLq42EjA==}
     dev: false
 
-  /simple-icons/4.17.0:
-    resolution: {integrity: sha512-AdZRFpHDuNeWrQbwLdcQp1ZyjAraUWI7kQY8Kw49qI5NNeLVN9gUupB4DSdqfD+eKH0yx4DzdrGaQjqNJOoskw==}
+  /simple-icons/4.18.0:
+    resolution: {integrity: sha512-0ew6glkQN09tONjOzk75ofeAMDa7EKom5yGeh9nxkoInlEXoQX84XOuvWAhJoJPvRrjvJLSUzWOmRzSEMeyz8w==}
     dev: false
 
   /sisteransi/1.0.5:
