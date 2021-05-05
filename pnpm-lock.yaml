@@ -28,7 +28,7 @@ specifiers:
   '@types/react-modal': 3.12.0
   '@types/suncalc': 1.8.0
   '@types/use-ackee': 2.0.0
-  '@types/webpack': 4.41.27
+  '@types/webpack': 4.41.28
   '@types/webpack-env': 1.16.0
   '@typescript-eslint/eslint-plugin': 4.21.0
   '@typescript-eslint/parser': 4.21.0
@@ -88,7 +88,7 @@ dependencies:
   '@types/react-modal': 3.12.0
   '@types/suncalc': 1.8.0
   '@types/use-ackee': 2.0.0
-  '@types/webpack': 4.41.27
+  '@types/webpack': 4.41.28
   '@types/webpack-env': 1.16.0
   '@typescript-eslint/eslint-plugin': 4.21.0_bb1772e1f887ed78c68f06416685750e
   '@typescript-eslint/parser': 4.21.0_eslint@7.24.0+typescript@4.2.4
@@ -2583,16 +2583,16 @@ packages:
   /@types/webpack-sources/2.1.0:
     resolution: {integrity: sha512-LXn/oYIpBeucgP1EIJbKQ2/4ZmpvRl+dlrFdX7+94SKRUV3Evy3FsfMZY318vGhkWUS5MPhtOM3w1/hCOAOXcg==}
     dependencies:
-      '@types/node': 13.13.48
+      '@types/node': 13.13.51
       '@types/source-list-map': 0.1.2
       source-map: 0.7.3
     dev: false
 
-  /@types/webpack/4.41.27:
-    resolution: {integrity: sha512-wK/oi5gcHi72VMTbOaQ70VcDxSQ1uX8S2tukBK9ARuGXrYM/+u4ou73roc7trXDNmCxCoerE8zruQqX/wuHszA==}
+  /@types/webpack/4.41.28:
+    resolution: {integrity: sha512-Nn84RAiJjKRfPFFCVR8LC4ueTtTdfWAMZ03THIzZWRJB+rX24BD3LqPSFnbMscWauEsT4segAsylPDIaZyZyLQ==}
     dependencies:
       '@types/anymatch': 1.3.1
-      '@types/node': 13.13.48
+      '@types/node': 13.13.51
       '@types/tapable': 1.0.7
       '@types/uglify-js': 3.13.0
       '@types/webpack-sources': 2.1.0
