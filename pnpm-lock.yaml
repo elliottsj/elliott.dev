@@ -20,7 +20,7 @@ specifiers:
   '@types/lodash': 4.14.169
   '@types/luxon': 1.26.5
   '@types/mdx-js__react': 1.5.3
-  '@types/node': 13.13.51
+  '@types/node': 13.13.52
   '@types/nprogress': 0.2.0
   '@types/prismjs': 1.16.5
   '@types/react': 17.0.3
@@ -80,7 +80,7 @@ dependencies:
   '@types/lodash': 4.14.169
   '@types/luxon': 1.26.5
   '@types/mdx-js__react': 1.5.3
-  '@types/node': 13.13.51
+  '@types/node': 13.13.52
   '@types/nprogress': 0.2.0
   '@types/prismjs': 1.16.5
   '@types/react': 17.0.3
@@ -2486,6 +2486,10 @@ packages:
 
   /@types/node/13.13.51:
     resolution: {integrity: sha512-66/xg5I5Te4oGi5Jws11PtNmKkZbOPZWyBZZ/l5AOrWj1Dyw+6Ge/JhYTq/2/Yvdqyhrue8RL+DGI298OJ0xcg==}
+    dev: false
+
+  /@types/node/13.13.52:
+    resolution: {integrity: sha512-s3nugnZumCC//n4moGGe6tkNMyYEdaDBitVjwPxXmR5lnMG5dHePinH2EdxkG3Rh1ghFHHixAG4NJhpJW1rthQ==}
     dev: false
 
   /@types/normalize-package-data/2.4.0:
