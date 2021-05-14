@@ -13,7 +13,7 @@ specifiers:
   '@mdx-js/loader': 1.6.22
   '@mdx-js/mdx': 1.6.22
   '@mdx-js/react': 1.6.22
-  '@next/mdx': 10.1.3
+  '@next/mdx': 10.2.0
   '@types/chroma-js': 2.1.3
   '@types/d3': 6.3.0
   '@types/jest': 26.0.23
@@ -43,7 +43,7 @@ specifiers:
   jest: 26.6.3
   lodash: 4.17.21
   luxon: 1.27.0
-  next: 10.1.3
+  next: 10.2.0
   normalize.css: 8.0.1
   npm-run-all: 4.1.5
   npm-scripts-info: 0.3.9
@@ -73,7 +73,7 @@ dependencies:
   '@mdx-js/loader': 1.6.22_react@17.0.2
   '@mdx-js/mdx': 1.6.22
   '@mdx-js/react': 1.6.22_react@17.0.2
-  '@next/mdx': 10.1.3_f56c41adb6190c4680be4a1c0222355d
+  '@next/mdx': 10.2.0_f56c41adb6190c4680be4a1c0222355d
   '@types/chroma-js': 2.1.3
   '@types/d3': 6.3.0
   '@types/jest': 26.0.23
@@ -103,7 +103,7 @@ dependencies:
   jest: 26.6.3
   lodash: 4.17.21
   luxon: 1.27.0
-  next: 10.1.3_507781d099a67956587e23f5ac79078b
+  next: 10.2.0_507781d099a67956587e23f5ac79078b
   normalize.css: 8.0.1
   npm-run-all: 4.1.5
   npm-scripts-info: 0.3.9
@@ -1973,12 +1973,12 @@ packages:
     resolution: {integrity: sha512-H1rQc1ZOHANWBvPcW+JpGwr+juXSxM8Q8YCkm3GhZd8REu1fHR3z99CErO1p9pkcfcxZnMdIZdIsXkOHY0NilA==}
     dev: false
 
-  /@next/env/10.1.3:
-    resolution: {integrity: sha512-q7z7NvmRs66lCQmVJtKjDxVtMTjSwP6ExVzaH46pbTH60MHgzEJ9H4jXrFLTihPmCIvpAv6Ai04jbS8dcg1ZMQ==}
+  /@next/env/10.2.0:
+    resolution: {integrity: sha512-tsWBsn1Rb6hXRaHc/pWMCpZ4Ipkf3OCbZ54ef5ukgIyEvzzGdGFXQshPP2AF7yb+8yMpunWs7vOMZW3e8oPF6A==}
     dev: false
 
-  /@next/mdx/10.1.3_f56c41adb6190c4680be4a1c0222355d:
-    resolution: {integrity: sha512-VpeT5jINIQjJ7TUKhawrNnVZEqEfRfZT2K//8RyoPAsjqp96vqHaISEk5NNd/d0hD7ZQpcWwKi8FpPel+wz3ew==}
+  /@next/mdx/10.2.0_f56c41adb6190c4680be4a1c0222355d:
+    resolution: {integrity: sha512-2AwN5Q4Av6McSpVKps2dDGdKEEUdme0cjdmo0iNuBFdBPzMBMeMyIMrT9T/QPCDUtqeB747f6Zkf/Xt2uVwzBg==}
     peerDependencies:
       '@mdx-js/loader': '>=0.15.0'
       '@mdx-js/react': '*'
@@ -1987,12 +1987,12 @@ packages:
       '@mdx-js/react': 1.6.22_react@17.0.2
     dev: false
 
-  /@next/polyfill-module/10.1.3:
-    resolution: {integrity: sha512-1DtUVcuoBJAn5IrxIZQjUG1KTPkiXMYloykPSkRxawimgvG9dRj2kscU+4KGNSFxHoxW9c68VRCb+7MDz5aGGw==}
+  /@next/polyfill-module/10.2.0:
+    resolution: {integrity: sha512-Nl3GexIUXsmuggkUqrRFyE/2k7UI44JaVzSywtXEyHzxpZm2a5bdMaWuC89pgLiFDDOqmbqyLAbtwm5lNxa7Eg==}
     dev: false
 
-  /@next/react-dev-overlay/10.1.3_react-dom@17.0.2+react@17.0.2:
-    resolution: {integrity: sha512-vIgUah3bR9+MKzwU1Ni5ONfYM0VdI42i7jZ+Ei1c0wjwkG9anVnDqhSQ3mVg62GP2nt7ExaaFyf9THbsw5KYXg==}
+  /@next/react-dev-overlay/10.2.0_react-dom@17.0.2+react@17.0.2:
+    resolution: {integrity: sha512-PRIAoWog41hLN4iJ8dChKp4ysOX0Q8yiNQ/cwzyqEd3EjugkDV5OiKl3mumGKaApJaIra1MX6j1wgQRuLhuWMA==}
     peerDependencies:
       react: ^16.9.0 || ^17
       react-dom: ^16.9.0 || ^17
@@ -2012,8 +2012,8 @@ packages:
       strip-ansi: 6.0.0
     dev: false
 
-  /@next/react-refresh-utils/10.1.3_react-refresh@0.8.3:
-    resolution: {integrity: sha512-P4GJZuLKfD/o42JvGZ/xP4Hxg68vd3NeZxOLqIuQKFjjaYgC2IrO+lE5PTwGmRkytjfprJC+9j7Jss/xQAS6QA==}
+  /@next/react-refresh-utils/10.2.0_react-refresh@0.8.3:
+    resolution: {integrity: sha512-3I31K9B4hEQRl7yQ44Umyz+szHtuMJrNdwsgJGhoEnUCXSBRHp5wv5Zv8eDa2NewSbe53b2C0oOpivrzmdBakw==}
     peerDependencies:
       react-refresh: 0.8.3
       webpack: ^4 || ^5
@@ -3858,18 +3858,22 @@ packages:
     resolution: {integrity: sha1-QuJ9T6BK4y+TGktNQZH6nN3ul8s=}
     dev: false
 
-  /cssnano-preset-simple/1.2.2:
-    resolution: {integrity: sha512-gtvrcRSGtP3hA/wS8mFVinFnQdEsEpm3v4I/s/KmNjpdWaThV/4E5EojAzFXxyT5OCSRPLlHR9iQexAqKHlhGQ==}
+  /cssnano-preset-simple/2.0.0_postcss@8.2.13:
+    resolution: {integrity: sha512-HkufSLkaBJbKBFx/7aj5HmCK9Ni/JedRQm0mT2qBzMG/dEuJOLnMt2lK6K1rwOOyV4j9aSY+knbW9WoS7BYpzg==}
+    peerDependencies:
+      postcss: ^8.2.1
     dependencies:
       caniuse-lite: 1.0.30001208
-      postcss: 7.0.35
+      postcss: 8.2.13
     dev: false
 
-  /cssnano-simple/1.2.2:
-    resolution: {integrity: sha512-4slyYc1w4JhSbhVX5xi9G0aQ42JnRyPg+7l7cqoNyoIDzfWx40Rq3JQZnoAWDu60A4AvKVp9ln/YSUOdhDX68g==}
+  /cssnano-simple/2.0.0_postcss@8.2.13:
+    resolution: {integrity: sha512-0G3TXaFxlh/szPEG/o3VcmCwl0N3E60XNb9YZZijew5eIs6fLjJuOPxQd9yEBaX2p/YfJtt49i4vYi38iH6/6w==}
+    peerDependencies:
+      postcss: ^8.2.2
     dependencies:
-      cssnano-preset-simple: 1.2.2
-      postcss: 7.0.35
+      cssnano-preset-simple: 2.0.0_postcss@8.2.13
+      postcss: 8.2.13
     dev: false
 
   /csso/4.2.0:
@@ -6168,7 +6172,7 @@ packages:
     resolution: {integrity: sha512-mk0umAQ5lT+CaOJ+Qp01N6kz48sJG2kr2n1rX0koqKf6FIygQV0qLOdN9SCYID4IVeSigDOcPeGLozdMLYfb5g==}
     engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
     dependencies:
-      '@types/node': 13.13.48
+      '@types/node': 13.13.52
       merge-stream: 2.0.0
       supports-color: 8.1.1
     dev: false
@@ -6382,13 +6386,6 @@ packages:
     dependencies:
       prelude-ls: 1.2.1
       type-check: 0.4.0
-    dev: false
-
-  /line-column/1.0.2:
-    resolution: {integrity: sha1-0lryk2tvSEkXKzEuR5LR2Ye8NKI=}
-    dependencies:
-      isarray: 1.0.0
-      isobject: 2.1.0
     dev: false
 
   /lines-and-columns/1.1.6:
@@ -6801,8 +6798,8 @@ packages:
     resolution: {integrity: sha1-Sr6/7tdUHywnrPspvbvRXI1bpPc=}
     dev: false
 
-  /next/10.1.3_507781d099a67956587e23f5ac79078b:
-    resolution: {integrity: sha512-8Jf38F+s0YcXXkJGF5iUxOqSmbHrey0fX5Epc43L0uwDKmN2jK9vhc2ihCwXC1pmu8d2m/8wfTiXRJKGti55yw==}
+  /next/10.2.0_507781d099a67956587e23f5ac79078b:
+    resolution: {integrity: sha512-PKDKCSF7s82xudu3kQhOEaokxggpbLEWouEUtzP6OqV0YqKYHF+Ff+BFLycEem8ixtTM2M6ElN0VRJcskJfxPQ==}
     engines: {node: '>=10.13.0'}
     hasBin: true
     peerDependencies:
@@ -6821,10 +6818,10 @@ packages:
     dependencies:
       '@babel/runtime': 7.12.5
       '@hapi/accept': 5.0.1
-      '@next/env': 10.1.3
-      '@next/polyfill-module': 10.1.3
-      '@next/react-dev-overlay': 10.1.3_react-dom@17.0.2+react@17.0.2
-      '@next/react-refresh-utils': 10.1.3_react-refresh@0.8.3
+      '@next/env': 10.2.0
+      '@next/polyfill-module': 10.2.0
+      '@next/react-dev-overlay': 10.2.0_react-dom@17.0.2+react@17.0.2
+      '@next/react-refresh-utils': 10.2.0_react-refresh@0.8.3
       '@opentelemetry/api': 0.14.0
       assert: 2.0.0
       ast-types: 0.13.2
@@ -6836,7 +6833,7 @@ packages:
       chokidar: 3.5.1
       constants-browserify: 1.0.0
       crypto-browserify: 3.12.0
-      cssnano-simple: 1.2.2
+      cssnano-simple: 2.0.0_postcss@8.2.13
       domain-browser: 4.19.0
       encoding: 0.1.13
       etag: 1.8.1
@@ -6852,7 +6849,7 @@ packages:
       p-limit: 3.1.0
       path-browserify: 1.0.1
       pnp-webpack-plugin: 1.6.4_typescript@4.2.4
-      postcss: 8.1.7
+      postcss: 8.2.13
       process: 0.11.10
       prop-types: 15.7.2
       querystring-es3: 0.2.1
@@ -7394,21 +7391,11 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: false
 
-  /postcss/7.0.35:
-    resolution: {integrity: sha512-3QT8bBJeX/S5zKTTjTCIjRF3If4avAT6kqxcASlTWEtAFCb9NH0OUxNDfgZSWdP5fJnBYCMEWkIFfWeugjzYMg==}
-    engines: {node: '>=6.0.0'}
-    dependencies:
-      chalk: 2.4.2
-      source-map: 0.6.1
-      supports-color: 6.1.0
-    dev: false
-
-  /postcss/8.1.7:
-    resolution: {integrity: sha512-llCQW1Pz4MOPwbZLmOddGM9eIJ8Bh7SZ2Oj5sxZva77uVaotYDsYTch1WBTNu7fUY0fpWp0fdt7uW40D4sRiiQ==}
+  /postcss/8.2.13:
+    resolution: {integrity: sha512-FCE5xLH+hjbzRdpbRb1IMCvPv9yZx2QnDarBEYSN0N0HYk+TcXsEhwdFcFb+SRWOKzKGErhIEbBK2ogyLdTtfQ==}
     engines: {node: ^10 || ^12 || >=14}
     dependencies:
       colorette: 1.2.2
-      line-column: 1.0.2
       nanoid: 3.1.22
       source-map: 0.6.1
     dev: false
@@ -8541,13 +8528,6 @@ packages:
   /supports-color/5.5.0:
     resolution: {integrity: sha512-QjVjwdXIt408MIiAqCX4oUKsgU2EqAGzs2Ppkm4aQYbjm+ZEWEcW4SfFNTr4uMNZma0ey4f5lgLrkB0aX0QMow==}
     engines: {node: '>=4'}
-    dependencies:
-      has-flag: 3.0.0
-    dev: false
-
-  /supports-color/6.1.0:
-    resolution: {integrity: sha512-qe1jfm1Mg7Nq/NSh6XE24gPXROEVsWHxC1LIx//XNlD9iw7YZQGjZNjYN7xGaEG6iKdA8EtNFW6R0gjnVXp+wQ==}
-    engines: {node: '>=6'}
     dependencies:
       has-flag: 3.0.0
     dev: false
