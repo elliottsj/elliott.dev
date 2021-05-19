@@ -13,7 +13,7 @@ specifiers:
   '@mdx-js/loader': 1.6.22
   '@mdx-js/mdx': 1.6.22
   '@mdx-js/react': 1.6.22
-  '@next/mdx': 10.2.0
+  '@next/mdx': 10.2.1
   '@types/chroma-js': 2.1.3
   '@types/d3': 6.3.0
   '@types/jest': 26.0.23
@@ -43,7 +43,7 @@ specifiers:
   jest: 26.6.3
   lodash: 4.17.21
   luxon: 1.27.0
-  next: 10.2.0
+  next: 10.2.1
   normalize.css: 8.0.1
   npm-run-all: 4.1.5
   npm-scripts-info: 0.3.9
@@ -73,7 +73,7 @@ dependencies:
   '@mdx-js/loader': 1.6.22_react@17.0.2
   '@mdx-js/mdx': 1.6.22
   '@mdx-js/react': 1.6.22_react@17.0.2
-  '@next/mdx': 10.2.0_f56c41adb6190c4680be4a1c0222355d
+  '@next/mdx': 10.2.1_f56c41adb6190c4680be4a1c0222355d
   '@types/chroma-js': 2.1.3
   '@types/d3': 6.3.0
   '@types/jest': 26.0.23
@@ -103,7 +103,7 @@ dependencies:
   jest: 26.6.3
   lodash: 4.17.21
   luxon: 1.27.0
-  next: 10.2.0_507781d099a67956587e23f5ac79078b
+  next: 10.2.1_507781d099a67956587e23f5ac79078b
   normalize.css: 8.0.1
   npm-run-all: 4.1.5
   npm-scripts-info: 0.3.9
@@ -1704,8 +1704,8 @@ packages:
       react: 17.0.2
     dev: false
 
-  /@hapi/accept/5.0.1:
-    resolution: {integrity: sha512-fMr4d7zLzsAXo28PRRQPXR1o2Wmu+6z+VY1UzDp0iFo13Twj8WePakwXBiqn3E1aAlTpSNzCXdnnQXFhst8h8Q==}
+  /@hapi/accept/5.0.2:
+    resolution: {integrity: sha512-CmzBx/bXUR8451fnZRuZAJRlzgm0Jgu5dltTX/bszmR2lheb9BpyN47Q1RbaGTsvFzn0PXAEs+lXDKfshccYZw==}
     dependencies:
       '@hapi/boom': 9.1.2
       '@hapi/hoek': 9.1.1
@@ -1973,12 +1973,12 @@ packages:
     resolution: {integrity: sha512-H1rQc1ZOHANWBvPcW+JpGwr+juXSxM8Q8YCkm3GhZd8REu1fHR3z99CErO1p9pkcfcxZnMdIZdIsXkOHY0NilA==}
     dev: false
 
-  /@next/env/10.2.0:
-    resolution: {integrity: sha512-tsWBsn1Rb6hXRaHc/pWMCpZ4Ipkf3OCbZ54ef5ukgIyEvzzGdGFXQshPP2AF7yb+8yMpunWs7vOMZW3e8oPF6A==}
+  /@next/env/10.2.1:
+    resolution: {integrity: sha512-mvUCIrwxFfyQa24iTbYAW1fbToC7cW4cGW5oiR3AyE6clfGK6fzwbkdODtjfaHGmCCS4K0epsy/XgV6DJS/EIw==}
     dev: false
 
-  /@next/mdx/10.2.0_f56c41adb6190c4680be4a1c0222355d:
-    resolution: {integrity: sha512-2AwN5Q4Av6McSpVKps2dDGdKEEUdme0cjdmo0iNuBFdBPzMBMeMyIMrT9T/QPCDUtqeB747f6Zkf/Xt2uVwzBg==}
+  /@next/mdx/10.2.1_f56c41adb6190c4680be4a1c0222355d:
+    resolution: {integrity: sha512-wULGQBsdPyDf+6Pcgs9qaEIwYmTSuEQGYSADSkIyd9CSuCjDJEnT+RwaFygaTQcfwwCtndQVtWu+lskS33XZCQ==}
     peerDependencies:
       '@mdx-js/loader': '>=0.15.0'
       '@mdx-js/react': '*'
@@ -1987,12 +1987,12 @@ packages:
       '@mdx-js/react': 1.6.22_react@17.0.2
     dev: false
 
-  /@next/polyfill-module/10.2.0:
-    resolution: {integrity: sha512-Nl3GexIUXsmuggkUqrRFyE/2k7UI44JaVzSywtXEyHzxpZm2a5bdMaWuC89pgLiFDDOqmbqyLAbtwm5lNxa7Eg==}
+  /@next/polyfill-module/10.2.1:
+    resolution: {integrity: sha512-MNVwR3lzZuH/UsLxclLeNXhd9GGvqjavMtAx8zSbOHzZHPmEYw3EQRqUI0qCNUdX52N+aSPeAhvDjUUzHdCpsA==}
     dev: false
 
-  /@next/react-dev-overlay/10.2.0_react-dom@17.0.2+react@17.0.2:
-    resolution: {integrity: sha512-PRIAoWog41hLN4iJ8dChKp4ysOX0Q8yiNQ/cwzyqEd3EjugkDV5OiKl3mumGKaApJaIra1MX6j1wgQRuLhuWMA==}
+  /@next/react-dev-overlay/10.2.1_react-dom@17.0.2+react@17.0.2:
+    resolution: {integrity: sha512-ZCSPO/gyJio9jBnF4Z+f+WMfMiIAgVjxyZ9h81W1Fjd/5BwoAADxakyCdXiLCMlVXkgtO1dXkY+yXTegxkpASQ==}
     peerDependencies:
       react: ^16.9.0 || ^17
       react-dom: ^16.9.0 || ^17
@@ -2012,8 +2012,8 @@ packages:
       strip-ansi: 6.0.0
     dev: false
 
-  /@next/react-refresh-utils/10.2.0_react-refresh@0.8.3:
-    resolution: {integrity: sha512-3I31K9B4hEQRl7yQ44Umyz+szHtuMJrNdwsgJGhoEnUCXSBRHp5wv5Zv8eDa2NewSbe53b2C0oOpivrzmdBakw==}
+  /@next/react-refresh-utils/10.2.1_react-refresh@0.8.3:
+    resolution: {integrity: sha512-G7l/1kQqTzZ1k6cw6WQol8F0eA7S+YQhUep4eTwlTI6k7Zei1f6/NuSbed9XxEH6xBB/bjVTaxxf0dYpBeB7zA==}
     peerDependencies:
       react-refresh: 0.8.3
       webpack: ^4 || ^5
@@ -3317,8 +3317,8 @@ packages:
       pako: 1.0.11
     dev: false
 
-  /browserslist/4.16.1:
-    resolution: {integrity: sha512-UXhDrwqsNcpTYJBTZsbGATDxZbiVDsx6UjpmRUmtnP10pr8wAYr5LgFoEFw9ixriQH2mv/NX2SfGzE/o8GndLA==}
+  /browserslist/4.16.3:
+    resolution: {integrity: sha512-vIyhWmIkULaq04Gt93txdh+j02yX/JzlyhLYbV3YQCn/zvES3JnY7TifHHvvr1w5hTDluNKMkV05cs4vy8Q7sw==}
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
@@ -3329,14 +3329,14 @@ packages:
       node-releases: 1.1.71
     dev: false
 
-  /browserslist/4.16.3:
-    resolution: {integrity: sha512-vIyhWmIkULaq04Gt93txdh+j02yX/JzlyhLYbV3YQCn/zvES3JnY7TifHHvvr1w5hTDluNKMkV05cs4vy8Q7sw==}
+  /browserslist/4.16.6:
+    resolution: {integrity: sha512-Wspk/PqO+4W9qp5iUTJsa1B/QrYn1keNCcEP5OvP7WBwT4KaDly0uONYmC6Xa3Z5IqnUgS0KcgLYu1l74x0ZXQ==}
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
-      caniuse-lite: 1.0.30001208
+      caniuse-lite: 1.0.30001228
       colorette: 1.2.2
-      electron-to-chromium: 1.3.712
+      electron-to-chromium: 1.3.732
       escalade: 3.1.1
       node-releases: 1.1.71
     dev: false
@@ -3465,6 +3465,10 @@ packages:
 
   /caniuse-lite/1.0.30001208:
     resolution: {integrity: sha512-OE5UE4+nBOro8Dyvv0lfx+SRtfVIOM9uhKqFmJeUbGriqhhStgp1A0OyBpgy3OUF8AhYCT+PVwPC1gMl2ZcQMA==}
+    dev: false
+
+  /caniuse-lite/1.0.30001228:
+    resolution: {integrity: sha512-QQmLOGJ3DEgokHbMSA8cj2a+geXqmnpyOFT0lhQV6P3/YOJvGDEwoedcwxEQ30gJIwIIunHIicunJ2rzK5gB2A==}
     dev: false
 
   /capture-exit/2.0.0:
@@ -3863,7 +3867,7 @@ packages:
     peerDependencies:
       postcss: ^8.2.1
     dependencies:
-      caniuse-lite: 1.0.30001208
+      caniuse-lite: 1.0.30001228
       postcss: 8.2.13
     dev: false
 
@@ -4367,6 +4371,10 @@ packages:
 
   /electron-to-chromium/1.3.712:
     resolution: {integrity: sha512-3kRVibBeCM4vsgoHHGKHmPocLqtFAGTrebXxxtgKs87hNUzXrX2NuS3jnBys7IozCnw7viQlozxKkmty2KNfrw==}
+    dev: false
+
+  /electron-to-chromium/1.3.732:
+    resolution: {integrity: sha512-qKD5Pbq+QMk4nea4lMuncUMhpEiQwaJyCW7MrvissnRcBDENhVfDmAqQYRQ3X525oTzhar9Zh1cK0L2d1UKYcw==}
     dev: false
 
   /elliptic/6.5.4:
@@ -6798,8 +6806,8 @@ packages:
     resolution: {integrity: sha1-Sr6/7tdUHywnrPspvbvRXI1bpPc=}
     dev: false
 
-  /next/10.2.0_507781d099a67956587e23f5ac79078b:
-    resolution: {integrity: sha512-PKDKCSF7s82xudu3kQhOEaokxggpbLEWouEUtzP6OqV0YqKYHF+Ff+BFLycEem8ixtTM2M6ElN0VRJcskJfxPQ==}
+  /next/10.2.1_507781d099a67956587e23f5ac79078b:
+    resolution: {integrity: sha512-2xJx8vFVBxfEoMz1nrUnH/IN5Q1YKw/8MIOPlwmjUWQTYrDyNc4ldmm/4kWatDMgus6Sd2LVGo3RA5eKGOD1aQ==}
     engines: {node: '>=10.13.0'}
     hasBin: true
     peerDependencies:
@@ -6817,18 +6825,18 @@ packages:
         optional: true
     dependencies:
       '@babel/runtime': 7.12.5
-      '@hapi/accept': 5.0.1
-      '@next/env': 10.2.0
-      '@next/polyfill-module': 10.2.0
-      '@next/react-dev-overlay': 10.2.0_react-dom@17.0.2+react@17.0.2
-      '@next/react-refresh-utils': 10.2.0_react-refresh@0.8.3
+      '@hapi/accept': 5.0.2
+      '@next/env': 10.2.1
+      '@next/polyfill-module': 10.2.1
+      '@next/react-dev-overlay': 10.2.1_react-dom@17.0.2+react@17.0.2
+      '@next/react-refresh-utils': 10.2.1_react-refresh@0.8.3
       '@opentelemetry/api': 0.14.0
       assert: 2.0.0
       ast-types: 0.13.2
       browserify-zlib: 0.2.0
-      browserslist: 4.16.1
+      browserslist: 4.16.6
       buffer: 5.6.0
-      caniuse-lite: 1.0.30001208
+      caniuse-lite: 1.0.30001228
       chalk: 2.4.2
       chokidar: 3.5.1
       constants-browserify: 1.0.0
