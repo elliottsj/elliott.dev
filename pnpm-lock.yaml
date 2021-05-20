@@ -13,7 +13,7 @@ specifiers:
   '@mdx-js/loader': 1.6.22
   '@mdx-js/mdx': 1.6.22
   '@mdx-js/react': 1.6.22
-  '@next/mdx': 10.2.1
+  '@next/mdx': 10.2.2
   '@types/chroma-js': 2.1.3
   '@types/d3': 6.3.0
   '@types/jest': 26.0.23
@@ -43,7 +43,7 @@ specifiers:
   jest: 26.6.3
   lodash: 4.17.21
   luxon: 1.27.0
-  next: 10.2.1
+  next: 10.2.2
   normalize.css: 8.0.1
   npm-run-all: 4.1.5
   npm-scripts-info: 0.3.9
@@ -73,7 +73,7 @@ dependencies:
   '@mdx-js/loader': 1.6.22_react@17.0.2
   '@mdx-js/mdx': 1.6.22
   '@mdx-js/react': 1.6.22_react@17.0.2
-  '@next/mdx': 10.2.1_f56c41adb6190c4680be4a1c0222355d
+  '@next/mdx': 10.2.2_f56c41adb6190c4680be4a1c0222355d
   '@types/chroma-js': 2.1.3
   '@types/d3': 6.3.0
   '@types/jest': 26.0.23
@@ -103,7 +103,7 @@ dependencies:
   jest: 26.6.3
   lodash: 4.17.21
   luxon: 1.27.0
-  next: 10.2.1_507781d099a67956587e23f5ac79078b
+  next: 10.2.2_507781d099a67956587e23f5ac79078b
   normalize.css: 8.0.1
   npm-run-all: 4.1.5
   npm-scripts-info: 0.3.9
@@ -1973,12 +1973,12 @@ packages:
     resolution: {integrity: sha512-H1rQc1ZOHANWBvPcW+JpGwr+juXSxM8Q8YCkm3GhZd8REu1fHR3z99CErO1p9pkcfcxZnMdIZdIsXkOHY0NilA==}
     dev: false
 
-  /@next/env/10.2.1:
-    resolution: {integrity: sha512-mvUCIrwxFfyQa24iTbYAW1fbToC7cW4cGW5oiR3AyE6clfGK6fzwbkdODtjfaHGmCCS4K0epsy/XgV6DJS/EIw==}
+  /@next/env/10.2.2:
+    resolution: {integrity: sha512-m0xOpl4F9z7R7Yt2OtJoo6ZUsFPdx+kuvZeoctH7T6lO66DmZL3W6MQDxso/ArkH8VOlDPZgeQVVBPf+I7wflA==}
     dev: false
 
-  /@next/mdx/10.2.1_f56c41adb6190c4680be4a1c0222355d:
-    resolution: {integrity: sha512-wULGQBsdPyDf+6Pcgs9qaEIwYmTSuEQGYSADSkIyd9CSuCjDJEnT+RwaFygaTQcfwwCtndQVtWu+lskS33XZCQ==}
+  /@next/mdx/10.2.2_f56c41adb6190c4680be4a1c0222355d:
+    resolution: {integrity: sha512-7JB5IIuFoqwqlQwOBxj5e/NfuTePIP6hv0lVo4vkDvGoC88+aY46FooooB8WzqdzE27aR0+c91W1cmPDqoO/uQ==}
     peerDependencies:
       '@mdx-js/loader': '>=0.15.0'
       '@mdx-js/react': '*'
@@ -1987,12 +1987,12 @@ packages:
       '@mdx-js/react': 1.6.22_react@17.0.2
     dev: false
 
-  /@next/polyfill-module/10.2.1:
-    resolution: {integrity: sha512-MNVwR3lzZuH/UsLxclLeNXhd9GGvqjavMtAx8zSbOHzZHPmEYw3EQRqUI0qCNUdX52N+aSPeAhvDjUUzHdCpsA==}
+  /@next/polyfill-module/10.2.2:
+    resolution: {integrity: sha512-0t5Hw1Dr18TWP65qAnakRa8+jza6SAFOz0b2v67s5AVquAwXXlclR4SfUy3ahrRtjCqlbLEE/oFIzCGbyMYfVA==}
     dev: false
 
-  /@next/react-dev-overlay/10.2.1_react-dom@17.0.2+react@17.0.2:
-    resolution: {integrity: sha512-ZCSPO/gyJio9jBnF4Z+f+WMfMiIAgVjxyZ9h81W1Fjd/5BwoAADxakyCdXiLCMlVXkgtO1dXkY+yXTegxkpASQ==}
+  /@next/react-dev-overlay/10.2.2_react-dom@17.0.2+react@17.0.2:
+    resolution: {integrity: sha512-uPslFPWvvZ8AdadGdK2/834UnJy6F+7071/ere6QpN88Ngzqx9lDIhjslEeFLRtpyBst4s1YUdbm69btVPdE5w==}
     peerDependencies:
       react: ^16.9.0 || ^17
       react-dom: ^16.9.0 || ^17
@@ -2012,8 +2012,8 @@ packages:
       strip-ansi: 6.0.0
     dev: false
 
-  /@next/react-refresh-utils/10.2.1_react-refresh@0.8.3:
-    resolution: {integrity: sha512-G7l/1kQqTzZ1k6cw6WQol8F0eA7S+YQhUep4eTwlTI6k7Zei1f6/NuSbed9XxEH6xBB/bjVTaxxf0dYpBeB7zA==}
+  /@next/react-refresh-utils/10.2.2_react-refresh@0.8.3:
+    resolution: {integrity: sha512-OL7r0iz+SiE9SMWcxZocUtEAHv0/TlBWxIE3KjjO1vWSU1r0gMrE2l2RxHfMLIPsl6CjAkcPxoaXlosFsJ2S5w==}
     peerDependencies:
       react-refresh: 0.8.3
       webpack: ^4 || ^5
@@ -6806,8 +6806,8 @@ packages:
     resolution: {integrity: sha1-Sr6/7tdUHywnrPspvbvRXI1bpPc=}
     dev: false
 
-  /next/10.2.1_507781d099a67956587e23f5ac79078b:
-    resolution: {integrity: sha512-2xJx8vFVBxfEoMz1nrUnH/IN5Q1YKw/8MIOPlwmjUWQTYrDyNc4ldmm/4kWatDMgus6Sd2LVGo3RA5eKGOD1aQ==}
+  /next/10.2.2_507781d099a67956587e23f5ac79078b:
+    resolution: {integrity: sha512-HPGSLrflWPvf3zEZSIk/uj0CZ+YYrpZwZS0PFAgXbEwb894iRuAPzglagqlzcCh7lg12RBEaKNIxhrVa5xgjtQ==}
     engines: {node: '>=10.13.0'}
     hasBin: true
     peerDependencies:
@@ -6826,10 +6826,10 @@ packages:
     dependencies:
       '@babel/runtime': 7.12.5
       '@hapi/accept': 5.0.2
-      '@next/env': 10.2.1
-      '@next/polyfill-module': 10.2.1
-      '@next/react-dev-overlay': 10.2.1_react-dom@17.0.2+react@17.0.2
-      '@next/react-refresh-utils': 10.2.1_react-refresh@0.8.3
+      '@next/env': 10.2.2
+      '@next/polyfill-module': 10.2.2
+      '@next/react-dev-overlay': 10.2.2_react-dom@17.0.2+react@17.0.2
+      '@next/react-refresh-utils': 10.2.2_react-refresh@0.8.3
       '@opentelemetry/api': 0.14.0
       assert: 2.0.0
       ast-types: 0.13.2
