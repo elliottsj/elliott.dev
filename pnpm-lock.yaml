@@ -24,7 +24,7 @@ specifiers:
   '@types/nprogress': 0.2.0
   '@types/prismjs': 1.16.5
   '@types/react': 17.0.3
-  '@types/react-dom': 17.0.6
+  '@types/react-dom': 17.0.7
   '@types/react-modal': 3.12.0
   '@types/suncalc': 1.8.0
   '@types/use-ackee': 2.0.0
@@ -84,7 +84,7 @@ dependencies:
   '@types/nprogress': 0.2.0
   '@types/prismjs': 1.16.5
   '@types/react': 17.0.3
-  '@types/react-dom': 17.0.6
+  '@types/react-dom': 17.0.7
   '@types/react-modal': 3.12.0
   '@types/suncalc': 1.8.0
   '@types/use-ackee': 2.0.0
@@ -2516,8 +2516,8 @@ packages:
     resolution: {integrity: sha512-1HcDas8SEj4z1Wc696tH56G8OlRaH/sqZOynNNB+HF0WOeXPaxTtbYzJY2oEfiUxjSKjhCKr+MvR7dCHcEelug==}
     dev: false
 
-  /@types/react-dom/17.0.6:
-    resolution: {integrity: sha512-MGTI+TudxAnGTj8aco8mogaPSJGK2Whje7OZh1CxNLRyhJpTZg/pGQpIbCT0eCVFQyH7UFpdvCqQEThHIp/gsA==}
+  /@types/react-dom/17.0.7:
+    resolution: {integrity: sha512-Wd5xvZRlccOrCTej8jZkoFZuZRKHzanDDv1xglI33oBNFMWrqOSzrvWFw7ngSiZjrpJAzPKFtX7JvuXpkNmQHA==}
     dependencies:
       '@types/react': 17.0.3
     dev: false
