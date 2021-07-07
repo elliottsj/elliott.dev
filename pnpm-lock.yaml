@@ -15,7 +15,7 @@ specifiers:
   '@mdx-js/react': 1.6.22
   '@next/mdx': 10.2.3
   '@types/chroma-js': 2.1.3
-  '@types/d3': 6.3.0
+  '@types/d3': 6.7.5
   '@types/jest': 26.0.24
   '@types/lodash': 4.14.170
   '@types/luxon': 1.26.5
@@ -75,7 +75,7 @@ dependencies:
   '@mdx-js/react': 1.6.22_react@17.0.2
   '@next/mdx': 10.2.3_f56c41adb6190c4680be4a1c0222355d
   '@types/chroma-js': 2.1.3
-  '@types/d3': 6.3.0
+  '@types/d3': 6.7.5
   '@types/jest': 26.0.24
   '@types/lodash': 4.14.170
   '@types/luxon': 1.26.5
@@ -2363,8 +2363,8 @@ packages:
       '@types/d3-selection': 2.0.0
     dev: false
 
-  /@types/d3/6.3.0:
-    resolution: {integrity: sha512-YILdGsjNTbvkWZKsBasB4cVDwNPnni7ILMJg9keMErQHyuII2yO2jyFdUy5E+7k/HTNP/AucrPddQuu27udbeA==}
+  /@types/d3/6.7.5:
+    resolution: {integrity: sha512-TUZ6zuT/KIvbHSv81kwAiO5gG5aTuoiLGnWR/KxHJ15Idy/xmGUXaaF5zMG+UMIsndcGlSHTmrvwRgdvZlNKaA==}
     dependencies:
       '@types/d3-array': 2.9.0
       '@types/d3-axis': 2.0.0
