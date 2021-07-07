@@ -25,7 +25,7 @@ specifiers:
   '@types/prismjs': 1.16.6
   '@types/react': 17.0.3
   '@types/react-dom': 17.0.9
-  '@types/react-modal': 3.12.0
+  '@types/react-modal': 3.12.1
   '@types/suncalc': 1.8.0
   '@types/use-ackee': 2.0.0
   '@types/webpack': 4.41.30
@@ -85,7 +85,7 @@ dependencies:
   '@types/prismjs': 1.16.6
   '@types/react': 17.0.3
   '@types/react-dom': 17.0.9
-  '@types/react-modal': 3.12.0
+  '@types/react-modal': 3.12.1
   '@types/suncalc': 1.8.0
   '@types/use-ackee': 2.0.0
   '@types/webpack': 4.41.30
@@ -2522,8 +2522,8 @@ packages:
       '@types/react': 17.0.3
     dev: false
 
-  /@types/react-modal/3.12.0:
-    resolution: {integrity: sha512-UnHu/YO73NZLwqFpju/c0tqiswR0UHIfeO16rkfLVJUIMfQsl7X0CBm99H5XXgBMe/PgtQ/Rkud72iuRBr1TeA==}
+  /@types/react-modal/3.12.1:
+    resolution: {integrity: sha512-pgq/jAnSJqHX7NXTFyUSXwlFOBUGngBXavFmAIKE7bkM7WNKyF/9XvmMr2+eIBOvR8waiA0Nj2qHfDZqMgeT6w==}
     dependencies:
       '@types/react': 17.0.3
     dev: false
