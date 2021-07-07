@@ -17,7 +17,7 @@ specifiers:
   '@types/chroma-js': 2.1.3
   '@types/d3': 6.3.0
   '@types/jest': 26.0.24
-  '@types/lodash': 4.14.170
+  '@types/lodash': 4.14.171
   '@types/luxon': 1.26.5
   '@types/mdx-js__react': 1.5.3
   '@types/node': 13.13.52
@@ -77,7 +77,7 @@ dependencies:
   '@types/chroma-js': 2.1.3
   '@types/d3': 6.3.0
   '@types/jest': 26.0.24
-  '@types/lodash': 4.14.170
+  '@types/lodash': 4.14.171
   '@types/luxon': 1.26.5
   '@types/mdx-js__react': 1.5.3
   '@types/node': 13.13.52
@@ -2448,8 +2448,8 @@ packages:
     resolution: {integrity: sha512-cxWFQVseBm6O9Gbw1IWb8r6OS4OhSt3hPZLkFApLjM8TEXROBuQGLAH2i2gZpcXdLBIrpXuTDhH7Vbm1iXmNGA==}
     dev: false
 
-  /@types/lodash/4.14.170:
-    resolution: {integrity: sha512-bpcvu/MKHHeYX+qeEN8GE7DIravODWdACVA1ctevD8CN24RhPZIKMn9ntfAsrvLfSX3cR5RrBKAbYm9bGs0A+Q==}
+  /@types/lodash/4.14.171:
+    resolution: {integrity: sha512-7eQ2xYLLI/LsicL2nejW9Wyko3lcpN6O/z0ZLHrEQsg280zIdCv1t/0m6UtBjUHokCGBQ3gYTbHzDkZ1xOBwwg==}
     dev: false
 
   /@types/luxon/1.26.5:
