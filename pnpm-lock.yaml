@@ -19,7 +19,7 @@ specifiers:
   '@types/jest': 26.0.24
   '@types/lodash': 4.14.171
   '@types/luxon': 1.26.5
-  '@types/mdx-js__react': 1.5.3
+  '@types/mdx-js__react': 1.5.4
   '@types/node': 13.13.52
   '@types/nprogress': 0.2.0
   '@types/prismjs': 1.16.6
@@ -79,7 +79,7 @@ dependencies:
   '@types/jest': 26.0.24
   '@types/lodash': 4.14.171
   '@types/luxon': 1.26.5
-  '@types/mdx-js__react': 1.5.3
+  '@types/mdx-js__react': 1.5.4
   '@types/node': 13.13.52
   '@types/nprogress': 0.2.0
   '@types/prismjs': 1.16.6
@@ -2462,8 +2462,8 @@ packages:
       '@types/unist': 2.0.3
     dev: false
 
-  /@types/mdx-js__react/1.5.3:
-    resolution: {integrity: sha512-flP0BpS5rXnEbkU5ih79ARaI/+rK10Iee+zxTaWYtoiyc2+f1EJ8EnYgMmXHdAuI7OX4J9/hdoXfrfrri0AT+Q==}
+  /@types/mdx-js__react/1.5.4:
+    resolution: {integrity: sha512-hce+Hymj3cEMOma13eQRhpT3mhQrOkN4CAYEwKWB/qj2BiuUrrTpCkOShEERGmLVgDc3nxF4Dc0k7W999EQxnQ==}
     dependencies:
       '@types/react': 17.0.3
     dev: false
