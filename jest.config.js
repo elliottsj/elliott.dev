@@ -16,9 +16,4 @@ module.exports = {
 
   // An array of regexp pattern strings that are matched against all test paths, matched tests are skipped
   testPathIgnorePatterns: ['<rootDir>/.next/', '<rootDir>/node_modules/'],
-
-  // A map from regular expressions to paths to transformers
-  transform: {
-    '^.+\\.(ts|tsx|js)$': require.resolve('./jest/babelTransformer'),
-  },
 };
