@@ -6,7 +6,7 @@ import { css } from '@emotion/react';
 import { Post } from '../lib/getPosts';
 import PostDate from './PostDate';
 
-const PostItem: React.FC<{ post: Post }> = ({ post }) => (
+const PostItem: React.FC<{ pathPrefix: string; post: Post }> = ({ pathPrefix, post }) => (
   <article>
     <header>
       <h2
@@ -14,7 +14,7 @@ const PostItem: React.FC<{ post: Post }> = ({ post }) => (
           margin-bottom: 0;
         `}
       >
-        <Link href={`/posts/${post.slug}`} passHref>
+        <Link href={`${pathPrefix}/${post.slug}`} passHref>
           <a
             css={css`
               text-decoration: none;
@@ -31,10 +31,11 @@ const PostItem: React.FC<{ post: Post }> = ({ post }) => (
 );
 
 interface Props {
+  pathPrefix: string;
   posts: Post[];
 }
 
-const PostList: React.FC<Props> = ({ posts }) => (
+const PostList: React.FC<Props> = ({ pathPrefix, posts }) => (
   <ul
     css={css`
       padding: 0;
@@ -45,7 +46,7 @@ const PostList: React.FC<Props> = ({ posts }) => (
       .filter((post) => post.meta.published)
       .map((post) => (
         <li key={post.slug}>
-          <PostItem post={post} />
+          <PostItem pathPrefix={pathPrefix} post={post} />
         </li>
       ))}
   </ul>

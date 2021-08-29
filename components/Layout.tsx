@@ -62,6 +62,18 @@ const SocialLink: React.FC<{ href: string }> = ({ children, href }) => {
   );
 };
 
+const NavLink: React.FC = ({ children }) => (
+  <span
+    css={css`
+      flex: 0;
+      font-family: 'Ubuntu', sans-serif;
+      padding-left: 1em;
+    `}
+  >
+    {children}
+  </span>
+);
+
 const Layout: React.FC = ({ children }) => {
   const theme = useTheme();
   const [isNightModeEnabled, setIsNightModeEnabled] = useState(true);
@@ -88,28 +100,22 @@ const Layout: React.FC = ({ children }) => {
               <a>elliott.dev</a>
             </Link>
           </span>
-          <span
-            css={css`
-              flex: 0;
-              font-family: 'Ubuntu', sans-serif;
-              padding-left: 1em;
-            `}
-          >
-            <Link href="/">
-              <a>Posts</a>
-            </Link>
-          </span>
-          <span
-            css={css`
-              flex: 0;
-              font-family: 'Ubuntu', sans-serif;
-              padding-left: 1em;
-            `}
-          >
+
+          <NavLink>
             <Link href="/about">
               <a>About</a>
             </Link>
-          </span>
+          </NavLink>
+          <NavLink>
+            <Link href="/">
+              <a>Posts</a>
+            </Link>
+          </NavLink>
+          <NavLink>
+            <Link href="/personal">
+              <a>Personal</a>
+            </Link>
+          </NavLink>
           {false && (
             <NightToggle
               disabledLabel="Off"

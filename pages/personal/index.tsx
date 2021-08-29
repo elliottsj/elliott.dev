@@ -1,8 +1,5 @@
 import { GetStaticProps } from 'next';
-import Link from 'next/link';
 import React from 'react';
-
-import { css } from '@emotion/react';
 
 import { Layout } from '../../components';
 import PostList from '../../components/PostList';
@@ -14,18 +11,7 @@ interface Props {
 
 const IndexPage: React.FC<Props> = ({ posts }) => (
   <Layout>
-    <PostList pathPrefix="/posts" posts={posts} />
-    <h3>
-      <Link href="/posts/archive" passHref>
-        <a
-          css={css`
-            text-decoration: none;
-          `}
-        >
-          Archive →
-        </a>
-      </Link>
-    </h3>
+    <PostList pathPrefix="/personal" posts={posts} />
   </Layout>
 );
 
