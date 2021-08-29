@@ -18,7 +18,7 @@ specifiers:
   '@types/d3': 6.3.0
   '@types/jest': 26.0.24
   '@types/lodash': 4.14.172
-  '@types/luxon': 1.26.5
+  '@types/luxon': 1.27.1
   '@types/mdx-js__react': 1.5.4
   '@types/node': 13.13.52
   '@types/nprogress': 0.2.0
@@ -42,7 +42,7 @@ specifiers:
   eslint-plugin-react-hooks: 4.2.0
   jest: 27.1.0
   lodash: 4.17.21
-  luxon: 1.27.0
+  luxon: 1.28.0
   next: 11.1.0
   normalize.css: 8.0.1
   npm-run-all: 4.1.5
@@ -78,7 +78,7 @@ dependencies:
   '@types/d3': 6.3.0
   '@types/jest': 26.0.24
   '@types/lodash': 4.14.172
-  '@types/luxon': 1.26.5
+  '@types/luxon': 1.27.1
   '@types/mdx-js__react': 1.5.4
   '@types/node': 13.13.52
   '@types/nprogress': 0.2.0
@@ -102,7 +102,7 @@ dependencies:
   eslint-plugin-react-hooks: 4.2.0_eslint@7.32.0
   jest: 27.1.0
   lodash: 4.17.21
-  luxon: 1.27.0
+  luxon: 1.28.0
   next: 11.1.0_2557d5ca952eaa781cbb7df12d39ca64
   normalize.css: 8.0.1
   npm-run-all: 4.1.5
@@ -2643,8 +2643,8 @@ packages:
     resolution: {integrity: sha512-/BHF5HAx3em7/KkzVKm3LrsD6HZAXuXO1AJZQ3cRRBZj4oHZDviWPYu0aEplAqDFNHZPW6d3G7KN+ONcCCC7pw==}
     dev: false
 
-  /@types/luxon/1.26.5:
-    resolution: {integrity: sha512-XeQxxRMyJi1znfzHw4CGDLyup/raj84SnjjkI2fDootZPGlB0yqtvlvEIAmzHDa5wiEI5JJevZOWxpcofsaV+A==}
+  /@types/luxon/1.27.1:
+    resolution: {integrity: sha512-cPiXpOvPFDr2edMnOXlz3UBDApwUfR+cpizvxCy0n3vp9bz/qe8BWzHPIEFcy+ogUOyjKuCISgyq77ELZPmkkg==}
     dev: false
 
   /@types/mdast/3.0.3:
@@ -6426,8 +6426,8 @@ packages:
       yallist: 4.0.0
     dev: false
 
-  /luxon/1.27.0:
-    resolution: {integrity: sha512-VKsFsPggTA0DvnxtJdiExAucKdAnwbCCNlMM5ENvHlxubqWd0xhZcdb4XgZ7QFNhaRhilXCFxHuoObP5BNA4PA==}
+  /luxon/1.28.0:
+    resolution: {integrity: sha512-TfTiyvZhwBYM/7QdAVDh+7dBTBA29v4ik0Ce9zda3Mnf8on1S5KJI8P2jKFZ8+5C0jhmr0KwJEO/Wdpm0VeWJQ==}
     dev: false
 
   /make-dir/3.1.0:
