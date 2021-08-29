@@ -55,7 +55,7 @@
     "@next/mdx": "11.1.0",
     "@types/chroma-js": "2.1.3",
     "@types/d3": "7.0.0",
-    "@types/jest": "26.0.24",
+    "@types/jest": "27.0.1",
     "@types/lodash": "4.14.172",
     "@types/luxon": "1.26.5",
     "@types/mdx-js__react": "1.5.4",
