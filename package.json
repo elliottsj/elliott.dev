@@ -41,18 +41,15 @@
   "homepage": "https://github.com/elliottsj/elliott.dev#readme",
   "dependencies": {
     "@babel/core": "7.15.0",
-    "@elliottsj/next-svgr": "0.0.3",
-    "@emotion/babel-preset-css-prop": "11.2.0",
+    "@emotion/babel-plugin": "11.3.0",
     "@emotion/jest": "11.3.0",
     "@emotion/react": "11.4.1",
     "@emotion/styled": "11.3.0",
     "@fortawesome/fontawesome-svg-core": "1.2.36",
     "@fortawesome/free-solid-svg-icons": "5.15.4",
     "@fortawesome/react-fontawesome": "0.1.15",
-    "@mdx-js/loader": "1.6.22",
-    "@mdx-js/mdx": "1.6.22",
     "@mdx-js/react": "1.6.22",
-    "@next/mdx": "11.1.0",
+    "@svgr/webpack": "5.5.0",
     "@types/chroma-js": "2.1.3",
     "@types/d3": "7.0.0",
     "@types/jest": "27.0.1",
@@ -97,6 +94,7 @@
     "simple-icons": "5.11.0",
     "suncalc": "1.8.0",
     "typescript": "4.4.2",
-    "use-ackee": "3.0.0"
+    "use-ackee": "3.0.0",
+    "xdm": "2.0.0"
   }
 }

@@ -28,11 +28,11 @@ I've decided to adopt some [12-factor][] philosophies to make this process a bit
 First, make sure you have an SSH key pair configured on AWS. You can either
 [create your own](./2014-01-09-public-key-authentication-on-cdf.md) and import it, or create a new one in the AWS console:
 
-<https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#KeyPairs:>
+[https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#KeyPairs:](https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#KeyPairs:)
 
 Next, launch a new EC2 instance of the AMI that De Lara provides:
 
-<https://console.aws.amazon.com/ec2/home?region=us-east-1#launchAmi=ami-cafc53a2>
+[https://console.aws.amazon.com/ec2/home?region=us-east-1#launchAmi=ami-cafc53a2](https://console.aws.amazon.com/ec2/home?region=us-east-1#launchAmi=ami-cafc53a2)
 
 1. Choose the _t2.micro_ instance type (or _t2.small_ if you have cash to spare)
 2. Click _Next_ until you get to _Step 6: Configure Security Group_
@@ -200,7 +200,7 @@ To view the site, you need to open an SSH tunnel:
 Spencers-MacBook$ ssh ubuntu@<PUBLIC_IP> -L 8080:localhost:80
 ```
 
-Then open <http://localhost:8080> in your browser. Alternatively, add TCP port 80 to your EC2 instance
+Then open [http://localhost:8080](http://localhost:8080) in your browser. Alternatively, add TCP port 80 to your EC2 instance
 security group inbound rules and open http://\<PUBLIC_IP\> in your browser
 
 ## Conclusion
