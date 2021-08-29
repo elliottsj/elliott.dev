@@ -5,7 +5,6 @@ import React from 'react';
 import styled from '@emotion/styled';
 
 // https://github.com/FormidableLabs/prism-react-renderer#faq
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
 ((typeof global !== 'undefined' ? global : window) as any).Prism = Prism;
 require('prismjs/components/prism-ruby');
 

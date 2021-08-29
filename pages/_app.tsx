@@ -3,7 +3,7 @@ import 'nprogress/nprogress.css';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 
 import { DateTime } from 'luxon';
-import App, { AppProps } from 'next/app';
+import { AppProps } from 'next/app';
 import dynamic from 'next/dynamic';
 import Head from 'next/head';
 import Link from 'next/link';
@@ -178,8 +178,4 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
   );
 };
 
-export default class extends App {
-  render() {
-    return <MyApp {...this.props} />;
-  }
-}
+export default MyApp;

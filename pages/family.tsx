@@ -19,8 +19,9 @@ interface Props {
 
 const FamilyTreePage: React.FC<Props> = ({ data: family }) => {
   const svgRef = useRef<SVGSVGElement>(null);
-  const simulationRef =
-    useRef<d3.Simulation<SimulationFamilyNodeDatum, SimulationFamilyLinkDatum>>();
+  const simulationRef = useRef<
+    d3.Simulation<SimulationFamilyNodeDatum, SimulationFamilyLinkDatum>
+  >();
   const svgSelectionRef = useRef<d3.Selection<SVGSVGElement, unknown, null, undefined>>();
   const zoomGroupSelectionRef = useRef<d3.Selection<SVGGElement, unknown, null, undefined>>();
   const windowSize = useWindowSize();
@@ -59,7 +60,6 @@ const FamilyTreePage: React.FC<Props> = ({ data: family }) => {
       .attr('markerHeight', markerBoxHeight)
       .attr('orient', 'auto-start-reverse')
       .append('path')
-      // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
       .attr('d', line(arrowPoints)!)
       .attr('stroke', 'black');
 
@@ -77,7 +77,7 @@ const FamilyTreePage: React.FC<Props> = ({ data: family }) => {
           .id((d) => d.id)
           .distance(30)
           .strength((d) =>
-            d.kind === 'Partner' || (d.target as unknown as FamilyNode).type === 'FamilyUnionNode'
+            d.kind === 'Partner' || ((d.target as unknown) as FamilyNode).type === 'FamilyUnionNode'
               ? 1
               : 0.5,
           )
@@ -86,28 +86,25 @@ const FamilyTreePage: React.FC<Props> = ({ data: family }) => {
 
     simulationRef.current = simulation;
 
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     function click(_event: any, d: any) {
       delete d.fx;
       delete d.fy;
       simulation.alpha(0.05).restart();
     }
 
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     function dragged(event: any, d: any) {
       d.fx = event.x; //clamp(event.x, 0, 1000 /*width*/);
       d.fy = event.y; //clamp(event.y, 0, 1000 /*height*/);
       simulation.alpha(0.05).restart();
     }
 
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const drag: any = d3.drag().on('drag', dragged);
 
     const links = g.selectAll('path').data(graph.links).join('path').attr('stroke', 'black');
 
     links.filter((d) => d.kind === 'Partner').attr('stroke-dasharray', '1');
     links
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+
       .filter((d) => d.kind === 'Child' && (d.target as any).type === 'FamilyUnionNode')
       .attr('stroke-dasharray', '4 1');
 
@@ -140,7 +137,6 @@ const FamilyTreePage: React.FC<Props> = ({ data: family }) => {
       .attr('text-anchor', 'middle');
 
     simulationRef.current.on('tick', () => {
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       links.attr('d', (d: any) => {
         return d3.line()([
           [d.source.x, d.source.y],
@@ -148,7 +144,6 @@ const FamilyTreePage: React.FC<Props> = ({ data: family }) => {
         ]);
       });
 
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       nodes.attr('transform', (d: any) => `translate(${d.x},${d.y})`);
     });
   }, [family]);
