@@ -1,8 +1,6 @@
 /// <reference types="next" />
 /// <reference types="next/types/global" />
+/// <reference types="next/image-types/global" />
 
-// https://emotion.sh/docs/emotion-11#css-prop-types
-/// <reference types="@emotion/react/types/css-prop" />
-
-// Enable .svg import via next-svgr
-declare module '*.svg';
+// NOTE: This file should not be edited
+// see https://nextjs.org/docs/basic-features/typescript for more information.
