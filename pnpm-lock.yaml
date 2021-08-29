@@ -48,7 +48,7 @@ specifiers:
   npm-run-all: 4.1.5
   npm-scripts-info: 0.3.9
   nprogress: 0.2.0
-  prettier: 2.2.1
+  prettier: 2.3.2
   prism-react-renderer: 1.1.1
   prismjs: 1.24.0
   react: 17.0.2
@@ -108,7 +108,7 @@ dependencies:
   npm-run-all: 4.1.5
   npm-scripts-info: 0.3.9
   nprogress: 0.2.0
-  prettier: 2.2.1
+  prettier: 2.3.2
   prism-react-renderer: 1.1.1_react@17.0.2
   prismjs: 1.24.0
   react: 17.0.2
@@ -7289,8 +7289,8 @@ packages:
     engines: {node: '>= 0.8.0'}
     dev: false
 
-  /prettier/2.2.1:
-    resolution: {integrity: sha512-PqyhM2yCjg/oKkFPtTGUojv7gnZAoG80ttl45O6x2Ug/rMJw4wcc9k6aaf2hibP7BGVCCM33gZoGjyvt9mm16Q==}
+  /prettier/2.3.2:
+    resolution: {integrity: sha512-lnJzDfJ66zkMy58OL5/NY5zp70S7Nz6KqcKkXYzn2tMVrNxvbqaBpg7H3qHaLxCJ5lNMsGuM8+ohS7cZrthdLQ==}
     engines: {node: '>=10.13.0'}
     hasBin: true
     dev: false

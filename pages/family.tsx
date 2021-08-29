@@ -19,9 +19,8 @@ interface Props {
 
 const FamilyTreePage: React.FC<Props> = ({ data: family }) => {
   const svgRef = useRef<SVGSVGElement>(null);
-  const simulationRef = useRef<
-    d3.Simulation<SimulationFamilyNodeDatum, SimulationFamilyLinkDatum>
-  >();
+  const simulationRef =
+    useRef<d3.Simulation<SimulationFamilyNodeDatum, SimulationFamilyLinkDatum>>();
   const svgSelectionRef = useRef<d3.Selection<SVGSVGElement, unknown, null, undefined>>();
   const zoomGroupSelectionRef = useRef<d3.Selection<SVGGElement, unknown, null, undefined>>();
   const windowSize = useWindowSize();
@@ -78,7 +77,7 @@ const FamilyTreePage: React.FC<Props> = ({ data: family }) => {
           .id((d) => d.id)
           .distance(30)
           .strength((d) =>
-            d.kind === 'Partner' || ((d.target as unknown) as FamilyNode).type === 'FamilyUnionNode'
+            d.kind === 'Partner' || (d.target as unknown as FamilyNode).type === 'FamilyUnionNode'
               ? 1
               : 0.5,
           )
