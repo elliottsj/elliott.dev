@@ -9,10 +9,10 @@ import styled from '@emotion/styled';
 ((typeof global !== 'undefined' ? global : window) as any).Prism = Prism;
 require('prismjs/components/prism-ruby');
 
-type CodeBlockLanguage = Language | 'ruby';
+type CodeBlockLanguage = Language | 'php' | 'ruby';
 
 const isLanguageValid = (language: string): language is CodeBlockLanguage =>
-  language === '' || language in Prism.languages || ['ruby'].includes(language);
+  language === '' || language in Prism.languages || ['php', 'ruby'].includes(language);
 
 const Pre = styled.pre`
   overflow: auto;

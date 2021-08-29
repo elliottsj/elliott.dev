@@ -6,6 +6,8 @@ export const meta = {
 };
 
 import Image from 'next/image';
+import ec2SecurityGroupPng from '../../public/images/ec2-security-group.png';
+
 
 # CSC309: Deploying the Right Way
 
@@ -36,7 +38,7 @@ Next, launch a new EC2 instance of the AMI that De Lara provides:
 2. Click _Next_ until you get to _Step 6: Configure Security Group_
 3. Create a new security group, name it something like _csc309-a1_, and allow SSH access from anywhere:
 
-   <Image src="/images/ec2-security-group.png" alt="Security Group" unsized />
+   <Image src={ec2SecurityGroupPng} alt="Security Group" />
 
 4. Then go ahead and click _Review and Launch_, then _Launch_.
 
