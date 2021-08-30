@@ -52,7 +52,7 @@ specifiers:
   suncalc: 1.8.0
   typescript: 4.4.2
   use-ackee: 3.0.0
-  xdm: 2.0.0
+  xdm: 2.0.1
 
 dependencies:
   '@babel/core': 7.15.0
@@ -106,7 +106,7 @@ dependencies:
   suncalc: 1.8.0
   typescript: 4.4.2
   use-ackee: 3.0.0_react@17.0.2
-  xdm: 2.0.0
+  xdm: 2.0.1
 
 packages:
 
@@ -8682,8 +8682,8 @@ packages:
         optional: true
     dev: false
 
-  /xdm/2.0.0:
-    resolution: {integrity: sha512-LI+YYKZfEYzyCZi+IumrCDc7AOg9Gvw02fFqWsHUAc+VNlpLzM4t3QnBNw95X//SPnLtytn9kI5rLkhZeT+2zA==}
+  /xdm/2.0.1:
+    resolution: {integrity: sha512-zSO9hgNZ9ZUV520e9g1IwewmXmuH+j/sQTYARQ1Z4EUAYLkXHBewvB3MJZvsrGY8phtd8VSG66OO+8oERQdLxA==}
     dependencies:
       '@rollup/pluginutils': 4.1.1
       '@types/estree-jsx': 0.0.1
