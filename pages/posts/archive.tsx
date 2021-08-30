@@ -23,7 +23,7 @@ const IndexPage: React.FC<Props> = ({ posts }) => (
         </a>
       </Link>
     </h3>
-    <PostList posts={posts} />
+    <PostList pathPrefix="/posts" posts={posts} />
   </Layout>
 );
 
