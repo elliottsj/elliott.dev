@@ -1,3 +1,5 @@
+const remarkGfm = require('remark-gfm');
+
 const config = {
   pageExtensions: ['ts', 'tsx', 'mdx'],
   webpack: (config) => {
@@ -15,6 +17,7 @@ const config = {
           loader: require.resolve('xdm/webpack.cjs'),
           options: {
             providerImportSource: '@mdx-js/react',
+            remarkPlugins: [remarkGfm],
           },
         },
       ],
