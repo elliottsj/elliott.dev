@@ -5,6 +5,10 @@ export const meta = {
   title: 'Public Key Authentication on CDF',
 };
 
+import { NextSeo } from 'next-seo';
+
+<NextSeo title={meta.title} description={meta.description} />
+
 import Image from 'next/image';
 
 # Public Key Authentication on CDF
@@ -62,7 +66,7 @@ Now when you connect to CDF, `ssh` should use your private key `~/.ssh/id_rsa` t
 
 Use [PuTTYgen][putty-download] to generate your SSH private/public key pair. Open PuTTYgen and click the _Generate_ button:
 
-import puttygen01 from '../../public/images/puttygen01.png'
+import puttygen01 from '../../public/images/puttygen01.png';
 
 <Image src={puttygen01} alt="PuTTYgen" />
 

@@ -5,6 +5,10 @@ export const meta = {
   title: 'Configuring a Staging Environment with Rails on Dokku',
 };
 
+import { NextSeo } from 'next-seo';
+
+<NextSeo title={meta.title} description={meta.description} />
+
 # Configuring a Staging Environment with Rails on Dokku
 
 [Dokku][] is a neat little platform-as-a-service app that mimics the core functionality of [Heroku][]. As with Heroku, it adopts the so-called [Twelve Factor](http://12factor.net/) paradigm of building web applications. One of the strengths of this kind of app is that it's very portable: it's easy to deploy the app in multiple places, with multiple configurations. I'll show you how to set up your Dokku-hosted Rails app with a 'staging' environment alongside the production environment; this is often useful to test your app before releasing it to your users.
