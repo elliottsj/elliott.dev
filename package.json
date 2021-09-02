@@ -40,7 +40,7 @@
   },
   "homepage": "https://github.com/elliottsj/elliott.dev#readme",
   "dependencies": {
-    "@babel/core": "7.15.0",
+    "@babel/core": "7.15.4",
     "@emotion/babel-plugin": "11.3.0",
     "@emotion/jest": "11.3.0",
     "@emotion/react": "11.4.1",
