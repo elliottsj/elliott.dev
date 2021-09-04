@@ -56,6 +56,7 @@ const SocialLink: React.FC<{ href: string }> = ({ children, href }) => {
         }
       `}
       href={href}
+      rel="me"
     >
       {children}
     </a>
