@@ -101,20 +101,14 @@ const Layout: React.FC = ({ children }) => {
               <a>elliott.dev</a>
             </Link>
           </span>
-
-          <NavLink>
-            <Link href="/about">
-              <a>About</a>
-            </Link>
-          </NavLink>
           <NavLink>
             <Link href="/">
               <a>Posts</a>
             </Link>
           </NavLink>
           <NavLink>
-            <Link href="/personal">
-              <a>Personal</a>
+            <Link href="/about">
+              <a>About</a>
             </Link>
           </NavLink>
           {false && (
