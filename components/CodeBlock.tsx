@@ -21,10 +21,7 @@ const Pre = styled.pre`
  * https://mdxjs.com/guides/syntax-highlighting
  */
 const CodeBlock: React.FC<{ children: string; className?: string }> = ({ children, className }) => {
-  if (!className) {
-    return <code>{children}</code>;
-  }
-  const language = className.replace(/language-/, '');
+  const language = className?.replace(/language-/, '') ?? 'text';
   if (!isLanguageValid(language)) {
     throw new Error(`Invalid language ${language}`);
   }

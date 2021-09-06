@@ -58,8 +58,15 @@ const Pre: React.FC = (props) => (
     css={css`
       display: grid;
     `}
-    {...props}
-  />
+  >
+    {/* @ts-ignore */}
+    {props.children && props.children.type === 'code' ? (
+      // @ts-ignore
+      <CodeBlock {...props.children.props} />
+    ) : (
+      props.children
+    )}
+  </div>
 );
 
 const Table: React.FC = (props) => (
@@ -110,7 +117,6 @@ const MDXLink: React.FC<
 
 const mdxComponents: MDXProviderProps['components'] = {
   blockquote: BlockQuote,
-  code: CodeBlock,
   pre: Pre,
   wrapper: Layout,
   a: MDXLink,
