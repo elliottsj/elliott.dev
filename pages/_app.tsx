@@ -10,7 +10,7 @@ import Link from 'next/link';
 import Router from 'next/router';
 import { DefaultSeo } from 'next-seo';
 import NProgress from 'nprogress';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import { css, Global, ThemeProvider } from '@emotion/react';
 import { config } from '@fortawesome/fontawesome-svg-core';
@@ -124,7 +124,25 @@ const mdxComponents: MDXProviderProps['components'] = {
   td: Td,
 };
 
+/**
+ * Workaround for https://github.com/vercel/next.js/issues/28271
+ */
+const useSafariRenderHack = () => {
+  useEffect(() => {
+    const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+    if (isSafari) {
+      const isVisited = localStorage.getItem('safari_visited');
+      if (!isVisited) {
+        localStorage.setItem('safari_visited', 'true');
+        window.location.replace(window.location.href);
+      }
+    }
+  }, []);
+};
+
 const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
+  useSafariRenderHack();
+
   // Recompute the theme every second
   const [theme, setTheme] = useState(getTheme());
   useInterval(() => {
