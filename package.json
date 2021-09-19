@@ -68,7 +68,7 @@
     "babel-jest": "27.1.1",
     "chroma-js": "2.1.2",
     "cross-env": "7.0.3",
-    "d3": "7.0.1",
+    "d3": "7.0.2",
     "del-cli": "4.0.1",
     "eslint": "7.32.0",
     "eslint-config-next": "11.1.2",

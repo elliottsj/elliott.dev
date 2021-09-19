@@ -29,7 +29,7 @@ specifiers:
   babel-jest: 27.1.1
   chroma-js: 2.1.2
   cross-env: 7.0.3
-  d3: 7.0.1
+  d3: 7.0.2
   del-cli: 4.0.1
   eslint: 7.32.0
   eslint-config-next: 11.1.2
@@ -85,7 +85,7 @@ dependencies:
   babel-jest: 27.1.1_@babel+core@7.15.5
   chroma-js: 2.1.2
   cross-env: 7.0.3
-  d3: 7.0.1
+  d3: 7.0.2
   del-cli: 4.0.1
   eslint: 7.32.0
   eslint-config-next: 11.1.2_8e74a5f9f4c5d59ea675baa7dfa48321
@@ -4061,8 +4061,8 @@ packages:
       d3-transition: 3.0.1_d3-selection@3.0.0
     dev: false
 
-  /d3/7.0.1:
-    resolution: {integrity: sha512-74zonD4nAtxF9dtwFwJ3RuoHPh2D/UTFX26midBuMVH+7pRbOezuyLUIb8mbQMuYFlcUXT+xy++orCmnvMM/CA==}
+  /d3/7.0.2:
+    resolution: {integrity: sha512-p3Leyce0kNyHOhkJ0kHLM5SdWTMQRDd3TKDkh6uv0VX+MhRMZH3E/bduq5uxW+HnECccmRJjOahte0OieeK/VQ==}
     engines: {node: '>=12'}
     dependencies:
       d3-array: 3.0.2
