@@ -52,7 +52,7 @@
     "@svgr/webpack": "5.5.0",
     "@types/chroma-js": "2.1.3",
     "@types/d3": "7.0.0",
-    "@types/jest": "27.0.1",
+    "@types/jest": "27.0.2",
     "@types/lodash": "4.14.173",
     "@types/luxon": "2.0.4",
     "@types/mdx-js__react": "1.5.4",
