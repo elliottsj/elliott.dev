@@ -54,7 +54,7 @@ specifiers:
   suncalc: 1.8.0
   typescript: 4.4.3
   use-ackee: 3.0.0
-  xdm: 2.0.6
+  xdm: 3.0.0
 
 dependencies:
   '@babel/core': 7.15.8
@@ -110,7 +110,7 @@ dependencies:
   suncalc: 1.8.0
   typescript: 4.4.3
   use-ackee: 3.0.0_react@17.0.2
-  xdm: 2.0.6
+  xdm: 3.0.0
 
 packages:
 
@@ -6758,18 +6758,19 @@ packages:
       '@types/mdast': 3.0.10
     dev: false
 
-  /mdast-util-to-hast/11.2.0:
-    resolution: {integrity: sha512-KSYbg4PA9wk5YwoCZCPxbUAjdYunNN5TqTXoZp/9taRDGQS65cL2fFgKc78l0f3deg4p1LP9xdhmMuUrhAUSZA==}
+  /mdast-util-to-hast/12.0.0:
+    resolution: {integrity: sha512-BCeq0Bz103NJvmhB7gN0TDmKRT7x3auJmEp7NcYX1xpqZsQeA3JNLazLhFx6VQPqw30e2zes/coKPAiEqxxUuQ==}
     dependencies:
       '@types/hast': 2.3.4
       '@types/mdast': 3.0.10
       '@types/mdurl': 1.0.2
       mdast-util-definitions: 5.1.0
       mdurl: 1.0.1
+      micromark-util-sanitize-uri: 1.0.0
       unist-builder: 3.0.0
       unist-util-generated: 2.0.0
       unist-util-position: 4.0.1
-      unist-util-visit: 3.1.0
+      unist-util-visit: 4.0.0
     dev: false
 
   /mdast-util-to-markdown/0.6.5:
@@ -8265,12 +8266,12 @@ packages:
       - supports-color
     dev: false
 
-  /remark-rehype/9.0.0:
-    resolution: {integrity: sha512-SFA+mPWu45ynFPKeT3h5eNNVAYoMp3wizr3KSKh1IQ9L6dLSyD25/df6/vv8EW8ji3O3dnZGdbLQl592Tn+ydg==}
+  /remark-rehype/10.0.0:
+    resolution: {integrity: sha512-WgvJFpfRLfnyHGvQaMgLXVfaXIXVA9FFo7tSky0omLLukZvDJdobZ2V/wYGd2xlScPVZNx6/99fb5kLFT2uFWQ==}
     dependencies:
       '@types/hast': 2.3.4
       '@types/mdast': 3.0.10
-      mdast-util-to-hast: 11.2.0
+      mdast-util-to-hast: 12.0.0
       unified: 10.1.0
     dev: false
 
@@ -9430,8 +9431,8 @@ packages:
         optional: true
     dev: false
 
-  /xdm/2.0.6:
-    resolution: {integrity: sha512-ZuimrBiRjOqwwg+RQKt/2Wj6IyUyn0JbTnEIYfgxAL0m1DF/0USWo2fe5/gaQ+9gPQz5aYZomyQ30ee88PCuLw==}
+  /xdm/3.0.0:
+    resolution: {integrity: sha512-CCKTaI34ekXVKh4tYsJ7GMcRTdezGk7d9dL87IyVZffwldT5/6zgKulU9nZW7G1FD5f+zRFR+Rg9klbUOysFiw==}
     dependencies:
       '@rollup/pluginutils': 4.1.1
       '@types/estree-jsx': 0.0.1
@@ -9447,7 +9448,7 @@ packages:
       micromark-extension-mdxjs: 1.0.0
       periscopic: 3.0.4
       remark-parse: 10.0.0
-      remark-rehype: 9.0.0
+      remark-rehype: 10.0.0
       source-map: 0.7.3
       unified: 10.1.0
       unist-util-position-from-estree: 1.1.1
