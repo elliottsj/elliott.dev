@@ -50,7 +50,7 @@ specifiers:
   react-dom: 17.0.2
   react-modal: 3.14.3
   remark-gfm: 1.0.0
-  simple-icons: 5.12.0
+  simple-icons: 5.18.0
   suncalc: 1.8.0
   typescript: 4.4.3
   use-ackee: 3.0.0
@@ -106,7 +106,7 @@ dependencies:
   react-dom: 17.0.2_react@17.0.2
   react-modal: 3.14.3_react-dom@17.0.2+react@17.0.2
   remark-gfm: 1.0.0
-  simple-icons: 5.12.0
+  simple-icons: 5.18.0
   suncalc: 1.8.0
   typescript: 4.4.3
   use-ackee: 3.0.0_react@17.0.2
@@ -8472,8 +8472,8 @@ packages:
     resolution: {integrity: sha512-VUJ49FC8U1OxwZLxIbTTrDvLnf/6TDgxZcK8wxR8zs13xpx7xbG60ndBlhNrFi2EMuFRoeDoJO7wthSLq42EjA==}
     dev: false
 
-  /simple-icons/5.12.0:
-    resolution: {integrity: sha512-iF5ZJuv/jPU2tdkc5aNXsirQg2kOggvcOUw2kMafCrelrr3Sj0ywRJkr+0uVniD1Kj6ayT1yb1IquBRHrYw10g==}
+  /simple-icons/5.18.0:
+    resolution: {integrity: sha512-qUAdUVrW4KtLr4tiSdFe6ItnXq1qfBByH5XbnpYBm5+Am1a1P54KCvz6Pz2iSRi9puU+VxgblhNg/ANJsW1/iQ==}
     engines: {node: '>=0.12.18'}
     dev: false
 
