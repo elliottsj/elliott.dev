@@ -1,3 +1,10 @@
+export const getStaticProps = async (context) => {
+  return {
+    // Disable react-div-100vh in Layout.tsx to fix CSS bug in Chrome
+    props: { use100vh: false },
+  };
+};
+
 export const meta = {
   published: true,
   publishedAt: '2021-10-18',
