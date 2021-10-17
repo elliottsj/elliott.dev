@@ -1,0 +1,275 @@
+export const meta = {
+  published: true,
+  publishedAt: '2021-10-18',
+  title: 'Use-Before-Define: Applying Reaching Definitions Analysis to Workflow Validation',
+  summary: 'Using compiler theory on no-code development platforms.',
+};
+
+import 'katex/dist/katex.css';
+
+import { NextSeo } from 'next-seo';
+
+<NextSeo title={meta.title} description={meta.description} />
+
+import Image from 'next/image';
+
+# Use-Before-Define: Applying Reaching Definitions Analysis to Workflow Validation
+
+import PostDate from '../../components/PostDate';
+
+<PostDate isoDate={meta.publishedAt} />
+
+_This post was adapted from the [original post on blog.yolk.dev](https://blog.yolk.dev/use-before-define-applying-reaching-definitions-analysis-to-bot-validation/)._
+
+import eslintNoUseBeforeDefinePng from '../../images/use-before-define/eslint-no-use-before-define.png';
+
+<Image
+  src={eslintNoUseBeforeDefinePng}
+  alt="ESLint detecting a name which was used before it was defined."
+/>
+
+As programmers, we're familiar with linter errors like the one above. When a variable (or a constant, or any named value) is referenced before it's defined, there is a good chance that the program will not work as intended when executed. In many programming languages, a use-before-define will in fact result in a run time error and crash the program:
+
+import nodejsUseBeforeDefinePng from '../../images/use-before-define/nodejs-use-before-define.png';
+
+<Image
+  src={nodejsUseBeforeDefinePng}
+  alt="Executing a use-before-define in Node.js results in a ReferenceError."
+/>
+
+This raises a question: How does ESLint do this? **How can we detect use-before-define without actually executing the program?**
+
+## How does ESLint detect use-before-define?
+
+ESLint is fundamentally a **static code analysis** tool. It works by parsing a JavaScript source file into an abstract syntax tree (AST), then applying a sequence of hand-written rules to the AST in order to find various issues. The AST is never actually executed as a program; instead, it's treated as a static structure to be manually traversed, much like how a table of contents can be extracted from an HTML document without rendering the full document in a browser.
+
+Let's look at the source of ESLint's [no-use-before-define](https://eslint.org/docs/rules/no-use-before-define) rule:
+
+[eslint/lib/rules/no-use-before-define.js](https://github.com/eslint/eslint/blob/022257a71b7579cf88cf3b8b936a696e8d2a09ed/lib/rules/no-use-before-define.js#L196-L224)
+
+The implementation is quite simple because **ESLint relies on the structured nature of JavaScript to make assumptions about the control flow of the program**, in particular _sequential ordering_ and _lexical scope_. Given the lexical scopes and their variable definitions & references within are already computed (see `scope`, `scope.references`, `scope.childScopes`), finding use-before-define references boils down to checking whether the reference comes after the definition in the source code:
+
+```js
+variable.identifiers[0].range[1] < reference.identifier.range[1];
+```
+
+Statements are always executed sequentially within a block, so ESLint can assume that any variable reference which comes before its variable definition yields a use-before-define error.
+
+> Why do we use static analysis at all? If ReferenceError is raised at run time, why not simply execute the program to find all such errors? In other words, why not exclusively use dynamic analysis?
+>
+> Most programs have branching control flow based on external input. In order for a dynamic analysis tool to work, it would need to generate sufficient input data in order to traverse all branches in the program. This presents a challenge because we would need to either automatically generate valid test inputs, or provide a way for the author to manually provide test inputs. This is more akin to unit tests which, while useful for their own reasons, cannot provide the same quick feedback during editing when compared to static analysis.
+
+## The Bot Studio programming model and control-flow graphs
+
+Before we get into this, a quick glossary of some Yolk-specific terms:
+
+- **Bot**: a collection of Decision Trees used to power a chat session, with a specific Decision Tree as an entry point.
+- **Bot Studio**: the web application where users can create and configure Bots and Decision Trees.
+- **Decision Tree**: an automation flow which powers a Bot's chat session, configured by a user in Bot Studio. Not actually a decision tree data structure, but a directed graph.
+- **Validation**: the process of analyzing a Bot and its Decision Trees for common configuration mistakes, such as use-before-define instances.
+
+In contrast to JavaScript, the Bot Studio programming model is [non-structured](https://en.wikipedia.org/wiki/Non-structured_programming). Statements (nodes) are not constrained to sequential execution; the author can link a node to any other node in the Decision Tree as its successor. There are no explicit looping structures (e.g. `for` / `while`) to create repetition; a cycle may be arbitrarily created by linking a node to a predecessor.
+
+```
+           ┌──────┐
+           │node-1│
+           └──────┘
+               │
+               ▼
+           ┌──────┐
+           │node-2│───────────────────────────┐
+           └──────┘                           │
+               │                              │
+               ▼                              ▼
+           ┌──────┐  ┌──────┐   ┌──────┐  ┌──────┐
+    ┌──────│node-3│◀─│node-8│◀──│node-7│◀─│node-6│──┐
+    │      └──────┘  └──────┘   └──────┘  └──────┘  │
+    │          │                    │         ▲     │
+    ▼          ▼                    │         │     │
+┌──────┐   ┌──────┐                 │         │     │
+│node-4│──▶│node-5│─────────────────┼─────────┘     │
+└──────┘   └──────┘                 ▼               │
+    │                           ┌──────┐            │
+    └──────────────────────────▶│node-9│◀───────────┘
+                                └──────┘
+```
+
+This model of programming is essentially creating a [control-flow graph](https://en.wikipedia.org/wiki/Control-flow_graph) with no structured constraints. In particular, a Decision Tree is an [irreducible control-flow graph](https://en.wikipedia.org/wiki/Control-flow_graph#Reducibility). This is a key fact that underlies the types of static analysis and optimizations which are possible on a Decision Tree.
+
+### Data-flow analysis
+
+There is no lexical scope or sequential ordering in Bot Studio to help us make assumptions about the control flow, so we need to look to more low-level compiler theory in order to perform analysis on a control-flow graph with looser constraints.
+
+[Data-flow analysis](https://en.wikipedia.org/wiki/Data-flow_analysis) applies here; it tells about how values assigned to variables might propagate while executing a program.
+
+### Reaching definitions analysis
+
+A specific type of data-flow analysis, [reaching definitions](https://en.wikipedia.org/wiki/Reaching_definition), tells us about which variable definitions can reach a particular instruction in a program. For Bot Studio, we can apply this theory to find out which variables (as defined by SaveValueNode, an input node result, a DT parameter, or a global) can "reach" a given node. If a node references a variable which does not reach, then a use-before-define error should be raised.
+
+There is more formal computer science background on this topic which you can read more about by reading "Additional resources" below, but the following will illustrate the most important concepts as they apply to Bot Studio.
+
+Take this pseudocode example:
+
+```
+node-1:  bar = true
+node-2:  if (bar === true)
+node-3:    foo = true
+           goto node-7
+         else
+node-4:    foo = false
+node-5:    if (bar === false)
+node-6:      botMessage(bar)
+           else
+node-7:      botMessage(foo)
+node-8:  return
+```
+
+`bar` "reaches" all other nodes in the program, because `node-1` is executed before any other node. However, `foo` does not reach `node-1` or `node-2`, because there is no control flow path from `node-3` or `node-4` to `node-1` or `node-2`.
+
+The above program does not raise any use-before-define errors because all references to `bar` or `foo` have corresponding definitions which "reach" the reference.
+
+Let's look at another example:
+
+```
+node-1:  bar = true
+node-2:  if (bar === true)
+node-3:    foo = true
+           goto node-6
+         else
+node-4:    if (bar === false)
+node-5:      botMessage(foo)
+           else
+node-6:      botMessage(foo)
+node-7:  return
+```
+
+This time, there is no definition of `foo` which reaches `node-5`. The only definition of `foo` is `node-3`, and there is no control flow path from `node-3` to `node-5`, so a use-before-define error should be raised at `node-5`.
+
+Let's look at a final example:
+
+```
+node-1:  bar = true
+node-2:  if (bar === true)
+node-3:    qux = true
+           goto node-8
+         else
+node-4:    foo = false
+node-5:    if (bar === false)
+node-6:      botMessage(foo)
+node-7:      botMessage(bar)
+           else
+node-8:      botMessage(foo)
+node-9:      botMessage(qux)
+node-10: return
+```
+
+There are two control flow paths to `node-8`:
+
+1. `node-1`, `node-2`, `node-3`, `node-8`.
+2. `node-1`, `node-2`, `node-4`, `node-5`, `node-8`.
+
+Only path (2) includes a definition for `foo`: `node-4: foo = false`.
+
+However, even though a path exists along which `foo` is not defined, `foo` still "reaches" `node-8` according to reaching definitions analysis.
+
+**A definition reaches a node if any path to that node includes that definition. It is not a requirement that all paths include that definition.** This is a limitation of reaching definitions analysis, because we might expect that a use-before-define error is raised since path (1) exists. However, it turns out that determining all possibly executed paths is not possible in polynomial time. In other words, it is undecidable; an NP-Hard problem. See also:
+
+- [page 11 of the Carnegie Mellon slides](https://www.cs.cmu.edu/afs/cs/academic/class/15745-s13/public/lectures/L5-Foundations-of-Dataflow-1up.pdf)
+- the [Monotone data flow analysis frameworks](https://link.springer.com/article/10.1007/BF00290339) paper
+- [http://pages.cs.wisc.edu/~horwitz/CS704-NOTES/2.DATAFLOW.html#MOP](http://pages.cs.wisc.edu/~horwitz/CS704-NOTES/2.DATAFLOW.html#MOP)
+
+Formally, a solution which includes _all paths_ is called the "Meet Over All Paths" (MOP) solution. Achieving a MOP solution in polynomial time is only possible when the framework is _distributive_. Reaching definitions analysis is a framework which is _monotone_ but not distributive, so achieving a MOP solution is undecidable. By contrast, _constant propagation_ is a framework which is distributive, so achieving a MOP solution is possible.
+
+### The worklist algorithm
+
+To perform reaching definitions analysis, the "iterative worklist algorithm" is used. This [University of Texas lecture](https://www.cs.utexas.edu/users/mckinley/380C/lecs/04.pdf) is a great resource describing this algorithm.
+
+Some key points about this algorithm:
+
+- The algorithm computes a Maximal Fixed Point (MFP) solution. An MFP solution is the largest of all Fixed Point (FP) solutions, and is unique regardless of the order of iteration. MFP ≤ MOP, so MFP is not guaranteed to reflect all paths in the program.
+- Time complexity: O(n^2).
+
+Yolk uses a custom JavaScript implementation of this algorithm to detect use-before-define instances, which may be open-sourced soon.
+
+## Additional resources
+
+- [https://en.wikipedia.org/wiki/Reaching_definition#Worklist_algorithm](https://en.wikipedia.org/wiki/Reaching_definition#Worklist_algorithm)
+- [https://www.youtube.com/watch?v=OROXJ9-wUQE](https://www.youtube.com/watch?v=OROXJ9-wUQE)
+- [https://suif.stanford.edu/~courses/cs243-winter07.bak/lectures/l2.pdf](https://suif.stanford.edu/~courses/cs243-winter07.bak/lectures/l2.pdf)
+- [http://www.cs.toronto.edu/~chechik/courses16/csc410/dataflowReadings.pdf](http://www.cs.toronto.edu/~chechik/courses16/csc410/dataflowReadings.pdf)
+- [https://greg4cr.github.io/courses/spring17csce747/Lectures/Spring17-Lecture9DataFlowAnalysis.pdf](https://greg4cr.github.io/courses/spring17csce747/Lectures/Spring17-Lecture9DataFlowAnalysis.pdf)
+- [http://www.cs.toronto.edu/~pekhimenko/courses/cscd70-w19/docs/Lecture 2 [Dataflow] 01.17.2019.pdf](http://www.cs.toronto.edu/~pekhimenko/courses/cscd70-w19/docs/Lecture 2 [Dataflow] 01.17.2019.pdf)
+- [https://www.cs.utexas.edu/users/mckinley/380C/lecs/04.pdf](https://www.cs.utexas.edu/users/mckinley/380C/lecs/04.pdf)
+- [https://www.cs.cmu.edu/afs/cs/academic/class/15745-s13/public/lectures/L5-Foundations-of-Dataflow-1up.pdf](https://www.cs.cmu.edu/afs/cs/academic/class/15745-s13/public/lectures/L5-Foundations-of-Dataflow-1up.pdf)
+- [https://www.cs.cmu.edu/afs/cs/academic/class/15745-s16/www/lectures/L6-Foundations-of-Dataflow.pdf](https://www.cs.cmu.edu/afs/cs/academic/class/15745-s16/www/lectures/L6-Foundations-of-Dataflow.pdf)
+- [https://link.springer.com/article/10.1007/BF00290339](https://link.springer.com/article/10.1007/BF00290339)
+- [http://pages.cs.wisc.edu/~horwitz/CS704-NOTES/2.DATAFLOW.html](http://pages.cs.wisc.edu/~horwitz/CS704-NOTES/2.DATAFLOW.html)
+- [https://stackoverflow.com/questions/9535819/find-all-paths-between-two-graph-nodes](https://stackoverflow.com/questions/9535819/find-all-paths-between-two-graph-nodes)
+
+## Discussion
+
+A concern was raised that reaching definitions analysis' underreporting of use-before-define errors may be problematic, since an actual use-before-define issue might occur at run time and be missed during validation.
+
+This is a valid concern which may prompt us to create a stricter data-flow analysis framework which raises errors in more cases. However, such a framework might raise errors for a program which is actually valid when executed.
+
+Let's look at an example:
+
+```
+node-1:  foo = true
+node-2:  if (foo === true)
+node-3:    bar = true
+         else
+node-4:    botMessage("Hello")
+node-5:  botMessage(bar)
+```
+
+There is a control flow path to `node-5` along which bar is not defined: `node-1`, `node-2`, `node-4`, `node-5`. We want to raise a use-before-define error on `node-5` because this path exists.
+
+A data-flow analysis framework which achieves this behaviour is a slight modification on reaching definitions analysis. Instead of using the _union_ meet operator $\wedge = \cup$, use the _intersection_ meet operator $\wedge = \cap$.
+
+i.e. rather than:
+
+$$
+\textrm{IN}[n] = \cup\textrm{ OUT}[p], p \in\textrm{predecessors}(n)
+$$
+
+use:
+
+$$
+\textrm{IN}[n] = \cap\textrm{ OUT}[p], p \in\textrm{predecessors}(n)
+$$
+
+When the intersection is performed, elements must be compared by their name and not their identity, so that two definitions introduced on separate paths are treated as equivalent when merged.
+
+The biggest caveat with this approach is that **errors may be raised when the program is actually correct**. For example:
+
+```
+node-1:  foo = true
+node-2:  if (foo === true)
+node-3:    bar = true
+         else
+node-4:    botMessage("Hello")
+node-5:  if (foo === true)
+node-6:    botMessage(bar)
+         else
+node-7:    botMessage(foo)
+```
+
+There is no actual code execution path to `node-6` along which bar is not defined. The only case in which `node-6` is executed is when `foo === true`, which also means that `bar = true` must have been executed.
+
+However, with the modified analysis, a use-before-define error would be raised on `node-6` because bar is not defined along the path `node-1`, `node-2`, `node-4`, `node-5`, `node-6`. To fix this, the author could add a `bar = true` statement after `node-4`:
+
+```
+node-1:  foo = true
+node-2:  if (foo === true)
+node-3:    bar = true
+         else
+node-4:    botMessage("Hello")
+node-4a:   bar = true
+node-5:  if (foo === true)
+node-6:    botMessage(bar)
+         else
+node-7:    botMessage(foo)
+```
+
+A product decision must be made to determine whether this is desired. With the modified analysis, the author would need to create a definition for `bar` along _all_ paths which reach `node-6`, even paths which would never be executed.
