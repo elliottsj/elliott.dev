@@ -75,71 +75,79 @@ const NavLink: React.FC = ({ children }) => (
   </span>
 );
 
-const Layout: React.FC = ({ children }) => {
+interface LayoutProps {
+  use100vh?: boolean;
+}
+
+const Layout: React.FC<LayoutProps> = ({ children, use100vh = true }) => {
   const theme = useTheme();
   const [isNightModeEnabled, setIsNightModeEnabled] = useState(true);
-  return (
-    <Div100vh>
-      <Grid>
-        <Header>
-          <span
-            css={css`
-              flex: 1;
-              font-family: 'Ubuntu', sans-serif;
-              font-size: 1.5rem;
-              font-weight: bold;
+  const layout = (
+    <Grid>
+      <Header>
+        <span
+          css={css`
+            flex: 1;
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 1.5rem;
+            font-weight: bold;
 
-              a {
-                background-color: ${theme.colors.primary};
-                box-shadow: 0 0 0 0.5rem ${theme.colors.primary};
-                color: ${theme.colors.background};
-                text-decoration: none;
-              }
-            `}
-          >
-            <Link href="/">
-              <a>elliott.dev</a>
-            </Link>
-          </span>
-          <NavLink>
-            <Link href="/">
-              <a>Posts</a>
-            </Link>
-          </NavLink>
-          <NavLink>
-            <Link href="/about">
-              <a>About</a>
-            </Link>
-          </NavLink>
-          {false && (
-            <NightToggle
-              disabledLabel="Off"
-              enabledLabel="On"
-              size="1em"
-              checked={isNightModeEnabled}
-              onChange={(checked) => {
-                setIsNightModeEnabled(checked);
-              }}
-            />
-          )}
-        </Header>
-        <Main>{children}</Main>
-        <Footer>
-          <SocialLink href="https://github.com/elliottsj">
-            <GitHubLogo />
-          </SocialLink>
-          {' • '}
-          <SocialLink href="https://stackoverflow.com/users/1626478/spencer">
-            <StackOverflowLogo />
-          </SocialLink>
-          {' • '}
-          <SocialLink href="https://twitter.com/spe_">
-            <TwitterLogo />
-          </SocialLink>
-        </Footer>
-      </Grid>
-    </Div100vh>
+            a {
+              background-color: ${theme.colors.primary};
+              box-shadow: 0 0 0 0.5rem ${theme.colors.primary};
+              color: ${theme.colors.background};
+              text-decoration: none;
+            }
+          `}
+        >
+          <Link href="/">
+            <a>elliott.dev</a>
+          </Link>
+        </span>
+        <NavLink>
+          <Link href="/">
+            <a>Posts</a>
+          </Link>
+        </NavLink>
+        <NavLink>
+          <Link href="/about">
+            <a>About</a>
+          </Link>
+        </NavLink>
+        {false && (
+          <NightToggle
+            disabledLabel="Off"
+            enabledLabel="On"
+            size="1em"
+            checked={isNightModeEnabled}
+            onChange={(checked) => {
+              setIsNightModeEnabled(checked);
+            }}
+          />
+        )}
+      </Header>
+      <Main>{children}</Main>
+      <Footer>
+        <SocialLink href="https://github.com/elliottsj">
+          <GitHubLogo />
+        </SocialLink>
+        {' • '}
+        <SocialLink href="https://stackoverflow.com/users/1626478/spencer">
+          <StackOverflowLogo />
+        </SocialLink>
+        {' • '}
+        <SocialLink href="https://twitter.com/spe_">
+          <TwitterLogo />
+        </SocialLink>
+      </Footer>
+    </Grid>
   );
+
+  if (use100vh) {
+    return <Div100vh>{layout}</Div100vh>;
+  }
+
+  return layout;
 };
 
 export default Layout;

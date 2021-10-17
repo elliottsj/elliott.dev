@@ -1,4 +1,6 @@
 const remarkGfm = require('remark-gfm');
+const remarkMath = require('remark-math');
+const rehypeKatex = require('rehype-katex');
 
 const config = {
   pageExtensions: ['ts', 'tsx', 'mdx'],
@@ -17,7 +19,8 @@ const config = {
           loader: require.resolve('xdm/webpack.cjs'),
           options: {
             providerImportSource: '@mdx-js/react',
-            remarkPlugins: [remarkGfm],
+            remarkPlugins: [remarkGfm, remarkMath],
+            rehypePlugins: [rehypeKatex],
           },
         },
       ],

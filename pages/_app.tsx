@@ -18,7 +18,6 @@ import { MDXProvider, MDXProviderProps } from '@mdx-js/react';
 
 import { Layout } from '../components';
 import CodeBlock from '../components/CodeBlock';
-import { useInterval } from '../hooks/useInterval';
 import { getTheme, globalStyles as themeGlobalStyles } from '../lib/theme';
 
 const Ackee = dynamic(() => import('../components/Ackee'), { ssr: false });
@@ -143,11 +142,11 @@ const useSafariRenderHack = () => {
 const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
   useSafariRenderHack();
 
-  // Recompute the theme every second
+  // Recompute the theme on the client
   const [theme, setTheme] = useState(getTheme());
-  useInterval(() => {
+  useEffect(() => {
     setTheme(getTheme(DateTime.local()));
-  }, 1000);
+  }, []);
 
   const ackeeServerUrl = process.env.NEXT_PUBLIC_ACKEE_SERVER;
   const ackeeDomainId = process.env.NEXT_PUBLIC_ACKEE_DOMAIN_ID;
