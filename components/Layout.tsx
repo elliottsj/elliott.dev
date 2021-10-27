@@ -126,7 +126,15 @@ const Layout: React.FC<LayoutProps> = ({ children, use100vh = true }) => {
           />
         )}
       </Header>
-      <Main>{children}</Main>
+      <Main
+        css={css`
+          * {
+            word-break: break-word;
+          }
+        `}
+      >
+        {children}
+      </Main>
       <Footer>
         <SocialLink href="https://github.com/elliottsj">
           <GitHubLogo />
