@@ -45,7 +45,7 @@ specifiers:
   nprogress: 0.2.0
   prettier: 2.4.1
   prism-react-renderer: 1.2.1
-  prismjs: 1.24.1
+  prismjs: 1.25.0
   react: 17.0.2
   react-div-100vh: 0.6.0
   react-dom: 17.0.2
@@ -104,7 +104,7 @@ dependencies:
   nprogress: 0.2.0
   prettier: 2.4.1
   prism-react-renderer: 1.2.1_react@17.0.2
-  prismjs: 1.24.1
+  prismjs: 1.25.0
   react: 17.0.2
   react-div-100vh: 0.6.0_react@17.0.2
   react-dom: 17.0.2_react@17.0.2
@@ -8021,8 +8021,8 @@ packages:
       react: 17.0.2
     dev: false
 
-  /prismjs/1.24.1:
-    resolution: {integrity: sha512-mNPsedLuk90RVJioIky8ANZEwYm5w9LcvCXrxHlwf4fNVSn8jEipMybMkWUyyF0JhnC+C4VcOVSBuHRKs1L5Ow==}
+  /prismjs/1.25.0:
+    resolution: {integrity: sha512-WCjJHl1KEWbnkQom1+SzftbtXMKQoezOCYs5rECqMN+jP+apI7ftoflyqigqzopSO3hMhTEb0mFClA8lkolgEg==}
     dev: false
 
   /process-nextick-args/2.0.1:
