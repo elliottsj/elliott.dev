@@ -57,7 +57,7 @@ specifiers:
   suncalc: 1.8.0
   typescript: 4.4.4
   use-ackee: 3.0.0
-  xdm: 3.0.1
+  xdm: 3.2.0
 
 dependencies:
   '@babel/core': 7.15.8
@@ -116,7 +116,7 @@ dependencies:
   suncalc: 1.8.0
   typescript: 4.4.4
   use-ackee: 3.0.0_react@17.0.2
-  xdm: 3.0.1
+  xdm: 3.2.0
 
 packages:
 
@@ -2836,6 +2836,10 @@ packages:
     resolution: {integrity: sha512-k8pnaP6JXVlQh18HgL5X6sYFNC/qZnzO7R2+HsmwrwUd+JnnsU0d9lyyT0RQrHg1anxDU36S98TI/fsGtmYqqg==}
     dependencies:
       '@types/react': 17.0.33
+    dev: false
+
+  /@types/mdx/2.0.1:
+    resolution: {integrity: sha512-JPEv4iAl0I+o7g8yVWDwk30es8mfVrjkvh5UeVR2sYPpZCK44vrAPsbJpIS+rJAUxLgaSAMKTEH5Vn5qd9XsrQ==}
     dev: false
 
   /@types/minimist/1.2.2:
@@ -9631,18 +9635,18 @@ packages:
         optional: true
     dev: false
 
-  /xdm/3.0.1:
-    resolution: {integrity: sha512-g9Bjc70teTXwE7I71HiLKCwtDk3FfQdBhUVTQ+L3GyRKY9YnhkRjD7SNyntlZm1zngtUSUd8SAL4ZtP5OBrU2g==}
+  /xdm/3.2.0:
+    resolution: {integrity: sha512-piWNFgqE3JCzex1QzBWszyLZhFKLQtmXSw9JXlJOmh6REMTwOz0wzDpKwvH1L4HieM7HekkQCVfcNR0ZyZ4XiQ==}
     dependencies:
       '@rollup/pluginutils': 4.1.1
       '@types/estree-jsx': 0.0.1
+      '@types/mdx': 2.0.1
       astring: 1.7.5
       estree-util-build-jsx: 2.0.0
       estree-util-is-identifier-name: 2.0.0
       estree-walker: 3.0.0
       got: 11.8.2
       hast-util-to-estree: 2.0.1
-      loader-utils: 2.0.0
       markdown-extensions: 1.1.1
       mdast-util-mdx: 1.1.0
       micromark-extension-mdxjs: 1.0.0
