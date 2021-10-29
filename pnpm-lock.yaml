@@ -12,7 +12,7 @@ specifiers:
   '@mdx-js/react': 1.6.22
   '@svgr/webpack': 5.5.0
   '@types/chroma-js': 2.1.3
-  '@types/d3': 7.0.0
+  '@types/d3': 7.1.0
   '@types/jest': 27.0.2
   '@types/lodash': 4.14.176
   '@types/luxon': 2.0.5
@@ -71,7 +71,7 @@ dependencies:
   '@mdx-js/react': 1.6.22_react@17.0.2
   '@svgr/webpack': 5.5.0
   '@types/chroma-js': 2.1.3
-  '@types/d3': 7.0.0
+  '@types/d3': 7.1.0
   '@types/jest': 27.0.2
   '@types/lodash': 4.14.176
   '@types/luxon': 2.0.5
@@ -2698,8 +2698,8 @@ packages:
       '@types/d3-selection': 3.0.1
     dev: false
 
-  /@types/d3/7.0.0:
-    resolution: {integrity: sha512-7rMMuS5unvbvFCJXAkQXIxWTo2OUlmVXN5q7sfQFesuVICY55PSP6hhbUhWjTTNpfTTB3iLALsIYDFe7KUNABw==}
+  /@types/d3/7.1.0:
+    resolution: {integrity: sha512-gYWvgeGjEl+zmF8c+U1RNIKqe7sfQwIXeLXO5Os72TjDjCEtgpvGBvZ8dXlAuSS1m6B90Y1Uo6Bm36OGR/OtCA==}
     dependencies:
       '@types/d3-array': 3.0.1
       '@types/d3-axis': 3.0.1
