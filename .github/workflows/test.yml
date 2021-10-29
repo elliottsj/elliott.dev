@@ -16,7 +16,7 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
-      - run: npm install --global pnpm@6.14.3
+      - run: npm install --global pnpm@6.19.1
       - run: pnpm install
       - run: pnpm test
         env:
