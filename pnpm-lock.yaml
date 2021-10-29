@@ -3,8 +3,8 @@ lockfileVersion: 5.3
 specifiers:
   '@babel/core': 7.15.8
   '@emotion/babel-plugin': 11.3.0
-  '@emotion/jest': 11.3.0
-  '@emotion/react': 11.4.1
+  '@emotion/jest': 11.5.0
+  '@emotion/react': 11.5.0
   '@emotion/styled': 11.3.0
   '@fortawesome/fontawesome-svg-core': 1.2.36
   '@fortawesome/free-solid-svg-icons': 5.15.4
@@ -62,9 +62,9 @@ specifiers:
 dependencies:
   '@babel/core': 7.15.8
   '@emotion/babel-plugin': 11.3.0_@babel+core@7.15.8
-  '@emotion/jest': 11.3.0_@types+jest@27.0.2
-  '@emotion/react': 11.4.1_55d02d7f582e6a5c731e09cf8c9518c0
-  '@emotion/styled': 11.3.0_f99ce21ad6178ede3c8fcd20938221ac
+  '@emotion/jest': 11.5.0_@types+jest@27.0.2
+  '@emotion/react': 11.5.0_55d02d7f582e6a5c731e09cf8c9518c0
+  '@emotion/styled': 11.3.0_e884480f55140c7cab1e9cf98f087028
   '@fortawesome/fontawesome-svg-core': 1.2.36
   '@fortawesome/free-solid-svg-icons': 5.15.4
   '@fortawesome/react-fontawesome': 0.1.16_f515edce028694561ceb456e3dba224c
@@ -1853,11 +1853,11 @@ packages:
       stylis: 4.0.10
     dev: false
 
-  /@emotion/cache/11.4.0:
-    resolution: {integrity: sha512-Zx70bjE7LErRO9OaZrhf22Qye1y4F7iDl+ITjet0J+i+B88PrAOBkKvaAWhxsZf72tDLajwCgfCjJ2dvH77C3g==}
+  /@emotion/cache/11.5.0:
+    resolution: {integrity: sha512-mAZ5QRpLriBtaj/k2qyrXwck6yeoz1V5lMt/jfj6igWU35yYlNKs2LziXVgvH81gnJZ+9QQNGelSsnuoAy6uIw==}
     dependencies:
       '@emotion/memoize': 0.7.5
-      '@emotion/sheet': 1.0.2
+      '@emotion/sheet': 1.0.3
       '@emotion/utils': 1.0.0
       '@emotion/weak-memoize': 0.2.5
       stylis: 4.0.10
@@ -1880,10 +1880,10 @@ packages:
       '@emotion/memoize': 0.7.5
     dev: false
 
-  /@emotion/jest/11.3.0_@types+jest@27.0.2:
-    resolution: {integrity: sha512-LZqYc3yerhic1IvAcEwBLRs1DsUt3oY7Oz6n+e+HU32iYOK/vpfzlhgmQURE94BHfv6eCOj6DV38f3jSnIkBkQ==}
+  /@emotion/jest/11.5.0_@types+jest@27.0.2:
+    resolution: {integrity: sha512-bz791yTD1I9lyB+h0+nDahmMv4kf3d+hGj85QncY3qB8VwGe03zVxdKutgaTNg7gvsRFh3ovhQGbsbwOJZMXqQ==}
     peerDependencies:
-      '@types/jest': ^26.0.14
+      '@types/jest': ^26.0.14 || ^27.0.0
       enzyme-to-json: ^3.2.1
     peerDependenciesMeta:
       '@types/jest':
@@ -1903,8 +1903,8 @@ packages:
     resolution: {integrity: sha512-igX9a37DR2ZPGYtV6suZ6whr8pTFtyHL3K/oLUotxpSVO2ASaprmAe2Dkq7tBo7CRY7MMDrAa9nuQP9/YG8FxQ==}
     dev: false
 
-  /@emotion/react/11.4.1_55d02d7f582e6a5c731e09cf8c9518c0:
-    resolution: {integrity: sha512-pRegcsuGYj4FCdZN6j5vqCALkNytdrKw3TZMekTzNXixRg4wkLsU5QEaBG5LC6l01Vppxlp7FE3aTHpIG5phLg==}
+  /@emotion/react/11.5.0_55d02d7f582e6a5c731e09cf8c9518c0:
+    resolution: {integrity: sha512-MYq/bzp3rYbee4EMBORCn4duPQfgpiEB5XzrZEBnUZAL80Qdfr7CEv/T80jwaTl/dnZmt9SnTa8NkTrwFNpLlw==}
     peerDependencies:
       '@babel/core': ^7.0.0
       '@types/react': '*'
@@ -1917,9 +1917,9 @@ packages:
     dependencies:
       '@babel/core': 7.15.8
       '@babel/runtime': 7.15.3
-      '@emotion/cache': 11.4.0
+      '@emotion/cache': 11.5.0
       '@emotion/serialize': 1.0.2
-      '@emotion/sheet': 1.0.2
+      '@emotion/sheet': 1.0.3
       '@emotion/utils': 1.0.0
       '@emotion/weak-memoize': 0.2.5
       '@types/react': 17.0.33
@@ -1937,11 +1937,11 @@ packages:
       csstype: 3.0.8
     dev: false
 
-  /@emotion/sheet/1.0.2:
-    resolution: {integrity: sha512-QQPB1B70JEVUHuNtzjHftMGv6eC3Y9wqavyarj4x4lg47RACkeSfNo5pxIOKizwS9AEFLohsqoaxGQj4p0vSIw==}
+  /@emotion/sheet/1.0.3:
+    resolution: {integrity: sha512-YoX5GyQ4db7LpbmXHMuc8kebtBGP6nZfRC5Z13OKJMixBEwdZrJ914D6yJv/P+ZH/YY3F5s89NYX2hlZAf3SRQ==}
     dev: false
 
-  /@emotion/styled/11.3.0_f99ce21ad6178ede3c8fcd20938221ac:
+  /@emotion/styled/11.3.0_e884480f55140c7cab1e9cf98f087028:
     resolution: {integrity: sha512-fUoLcN3BfMiLlRhJ8CuPUMEyKkLEoM+n+UyAbnqGEsCd5IzKQ7VQFLtzpJOaCD2/VR2+1hXQTnSZXVJeiTNltA==}
     peerDependencies:
       '@babel/core': ^7.0.0
@@ -1958,7 +1958,7 @@ packages:
       '@babel/runtime': 7.15.3
       '@emotion/babel-plugin': 11.3.0_@babel+core@7.15.8
       '@emotion/is-prop-valid': 1.1.0
-      '@emotion/react': 11.4.1_55d02d7f582e6a5c731e09cf8c9518c0
+      '@emotion/react': 11.5.0_55d02d7f582e6a5c731e09cf8c9518c0
       '@emotion/serialize': 1.0.2
       '@emotion/utils': 1.0.0
       '@types/react': 17.0.33
