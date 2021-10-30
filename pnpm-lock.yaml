@@ -34,7 +34,7 @@ specifiers:
   eslint: 7.32.0
   eslint-config-next: 11.1.2
   jest: 27.3.1
-  katex: 0.13.21
+  katex: 0.13.22
   lodash: 4.17.21
   luxon: 2.0.2
   next: 11.1.0
@@ -93,7 +93,7 @@ dependencies:
   eslint: 7.32.0
   eslint-config-next: 11.1.2_debbfe13d5399b40ea4c9a388d9a5aca
   jest: 27.3.1
-  katex: 0.13.21
+  katex: 0.13.22
   lodash: 4.17.21
   luxon: 2.0.2
   next: 11.1.0_742da6775053912c51770e4a8773db09
@@ -3594,14 +3594,14 @@ packages:
     resolution: {integrity: sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ==}
     dev: false
 
-  /commander/6.2.1:
-    resolution: {integrity: sha512-U7VdrJFnJgo4xjrHpTzu0yrHPGImdsmD95ZlgYSEajAn2JKzDhDTPG9kBTefmObL2w/ngeZnilk+OV9CG3d7UA==}
-    engines: {node: '>= 6'}
-    dev: false
-
   /commander/7.2.0:
     resolution: {integrity: sha512-QrWXB+ZQSVPmIWIhtEO9H+gwHaMGYiF5ChvoJ+K9ZGHG/sVsa6yiesAD1GC/x46sET00Xlwo1u49RVVVzvcSkw==}
     engines: {node: '>= 10'}
+    dev: false
+
+  /commander/8.3.0:
+    resolution: {integrity: sha512-OkTL9umf+He2DZkUq8f8J9of7yL6RJKI24dVITBmNfZBmri9zYZQrKkuXiKhyfPSu8tUhnVBB1iKXevvnlR4Ww==}
+    engines: {node: '>= 12'}
     dev: false
 
   /commondir/1.0.1:
@@ -6252,11 +6252,11 @@ packages:
       commander: 2.20.3
     dev: false
 
-  /katex/0.13.21:
-    resolution: {integrity: sha512-7VZpOh4vge3nODjzcIq3JaaQeO6LwAfIHQbV9CyEhK19/VKaLw8RIHYZ2xCQbZmH4re6mq2YHdKA6iLMZy6AFA==}
+  /katex/0.13.22:
+    resolution: {integrity: sha512-Un9kyIBBCXJfddX1pMTvhjmcgo9VMixqUryrJ5hAD8IBZn+4B8Ipr556vxocz6/8f2HD2/vWEii9ESC/DQvBqQ==}
     hasBin: true
     dependencies:
-      commander: 6.2.1
+      commander: 8.3.0
     dev: false
 
   /keyv/4.0.3:
@@ -8101,7 +8101,7 @@ packages:
     dependencies:
       '@types/katex': 0.11.1
       hast-util-to-text: 2.0.1
-      katex: 0.13.21
+      katex: 0.13.22
       rehype-parse: 7.0.1
       unified: 9.2.2
       unist-util-visit: 2.0.3
