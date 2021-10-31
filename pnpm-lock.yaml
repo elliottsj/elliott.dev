@@ -34,7 +34,7 @@ specifiers:
   eslint: 7.32.0
   eslint-config-next: 11.1.2
   jest: 27.3.1
-  katex: 0.13.24
+  katex: 0.15.1
   lodash: 4.17.21
   luxon: 2.0.2
   next: 11.1.0
@@ -93,7 +93,7 @@ dependencies:
   eslint: 7.32.0
   eslint-config-next: 11.1.2_debbfe13d5399b40ea4c9a388d9a5aca
   jest: 27.3.1
-  katex: 0.13.24
+  katex: 0.15.1
   lodash: 4.17.21
   luxon: 2.0.2
   next: 11.1.0_742da6775053912c51770e4a8773db09
@@ -6254,6 +6254,13 @@ packages:
 
   /katex/0.13.24:
     resolution: {integrity: sha512-jZxYuKCma3VS5UuxOx/rFV1QyGSl3Uy/i0kTJF3HgQ5xMinCQVF8Zd4bMY/9aI9b9A2pjIBOsjSSm68ykTAr8w==}
+    hasBin: true
+    dependencies:
+      commander: 8.3.0
+    dev: false
+
+  /katex/0.15.1:
+    resolution: {integrity: sha512-KIk+gizli0gl1XaJlCYS8/donGMbzXYTka6BbH3AgvDJTOwyDY4hJ+YmzJ1F0y/3XzX5B9ED8AqB2Hmn2AZ0uA==}
     hasBin: true
     dependencies:
       commander: 8.3.0
