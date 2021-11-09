@@ -15,7 +15,7 @@ specifiers:
   '@types/d3': 7.1.0
   '@types/jest': 27.0.2
   '@types/lodash': 4.14.176
-  '@types/luxon': 2.0.6
+  '@types/luxon': 2.0.7
   '@types/mdx-js__react': 1.5.5
   '@types/node': 16.11.7
   '@types/nprogress': 0.2.0
@@ -74,7 +74,7 @@ dependencies:
   '@types/d3': 7.1.0
   '@types/jest': 27.0.2
   '@types/lodash': 4.14.176
-  '@types/luxon': 2.0.6
+  '@types/luxon': 2.0.7
   '@types/mdx-js__react': 1.5.5
   '@types/node': 16.11.7
   '@types/nprogress': 0.2.0
@@ -2586,8 +2586,8 @@ packages:
     resolution: {integrity: sha512-xZmuPTa3rlZoIbtDUyJKZQimJV3bxCmzMIO2c9Pz9afyDro6kr7R79GwcB6mRhuoPmV2p1Vb66WOJH7F886WKQ==}
     dev: false
 
-  /@types/luxon/2.0.6:
-    resolution: {integrity: sha512-cjZwmN7ai2MG4xIKyrI1YP9QYU81huqYUHR7M6n1nm1+izqNWrdxihGDkuc7359ILROxpCnTt2A1sbKg7vXk/A==}
+  /@types/luxon/2.0.7:
+    resolution: {integrity: sha512-AxiYycfO+/M4VIH0ribSr2iPFC+APewpJIaQSydwVnzorK3mjSFXkA3HmhQidGx44MpwaatFyEkbW/WD4zdDaQ==}
     dev: false
 
   /@types/mdast/3.0.10:
