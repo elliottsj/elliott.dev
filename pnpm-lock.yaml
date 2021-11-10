@@ -49,7 +49,7 @@ specifiers:
   react: 17.0.2
   react-div-100vh: 0.6.0
   react-dom: 17.0.2
-  react-modal: 3.14.3
+  react-modal: 3.14.4
   rehype-katex: 5.0.0
   remark-gfm: 1.0.0
   remark-math: 4.0.0
@@ -108,7 +108,7 @@ dependencies:
   react: 17.0.2
   react-div-100vh: 0.6.0_react@17.0.2
   react-dom: 17.0.2_react@17.0.2
-  react-modal: 3.14.3_react-dom@17.0.2+react@17.0.2
+  react-modal: 3.14.4_react-dom@17.0.2+react@17.0.2
   rehype-katex: 5.0.0
   remark-gfm: 1.0.0
   remark-math: 4.0.0
@@ -7931,8 +7931,8 @@ packages:
     resolution: {integrity: sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==}
     dev: false
 
-  /react-modal/3.14.3_react-dom@17.0.2+react@17.0.2:
-    resolution: {integrity: sha512-+C2KODVKyu20zHXPJxfOOcf571L1u/EpFlH+oS/3YDn8rgVE51QZuxuuIwabJ8ZFnOEHaD+r6XNjqwtxZnXO0g==}
+  /react-modal/3.14.4_react-dom@17.0.2+react@17.0.2:
+    resolution: {integrity: sha512-8surmulejafYCH9wfUmFyj4UfbSJwjcgbS9gf3oOItu4Hwd6ivJyVBETI0yHRhpJKCLZMUtnhzk76wXTsNL6Qg==}
     engines: {node: '>=8'}
     peerDependencies:
       react: ^0.14.0 || ^15.0.0 || ^16 || ^17
