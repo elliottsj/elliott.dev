@@ -13,7 +13,7 @@ specifiers:
   '@svgr/webpack': 5.5.0
   '@types/chroma-js': 2.1.3
   '@types/d3': 7.1.0
-  '@types/jest': 27.0.2
+  '@types/jest': 27.0.3
   '@types/lodash': 4.14.177
   '@types/luxon': 2.0.7
   '@types/mdx-js__react': 1.5.5
@@ -62,7 +62,7 @@ specifiers:
 dependencies:
   '@babel/core': 7.15.8
   '@emotion/babel-plugin': 11.3.0_@babel+core@7.15.8
-  '@emotion/jest': 11.5.0_@types+jest@27.0.2
+  '@emotion/jest': 11.5.0_@types+jest@27.0.3
   '@emotion/react': 11.5.0_5ac86cf061f5d802f86b3475a2f9dc00
   '@emotion/styled': 11.3.0_af6617d8f03cc228a20adff34b358d66
   '@fortawesome/fontawesome-svg-core': 1.2.36
@@ -72,7 +72,7 @@ dependencies:
   '@svgr/webpack': 5.5.0
   '@types/chroma-js': 2.1.3
   '@types/d3': 7.1.0
-  '@types/jest': 27.0.2
+  '@types/jest': 27.0.3
   '@types/lodash': 4.14.177
   '@types/luxon': 2.0.7
   '@types/mdx-js__react': 1.5.5
@@ -1648,7 +1648,7 @@ packages:
       '@emotion/memoize': 0.7.5
     dev: false
 
-  /@emotion/jest/11.5.0_@types+jest@27.0.2:
+  /@emotion/jest/11.5.0_@types+jest@27.0.3:
     resolution: {integrity: sha512-bz791yTD1I9lyB+h0+nDahmMv4kf3d+hGj85QncY3qB8VwGe03zVxdKutgaTNg7gvsRFh3ovhQGbsbwOJZMXqQ==}
     peerDependencies:
       '@types/jest': ^26.0.14 || ^27.0.0
@@ -1661,7 +1661,7 @@ packages:
     dependencies:
       '@babel/runtime': 7.15.3
       '@emotion/css-prettifier': 1.0.0
-      '@types/jest': 27.0.2
+      '@types/jest': 27.0.3
       chalk: 4.1.2
       specificity: 0.4.1
       stylis: 4.0.10
@@ -2561,11 +2561,11 @@ packages:
       '@types/istanbul-lib-report': 3.0.0
     dev: false
 
-  /@types/jest/27.0.2:
-    resolution: {integrity: sha512-4dRxkS/AFX0c5XW6IPMNOydLn2tEhNhJV7DnYK+0bjoJZ+QTmfucBlihX7aoEsh/ocYtkLC73UbnBXBXIxsULA==}
+  /@types/jest/27.0.3:
+    resolution: {integrity: sha512-cmmwv9t7gBYt7hNKH5Spu7Kuu/DotGa+Ff+JGRKZ4db5eh8PnKS4LuebJ3YLUoyOyIHraTGyULn23YtEAm0VSg==}
     dependencies:
-      jest-diff: 27.1.1
-      pretty-format: 27.1.1
+      jest-diff: 27.3.1
+      pretty-format: 27.3.1
     dev: false
 
   /@types/json5/0.0.29:
@@ -2877,11 +2877,6 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       type-fest: 0.21.3
-    dev: false
-
-  /ansi-regex/5.0.0:
-    resolution: {integrity: sha512-bY6fj56OUQ0hU1KjFNDQuJFezqKdrAyFdIevADiqrWHwSlbmBNMHp5ak2f40Pm8JTFyM2mqxkG6ngkHO11f/lg==}
-    engines: {node: '>=8'}
     dev: false
 
   /ansi-regex/5.0.1:
@@ -5741,16 +5736,6 @@ packages:
       - utf-8-validate
     dev: false
 
-  /jest-diff/27.1.1:
-    resolution: {integrity: sha512-m/6n5158rqEriTazqHtBpOa2B/gGgXJijX6nsEgZfbJ/3pxQcdpVXBe+FP39b1dxWHyLVVmuVXddmAwtqFO4Lg==}
-    engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
-    dependencies:
-      chalk: 4.1.2
-      diff-sequences: 27.0.6
-      jest-get-type: 27.0.6
-      pretty-format: 27.1.1
-    dev: false
-
   /jest-diff/27.3.1:
     resolution: {integrity: sha512-PCeuAH4AWUo2O5+ksW4pL9v5xJAcIKPUPfIhZBcG1RKv/0+dvaWTQK1Nrau8d67dp65fOqbeMdoil+6PedyEPQ==}
     engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
@@ -5807,11 +5792,6 @@ packages:
       '@types/node': 16.11.7
       jest-mock: 27.3.0
       jest-util: 27.3.1
-    dev: false
-
-  /jest-get-type/27.0.6:
-    resolution: {integrity: sha512-XTkK5exIeUbbveehcSR8w0bhH+c0yloW/Wpl+9vZrjzztCPWrxhHwkIFpZzCt71oRBsgxmuUfxEqOYoZI2macg==}
-    engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
     dev: false
 
   /jest-get-type/27.3.1:
@@ -7726,16 +7706,6 @@ packages:
     resolution: {integrity: sha512-9fbDAXSBcc6Bs1mZrDYb3XKzDLm4EXXL9sC1LqKP5rZkT6KRr/rf9amVUcODVXgguK/isJz0d0hP72WeaKWsvA==}
     engines: {node: '>=10.13.0'}
     hasBin: true
-    dev: false
-
-  /pretty-format/27.1.1:
-    resolution: {integrity: sha512-zdBi/xlstKJL42UH7goQti5Hip/B415w1Mfj+WWWYMBylAYtKESnXGUtVVcMVid9ReVjypCotUV6CEevYPHv2g==}
-    engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
-    dependencies:
-      '@jest/types': 27.2.5
-      ansi-regex: 5.0.0
-      ansi-styles: 5.2.0
-      react-is: 17.0.2
     dev: false
 
   /pretty-format/27.3.1:
