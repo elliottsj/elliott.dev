@@ -86,7 +86,6 @@
     "prism-react-renderer": "1.2.1",
     "prismjs": "1.25.0",
     "react": "17.0.2",
-    "react-div-100vh": "0.6.0",
     "react-dom": "17.0.2",
     "react-modal": "3.14.4",
     "rehype-katex": "6.0.2",

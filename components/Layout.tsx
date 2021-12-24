@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import React, { useState } from 'react';
-import Div100vh from 'react-div-100vh';
 import GitHubLogo from 'simple-icons/icons/github.svg';
 import StackOverflowLogo from 'simple-icons/icons/stackoverflow.svg';
 import TwitterLogo from 'simple-icons/icons/twitter.svg';
@@ -152,7 +151,15 @@ const Layout: React.FC<LayoutProps> = ({ children, use100vh = true }) => {
   );
 
   if (use100vh) {
-    return <Div100vh>{layout}</Div100vh>;
+    return (
+      <div
+        css={css`
+      height: 100vh;
+      `}
+      >
+        {layout}
+      </div>
+    );
   }
 
   return layout;

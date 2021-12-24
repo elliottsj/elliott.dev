@@ -2,7 +2,6 @@ import * as d3 from 'd3';
 import { GetServerSideProps } from 'next';
 import Head from 'next/head';
 import React, { useEffect, useRef, useState } from 'react';
-import Div100vh from 'react-div-100vh';
 import Modal from 'react-modal';
 
 import { css } from '@emotion/react';
@@ -183,7 +182,11 @@ const FamilyTreePage: React.FC<Props> = ({ data: family }) => {
   }, [windowSize]);
 
   return (
-    <Div100vh>
+    <div
+      css={css`
+      height: 100vh;
+    `}
+    >
       <Head>
         {/* Disable manual scaling */}
         <meta
@@ -240,7 +243,7 @@ const FamilyTreePage: React.FC<Props> = ({ data: family }) => {
           Close
         </button>
       </Modal>
-    </Div100vh>
+    </div>
   );
 };
 

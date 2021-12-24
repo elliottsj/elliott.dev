@@ -47,7 +47,6 @@ specifiers:
   prism-react-renderer: 1.2.1
   prismjs: 1.25.0
   react: 17.0.2
-  react-div-100vh: 0.6.0
   react-dom: 17.0.2
   react-modal: 3.14.4
   rehype-katex: 6.0.2
@@ -106,7 +105,6 @@ dependencies:
   prism-react-renderer: 1.2.1_react@17.0.2
   prismjs: 1.25.0
   react: 17.0.2
-  react-div-100vh: 0.6.0_react@17.0.2
   react-dom: 17.0.2_react@17.0.2
   react-modal: 3.14.4_react-dom@17.0.2+react@17.0.2
   rehype-katex: 6.0.2
@@ -7731,14 +7729,6 @@ packages:
       http-errors: 1.7.3
       iconv-lite: 0.4.24
       unpipe: 1.0.0
-    dev: false
-
-  /react-div-100vh/0.6.0_react@17.0.2:
-    resolution: {integrity: sha512-ErV0VTNXUd8jZqofC0ExZr5u+XDD2kN2te4SbwtqsyTm0UOjVYu53kP+FalGQrTe+DoMG8VYR2dITcAFu7c/5w==}
-    peerDependencies:
-      react: '>=16.8.0'
-    dependencies:
-      react: 17.0.2
     dev: false
 
   /react-dom/17.0.2_react@17.0.2:
