@@ -1,22 +1,22 @@
-const remarkGfm = require('remark-gfm');
-const remarkMath = require('remark-math');
-const rehypeKatex = require('rehype-katex');
+import remarkGfm from 'remark-gfm';
+import remarkMath from 'remark-math';
+import rehypeKatex from 'rehype-katex';
 
-const config = {
+/**
+ * @type {import('next').NextConfig}
+ */
+const nextConfig = {
   pageExtensions: ['ts', 'tsx', 'mdx'],
   webpack: (config) => {
-    // Workaround for https://github.com/vercel/next.js/issues/20884
-    config.optimization.splitChunks = false;
-
     config.module.rules.push({
       test: /\.svg$/,
-      use: [require.resolve('@svgr/webpack')],
+      use: ['@svgr/webpack'],
     });
     config.module.rules.push({
       test: /\.mdx$/,
       use: [
         {
-          loader: require.resolve('xdm/webpack.cjs'),
+          loader: 'xdm/webpack.cjs',
           options: {
             providerImportSource: '@mdx-js/react',
             remarkPlugins: [remarkGfm, remarkMath],
@@ -30,4 +30,4 @@ const config = {
   },
 };
 
-module.exports = config;
+export default nextConfig;
