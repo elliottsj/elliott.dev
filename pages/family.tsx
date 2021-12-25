@@ -262,7 +262,7 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
   }
 
   const response = await fetch(
-    `https://raw.githubusercontent.com/elliottsj/elliott-family-data/master/data.json`,
+    `https://raw.githubusercontent.com/elliottsj/elliott-family-data/master/family.json`,
     {
       headers: {
         Authorization: `token ${process.env.DATA_TOKEN}`,
