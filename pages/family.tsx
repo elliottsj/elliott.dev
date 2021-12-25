@@ -115,7 +115,10 @@ const FamilyTreePage: React.FC<Props> = ({ data: family }) => {
       .append('circle')
       .attr('fill', '#fff')
       .attr('stroke', (d) =>
-        d.type === 'FamilyMemberNode' && d.member.name.includes('Scott') ? '#ff6961' : '#000',
+        d.type === 'FamilyMemberNode' &&
+        (d.member.name.includes('Lauren') || d.member.name.includes('Josh'))
+          ? '#ff6961'
+          : '#000',
       )
       .attr('stroke-width', 1.5)
       .attr('r', 20);
