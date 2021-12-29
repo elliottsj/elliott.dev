@@ -187,8 +187,8 @@ const FamilyTreePage: React.FC<Props> = ({ data: family }) => {
   return (
     <div
       css={css`
-      height: 100vh;
-    `}
+        height: 100vh;
+      `}
     >
       <Head>
         {/* Disable manual scaling */}

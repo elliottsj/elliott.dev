@@ -154,8 +154,8 @@ const Layout: React.FC<LayoutProps> = ({ children, use100vh = true }) => {
     return (
       <div
         css={css`
-      height: 100vh;
-      `}
+          height: 100vh;
+        `}
       >
         {layout}
       </div>
