@@ -34,7 +34,7 @@ specifiers:
   eslint: 8.5.0
   eslint-config-next: 12.0.8
   jest: 27.4.7
-  katex: 0.15.1
+  katex: 0.15.2
   lodash: 4.17.21
   luxon: 2.2.0
   next: 12.0.8
@@ -92,7 +92,7 @@ dependencies:
   eslint: 8.5.0
   eslint-config-next: 12.0.8_41e9ac1b053f43a67d0738305424eb49
   jest: 27.4.7
-  katex: 0.15.1
+  katex: 0.15.2
   lodash: 4.17.21
   luxon: 2.2.0
   next: 12.0.8_dfc0b93d99fba272c9564d3139a2581a
@@ -5698,8 +5698,8 @@ packages:
       commander: 8.3.0
     dev: false
 
-  /katex/0.15.1:
-    resolution: {integrity: sha512-KIk+gizli0gl1XaJlCYS8/donGMbzXYTka6BbH3AgvDJTOwyDY4hJ+YmzJ1F0y/3XzX5B9ED8AqB2Hmn2AZ0uA==}
+  /katex/0.15.2:
+    resolution: {integrity: sha512-FfZ/f6f8bQdLmJ3McXDNTkKenQkoXkItpW0I9bsG2wgb+8JAY5bwpXFtI8ZVrg5hc1wo1X/UIhdkVMpok46tEQ==}
     hasBin: true
     dependencies:
       commander: 8.3.0
@@ -7280,7 +7280,7 @@ packages:
       '@types/hast': 2.3.4
       '@types/katex': 0.11.1
       hast-util-to-text: 3.1.1
-      katex: 0.15.1
+      katex: 0.15.2
       rehype-parse: 8.0.3
       unified: 10.1.1
       unist-util-remove-position: 4.0.1
