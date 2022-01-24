@@ -19,7 +19,7 @@ specifiers:
   '@types/mdx-js__react': 1.5.5
   '@types/node': 16.11.21
   '@types/nprogress': 0.2.0
-  '@types/prismjs': 1.16.7
+  '@types/prismjs': 1.16.8
   '@types/react': 17.0.38
   '@types/react-dom': 17.0.11
   '@types/react-modal': 3.13.1
@@ -77,7 +77,7 @@ dependencies:
   '@types/mdx-js__react': 1.5.5
   '@types/node': 16.11.21
   '@types/nprogress': 0.2.0
-  '@types/prismjs': 1.16.7
+  '@types/prismjs': 1.16.8
   '@types/react': 17.0.38
   '@types/react-dom': 17.0.11
   '@types/react-modal': 3.13.1
@@ -2616,8 +2616,8 @@ packages:
     resolution: {integrity: sha512-ekoj4qOQYp7CvjX8ZDBgN86w3MqQhLE1hczEJbEIjgFEumDy+na/4AJAbLXfgEWFNB2pKadM5rPFtuSGMWK7xA==}
     dev: false
 
-  /@types/prismjs/1.16.7:
-    resolution: {integrity: sha512-EHN5cCYpZU0KUX+Hl5A7xSVaUFTMihEQFNsXceR6maq3wGhEM2nKkXLFLB00SVzZKlClR8kb3WKtGRATI0bM0Q==}
+  /@types/prismjs/1.16.8:
+    resolution: {integrity: sha512-I8v3yZIvhIwB55MhV+9+FhK5OMokviuQQP4vGmffW18iQGw5cyB6CaBGWFhcIJk+0cyi/PNhNPedlUYTAHoc2Q==}
     dev: false
 
   /@types/prop-types/15.7.4:
