@@ -9,7 +9,7 @@ import { NextSeo } from 'next-seo';
 
 <NextSeo title={meta.title} description={meta.description} />
 
-import Image from 'next/image';
+import Image from 'next/future/image';
 
 # Public Key Authentication on CDF
 
@@ -68,7 +68,7 @@ Use [PuTTYgen][putty-download] to generate your SSH private/public key pair. Ope
 
 import puttygen01 from '../../images/puttygen01.png';
 
-<Image src={puttygen01} alt="PuTTYgen" />
+<Image src={puttygen01} alt="PuTTYgen" style={{ maxWidth: '100%', height: 'auto' }} />
 
 At this point, PuTTYgen will ask you to move your mouse around over the window, which creates some entropy to make the key a bit more secure.
 
@@ -78,7 +78,7 @@ Optionally change the _Key comment_ to something useful like your CDF username, 
 
 import puttygen02 from '../../images/puttygen02.png';
 
-<Image src={puttygen02} alt="PuTTYgen" />
+<Image src={puttygen02} alt="PuTTYgen" style={{ maxWidth: '100%', height: 'auto' }} />
 
 #### Copy your public key onto CDF.
 
@@ -86,7 +86,7 @@ Your public key is displayed in the section of the PuTTYgen window _Public key f
 
 import puttygen03 from '../../images/puttygen03.png';
 
-<Image src={puttygen03} alt="PuTTYgen" />
+<Image src={puttygen03} alt="PuTTYgen" style={{ maxWidth: '100%', height: 'auto' }} />
 
 Copy the entire string to your clipboard.
 
@@ -94,7 +94,7 @@ Connect to CDF in PuTTY using your password:
 
 import putty01 from '../../images/putty01.png';
 
-<Image src={putty01} alt="PuTTY" />
+<Image src={putty01} alt="PuTTY" style={{ maxWidth: '100%', height: 'auto' }} />
 
 Create `~/.ssh/authorized_keys` by pasting your public key into an  
 `echo "..." >> authorized_keys` command:
@@ -116,19 +116,19 @@ Set your username in _Connection_ -> _Data_:
 
 import putty02 from '../../images/putty02.png';
 
-<Image src={putty02} alt="PuTTY" />
+<Image src={putty02} alt="PuTTY" style={{ maxWidth: '100%', height: 'auto' }} />
 
 Set your private key in _Connection_ -> _SSH_ -> _Auth_:
 
 import putty03 from '../../images/putty03.png';
 
-<Image src={putty03} alt="PuTTY" />
+<Image src={putty03} alt="PuTTY" style={{ maxWidth: '100%', height: 'auto' }} />
 
 Create a saved session:
 
 import putty04 from '../../images/putty04.png';
 
-<Image src={putty04} alt="PuTTY" />
+<Image src={putty04} alt="PuTTY" style={{ maxWidth: '100%', height: 'auto' }} />
 
 Now when you open PuTTY, all you need to do is double-click the name of your saved session (in my case, _cdf_) and you'll be logged in automatically. Perfect!
 

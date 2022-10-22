@@ -18,7 +18,7 @@ import { NextSeo } from 'next-seo';
 
 <NextSeo title={meta.title} description={meta.description} />
 
-import Image from 'next/image';
+import Image from 'next/future/image';
 
 # Use-Before-Define: Applying Reaching Definitions Analysis to Workflow Validation
 
@@ -33,6 +33,7 @@ import eslintNoUseBeforeDefinePng from '../../images/use-before-define/eslint-no
 <Image
   src={eslintNoUseBeforeDefinePng}
   alt="ESLint detecting a name which was used before it was defined."
+  style={{ maxWidth: '100%', height: 'auto' }}
 />
 
 As programmers, we're familiar with linter errors like the one above. When a variable (or a constant, or any named value) is referenced before it's defined, there is a good chance that the program will not work as intended when executed. In many programming languages, a use-before-define will in fact result in a run time error and crash the program:
@@ -42,6 +43,7 @@ import nodejsUseBeforeDefinePng from '../../images/use-before-define/nodejs-use-
 <Image
   src={nodejsUseBeforeDefinePng}
   alt="Executing a use-before-define in Node.js results in a ReferenceError."
+  style={{ maxWidth: '100%', height: 'auto' }}
 />
 
 This raises a question: How does ESLint do this? **How can we detect use-before-define without actually executing the program?**
