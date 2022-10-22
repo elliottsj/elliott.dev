@@ -8,7 +8,7 @@ specifiers:
   '@emotion/styled': 11.6.0
   '@fortawesome/fontawesome-svg-core': 1.2.36
   '@fortawesome/free-solid-svg-icons': 5.15.4
-  '@fortawesome/react-fontawesome': 0.1.16
+  '@fortawesome/react-fontawesome': 0.1.19
   '@mdx-js/react': 1.6.22
   '@svgr/webpack': 6.1.2
   '@types/chroma-js': 2.1.3
@@ -66,7 +66,7 @@ dependencies:
   '@emotion/styled': 11.6.0_l2hvoz4ko7rutay2ra3b5oup3q
   '@fortawesome/fontawesome-svg-core': 1.2.36
   '@fortawesome/free-solid-svg-icons': 5.15.4
-  '@fortawesome/react-fontawesome': 0.1.16_6uk63tqcq2kfmhhlivxd3orcjq
+  '@fortawesome/react-fontawesome': 0.1.19_6uk63tqcq2kfmhhlivxd3orcjq
   '@mdx-js/react': 1.6.22_react@17.0.2
   '@svgr/webpack': 6.1.2
   '@types/chroma-js': 2.1.3
@@ -1665,14 +1665,14 @@ packages:
       '@fortawesome/fontawesome-common-types': 0.2.36
     dev: false
 
-  /@fortawesome/react-fontawesome/0.1.16_6uk63tqcq2kfmhhlivxd3orcjq:
-    resolution: {integrity: sha512-aLmzDwC9rEOAJv2UJdMns89VZR5Ry4IHu5dQQh24Z/lWKEm44lfQr1UNalZlkUaQN8d155tNh+CS7ntntj1VMA==}
+  /@fortawesome/react-fontawesome/0.1.19_6uk63tqcq2kfmhhlivxd3orcjq:
+    resolution: {integrity: sha512-Hyb+lB8T18cvLNX0S3llz7PcSOAJMLwiVKBuuzwM/nI5uoBw+gQjnf9il0fR1C3DKOI5Kc79pkJ4/xB0Uw9aFQ==}
     peerDependencies:
-      '@fortawesome/fontawesome-svg-core': ~1 || >=1.3.0-beta1
+      '@fortawesome/fontawesome-svg-core': ~1 || ~6
       react: '>=16.x'
     dependencies:
       '@fortawesome/fontawesome-svg-core': 1.2.36
-      prop-types: 15.8.0
+      prop-types: 15.8.1
       react: 17.0.2
     dev: false
 
@@ -4246,7 +4246,7 @@ packages:
       object.fromentries: 2.0.5
       object.hasown: 1.1.0
       object.values: 1.1.5
-      prop-types: 15.8.0
+      prop-types: 15.8.1
       resolve: 2.0.0-next.3
       semver: 6.3.0
       string.prototype.matchall: 4.0.6
@@ -6965,6 +6965,14 @@ packages:
 
   /prop-types/15.8.0:
     resolution: {integrity: sha512-fDGekdaHh65eI3lMi5OnErU6a8Ighg2KjcjQxO7m8VHyWjcPyj5kiOgV1LQDOOOgVy3+5FgjXvdSSX7B8/5/4g==}
+    dependencies:
+      loose-envify: 1.4.0
+      object-assign: 4.1.1
+      react-is: 16.13.1
+    dev: false
+
+  /prop-types/15.8.1:
+    resolution: {integrity: sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==}
     dependencies:
       loose-envify: 1.4.0
       object-assign: 4.1.1
