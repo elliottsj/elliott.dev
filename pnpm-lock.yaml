@@ -38,7 +38,7 @@ specifiers:
   lodash: 4.17.21
   luxon: 2.2.0
   next: 12.3.1
-  next-seo: 4.28.1
+  next-seo: 4.29.0
   normalize.css: 8.0.1
   npm-run-all: 4.1.5
   npm-scripts-info: 0.3.9
@@ -96,7 +96,7 @@ dependencies:
   lodash: 4.17.21
   luxon: 2.2.0
   next: 12.3.1_ch7rcvcnfphdwq74tvjyclnpuq
-  next-seo: 4.28.1_dty4et2pnba4zo7o4cegg6bk2e
+  next-seo: 4.29.0_dty4et2pnba4zo7o4cegg6bk2e
   normalize.css: 8.0.1
   npm-run-all: 4.1.5
   npm-scripts-info: 0.3.9
@@ -6561,8 +6561,8 @@ packages:
     resolution: {integrity: sha1-Sr6/7tdUHywnrPspvbvRXI1bpPc=}
     dev: false
 
-  /next-seo/4.28.1_dty4et2pnba4zo7o4cegg6bk2e:
-    resolution: {integrity: sha512-WZgwdM+UhpNF3A37zFllzmPhnOVJ9vYeYlc0n3Z/kYfz/QQgy8NEdncNNggS9dU4JD8xriaCcyknhy5OsrFsJw==}
+  /next-seo/4.29.0_dty4et2pnba4zo7o4cegg6bk2e:
+    resolution: {integrity: sha512-xmwzcz4uHaYJ8glbuhs6FSBQ7z3irmdPYdJJ5saWm72Uy3o+mPKGaPCXQetTCE6/xxVnpoDV4yFtFlEjUcljSg==}
     peerDependencies:
       next: ^8.1.1-canary.54 || >=9.0.0
       react: '>=16.0.0'
