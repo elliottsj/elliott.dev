@@ -25,7 +25,7 @@ specifiers:
   '@types/react-modal': 3.13.1
   '@types/suncalc': 1.8.1
   '@types/use-ackee': 2.0.0
-  '@types/webpack-env': 1.16.3
+  '@types/webpack-env': 1.16.4
   babel-jest: 27.4.6
   chroma-js: 2.1.2
   cross-env: 7.0.3
@@ -83,7 +83,7 @@ dependencies:
   '@types/react-modal': 3.13.1
   '@types/suncalc': 1.8.1
   '@types/use-ackee': 2.0.0
-  '@types/webpack-env': 1.16.3
+  '@types/webpack-env': 1.16.4
   babel-jest: 27.4.6_@babel+core@7.16.12
   chroma-js: 2.1.2
   cross-env: 7.0.3
@@ -2752,8 +2752,8 @@ packages:
       '@types/ackee-tracker': 5.0.2
     dev: false
 
-  /@types/webpack-env/1.16.3:
-    resolution: {integrity: sha512-9gtOPPkfyNoEqCQgx4qJKkuNm/x0R2hKR7fdl7zvTJyHnIisuE/LfvXOsYWL0o3qq6uiBnKZNNNzi3l0y/X+xw==}
+  /@types/webpack-env/1.16.4:
+    resolution: {integrity: sha512-llS8qveOUX3wxHnSykP5hlYFFuMfJ9p5JvIyCiBgp7WTfl6K5ZcyHj8r8JsN/J6QODkAsRRCLIcTuOCu8etkUw==}
     dev: false
 
   /@types/yargs-parser/20.2.1:
