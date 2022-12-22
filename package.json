@@ -39,6 +39,10 @@
     "url": "https://github.com/elliottsj/elliott.dev/issues"
   },
   "homepage": "https://github.com/elliottsj/elliott.dev#readme",
+  "engines": {
+    "node": "^18",
+    "pnpm": "^7"
+  },
   "dependencies": {
     "@babel/core": "7.16.12",
     "@emotion/babel-plugin": "11.7.2",
