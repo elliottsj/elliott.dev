@@ -15,10 +15,10 @@ import { css, Global, ThemeProvider } from '@emotion/react';
 import { config } from '@fortawesome/fontawesome-svg-core';
 import { MDXProvider, MDXProviderProps } from '@mdx-js/react';
 
-import { Layout } from '../components';
-import CodeBlock from '../components/CodeBlock';
-import { getTheme, globalStyles as themeGlobalStyles } from '../lib/theme';
-import Seo from '../components/Seo';
+import { Layout } from '@/components';
+import CodeBlock from '@/components/CodeBlock';
+import { getTheme, globalStyles as themeGlobalStyles } from '@/lib/theme';
+import Seo from '@/components/Seo';
 
 const Ackee = dynamic(() => import('../components/Ackee'), { ssr: false });
 

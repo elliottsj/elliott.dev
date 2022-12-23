@@ -7,7 +7,7 @@ import TwitterLogo from 'simple-icons/icons/twitter.svg';
 import { css, useTheme } from '@emotion/react';
 import styled from '@emotion/styled';
 
-import { pxRem } from '../lib/theme';
+import { pxRem } from '@/lib/theme';
 import NightToggle from './NightToggle';
 
 const Grid = styled.div`
