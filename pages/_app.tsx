@@ -8,7 +8,6 @@ import dynamic from 'next/dynamic';
 import Head from 'next/head';
 import Link from 'next/link';
 import Router from 'next/router';
-import { DefaultSeo } from 'next-seo';
 import NProgress from 'nprogress';
 import React, { useEffect, useState } from 'react';
 
@@ -19,6 +18,7 @@ import { MDXProvider, MDXProviderProps } from '@mdx-js/react';
 import { Layout } from '../components';
 import CodeBlock from '../components/CodeBlock';
 import { getTheme, globalStyles as themeGlobalStyles } from '../lib/theme';
+import Seo from '../components/Seo';
 
 const Ackee = dynamic(() => import('../components/Ackee'), { ssr: false });
 
@@ -103,11 +103,11 @@ const Td: React.FC = (props) => (
 const MDXLink: React.FC<
   React.DetailedHTMLProps<React.AnchorHTMLAttributes<HTMLAnchorElement>, HTMLAnchorElement>
 > = (props) => {
-  const { href, ...rest } = props;
+  const { href, children, ref: _ref, ...rest } = props;
   if (href?.startsWith('/')) {
     return (
-      <Link href={href}>
-        <a {...rest} />
+      <Link href={href} {...rest}>
+        {children}
       </Link>
     );
   }
@@ -161,7 +161,7 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
         <link rel="webmention" href="https://webmention.io/elliott.dev/webmention" />
         <link rel="pingback" href="https://webmention.io/elliott.dev/xmlrpc" />
       </Head>
-      <DefaultSeo defaultTitle="elliott.dev" titleTemplate="%s | elliott.dev" />
+      <Seo />
       <Global
         styles={css`
           ${themeGlobalStyles}

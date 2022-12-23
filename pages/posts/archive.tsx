@@ -13,14 +13,13 @@ interface Props {
 const IndexPage: React.FC<Props> = ({ posts }) => (
   <Layout>
     <h3>
-      <Link href="/" passHref>
-        <a
-          css={css`
-            text-decoration: none;
-          `}
-        >
-          ← Home
-        </a>
+      <Link
+        href="/"
+        css={css`
+          text-decoration: none;
+        `}
+      >
+        ← Home
       </Link>
     </h3>
     <PostList pathPrefix="/posts" posts={posts} />

@@ -14,14 +14,13 @@ const PostItem: React.FC<{ pathPrefix: string; post: Post }> = ({ pathPrefix, po
           margin-bottom: 0;
         `}
       >
-        <Link href={`${pathPrefix}/${post.slug}`} passHref>
-          <a
-            css={css`
-              text-decoration: none;
-            `}
-          >
-            {post.meta.title}
-          </a>
+        <Link
+          href={`${pathPrefix}/${post.slug}`}
+          css={css`
+            text-decoration: none;
+          `}
+        >
+          {post.meta.title}
         </Link>
       </h2>
       <PostDate isoDate={post.meta.publishedAt} />
