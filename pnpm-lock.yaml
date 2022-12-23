@@ -38,7 +38,6 @@ specifiers:
   lodash: 4.17.21
   luxon: 2.2.0
   next: 13.1.0
-  next-seo: 5.15.0
   normalize.css: 8.0.1
   npm-run-all: 4.1.5
   npm-scripts-info: 0.3.9
@@ -96,7 +95,6 @@ dependencies:
   lodash: 4.17.21
   luxon: 2.2.0
   next: 13.1.0_gdnpy55cvp33o6oac6hvxgpo5u
-  next-seo: 5.15.0_s75y6mxmikaw2mhqmuko6w7njm
   normalize.css: 8.0.1
   npm-run-all: 4.1.5
   npm-scripts-info: 0.3.9
@@ -6799,18 +6797,6 @@ packages:
 
   /natural-compare/1.4.0:
     resolution: {integrity: sha1-Sr6/7tdUHywnrPspvbvRXI1bpPc=}
-    dev: false
-
-  /next-seo/5.15.0_s75y6mxmikaw2mhqmuko6w7njm:
-    resolution: {integrity: sha512-LGbcY91yDKGMb7YI+28n3g+RuChUkt6pXNpa8FkfKkEmNiJkeRDEXTnnjVtwT9FmMhG6NH8qwHTelGrlYm9rgg==}
-    peerDependencies:
-      next: ^8.1.1-canary.54 || >=9.0.0
-      react: '>=16.0.0'
-      react-dom: '>=16.0.0'
-    dependencies:
-      next: 13.1.0_gdnpy55cvp33o6oac6hvxgpo5u
-      react: 18.2.0
-      react-dom: 18.2.0_react@18.2.0
     dev: false
 
   /next/13.1.0_gdnpy55cvp33o6oac6hvxgpo5u:
