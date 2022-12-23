@@ -103,11 +103,11 @@ const Td: React.FC = (props) => (
 const MDXLink: React.FC<
   React.DetailedHTMLProps<React.AnchorHTMLAttributes<HTMLAnchorElement>, HTMLAnchorElement>
 > = (props) => {
-  const { href, ...rest } = props;
+  const { href, children, ref: _ref, ...rest } = props;
   if (href?.startsWith('/')) {
     return (
-      <Link href={href}>
-        <a {...rest} />
+      <Link href={href} {...rest}>
+        {children}
       </Link>
     );
   }

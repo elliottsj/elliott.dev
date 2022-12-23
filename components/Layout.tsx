@@ -99,19 +99,13 @@ const Layout: React.FC<LayoutProps> = ({ children, use100vh = true }) => {
             }
           `}
         >
-          <Link href="/">
-            <a>elliott.dev</a>
-          </Link>
+          <Link href="/">elliott.dev</Link>
         </span>
         <NavLink>
-          <Link href="/">
-            <a>Posts</a>
-          </Link>
+          <Link href="/">Posts</Link>
         </NavLink>
         <NavLink>
-          <Link href="/about">
-            <a>About</a>
-          </Link>
+          <Link href="/about">About</Link>
         </NavLink>
         {false && (
           <NightToggle

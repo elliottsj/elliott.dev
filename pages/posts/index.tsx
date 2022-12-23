@@ -16,14 +16,13 @@ const IndexPage: React.FC<Props> = ({ posts }) => (
   <Layout>
     <PostList pathPrefix="/posts" posts={posts} />
     <h3>
-      <Link href="/posts/archive" passHref>
-        <a
-          css={css`
-            text-decoration: none;
-          `}
-        >
-          Archive →
-        </a>
+      <Link
+        href="/posts/archive"
+        css={css`
+          text-decoration: none;
+        `}
+      >
+        Archive →
       </Link>
     </h3>
   </Layout>
