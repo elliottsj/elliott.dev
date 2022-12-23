@@ -6,8 +6,8 @@ import Modal from 'react-modal';
 
 import { css } from '@emotion/react';
 
-import { useWindowSize } from '../hooks/useWindowSize';
-import { Family, FamilyLink, FamilyNode, getFamilyGraph } from '../lib/family';
+import { useWindowSize } from '@/hooks/useWindowSize';
+import { Family, FamilyLink, FamilyNode, getFamilyGraph } from '@/lib/family';
 
 type SimulationFamilyNodeDatum = FamilyNode & d3.SimulationNodeDatum;
 type SimulationFamilyLinkDatum = FamilyLink & d3.SimulationNodeDatum;

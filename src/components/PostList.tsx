@@ -3,7 +3,7 @@ import React from 'react';
 
 import { css } from '@emotion/react';
 
-import { Post } from '../lib/getPosts';
+import { Post } from '@/lib/getPosts';
 import PostDate from './PostDate';
 
 const PostItem: React.FC<{ pathPrefix: string; post: Post }> = ({ pathPrefix, post }) => (

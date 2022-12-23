@@ -5,7 +5,7 @@ export const meta = {
   title: 'Public Key Authentication on CDF',
 };
 
-import Seo from '../../components/Seo';
+import Seo from '@/components/Seo';
 
 <Seo title={meta.title} description={meta.description} />
 
@@ -66,7 +66,7 @@ Now when you connect to CDF, `ssh` should use your private key `~/.ssh/id_rsa` t
 
 Use [PuTTYgen][putty-download] to generate your SSH private/public key pair. Open PuTTYgen and click the _Generate_ button:
 
-import puttygen01 from '../../images/puttygen01.png';
+import puttygen01 from '@/images/puttygen01.png';
 
 <Image src={puttygen01} alt="PuTTYgen" style={{ maxWidth: '100%', height: 'auto' }} />
 
@@ -76,7 +76,7 @@ Optionally change the _Key comment_ to something useful like your CDF username, 
 
 (Note: You cannot create directories with a leading `.` in Windows Explorer. Open `cmd.exe` and run `mkdir %UserProfile%\.ssh` to create the directory.)
 
-import puttygen02 from '../../images/puttygen02.png';
+import puttygen02 from '@/images/puttygen02.png';
 
 <Image src={puttygen02} alt="PuTTYgen" style={{ maxWidth: '100%', height: 'auto' }} />
 
@@ -84,7 +84,7 @@ import puttygen02 from '../../images/puttygen02.png';
 
 Your public key is displayed in the section of the PuTTYgen window _Public key for pasting into OpenSSH authorized_keys file_. We need to copy the contents of this file into a file on CDF, `~/.ssh/authorized_keys` so that CDF knows that your key pair is allowed to log into your CDF account.
 
-import puttygen03 from '../../images/puttygen03.png';
+import puttygen03 from '@/images/puttygen03.png';
 
 <Image src={puttygen03} alt="PuTTYgen" style={{ maxWidth: '100%', height: 'auto' }} />
 
@@ -92,7 +92,7 @@ Copy the entire string to your clipboard.
 
 Connect to CDF in PuTTY using your password:
 
-import putty01 from '../../images/putty01.png';
+import putty01 from '@/images/putty01.png';
 
 <Image src={putty01} alt="PuTTY" style={{ maxWidth: '100%', height: 'auto' }} />
 
@@ -114,19 +114,19 @@ exit
 
 Set your username in _Connection_ -> _Data_:
 
-import putty02 from '../../images/putty02.png';
+import putty02 from '@/images/putty02.png';
 
 <Image src={putty02} alt="PuTTY" style={{ maxWidth: '100%', height: 'auto' }} />
 
 Set your private key in _Connection_ -> _SSH_ -> _Auth_:
 
-import putty03 from '../../images/putty03.png';
+import putty03 from '@/images/putty03.png';
 
 <Image src={putty03} alt="PuTTY" style={{ maxWidth: '100%', height: 'auto' }} />
 
 Create a saved session:
 
-import putty04 from '../../images/putty04.png';
+import putty04 from '@/images/putty04.png';
 
 <Image src={putty04} alt="PuTTY" style={{ maxWidth: '100%', height: 'auto' }} />
 

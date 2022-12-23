@@ -14,7 +14,7 @@ export const meta = {
 
 import 'katex/dist/katex.css';
 
-import Seo from '../../components/Seo';
+import Seo from '@/components/Seo';
 
 <Seo title={meta.title} description={meta.description} />
 
@@ -22,13 +22,13 @@ import Image from 'next/image';
 
 # Use-Before-Define: Applying Reaching Definitions Analysis to Workflow Validation
 
-import PostDate from '../../components/PostDate';
+import PostDate from '@/components/PostDate';
 
 <PostDate isoDate={meta.publishedAt} />
 
 _This post was adapted from the [original post on blog.yolk.dev](https://blog.yolk.dev/use-before-define-applying-reaching-definitions-analysis-to-bot-validation/)._
 
-import eslintNoUseBeforeDefinePng from '../../images/use-before-define/eslint-no-use-before-define.png';
+import eslintNoUseBeforeDefinePng from '@/images/use-before-define/eslint-no-use-before-define.png';
 
 <Image
   src={eslintNoUseBeforeDefinePng}
@@ -38,7 +38,7 @@ import eslintNoUseBeforeDefinePng from '../../images/use-before-define/eslint-no
 
 As programmers, we're familiar with linter errors like the one above. When a variable (or a constant, or any named value) is referenced before it's defined, there is a good chance that the program will not work as intended when executed. In many programming languages, a use-before-define will in fact result in a run time error and crash the program:
 
-import nodejsUseBeforeDefinePng from '../../images/use-before-define/nodejs-use-before-define.png';
+import nodejsUseBeforeDefinePng from '@/images/use-before-define/nodejs-use-before-define.png';
 
 <Image
   src={nodejsUseBeforeDefinePng}
