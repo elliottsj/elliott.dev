@@ -52,15 +52,16 @@ const BlockQuote: React.FC = (props) => (
   />
 );
 
-const Pre: React.FC = (props) => (
+const Pre: React.FC<{ children: React.ReactNode }> = (props) => (
   <div
     css={css`
       display: grid;
     `}
   >
-    {/* @ts-ignore */}
-    {props.children && props.children.type === 'code' ? (
-      // @ts-ignore
+    {props.children &&
+    typeof props.children === 'object' &&
+    'type' in props.children &&
+    props.children.type === 'code' ? (
       <CodeBlock {...props.children.props} />
     ) : (
       props.children
