@@ -46,7 +46,7 @@
   "dependencies": {
     "@babel/core": "7.16.12",
     "@emotion/babel-plugin": "11.7.2",
-    "@emotion/jest": "11.10.0",
+    "@emotion/jest": "11.10.5",
     "@emotion/react": "11.10.5",
     "@emotion/styled": "11.6.0",
     "@fortawesome/fontawesome-svg-core": "1.2.36",
