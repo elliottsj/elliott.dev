@@ -45,7 +45,7 @@ const Footer = styled.footer`
   padding: ${pxRem(21)};
 `;
 
-const SocialLink: React.FC<{ href: string }> = ({ children, href }) => {
+const SocialLink: React.FC<{ children: React.ReactNode; href: string }> = ({ children, href }) => {
   const theme = useTheme();
   return (
     <a
@@ -62,7 +62,7 @@ const SocialLink: React.FC<{ href: string }> = ({ children, href }) => {
   );
 };
 
-const NavLink: React.FC = ({ children }) => (
+const NavLink: React.FC<{ children: React.ReactNode }> = ({ children }) => (
   <span
     css={css`
       flex: 0;
@@ -75,6 +75,7 @@ const NavLink: React.FC = ({ children }) => (
 );
 
 interface LayoutProps {
+  children: React.ReactNode;
   use100vh?: boolean;
 }
 
