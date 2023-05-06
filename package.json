@@ -60,7 +60,7 @@
     "@types/lodash": "4.14.191",
     "@types/luxon": "2.0.9",
     "@types/mdx-js__react": "1.5.5",
-    "@types/node": "16.11.68",
+    "@types/node": "18.16.5",
     "@types/nprogress": "0.2.0",
     "@types/prismjs": "1.16.8",
     "@types/react": "18.0.26",
@@ -97,7 +97,7 @@
     "sharp": "0.31.3",
     "simple-icons": "5.20.0",
     "suncalc": "1.8.0",
-    "typescript": "4.5.5",
+    "typescript": "5.0.4",
     "use-ackee": "3.0.1",
     "xdm": "3.3.4"
   }
