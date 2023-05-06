@@ -1,24 +1,21 @@
-import 'normalize.css/normalize.css';
-import 'nprogress/nprogress.css';
+import { Layout } from '@/components';
+import CodeBlock from '@/components/CodeBlock';
+import Seo from '@/components/Seo';
+import { getTheme, globalStyles as themeGlobalStyles } from '@/lib/theme';
+import { css, Global, ThemeProvider } from '@emotion/react';
+import { config } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css';
-
+import { MDXProvider, MDXProviderProps } from '@mdx-js/react';
 import { DateTime } from 'luxon';
 import { AppProps } from 'next/app';
 import dynamic from 'next/dynamic';
 import Head from 'next/head';
 import Link from 'next/link';
 import Router from 'next/router';
+import 'normalize.css/normalize.css';
 import NProgress from 'nprogress';
+import 'nprogress/nprogress.css';
 import React, { useEffect, useState } from 'react';
-
-import { css, Global, ThemeProvider } from '@emotion/react';
-import { config } from '@fortawesome/fontawesome-svg-core';
-import { MDXProvider, MDXProviderProps } from '@mdx-js/react';
-
-import { Layout } from '@/components';
-import CodeBlock from '@/components/CodeBlock';
-import { getTheme, globalStyles as themeGlobalStyles } from '@/lib/theme';
-import Seo from '@/components/Seo';
 
 const Ackee = dynamic(() => import('../components/Ackee'), { ssr: false });
 

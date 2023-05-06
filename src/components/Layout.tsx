@@ -1,14 +1,12 @@
+import NightToggle from './NightToggle';
+import { pxRem } from '@/lib/theme';
+import { css, useTheme } from '@emotion/react';
+import styled from '@emotion/styled';
 import Link from 'next/link';
 import React, { useState } from 'react';
 import GitHubLogo from 'simple-icons/icons/github.svg';
 import StackOverflowLogo from 'simple-icons/icons/stackoverflow.svg';
 import TwitterLogo from 'simple-icons/icons/twitter.svg';
-
-import { css, useTheme } from '@emotion/react';
-import styled from '@emotion/styled';
-
-import { pxRem } from '@/lib/theme';
-import NightToggle from './NightToggle';
 
 const Grid = styled.div`
   height: 100%;

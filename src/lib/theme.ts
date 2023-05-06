@@ -1,8 +1,7 @@
+import { css, Theme } from '@emotion/react';
 import chroma from 'chroma-js';
 import { DateTime } from 'luxon';
 import * as sun from 'suncalc';
-
-import { css, Theme } from '@emotion/react';
 
 declare module '@emotion/react' {
   export interface Theme {

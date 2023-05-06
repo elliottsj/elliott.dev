@@ -1,13 +1,11 @@
+import { useWindowSize } from '@/hooks/useWindowSize';
+import { Family, FamilyLink, FamilyNode, getFamilyGraph } from '@/lib/family';
+import { css } from '@emotion/react';
 import * as d3 from 'd3';
 import { GetServerSideProps } from 'next';
 import Head from 'next/head';
 import React, { useEffect, useRef, useState } from 'react';
 import Modal from 'react-modal';
-
-import { css } from '@emotion/react';
-
-import { useWindowSize } from '@/hooks/useWindowSize';
-import { Family, FamilyLink, FamilyNode, getFamilyGraph } from '@/lib/family';
 
 type SimulationFamilyNodeDatum = FamilyNode & d3.SimulationNodeDatum;
 type SimulationFamilyLinkDatum = FamilyLink & d3.SimulationNodeDatum;

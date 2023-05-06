@@ -1,8 +1,7 @@
+import styled from '@emotion/styled';
 import Highlight, { defaultProps, Language, Prism } from 'prism-react-renderer';
 import vsDark from 'prism-react-renderer/themes/vsDark';
 import React from 'react';
-
-import styled from '@emotion/styled';
 
 // https://github.com/FormidableLabs/prism-react-renderer#faq
 ((typeof global !== 'undefined' ? global : window) as any).Prism = Prism;

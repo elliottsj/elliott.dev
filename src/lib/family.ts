@@ -1,8 +1,8 @@
+import { mergeMaps } from './util';
 import groupBy from 'lodash/fp/groupBy';
 import identity from 'lodash/fp/identity';
 import sortBy from 'lodash/fp/sortBy';
 import uniqBy from 'lodash/fp/uniqBy';
-import { mergeMaps } from './util';
 
 // https://github.com/microsoft/TypeScript/issues/202
 export type ID = string;

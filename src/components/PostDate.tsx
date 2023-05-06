@@ -1,5 +1,5 @@
-import React from 'react';
 import { DateTime } from 'luxon';
+import React from 'react';
 
 interface Props {
   isoDate: string;
