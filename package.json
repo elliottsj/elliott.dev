@@ -54,6 +54,7 @@
     "@fortawesome/react-fontawesome": "0.1.19",
     "@mdx-js/react": "1.6.22",
     "@svgr/webpack": "6.1.2",
+    "@t3-oss/env-nextjs": "0.3.1",
     "@trivago/prettier-plugin-sort-imports": "4.1.1",
     "@types/chroma-js": "2.1.4",
     "@types/d3": "7.4.0",
@@ -100,6 +101,7 @@
     "suncalc": "1.8.0",
     "typescript": "5.0.4",
     "use-ackee": "3.0.1",
-    "xdm": "3.3.4"
+    "xdm": "3.3.4",
+    "zod": "3.21.4"
   }
 }

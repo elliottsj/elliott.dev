@@ -1,3 +1,4 @@
+import { env } from '../../env.mjs';
 import { Layout } from '@/components';
 import CodeBlock from '@/components/CodeBlock';
 import Seo from '@/components/Seo';
@@ -146,8 +147,8 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
     setTheme(getTheme(DateTime.local()));
   }, []);
 
-  const ackeeServerUrl = process.env.NEXT_PUBLIC_ACKEE_SERVER;
-  const ackeeDomainId = process.env.NEXT_PUBLIC_ACKEE_DOMAIN_ID;
+  const ackeeServerUrl = env.NEXT_PUBLIC_ACKEE_SERVER;
+  const ackeeDomainId = env.NEXT_PUBLIC_ACKEE_DOMAIN_ID;
 
   return (
     <>

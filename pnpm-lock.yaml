@@ -31,6 +31,9 @@ dependencies:
   '@svgr/webpack':
     specifier: 6.1.2
     version: 6.1.2
+  '@t3-oss/env-nextjs':
+    specifier: 0.3.1
+    version: 0.3.1(typescript@5.0.4)(zod@3.21.4)
   '@trivago/prettier-plugin-sort-imports':
     specifier: 4.1.1
     version: 4.1.1(prettier@2.5.1)
@@ -172,6 +175,9 @@ dependencies:
   xdm:
     specifier: 3.3.4
     version: 3.3.4
+  zod:
+    specifier: 3.21.4
+    version: 3.21.4
 
 packages:
 
@@ -2436,6 +2442,27 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       defer-to-connect: 2.0.1
+    dev: false
+
+  /@t3-oss/env-core@0.3.1(typescript@5.0.4)(zod@3.21.4):
+    resolution: {integrity: sha512-iEnBuWeSjzqQLDTUw7H+YhstV4OZrGXTkQGL6ZOMxZQoCmwGX7GVS+1KCd5RvCzOtrIAD9jeOItSWNjC7sG4Sg==}
+    peerDependencies:
+      typescript: '>=4.7.2'
+      zod: ^3.0.0
+    dependencies:
+      typescript: 5.0.4
+      zod: 3.21.4
+    dev: false
+
+  /@t3-oss/env-nextjs@0.3.1(typescript@5.0.4)(zod@3.21.4):
+    resolution: {integrity: sha512-W1OgOn5xtpdEGraAQesyLzO2aNLRfSJEyK6qjQFfEUnrPbkvB+WxABX2bPMqfn4KJQ8pziLCSdBFiUN8OagqAg==}
+    peerDependencies:
+      typescript: '>=4.7.2'
+      zod: ^3.0.0
+    dependencies:
+      '@t3-oss/env-core': 0.3.1(typescript@5.0.4)(zod@3.21.4)
+      typescript: 5.0.4
+      zod: 3.21.4
     dev: false
 
   /@trivago/prettier-plugin-sort-imports@4.1.1(prettier@2.5.1):

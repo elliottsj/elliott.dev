@@ -1,3 +1,4 @@
+import { env } from '../../env.mjs';
 import { useWindowSize } from '@/hooks/useWindowSize';
 import { Family, FamilyLink, FamilyNode, getFamilyGraph } from '@/lib/family';
 import { css } from '@emotion/react';
@@ -253,7 +254,7 @@ export default FamilyTreePage;
 export const getServerSideProps: GetServerSideProps = async (context) => {
   const token = context.query['token'] || null;
 
-  if (!token || token !== process.env.FAMILY_TOKEN) {
+  if (!token || token !== env.FAMILY_TOKEN) {
     return {
       notFound: true,
     };
@@ -263,7 +264,7 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
     `https://raw.githubusercontent.com/elliottsj/elliott-family-data/master/family.json`,
     {
       headers: {
-        Authorization: `token ${process.env.DATA_TOKEN}`,
+        Authorization: `token ${DATA_TOKEN}`,
       },
     },
   );
