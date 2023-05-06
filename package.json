@@ -40,8 +40,8 @@
   },
   "homepage": "https://github.com/elliottsj/elliott.dev#readme",
   "engines": {
-    "node": "18.12.1",
-    "pnpm": "7.19.0"
+    "node": "^18",
+    "pnpm": "^8"
   },
   "dependencies": {
     "@babel/core": "7.16.12",
@@ -80,7 +80,7 @@
     "katex": "0.15.6",
     "lodash": "4.17.21",
     "luxon": "2.2.0",
-    "next": "13.1.0",
+    "next": "13.4.1",
     "normalize.css": "8.0.1",
     "npm-run-all": "4.1.5",
     "npm-scripts-info": "0.3.9",
