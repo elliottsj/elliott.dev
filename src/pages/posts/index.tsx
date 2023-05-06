@@ -1,12 +1,10 @@
-import { GetStaticProps } from 'next';
-import Link from 'next/link';
-import React from 'react';
-
-import { css } from '@emotion/react';
-
 import { Layout } from '@/components';
 import PostList from '@/components/PostList';
 import { getPosts, Post } from '@/lib/getPosts';
+import { css } from '@emotion/react';
+import { GetStaticProps } from 'next';
+import Link from 'next/link';
+import React from 'react';
 
 interface Props {
   posts: Post[];
