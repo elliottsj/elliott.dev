@@ -44,7 +44,7 @@
     "pnpm": "^8"
   },
   "dependencies": {
-    "@babel/core": "7.16.12",
+    "@babel/core": "7.20.12",
     "@emotion/babel-plugin": "11.7.2",
     "@emotion/jest": "11.10.5",
     "@emotion/react": "11.10.5",
