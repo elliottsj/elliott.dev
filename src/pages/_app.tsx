@@ -2,6 +2,7 @@ import { Layout } from '@/components';
 import CodeBlock from '@/components/CodeBlock';
 import Seo from '@/components/Seo';
 import { getTheme, globalStyles as themeGlobalStyles } from '@/lib/theme';
+import '@/styles/globals.css';
 import { css, Global, ThemeProvider } from '@emotion/react';
 import { config } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css';
