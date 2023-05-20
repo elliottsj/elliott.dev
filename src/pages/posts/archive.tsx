@@ -1,7 +1,6 @@
 import { Layout } from '@/components';
 import PostList from '@/components/PostList';
 import { getPosts, Post } from '@/lib/getPosts';
-import { css } from '@emotion/react';
 import Link from 'next/link';
 import React from 'react';
 
@@ -12,12 +11,7 @@ interface Props {
 const IndexPage: React.FC<Props> = ({ posts }) => (
   <Layout>
     <h3>
-      <Link
-        href="/"
-        css={css`
-          text-decoration: none;
-        `}
-      >
+      <Link href="/" className="no-underline">
         ← Home
       </Link>
     </h3>

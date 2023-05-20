@@ -1,76 +1,59 @@
-import NightToggle from './NightToggle';
-import { pxRem } from '@/lib/theme';
-import { css, useTheme } from '@emotion/react';
-import styled from '@emotion/styled';
+import { merriweather, ubuntu, firaCode } from '@/lib/fonts';
+import classNames from 'classnames';
 import Link from 'next/link';
-import React, { useState } from 'react';
+import React from 'react';
 import GitHubLogo from 'simple-icons/icons/github.svg';
 import StackOverflowLogo from 'simple-icons/icons/stackoverflow.svg';
 import TwitterLogo from 'simple-icons/icons/twitter.svg';
 
-const Grid = styled.div`
-  height: 100%;
-  display: grid;
-  grid:
-    [row1-start] '. header .' auto [row1-end]
-    [row2-start] '. main .' 1fr [row2-end]
-    [row3-start] '. footer .' auto [row3-end]
-    / 1fr minmax(auto, ${pxRem(672)}) 1fr;
-  background-color: ${(props) => props.theme.colors.background};
-  transition: background-color 1s ease;
-  overflow: auto;
-`;
+const Grid: React.FC<React.ComponentProps<'div'>> = (props) => {
+  return (
+    <div
+      className={classNames(
+        'grid',
+        'h-full',
+        'grid-rows-[auto_1fr_auto]',
+        'grid-cols-[1fr_minmax(auto,672px)_1fr]',
+        'bg-background',
+        'transition-colors',
+        'overflow-auto',
+        merriweather.variable,
+        ubuntu.variable,
+        firaCode.variable,
+      )}
+      {...props}
+    />
+  );
+};
 
-const Header = styled.header`
-  grid-area: header;
-  padding: ${pxRem(42)} ${pxRem(21)};
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-`;
+const Header: React.FC<React.ComponentProps<'header'>> = (props) => {
+  return (
+    <header
+      className={classNames(
+        'row-start-1 col-start-2',
+        'flex items-center justify-between',
+        'py-10 px-5',
+      )}
+      {...props}
+    />
+  );
+};
 
-const Main = styled.main`
-  grid-area: main;
-  padding: 0 ${pxRem(21)};
+const Main: React.FC<React.ComponentProps<'main'>> = (props) => {
+  return <main className={classNames('row-start-2 col-start-2', 'px-5')} {...props} />;
+};
 
-  img {
-    max-width: 100%;
-  }
-`;
-
-const Footer = styled.footer`
-  grid-area: footer;
-  padding: ${pxRem(21)};
-`;
+const Footer: React.FC<React.ComponentProps<'footer'>> = (props) => {
+  return <footer className={classNames('row-start-3 col-start-2', 'p-5')} {...props} />;
+};
 
 const SocialLink: React.FC<{ children: React.ReactNode; href: string }> = ({ children, href }) => {
-  const theme = useTheme();
   return (
-    <a
-      css={css`
-        svg {
-          fill: ${theme.colors.text};
-        }
-      `}
-      href={href}
-      rel="me"
-    >
+    <a href={href} rel="me">
       {children}
     </a>
   );
 };
-
-const NavLink: React.FC<{ children: React.ReactNode }> = ({ children }) => (
-  <span
-    css={css`
-      flex: 0;
-      font-family: 'Ubuntu', sans-serif;
-      padding-left: 1em;
-    `}
-  >
-    {children}
-  </span>
-);
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -78,81 +61,42 @@ interface LayoutProps {
 }
 
 const Layout: React.FC<LayoutProps> = ({ children, use100vh = true }) => {
-  const theme = useTheme();
-  const [isNightModeEnabled, setIsNightModeEnabled] = useState(true);
   const layout = (
     <Grid>
       <Header>
-        <span
-          css={css`
-            flex: 1;
-            font-family: 'Ubuntu', sans-serif;
-            font-size: 1.5rem;
-            font-weight: bold;
-
-            a {
-              background-color: ${theme.colors.primary};
-              box-shadow: 0 0 0 0.5rem ${theme.colors.primary};
-              color: ${theme.colors.background};
-              text-decoration: none;
-            }
-          `}
-        >
-          <Link href="/">elliott.dev</Link>
-        </span>
-        <NavLink>
+        <div className="flex-1 font-sans font-bold text-2xl ">
+          <div className="p-2 inline-block bg-primary">
+            <Link className="no-underline text-background hover:text-background" href="/">
+              elliott.dev
+            </Link>
+          </div>
+        </div>
+        <div className="flex-none font-sans pl-4">
           <Link href="/">Posts</Link>
-        </NavLink>
-        <NavLink>
+        </div>
+        <div className="flex-none font-sans pl-4">
           <Link href="/about">About</Link>
-        </NavLink>
-        {false && (
-          <NightToggle
-            disabledLabel="Off"
-            enabledLabel="On"
-            size="1em"
-            checked={isNightModeEnabled}
-            onChange={(checked) => {
-              setIsNightModeEnabled(checked);
-            }}
-          />
-        )}
+        </div>
       </Header>
-      <Main
-        css={css`
-          * {
-            word-break: break-word;
-          }
-        `}
-      >
-        {children}
-      </Main>
+      <Main>{children}</Main>
       <Footer>
         <SocialLink href="https://github.com/elliottsj">
-          <GitHubLogo />
+          <GitHubLogo className="inline" />
         </SocialLink>
         {' • '}
         <SocialLink href="https://stackoverflow.com/users/1626478/spencer">
-          <StackOverflowLogo />
+          <StackOverflowLogo className="inline" />
         </SocialLink>
         {' • '}
         <SocialLink href="https://twitter.com/spe_">
-          <TwitterLogo />
+          <TwitterLogo className="inline" />
         </SocialLink>
       </Footer>
     </Grid>
   );
 
   if (use100vh) {
-    return (
-      <div
-        css={css`
-          height: 100vh;
-        `}
-      >
-        {layout}
-      </div>
-    );
+    return <div className="h-screen">{layout}</div>;
   }
 
   return layout;

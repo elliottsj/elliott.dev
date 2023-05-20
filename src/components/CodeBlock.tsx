@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import classNames from 'classnames';
 import Highlight, { defaultProps, Language, Prism } from 'prism-react-renderer';
 import vsDark from 'prism-react-renderer/themes/vsDark';
 import React from 'react';
@@ -12,10 +12,6 @@ type CodeBlockLanguage = Language | 'php' | 'ruby' | 'text';
 const isLanguageValid = (language: string): language is CodeBlockLanguage =>
   language === '' || language in Prism.languages || ['php', 'ruby', 'text'].includes(language);
 
-const Pre = styled.pre`
-  overflow: auto;
-`;
-
 /**
  * https://mdxjs.com/guides/syntax-highlighting
  */
@@ -28,7 +24,7 @@ const CodeBlock: React.FC<{ children: string; className?: string }> = ({ childre
   return (
     <Highlight {...defaultProps} code={children} language={language as Language} theme={vsDark}>
       {({ className, style, tokens, getLineProps, getTokenProps }) => (
-        <Pre className={className} style={{ ...style, padding: '20px' }}>
+        <pre className={classNames('overflow-auto p-[20px]', className)} style={{ ...style }}>
           {tokens.map((line, i) => (
             <div key={i} {...getLineProps({ line, key: i })}>
               {line.map((token, key) => (
@@ -36,7 +32,7 @@ const CodeBlock: React.FC<{ children: string; className?: string }> = ({ childre
               ))}
             </div>
           ))}
-        </Pre>
+        </pre>
       )}
     </Highlight>
   );

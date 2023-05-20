@@ -1,3 +1,6 @@
+import Seo from '@/components/Seo';
+import 'katex/dist/katex.css';
+
 export const getStaticProps = async (context) => {
   return {
     // Disable react-div-100vh in Layout.tsx to fix CSS bug in Chrome
@@ -11,10 +14,6 @@ export const meta = {
   title: 'Use-Before-Define: Applying Reaching Definitions Analysis to Workflow Validation',
   summary: 'Applying compiler theory to no-code development platforms.',
 };
-
-import 'katex/dist/katex.css';
-
-import Seo from '@/components/Seo';
 
 <Seo title={meta.title} description={meta.description} />
 

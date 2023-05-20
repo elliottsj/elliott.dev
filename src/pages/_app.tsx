@@ -1,9 +1,9 @@
 import { Layout } from '@/components';
 import CodeBlock from '@/components/CodeBlock';
 import Seo from '@/components/Seo';
-import { getTheme, globalStyles as themeGlobalStyles } from '@/lib/theme';
+import { merriweather, ubuntu } from '@/lib/fonts';
+import { getBackgroundColor } from '@/lib/theme';
 import '@/styles/globals.css';
-import { css, Global, ThemeProvider } from '@emotion/react';
 import { config } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import { MDXProvider, MDXProviderProps } from '@mdx-js/react';
@@ -13,7 +13,6 @@ import dynamic from 'next/dynamic';
 import Head from 'next/head';
 import Link from 'next/link';
 import Router from 'next/router';
-import 'normalize.css/normalize.css';
 import NProgress from 'nprogress';
 import 'nprogress/nprogress.css';
 import React, { useEffect, useState } from 'react';
@@ -39,23 +38,11 @@ Router.events.on('routeChangeError', () => {
 });
 
 const BlockQuote: React.FC = (props) => (
-  <blockquote
-    css={css`
-      margin: 0;
-      padding-left: 20px;
-      box-shadow: inset 3px 0 0 0 rgba(41, 41, 41, 1);
-      font-style: italic;
-    `}
-    {...props}
-  />
+  <blockquote className="m-0 pl-[20px] shadow-inner italic" {...props} />
 );
 
 const Pre: React.FC<{ children: React.ReactNode }> = (props) => (
-  <div
-    css={css`
-      display: grid;
-    `}
-  >
+  <div className="grid">
     {props.children &&
     typeof props.children === 'object' &&
     'type' in props.children &&
@@ -68,31 +55,13 @@ const Pre: React.FC<{ children: React.ReactNode }> = (props) => (
 );
 
 const Table: React.FC = (props) => (
-  <div
-    css={css`
-      display: grid;
-    `}
-  >
-    <table
-      css={css`
-        display: block;
-        overflow: auto;
-        border-collapse: collapse;
-        width: 99%;
-      `}
-      {...props}
-    />
+  <div className="grid">
+    <table className="block overflow-auto border-collapse w-[99%]" {...props} />
   </div>
 );
 
 const Td: React.FC = (props) => (
-  <td
-    css={css`
-      border: 1px solid #e2e8f0;
-      padding: 0.5rem;
-    `}
-    {...props}
-  />
+  <td className="border border-solid border-[#e2e8f0] p-0.5" {...props} />
 );
 
 /**
@@ -102,13 +71,9 @@ const Td: React.FC = (props) => (
 const MDXLink: React.FC<
   React.DetailedHTMLProps<React.AnchorHTMLAttributes<HTMLAnchorElement>, HTMLAnchorElement>
 > = (props) => {
-  const { href, children, ref: _ref, ...rest } = props;
+  const { href, ref: _ref, ...rest } = props;
   if (href?.startsWith('/')) {
-    return (
-      <Link href={href} {...rest}>
-        {children}
-      </Link>
-    );
+    return <Link href={href} {...rest} />;
   }
   return <a href={href} {...rest} />;
 };
@@ -141,10 +106,10 @@ const useSafariRenderHack = () => {
 const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
   useSafariRenderHack();
 
-  // Recompute the theme on the client
-  const [theme, setTheme] = useState(getTheme());
+  // Recompute the background color on the client
+  const [backgroundColor, setBackgroundColor] = useState(getBackgroundColor());
   useEffect(() => {
-    setTheme(getTheme(DateTime.local()));
+    setBackgroundColor(getBackgroundColor(DateTime.local()));
   }, []);
 
   const ackeeServerUrl = process.env.NEXT_PUBLIC_ACKEE_SERVER;
@@ -161,44 +126,29 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
         <link rel="pingback" href="https://webmention.io/elliott.dev/xmlrpc" />
       </Head>
       <Seo />
-      <Global
-        styles={css`
-          ${themeGlobalStyles}
+      <style jsx global>{`
+        :root {
+          --color-background: ${backgroundColor};
+        }
 
-          html {
-            line-height: 1.5;
-          }
-          body {
-            font-family: ${theme.fonts.body};
-          }
-          h1,
-          h2,
-          h3,
-          h4,
-          h5,
-          h6 {
-            font-family: ${theme.fonts.heading};
-          }
-
-          /* https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
-          html {
-            box-sizing: border-box;
-          }
-          *,
-          *:before,
-          *:after {
-            box-sizing: inherit;
-          }
-        `}
-      />
+        body {
+          font-family: ${merriweather.style.fontFamily};
+        }
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+          font-family: ${ubuntu.style.fontFamily};
+        }
+      `}</style>
       {ackeeServerUrl && ackeeDomainId && (
         <Ackee ackeeServerUrl={ackeeServerUrl} ackeeDomainId={ackeeDomainId} />
       )}
-      <ThemeProvider theme={theme}>
-        <MDXProvider components={mdxComponents}>
-          <Component {...pageProps} />
-        </MDXProvider>
-      </ThemeProvider>
+      <MDXProvider components={mdxComponents}>
+        <Component {...pageProps} />
+      </MDXProvider>
     </>
   );
 };

@@ -8,9 +8,6 @@ module.exports = {
   // An array of file extensions your modules use
   moduleFileExtensions: ['ts', 'tsx', 'js', 'json'],
 
-  // Serializers for snapshot testing
-  snapshotSerializers: ['@emotion/jest/serializer'],
-
   // The pattern Jest uses to detect test files
   testRegex: '(/__tests__/.*|(.|/)(test|spec)).(ts|tsx|js)$',
 

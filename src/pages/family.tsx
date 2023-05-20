@@ -1,6 +1,5 @@
 import { useWindowSize } from '@/hooks/useWindowSize';
 import { Family, FamilyLink, FamilyNode, getFamilyGraph } from '@/lib/family';
-import { css } from '@emotion/react';
 import * as d3 from 'd3';
 import { GetServerSideProps } from 'next';
 import Head from 'next/head';
@@ -183,11 +182,7 @@ const FamilyTreePage: React.FC<Props> = ({ data: family }) => {
   }, [windowSize]);
 
   return (
-    <div
-      css={css`
-        height: 100vh;
-      `}
-    >
+    <div className="h-screen">
       <Head>
         {/* Disable manual scaling */}
         <meta
@@ -197,12 +192,7 @@ const FamilyTreePage: React.FC<Props> = ({ data: family }) => {
       </Head>
       <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" ref={svgRef} />
       <button
-        css={css`
-          position: absolute;
-          top: 20px;
-          left: 20px;
-          font-size: 2em;
-        `}
+        className="absolute top-[20px] left-[20px] text-4xl"
         onClick={() => {
           setIsModalOpen(true);
         }}
@@ -229,13 +219,7 @@ const FamilyTreePage: React.FC<Props> = ({ data: family }) => {
         >
           Close
         </button>
-        <pre
-          css={css`
-            white-space: pre-wrap;
-          `}
-        >
-          {family.aboutText}
-        </pre>
+        <pre className="whitespace-pre-wrap">{family.aboutText}</pre>
         <button
           onClick={() => {
             setIsModalOpen(false);
