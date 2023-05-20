@@ -20,12 +20,13 @@
     "paths": {
       "@/*": ["src/*"]
     },
+    "plugins": [{ "name": "next" }],
     "resolveJsonModule": true,
     "skipLibCheck": false,
     "strict": true,
     "target": "es5",
     "types": ["jest", "webpack-env"]
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
   "exclude": ["node_modules"]
 }
