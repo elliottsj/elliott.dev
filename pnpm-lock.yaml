@@ -109,9 +109,6 @@ dependencies:
   next:
     specifier: 13.4.1
     version: 13.4.1(@babel/core@7.16.12)(react-dom@18.2.0)(react@18.2.0)
-  normalize.css:
-    specifier: 8.0.1
-    version: 8.0.1
   npm-run-all:
     specifier: 4.1.5
     version: 4.1.5
@@ -7335,10 +7332,6 @@ packages:
   /normalize-url@6.1.0:
     resolution: {integrity: sha512-DlL+XwOy3NxAQ8xuC0okPgK46iuVNAK01YN7RueYBqqFeGsBjV9XmCAzAdgt+667bCl5kPh9EqKKDwnaPG1I7A==}
     engines: {node: '>=10'}
-    dev: false
-
-  /normalize.css@8.0.1:
-    resolution: {integrity: sha512-qizSNPO93t1YUuUhP22btGOo3chcvDFqFaj2TRybP0DMxkHOCTYwp3n34fel4a31ORXy4m1Xq0Gyqpb5m33qIg==}
     dev: false
 
   /npm-run-all@4.1.5:
