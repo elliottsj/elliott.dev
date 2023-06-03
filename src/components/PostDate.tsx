@@ -6,7 +6,7 @@ interface Props {
 }
 
 const PostDate: React.FC<Props> = ({ isoDate }) => (
-  <small>{DateTime.fromISO(isoDate).toLocaleString(DateTime.DATE_FULL)}</small>
+  <time dateTime={isoDate}>{DateTime.fromISO(isoDate).toLocaleString(DateTime.DATE_FULL)}</time>
 );
 
 export default PostDate;

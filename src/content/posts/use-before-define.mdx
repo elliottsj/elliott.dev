@@ -1,27 +1,13 @@
-import Seo from '@/components/Seo';
-import 'katex/dist/katex.css';
-
-export const getStaticProps = async (context) => {
-  return {
-    // Disable react-div-100vh in Layout.tsx to fix CSS bug in Chrome
-    props: { use100vh: false },
-  };
-};
-
-export const meta = {
-  published: true,
-  publishedAt: '2021-10-18',
-  title: 'Use-Before-Define: Applying Reaching Definitions Analysis to Workflow Validation',
-  summary: 'Applying compiler theory to no-code development platforms.',
-};
-
-<Seo title={meta.title} description={meta.description} />
-
-import Image from 'next/image';
+---
+title: 'Use-Before-Define: Applying Reaching Definitions Analysis to Workflow Validation'
+description: 'Applying compiler theory to no-code development platforms.'
+date: 2021-10-18
+published: true
+# Disable react-div-100vh in Layout.tsx to fix CSS bug in Chrome
+use100vh: false
+---
 
 # Use-Before-Define: Applying Reaching Definitions Analysis to Workflow Validation
-
-import PostDate from '@/components/PostDate';
 
 <PostDate isoDate={meta.publishedAt} />
 
