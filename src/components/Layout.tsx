@@ -4,6 +4,7 @@ import Link from 'next/link';
 import React from 'react';
 import GitHubLogo from 'simple-icons/icons/github.svg';
 import StackOverflowLogo from 'simple-icons/icons/stackoverflow.svg';
+import SubstackLogo from 'simple-icons/icons/substack.svg';
 import TwitterLogo from 'simple-icons/icons/twitter.svg';
 
 const Grid: React.FC<React.ComponentProps<'div'>> = (props) => {
@@ -72,7 +73,10 @@ const Layout: React.FC<LayoutProps> = ({ children, use100vh = true }) => {
           </div>
         </div>
         <div className="flex-none font-sans pl-4">
-          <Link href="/">Posts</Link>
+          <Link href="/">Things</Link>
+        </div>
+        <div className="flex-none font-sans pl-4">
+          <Link href="/posts">Posts</Link>
         </div>
         <div className="flex-none font-sans pl-4">
           <Link href="/about">About</Link>
@@ -90,6 +94,10 @@ const Layout: React.FC<LayoutProps> = ({ children, use100vh = true }) => {
         {' • '}
         <SocialLink href="https://twitter.com/spe_">
           <TwitterLogo className="inline" />
+        </SocialLink>
+        {' • '}
+        <SocialLink href="https://cosmictealatte.substack.com">
+          <SubstackLogo className="inline" />
         </SocialLink>
       </Footer>
     </Grid>

@@ -1,3 +1,5 @@
+import Seo from '@/components/Seo';
+
 export const meta = {
   archived: true,
   published: true,
@@ -5,12 +7,10 @@ export const meta = {
   title: 'CSC309: Deploying the Right Way',
 };
 
-import Seo from '@/components/Seo';
+<Seo title={meta.title} description={meta.title} />
 
-<Seo title={meta.title} description={meta.description} />
-
-import Image from 'next/image';
 import ec2SecurityGroupPng from '@/images/ec2-security-group.png';
+import Image from 'next/image';
 
 # CSC309: Deploying the Right Way
 

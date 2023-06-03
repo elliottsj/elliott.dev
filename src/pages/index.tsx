@@ -1,1 +1,1 @@
-export { default, getStaticProps } from './posts';
+export { default } from './things';
