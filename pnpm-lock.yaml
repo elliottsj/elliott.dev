@@ -3652,7 +3652,7 @@ packages:
     dev: false
 
   /clone-response@1.0.2:
-    resolution: {integrity: sha1-0dyXOSAxTfZ/vrlCI7TuNQI56Ws=}
+    resolution: {integrity: sha512-yjLXh88P599UOyPTFX0POsd7WxnbsVsGohcwzHOLspIhhpalPw1BcqED8NblyZLKcGrL8dTgMlcaZxV2jAD41Q==}
     dependencies:
       mimic-response: 1.0.1
     dev: false
@@ -5317,8 +5317,8 @@ packages:
       get-intrinsic: 1.2.1
     dev: false
 
-  /got@11.8.3:
-    resolution: {integrity: sha512-7gtQ5KiPh1RtGS9/Jbv1ofDpBFuq42gyfEib+ejaRBJuj/3tQFeR5+gw57e4ipaU8c/rCjvX6fkQz2lyDlGAOg==}
+  /got@11.8.6:
+    resolution: {integrity: sha512-6tfZ91bOr7bOXnK7PRDCGBLa1H4U080YHNaAQ2KsMGlLEzRbk44nsZF2E1IeRc3vtJHPVbKCYgdFbaGO2ljd8g==}
     engines: {node: '>=10.19.0'}
     dependencies:
       '@sindresorhus/is': 4.2.0
@@ -8183,7 +8183,7 @@ packages:
     dev: false
 
   /quick-lru@1.1.0:
-    resolution: {integrity: sha1-Q2CxfGETatOAeDl/8RQW4Ybc+7g=}
+    resolution: {integrity: sha512-tRS7sTgyxMXtLum8L65daJnHUhfDUgboRdcWW2bR9vBfrj2+O5HSMbQOJfJJjIVSPFqbBCF37FpwWXGitDc5tA==}
     engines: {node: '>=4'}
     dev: false
 
@@ -9636,7 +9636,7 @@ packages:
       estree-util-build-jsx: 2.0.0
       estree-util-is-identifier-name: 2.0.0
       estree-walker: 3.0.1
-      got: 11.8.3
+      got: 11.8.6
       hast-util-to-estree: 2.0.2
       markdown-extensions: 1.1.1
       mdast-util-mdx: 1.1.0
