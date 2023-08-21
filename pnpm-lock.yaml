@@ -36,8 +36,8 @@ dependencies:
     specifier: 29.5.3
     version: 29.5.3
   '@types/lodash':
-    specifier: 4.14.191
-    version: 4.14.191
+    specifier: 4.14.197
+    version: 4.14.197
   '@types/luxon':
     specifier: 2.0.9
     version: 2.0.9
@@ -2746,8 +2746,8 @@ packages:
       '@types/node': 18.16.5
     dev: false
 
-  /@types/lodash@4.14.191:
-    resolution: {integrity: sha512-BdZ5BCCvho3EIXw6wUCXHe7rS53AIDPLE+JzwgT+OsJk53oBfbSmZZ7CX4VaRoN78N+TJpFi9QPlfIVNmJYWxQ==}
+  /@types/lodash@4.14.197:
+    resolution: {integrity: sha512-BMVOiWs0uNxHVlHBgzTIqJYmj+PgCo4euloGF+5m4okL3rEYzM2EEv78mw8zWSMM57dM7kVIgJ2QDvwHSoCI5g==}
     dev: false
 
   /@types/luxon@2.0.9:
