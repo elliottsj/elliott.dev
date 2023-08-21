@@ -40,8 +40,8 @@
   },
   "homepage": "https://github.com/elliottsj/elliott.dev#readme",
   "engines": {
-    "node": "^18",
-    "pnpm": "^8"
+    "node": "18.17.1",
+    "pnpm": "8.6.12"
   },
   "dependencies": {
     "@babel/core": "7.16.12",
