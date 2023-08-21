@@ -111,8 +111,8 @@ dependencies:
     specifier: 4.17.21
     version: 4.17.21
   luxon:
-    specifier: 2.2.0
-    version: 2.2.0
+    specifier: 2.5.2
+    version: 2.5.2
   next:
     specifier: 13.4.1
     version: 13.4.1(@babel/core@7.16.12)(react-dom@18.2.0)(react@18.2.0)
@@ -6744,8 +6744,8 @@ packages:
       yallist: 4.0.0
     dev: false
 
-  /luxon@2.2.0:
-    resolution: {integrity: sha512-LwmknessH4jVIseCsizUgveIHwlLv/RQZWC2uDSMfGJs7w8faPUi2JFxfyfMcTPrpNbChTem3Uz6IKRtn+LcIA==}
+  /luxon@2.5.2:
+    resolution: {integrity: sha512-Yg7/RDp4nedqmLgyH0LwgGRvMEKVzKbUdkBYyCosbHgJ+kaOUx0qzSiSatVc3DFygnirTPYnMM2P5dg2uH1WvA==}
     engines: {node: '>=12'}
     dev: false
 
