@@ -111,12 +111,7 @@ const FamilyTreePage: React.FC<Props> = ({ data: family }) => {
       .filter((d) => d.type === 'FamilyMemberNode')
       .append('circle')
       .attr('fill', '#fff')
-      .attr('stroke', (d) =>
-        d.type === 'FamilyMemberNode' &&
-        (d.member.name.includes('Lauren') || d.member.name.includes('Josh'))
-          ? '#ff6961'
-          : '#000',
-      )
+      .attr('stroke', (d) => '#000')
       .attr('stroke-width', 1.5)
       .attr('r', 20);
 
@@ -235,9 +230,9 @@ const FamilyTreePage: React.FC<Props> = ({ data: family }) => {
 export default FamilyTreePage;
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
-  const token = context.query['token'] || null;
+  const secret = context.query['secret'] || null;
 
-  if (!token || token !== process.env.FAMILY_TOKEN) {
+  if (!secret || secret !== process.env.FAMILY_SECRET) {
     return {
       notFound: true,
     };
