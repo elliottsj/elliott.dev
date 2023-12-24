@@ -40,7 +40,7 @@
   },
   "homepage": "https://github.com/elliottsj/elliott.dev#readme",
   "engines": {
-    "node": "20.x",
+    "node": "^18",
     "pnpm": "^8"
   },
   "dependencies": {
