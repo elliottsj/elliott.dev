@@ -39,8 +39,8 @@ dependencies:
     specifier: 4.14.197
     version: 4.14.197
   '@types/luxon':
-    specifier: 2.0.9
-    version: 2.0.9
+    specifier: 2.4.0
+    version: 2.4.0
   '@types/mdx-js__react':
     specifier: 1.5.5
     version: 1.5.5
@@ -2750,8 +2750,8 @@ packages:
     resolution: {integrity: sha512-BMVOiWs0uNxHVlHBgzTIqJYmj+PgCo4euloGF+5m4okL3rEYzM2EEv78mw8zWSMM57dM7kVIgJ2QDvwHSoCI5g==}
     dev: false
 
-  /@types/luxon@2.0.9:
-    resolution: {integrity: sha512-ZuzIc7aN+i2ZDMWIiSmMdubR9EMMSTdEzF6R+FckP4p6xdnOYKqknTo/k+xXQvciSXlNGIwA4OPU5X7JIFzYdA==}
+  /@types/luxon@2.4.0:
+    resolution: {integrity: sha512-oCavjEjRXuR6URJEtQm0eBdfsBiEcGBZbq21of8iGkeKxU1+1xgKuFPClaBZl2KB8ZZBSWlgk61tH6Mf+nvZVw==}
     dev: false
 
   /@types/mdast@3.0.10:
