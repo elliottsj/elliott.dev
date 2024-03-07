@@ -74,36 +74,6 @@ const IndexPage: React.FC = () => (
           </p>
         </article>
       </li>
-      <li>
-        <article>
-          <header>
-            <h2 className="mt-4 text-2xl">
-              <a href="https://twitter.com/cosmictealatte" className="no-underline">
-                @cosmictealatte on Twitter
-              </a>
-            </h2>
-          </header>
-          <p className="my-4">
-            Less curated, more personal, stream-of-consciousness Twitter account.
-          </p>
-        </article>
-      </li>
-      <li>
-        <article>
-          <header>
-            <h2 className="mt-4 text-2xl">
-              <a href="https://cosmictealatte.substack.com" className="no-underline">
-                Cosmic Tea Latte on Substack
-              </a>
-            </h2>
-          </header>
-          <p className="my-4">
-            A blog where I explore non-programming topics which interest me, focusing on the
-            intersection of psychology, meaning, and spirituality as it applies to myself and the
-            world of tech and software development.
-          </p>
-        </article>
-      </li>
     </ul>
   </Layout>
 );
