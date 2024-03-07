@@ -48,21 +48,6 @@ const IndexPage: React.FC = () => (
         <article>
           <header>
             <h2 className="mt-4 text-2xl">
-              <a href="https://elliottsj.github.io/public-notes" className="no-underline">
-                Knowledge Graph on LogSeq
-              </a>
-            </h2>
-          </header>
-          <p className="my-4">
-            Main repository of my public notes about all sort of topics to varying degrees of
-            organization, including notes on psychology and philosophy.
-          </p>
-        </article>
-      </li>
-      <li>
-        <article>
-          <header>
-            <h2 className="mt-4 text-2xl">
               <a href="https://twitter.com/spe_" className="no-underline">
                 @spe_ on Twitter
               </a>
