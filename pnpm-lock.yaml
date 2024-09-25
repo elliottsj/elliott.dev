@@ -105,8 +105,8 @@ dependencies:
     specifier: 29.5.0
     version: 29.5.0
   katex:
-    specifier: 0.15.6
-    version: 0.15.6
+    specifier: 0.16.10
+    version: 0.16.10
   lodash:
     specifier: 4.17.21
     version: 4.17.21
@@ -6603,6 +6603,13 @@ packages:
 
   /katex@0.15.6:
     resolution: {integrity: sha512-UpzJy4yrnqnhXvRPhjEuLA4lcPn6eRngixW7Q3TJErjg3Aw2PuLFBzTkdUb89UtumxjhHTqL3a5GDGETMSwgJA==}
+    hasBin: true
+    dependencies:
+      commander: 8.3.0
+    dev: false
+
+  /katex@0.16.10:
+    resolution: {integrity: sha512-ZiqaC04tp2O5utMsl2TEZTXxa6WSC4yo0fv5ML++D3QZv/vx2Mct0mTlRx3O+uUkjfuAgOkzsCmq5MiUEsDDdA==}
     hasBin: true
     dependencies:
       commander: 8.3.0
