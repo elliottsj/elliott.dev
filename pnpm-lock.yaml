@@ -159,8 +159,8 @@ dependencies:
     specifier: 0.31.3
     version: 0.31.3
   simple-icons:
-    specifier: 5.20.0
-    version: 5.20.0
+    specifier: 5.24.0
+    version: 5.24.0
   suncalc:
     specifier: 1.8.0
     version: 1.8.0
@@ -8672,8 +8672,8 @@ packages:
       simple-concat: 1.0.1
     dev: false
 
-  /simple-icons@5.20.0:
-    resolution: {integrity: sha512-XizBBRSnGm8f+DQS3keR4hh8g0FbjvpBuXvA0PkLuDpyNraJxo7c/9WuZ9sl/N6EsBFGAwQ3Ci8ZWnyzQSalrg==}
+  /simple-icons@5.24.0:
+    resolution: {integrity: sha512-wKHeqUBsHYB5KPqdc3e7BGQPQCx/NbHfJuukjo70ABGk6hegjTDSoJhsSEcVadknVG4W3+jcC3G3RbytJnapGQ==}
     engines: {node: '>=0.12.18'}
     dev: false
 
