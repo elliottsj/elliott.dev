@@ -27,8 +27,8 @@ dependencies:
     specifier: 4.1.1
     version: 4.1.1(prettier@2.5.1)
   '@types/chroma-js':
-    specifier: 2.1.5
-    version: 2.1.5
+    specifier: 2.4.4
+    version: 2.4.4
   '@types/d3':
     specifier: 7.4.0
     version: 7.4.0
@@ -78,8 +78,8 @@ dependencies:
     specifier: 27.4.6
     version: 27.4.6(@babel/core@7.16.12)
   chroma-js:
-    specifier: 2.1.2
-    version: 2.1.2
+    specifier: 2.6.0
+    version: 2.6.0
   classnames:
     specifier: 2.3.2
     version: 2.3.2
@@ -2472,8 +2472,8 @@ packages:
       '@types/responselike': 1.0.0
     dev: false
 
-  /@types/chroma-js@2.1.5:
-    resolution: {integrity: sha512-LnJmElng1zoH7GOYqIo/EuL7L0/vEh5rc+fKaF4rsylJyjwOkX0pXeBemH25FQAWHifKJWqaRwR0EhC+yDod9A==}
+  /@types/chroma-js@2.4.4:
+    resolution: {integrity: sha512-/DTccpHTaKomqussrn+ciEvfW4k6NAHzNzs/sts1TCqg333qNxOhy8TNIoQCmbGG3Tl8KdEhkGAssb1n3mTXiQ==}
     dev: false
 
   /@types/d3-array@3.0.2:
@@ -3610,10 +3610,8 @@ packages:
     resolution: {integrity: sha512-jJ0bqzaylmJtVnNgzTeSOs8DPavpbYgEr/b0YL8/2GO3xJEhInFmhKMUnEJQjZumK7KXGFhUy89PrsJWlakBVg==}
     dev: false
 
-  /chroma-js@2.1.2:
-    resolution: {integrity: sha512-ri/ouYDWuxfus3UcaMxC1Tfp3IE9K5iQzxc2hSxbBRVNQFut1UuGAsZmiAf2mOUubzGJwgMSv9lHg+XqLaz1QQ==}
-    dependencies:
-      cross-env: 6.0.3
+  /chroma-js@2.6.0:
+    resolution: {integrity: sha512-BLHvCB9s8Z1EV4ethr6xnkl/P2YRFOGqfgvuMG/MyCbZPrTA+NeiByY6XvgF0zP4/2deU2CXnWyMa3zu1LqQ3A==}
     dev: false
 
   /ci-info@3.3.0:
@@ -3762,14 +3760,6 @@ packages:
       parse-json: 5.2.0
       path-type: 4.0.0
       yaml: 1.10.2
-    dev: false
-
-  /cross-env@6.0.3:
-    resolution: {integrity: sha512-+KqxF6LCvfhWvADcDPqo64yVIB31gv/jQulX2NGzKS/g3GEVz6/pt4wjHFtFWsHMddebWD/sDthJemzM4MaAag==}
-    engines: {node: '>=8.0'}
-    hasBin: true
-    dependencies:
-      cross-spawn: 7.0.3
     dev: false
 
   /cross-env@7.0.3:
