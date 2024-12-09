@@ -30,8 +30,8 @@ dependencies:
     specifier: 2.1.5
     version: 2.1.5
   '@types/d3':
-    specifier: 7.4.0
-    version: 7.4.0
+    specifier: 7.4.3
+    version: 7.4.3
   '@types/jest':
     specifier: 29.5.3
     version: 29.5.3
@@ -2620,8 +2620,8 @@ packages:
       '@types/d3-selection': 3.0.2
     dev: false
 
-  /@types/d3@7.4.0:
-    resolution: {integrity: sha512-jIfNVK0ZlxcuRDKtRS/SypEyOQ6UHaFQBKv032X45VvxSJ6Yi5G9behy9h6tNTHTDGh5Vq+KbmBjUWLgY4meCA==}
+  /@types/d3@7.4.3:
+    resolution: {integrity: sha512-lZXZ9ckh5R8uiFVt8ogUNf+pIrK4EsWrx2Np75WvF/eTpJ0FMHNhjXk8CKEx/+gpHbNQyJWehbFaTvqmHWB3ww==}
     dependencies:
       '@types/d3-array': 3.0.2
       '@types/d3-axis': 3.0.1
