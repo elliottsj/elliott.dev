@@ -66,8 +66,8 @@ dependencies:
     specifier: 1.8.1
     version: 1.8.1
   '@types/use-ackee':
-    specifier: 2.0.0
-    version: 2.0.0
+    specifier: 2.0.3
+    version: 2.0.3
   '@types/webpack-env':
     specifier: 1.16.4
     version: 1.16.4
@@ -2860,8 +2860,8 @@ packages:
     resolution: {integrity: sha512-PBjIUxZHOuj0R15/xuwJYjFi+KZdNFrehocChv4g5hu6aFroHue8m0lBP0POdK2nKzbw0cgV1mws8+V/JAcEkQ==}
     dev: false
 
-  /@types/use-ackee@2.0.0:
-    resolution: {integrity: sha512-rLKdPEdtXZxfbBfptlRPV1DqJgNSVHYtHotlv8sc3bKmm0LCQ9yNARExGQL4zJ/CF2Wq5sD37LwRRraPiWOewA==}
+  /@types/use-ackee@2.0.3:
+    resolution: {integrity: sha512-Zuo3egKP0orr33SVMWazBTyWp0QTdDVSvOK/y4F+/PS5qgopKVes8GXw705hPkO5hyU3cBuIfN/lyjRjiPG0xA==}
     dependencies:
       '@types/ackee-tracker': 5.0.2
     dev: false
