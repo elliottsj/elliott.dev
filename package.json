@@ -94,7 +94,7 @@
     "rehype-katex": "6.0.3",
     "remark-gfm": "3.0.1",
     "remark-math": "5.1.1",
-    "sharp": "0.31.3",
+    "sharp": "0.32.6",
     "simple-icons": "5.20.0",
     "suncalc": "1.8.0",
     "tailwindcss": "3.3.7",
