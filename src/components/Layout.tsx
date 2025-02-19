@@ -5,7 +5,6 @@ import React from 'react';
 import GitHubLogo from 'simple-icons/icons/github.svg';
 import StackOverflowLogo from 'simple-icons/icons/stackoverflow.svg';
 import SubstackLogo from 'simple-icons/icons/substack.svg';
-import TwitterLogo from 'simple-icons/icons/twitter.svg';
 
 const Grid: React.FC<React.ComponentProps<'div'>> = (props) => {
   return (
@@ -90,14 +89,6 @@ const Layout: React.FC<LayoutProps> = ({ children, use100vh = true }) => {
         {' • '}
         <SocialLink href="https://stackoverflow.com/users/1626478/spencer">
           <StackOverflowLogo className="inline" />
-        </SocialLink>
-        {' • '}
-        <SocialLink href="https://twitter.com/spe_">
-          <TwitterLogo className="inline" />
-        </SocialLink>
-        {' • '}
-        <SocialLink href="https://cosmictealatte.substack.com">
-          <SubstackLogo className="inline" />
         </SocialLink>
       </Footer>
     </Grid>
