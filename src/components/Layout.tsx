@@ -4,7 +4,6 @@ import Link from 'next/link';
 import React from 'react';
 import GitHubLogo from 'simple-icons/icons/github.svg';
 import StackOverflowLogo from 'simple-icons/icons/stackoverflow.svg';
-import SubstackLogo from 'simple-icons/icons/substack.svg';
 
 const Grid: React.FC<React.ComponentProps<'div'>> = (props) => {
   return (
