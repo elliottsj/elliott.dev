@@ -135,8 +135,8 @@ dependencies:
     specifier: 1.2.1
     version: 1.2.1(react@18.2.0)
   prismjs:
-    specifier: 1.25.0
-    version: 1.25.0
+    specifier: 1.27.0
+    version: 1.27.0
   react:
     specifier: 18.2.0
     version: 18.2.0
@@ -8144,8 +8144,9 @@ packages:
       react: 18.2.0
     dev: false
 
-  /prismjs@1.25.0:
-    resolution: {integrity: sha512-WCjJHl1KEWbnkQom1+SzftbtXMKQoezOCYs5rECqMN+jP+apI7ftoflyqigqzopSO3hMhTEb0mFClA8lkolgEg==}
+  /prismjs@1.27.0:
+    resolution: {integrity: sha512-t13BGPUlFDR7wRB5kQDG4jjl7XeuH6jbJGt11JHPL96qwsEHNX2+68tFXqc1/k+/jALsbSWJKUOT/hcYAZ5LkA==}
+    engines: {node: '>=6'}
     dev: false
 
   /prompts@2.4.2:
