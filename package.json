@@ -29,9 +29,6 @@
     "node": "^20.18.0 || ^22.0.0 || >=24.0.0",
     "pnpm": "^10"
   },
-  "pnpm": {
-    "onlyBuiltDependencies": ["sharp", "unrs-resolver"]
-  },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^7.2.0",
     "@fortawesome/free-solid-svg-icons": "^7.2.0",
