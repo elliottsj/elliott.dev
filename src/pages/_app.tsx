@@ -1,21 +1,22 @@
-import { Layout } from '@/components';
-import CodeBlock from '@/components/CodeBlock';
-import Seo from '@/components/Seo';
-import { merriweather, ubuntu } from '@/lib/fonts';
-import { getBackgroundColor } from '@/lib/theme';
-import '@/styles/globals.css';
 import { config } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css';
-import { MDXProvider, MDXProviderProps } from '@mdx-js/react';
+import { MDXProvider } from '@mdx-js/react';
 import { DateTime } from 'luxon';
-import { AppProps } from 'next/app';
+import type { AppProps } from 'next/app';
 import dynamic from 'next/dynamic';
 import Head from 'next/head';
 import Link from 'next/link';
 import Router from 'next/router';
 import NProgress from 'nprogress';
 import 'nprogress/nprogress.css';
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
+import type { ComponentProps, ReactNode } from 'react';
+import { Layout } from '@/components';
+import CodeBlock from '@/components/CodeBlock';
+import Seo from '@/components/Seo';
+import { merriweather, ubuntu } from '@/lib/fonts';
+import { getBackgroundColor } from '@/lib/theme';
+import '@/styles/globals.css';
 
 const Ackee = dynamic(() => import('../components/Ackee'), { ssr: false });
 
@@ -37,30 +38,30 @@ Router.events.on('routeChangeError', () => {
   NProgress.done();
 });
 
-const BlockQuote: React.FC = (props) => (
+const BlockQuote = (props: ComponentProps<'blockquote'>) => (
   <blockquote className="m-0 pl-[20px] shadow-inner italic" {...props} />
 );
 
-const Pre: React.FC<{ children: React.ReactNode }> = (props) => (
+const Pre = (props: ComponentProps<'pre'>) => (
   <div className="grid">
     {props.children &&
     typeof props.children === 'object' &&
     'type' in props.children &&
     props.children.type === 'code' ? (
-      <CodeBlock {...props.children.props} />
+      <CodeBlock {...(props.children.props as { children: string; className?: string })} />
     ) : (
       props.children
     )}
   </div>
 );
 
-const Table: React.FC = (props) => (
+const Table = (props: ComponentProps<'table'>) => (
   <div className="grid">
     <table className="block overflow-auto border-collapse w-[99%]" {...props} />
   </div>
 );
 
-const Td: React.FC = (props) => (
+const Td = (props: ComponentProps<'td'>) => (
   <td className="border border-solid border-[#e2e8f0] p-0.5" {...props} />
 );
 
@@ -68,9 +69,7 @@ const Td: React.FC = (props) => (
  * Links in an MDX document are wrapped in a Next.js <Link /> if it's a link
  * to a page on this site.
  */
-const MDXLink: React.FC<
-  React.DetailedHTMLProps<React.AnchorHTMLAttributes<HTMLAnchorElement>, HTMLAnchorElement>
-> = (props) => {
+const MDXLink = (props: ComponentProps<'a'>) => {
   const { href, ref: _ref, ...rest } = props;
   if (href?.startsWith('/')) {
     return <Link href={href} {...rest} />;
@@ -78,10 +77,12 @@ const MDXLink: React.FC<
   return <a href={href} {...rest} />;
 };
 
-const mdxComponents: MDXProviderProps['components'] = {
+const Wrapper = ({ children }: { children: ReactNode }) => <Layout>{children}</Layout>;
+
+const mdxComponents: ComponentProps<typeof MDXProvider>['components'] = {
   blockquote: BlockQuote,
   pre: Pre,
-  wrapper: Layout,
+  wrapper: Wrapper,
   a: MDXLink,
   table: Table,
   td: Td,
@@ -103,12 +104,15 @@ const useSafariRenderHack = () => {
   }, []);
 };
 
-const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
+const MyApp = ({ Component, pageProps }: AppProps) => {
   useSafariRenderHack();
 
-  // Recompute the background color on the client
+  // Recompute the background color on the client to use the visitor's local
+  // time zone instead of the SSR placeholder. This is intentionally a one-shot
+  // post-hydration sync, hence the eslint-disable.
   const [backgroundColor, setBackgroundColor] = useState(getBackgroundColor());
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setBackgroundColor(getBackgroundColor(DateTime.local()));
   }, []);
 

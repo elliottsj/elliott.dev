@@ -1,4 +1,4 @@
-import { Merriweather, Ubuntu, Fira_Code } from 'next/font/google';
+import { Fira_Code, Merriweather, Ubuntu } from 'next/font/google';
 
 export const merriweather = Merriweather({
   subsets: ['latin'],

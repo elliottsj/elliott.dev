@@ -1,6 +1,6 @@
-import { Layout } from '@/components';
 import Link from 'next/link';
 import React from 'react';
+import { Layout } from '@/components';
 
 const IndexPage: React.FC = () => (
   <Layout>

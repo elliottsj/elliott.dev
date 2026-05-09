@@ -1,5 +1,5 @@
-import { approximateLongitudeFromTimezone, getDaylightTemperature } from './theme';
 import { DateTime } from 'luxon';
+import { approximateLongitudeFromTimezone, getDaylightTemperature } from './theme';
 
 describe('approximateLongitudeFromTimezone', () => {
   test('US Eastern Standard Time', () => {
