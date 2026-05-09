@@ -1,10 +1,10 @@
-import { useWindowSize } from '@/hooks/useWindowSize';
-import { Family, FamilyLink, FamilyNode, getFamilyGraph } from '@/lib/family';
 import * as d3 from 'd3';
 import { GetServerSideProps } from 'next';
 import Head from 'next/head';
 import React, { useEffect, useRef, useState } from 'react';
 import Modal from 'react-modal';
+import { useWindowSize } from '@/hooks/useWindowSize';
+import { Family, FamilyLink, FamilyNode, getFamilyGraph } from '@/lib/family';
 
 type SimulationFamilyNodeDatum = FamilyNode & d3.SimulationNodeDatum;
 type SimulationFamilyLinkDatum = FamilyLink & d3.SimulationNodeDatum;
@@ -15,10 +15,15 @@ interface Props {
 
 const FamilyTreePage: React.FC<Props> = ({ data: family }) => {
   const svgRef = useRef<SVGSVGElement>(null);
-  const simulationRef =
-    useRef<d3.Simulation<SimulationFamilyNodeDatum, SimulationFamilyLinkDatum>>();
-  const svgSelectionRef = useRef<d3.Selection<SVGSVGElement, unknown, null, undefined>>();
-  const zoomGroupSelectionRef = useRef<d3.Selection<SVGGElement, unknown, null, undefined>>();
+  const simulationRef = useRef<
+    d3.Simulation<SimulationFamilyNodeDatum, SimulationFamilyLinkDatum> | undefined
+  >(undefined);
+  const svgSelectionRef = useRef<d3.Selection<SVGSVGElement, unknown, null, undefined> | undefined>(
+    undefined,
+  );
+  const zoomGroupSelectionRef = useRef<
+    d3.Selection<SVGGElement, unknown, null, undefined> | undefined
+  >(undefined);
   const windowSize = useWindowSize();
   const [isModalOpen, setIsModalOpen] = useState(false);
 

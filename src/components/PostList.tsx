@@ -1,7 +1,7 @@
-import PostDate from './PostDate';
-import { Post } from '@/lib/getPosts';
 import Link from 'next/link';
 import React from 'react';
+import { Post } from '@/lib/getPosts';
+import PostDate from './PostDate';
 
 const PostItem: React.FC<{ pathPrefix: string; post: Post }> = ({ pathPrefix, post }) => (
   <article>

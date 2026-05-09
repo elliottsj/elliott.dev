@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pnpm --version)",
+      "Bash(npm view *)",
+      "Bash(pnpm install *)",
+      "Bash(pnpm approve-builds *)",
+      "Bash(pnpm exec *)",
+      "Bash(pnpm build *)",
+      "Bash(pnpm lint *)",
+      "Bash(pnpm jest *)",
+      "Bash(pnpm format:check)"
+    ]
+  }
+}

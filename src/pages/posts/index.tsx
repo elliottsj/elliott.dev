@@ -1,15 +1,15 @@
+import type { GetStaticProps } from 'next';
+import Link from 'next/link';
+import path from 'node:path';
 import { Layout } from '@/components';
 import PostList from '@/components/PostList';
-import { getPosts, Post } from '@/lib/getPosts';
-import { GetStaticProps } from 'next';
-import Link from 'next/link';
-import React from 'react';
+import { type Post, getPosts } from '@/lib/getPosts';
 
 interface Props {
   posts: Post[];
 }
 
-const IndexPage: React.FC<Props> = ({ posts }) => (
+const IndexPage = ({ posts }: Props) => (
   <Layout>
     <PostList pathPrefix="/posts" posts={posts} />
     <h3>
@@ -22,8 +22,10 @@ const IndexPage: React.FC<Props> = ({ posts }) => (
 
 export default IndexPage;
 
-export const getStaticProps: GetStaticProps = async () => ({
+export const getStaticProps: GetStaticProps<Props> = async () => ({
   props: {
-    posts: (await getPosts(require.context('.'))).filter((post) => !post.meta.archived),
+    posts: (await getPosts(path.join(process.cwd(), 'src/pages/posts'))).filter(
+      (post) => !post.meta.archived,
+    ),
   },
 });
