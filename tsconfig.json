@@ -24,7 +24,7 @@
       }
     ],
     "resolveJsonModule": true,
-    "skipLibCheck": true,
+    "skipLibCheck": false,
     "strict": true,
     "target": "ES2022",
     "types": ["jest"]
