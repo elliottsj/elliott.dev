@@ -52,10 +52,9 @@ const SocialLink: React.FC<{ children: React.ReactNode; href: string }> = ({ chi
 
 interface LayoutProps {
   children: React.ReactNode;
-  use100vh?: boolean;
 }
 
-const Layout: React.FC<LayoutProps> = ({ children, use100vh = true }) => {
+const Layout: React.FC<LayoutProps> = ({ children }) => {
   const layout = (
     <Grid>
       <Header>
@@ -89,11 +88,7 @@ const Layout: React.FC<LayoutProps> = ({ children, use100vh = true }) => {
     </Grid>
   );
 
-  if (use100vh) {
-    return <div className="h-screen">{layout}</div>;
-  }
-
-  return layout;
+  return <div className="h-screen">{layout}</div>;
 };
 
 export default Layout;

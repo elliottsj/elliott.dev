@@ -8,7 +8,6 @@ export interface Meta {
   publishedAt: string;
   title: string;
   summary?: string;
-  use100vh?: boolean;
 }
 
 export interface Post {
