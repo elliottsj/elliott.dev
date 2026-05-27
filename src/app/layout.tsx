@@ -1,9 +1,7 @@
 import classNames from 'classnames';
 import type { Metadata } from 'next';
-import 'nprogress/nprogress.css';
 import { Suspense } from 'react';
 import Ackee from '@/components/Ackee';
-import NavigationEvents from '@/components/NavigationEvents';
 import ThemeColorProvider from '@/components/ThemeColorProvider';
 import { firaCode, merriweather, ubuntu } from '@/lib/fonts';
 import { getBackgroundColor } from '@/lib/theme';
@@ -29,9 +27,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className={classNames(merriweather.variable, ubuntu.variable, firaCode.variable)}>
         {children}
         <ThemeColorProvider />
-        <Suspense fallback={null}>
-          <NavigationEvents />
-        </Suspense>
         {ackeeServerUrl && ackeeDomainId && (
           <Suspense fallback={null}>
             <Ackee ackeeServerUrl={ackeeServerUrl} ackeeDomainId={ackeeDomainId} />

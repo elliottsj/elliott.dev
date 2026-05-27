@@ -30,8 +30,7 @@ const Td = (props: ComponentProps<'td'>) => (
   <td className="border border-solid border-[#e2e8f0] p-0.5" {...props} />
 );
 
-const MDXLink = (props: ComponentProps<'a'>) => {
-  const { href, ref: _ref, ...rest } = props;
+const MDXLink = ({ href, ...rest }: ComponentProps<'a'>) => {
   if (href?.startsWith('/')) {
     return <Link href={href} {...rest} />;
   }

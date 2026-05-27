@@ -54,8 +54,8 @@ interface LayoutProps {
   children: React.ReactNode;
 }
 
-const Layout: React.FC<LayoutProps> = ({ children }) => {
-  const layout = (
+const Layout: React.FC<LayoutProps> = ({ children }) => (
+  <div className="h-screen">
     <Grid>
       <Header>
         <div className="flex-1 font-sans font-bold text-2xl ">
@@ -66,7 +66,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           </div>
         </div>
         <div className="flex-none font-sans pl-4">
-          <Link href="/">Things</Link>
+          <Link href="/">Home</Link>
         </div>
         <div className="flex-none font-sans pl-4">
           <Link href="/posts">Posts</Link>
@@ -86,9 +86,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         </SocialLink>
       </Footer>
     </Grid>
-  );
-
-  return <div className="h-screen">{layout}</div>;
-};
+  </div>
+);
 
 export default Layout;
