@@ -3,7 +3,6 @@ import Link from 'next/link';
 import React from 'react';
 import GitHubLogo from 'simple-icons/icons/github.svg';
 import StackOverflowLogo from 'simple-icons/icons/stackoverflow.svg';
-import { firaCode, merriweather, ubuntu } from '@/lib/fonts';
 
 const Grid: React.FC<React.ComponentProps<'div'>> = (props) => {
   return (
@@ -16,9 +15,6 @@ const Grid: React.FC<React.ComponentProps<'div'>> = (props) => {
         'bg-background',
         'transition-colors',
         'overflow-auto',
-        merriweather.variable,
-        ubuntu.variable,
-        firaCode.variable,
       )}
       {...props}
     />
@@ -56,11 +52,10 @@ const SocialLink: React.FC<{ children: React.ReactNode; href: string }> = ({ chi
 
 interface LayoutProps {
   children: React.ReactNode;
-  use100vh?: boolean;
 }
 
-const Layout: React.FC<LayoutProps> = ({ children, use100vh = true }) => {
-  const layout = (
+const Layout: React.FC<LayoutProps> = ({ children }) => (
+  <div className="h-screen">
     <Grid>
       <Header>
         <div className="flex-1 font-sans font-bold text-2xl ">
@@ -71,7 +66,7 @@ const Layout: React.FC<LayoutProps> = ({ children, use100vh = true }) => {
           </div>
         </div>
         <div className="flex-none font-sans pl-4">
-          <Link href="/">Things</Link>
+          <Link href="/">Home</Link>
         </div>
         <div className="flex-none font-sans pl-4">
           <Link href="/posts">Posts</Link>
@@ -91,13 +86,7 @@ const Layout: React.FC<LayoutProps> = ({ children, use100vh = true }) => {
         </SocialLink>
       </Footer>
     </Grid>
-  );
-
-  if (use100vh) {
-    return <div className="h-screen">{layout}</div>;
-  }
-
-  return layout;
-};
+  </div>
+);
 
 export default Layout;

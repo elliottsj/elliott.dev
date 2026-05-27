@@ -1,6 +1,6 @@
+'use client';
+
 import * as d3 from 'd3';
-import { GetServerSideProps } from 'next';
-import Head from 'next/head';
 import React, { useEffect, useRef, useState } from 'react';
 import Modal from 'react-modal';
 import { useWindowSize } from '@/hooks/useWindowSize';
@@ -13,7 +13,7 @@ interface Props {
   data: Family;
 }
 
-const FamilyTreePage: React.FC<Props> = ({ data: family }) => {
+const FamilyTree: React.FC<Props> = ({ data: family }) => {
   const svgRef = useRef<SVGSVGElement>(null);
   const simulationRef = useRef<
     d3.Simulation<SimulationFamilyNodeDatum, SimulationFamilyLinkDatum> | undefined
@@ -93,8 +93,8 @@ const FamilyTreePage: React.FC<Props> = ({ data: family }) => {
     }
 
     function dragged(event: any, d: any) {
-      d.fx = event.x; //clamp(event.x, 0, 1000 /*width*/);
-      d.fy = event.y; //clamp(event.y, 0, 1000 /*height*/);
+      d.fx = event.x;
+      d.fy = event.y;
       simulation.alpha(0.05).restart();
     }
 
@@ -104,7 +104,6 @@ const FamilyTreePage: React.FC<Props> = ({ data: family }) => {
 
     links.filter((d) => d.kind === 'Partner').attr('stroke-dasharray', '1');
     links
-
       .filter((d) => d.kind === 'Child' && (d.target as any).type === 'FamilyUnionNode')
       .attr('stroke-dasharray', '4 1');
 
@@ -183,13 +182,6 @@ const FamilyTreePage: React.FC<Props> = ({ data: family }) => {
 
   return (
     <div className="h-screen">
-      <Head>
-        {/* Disable manual scaling */}
-        <meta
-          name="viewport"
-          content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"
-        />
-      </Head>
       <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" ref={svgRef} />
       <button
         className="absolute top-[20px] left-[20px] text-4xl"
@@ -232,26 +224,4 @@ const FamilyTreePage: React.FC<Props> = ({ data: family }) => {
   );
 };
 
-export default FamilyTreePage;
-
-export const getServerSideProps: GetServerSideProps = async (context) => {
-  const secret = context.query['secret'] || null;
-
-  if (!secret || secret !== process.env.FAMILY_SECRET) {
-    return {
-      notFound: true,
-    };
-  }
-
-  const response = await fetch(
-    `https://raw.githubusercontent.com/elliottsj/elliott-family-data/master/family.json`,
-    {
-      headers: {
-        Authorization: `token ${process.env.DATA_TOKEN}`,
-      },
-    },
-  );
-  const data = await response.json();
-
-  return { props: { data } };
-};
+export default FamilyTree;

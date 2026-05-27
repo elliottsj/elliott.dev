@@ -1,15 +1,17 @@
-import { useRouter } from 'next/router';
+'use client';
+
+import { usePathname, useSearchParams } from 'next/navigation';
 import useAckee from 'use-ackee';
 
-/**
- * Component which initializes Ackee tracking.
- */
 const Ackee: React.FC<{ ackeeServerUrl: string; ackeeDomainId: string }> = ({
   ackeeServerUrl,
   ackeeDomainId,
 }) => {
-  const router = useRouter();
-  useAckee(router.asPath, { server: ackeeServerUrl, domainId: ackeeDomainId }, { detailed: false });
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
+  const search = searchParams.toString();
+  const url = search ? `${pathname}?${search}` : pathname;
+  useAckee(url, { server: ackeeServerUrl, domainId: ackeeDomainId }, { detailed: false });
 
   return null;
 };
