@@ -1,9 +1,7 @@
 import Link from 'next/link';
-import React from 'react';
-import { Layout } from '@/components';
 
-const IndexPage: React.FC = () => (
-  <Layout>
+export default function HomePage() {
+  return (
     <ul className="p-0 list-none">
       <li>
         <article>
@@ -18,7 +16,5 @@ const IndexPage: React.FC = () => (
         </article>
       </li>
     </ul>
-  </Layout>
-);
-
-export default IndexPage;
+  );
+}

@@ -1,21 +1,13 @@
-import Seo from '@/components/Seo';
 import 'katex/dist/katex.css';
-
-export const getStaticProps = async (context) => {
-  return {
-    // Disable react-div-100vh in Layout.tsx to fix CSS bug in Chrome
-    props: { use100vh: false },
-  };
-};
 
 export const meta = {
   published: true,
   publishedAt: '2021-10-18',
   title: 'Use-Before-Define: Applying Reaching Definitions Analysis to Workflow Validation',
   summary: 'Applying compiler theory to no-code development platforms.',
+  // Disable the 100vh wrapper so katex displays in this long-form post.
+  use100vh: false,
 };
-
-<Seo title={meta.title} description={meta.summary} />
 
 import Image from 'next/image';
 

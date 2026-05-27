@@ -3,7 +3,6 @@ import Link from 'next/link';
 import React from 'react';
 import GitHubLogo from 'simple-icons/icons/github.svg';
 import StackOverflowLogo from 'simple-icons/icons/stackoverflow.svg';
-import { firaCode, merriweather, ubuntu } from '@/lib/fonts';
 
 const Grid: React.FC<React.ComponentProps<'div'>> = (props) => {
   return (
@@ -16,9 +15,6 @@ const Grid: React.FC<React.ComponentProps<'div'>> = (props) => {
         'bg-background',
         'transition-colors',
         'overflow-auto',
-        merriweather.variable,
-        ubuntu.variable,
-        firaCode.variable,
       )}
       {...props}
     />
